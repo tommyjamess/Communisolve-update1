@@ -1,0 +1,106 @@
+:root{
+
+    --color-light-gray: #c2c2c23d;
+    --color-grey: #858585;
+    --color-brandcolor: #700CB3;
+    --color-white:#FFFFFF;
+    --color-green:#008000;
+
+
+    --space-card-horizontal: 9.6px;
+    --space-card-vertical:9.6px;
+    --page-wall-spacing:30px;
+    --content-padding-inline: 27px;
+    --space-small:5px;
+    --space-one:10px;
+    --space-two:20px;
+    --space-three:30px;
+    --space-four:40px;
+
+    --border-radius-small:9px;
+
+    --fontweight-300:300;
+    --fontweight-400:400;
+    --fontweight-500:500;
+    --fontweight-600:600;
+    --fontweight-700:700;
+
+    --font-size-small: 12px;
+    --font-size-one: 14px;
+    --font-size-two: 15px;
+
+
+
+    --card-sidecard-size:100px;
+    --card-border-radius: 10px;
+    --card-margin-block:10px;
+    --card-box-shadow:0px 0px 2px 2px rgb(128, 128, 128, 0.2);
+    --card-margin: 1rem;
+
+    --fontsize-logo:18px;
+    --icon-size:24px;
+
+    --logo-size:19.1px;
+    
+}
+
+
+.colored-green{
+    color: var(--color-green);
+}
+.cardspacing{
+    padding-inline: var(--space-two);
+    padding-block: var(--space-one);
+}
+.filter-padding{
+    padding-bottom: 7px;
+}
+.selected-filter{
+    border-bottom: 3px solid var(--color-brandcolor);
+}
+.selected{
+    color: var(--color-brandcolor) !important;  
+}
+
+.fixed {
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    margin-bottom: 300px;        
+}
+
+.card-filter-stick{
+    position:fixed;
+    width: 440px;
+
+    transform: translateY(-200%);
+}
+.card-stick-padding{
+    margin-bottom: 52px;
+}
+
+.side-card-stick{
+    position:fixed;
+    width: 230px;
+    transform: translateY(-106.5%);
+}
+.right-card-stick{
+    position:fixed;
+    width: 230px;
+    transform: translateY(-106.5%);
+}
+.side-card-stick-height{
+    height: 298.8px;
+}
+.right-card-stick-height{
+    height: 298.8px;
+}
+.next-side-card-fixer{
+    margin-top: 22px;
+}
+
+.side-menu-stick{
+    position: fixed;
+    width: 150px;
+}

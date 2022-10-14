@@ -1,0 +1,131 @@
+
+let filters = document.querySelectorAll(".filterTwo");
+let allfilter = document.querySelector(".allfilter");
+let activefilter = document.querySelector(".activefilter");
+let startingfilter = document.querySelector(".startingfilter")
+
+let headerDiv = document.querySelector(".header-container")
+let sessionFilter = document.querySelector(".majorSessionFilter")
+let sessionFilterOuter = document.querySelector(".filter")
+let sideCardFixed = document.querySelector(".sideCardFixed")
+let rightCardFixed = document.querySelector(".rightCardFixed")
+let rightCardOuter = document.querySelector(".right-card--outer")
+let sideCardTwoFixed = document.querySelector(".sideCardTwoFixed")
+let sideCardOuter = document.querySelector(".side-card--outer")
+let nextSideCardFix = document.querySelector(".nextSideCardFix")
+let sideMenuFixed = document.querySelector(".sideMenuFixed")
+let sideMenuOuter = document.querySelector("sideMenuOuter")
+
+let turnDark = document.getElementById("turnDark")
+let = mainContainer = document.querySelector(".content-container")
+
+
+// session filters highlights
+
+// all filter 
+allfilter.addEventListener("click", (e)=>{
+    allfilter.classList.add("selected-filter")
+    allfilter.firstElementChild.classList.add("selected")
+
+    activefilter.classList.remove("selected-filter")
+    activefilter.firstElementChild.classList.remove("selected")
+
+    startingfilter.classList.remove("selected-filter")
+    startingfilter.firstElementChild.classList.remove("selected")
+})
+
+// active filter
+activefilter.addEventListener("click", (e)=>{
+    activefilter.classList.add("selected-filter")
+    activefilter.firstElementChild.classList.add("selected")
+
+    allfilter.classList.remove("selected-filter")
+    allfilter.firstElementChild.classList.remove("selected")
+
+    startingfilter.classList.remove("selected-filter")
+    startingfilter.firstElementChild.classList.remove("selected")
+})
+
+
+// starting session filter 
+startingfilter.addEventListener("click", (e)=>{
+    startingfilter.classList.add("selected-filter")
+    startingfilter.firstElementChild.classList.add("selected")
+
+    activefilter.classList.remove("selected-filter")
+    activefilter.firstElementChild.classList.remove("selected")
+
+    allfilter.classList.remove("selected-filter")
+    allfilter.firstElementChild.classList.remove("selected")
+})
+
+
+
+
+window.onscroll = function() {scrollFunction()};
+
+let fixed = headerDiv.offsetTop;
+let fixSessionFilter = sessionFilter.offsetTop;
+let sideCardFixer = sideCardFixed.offsetTop
+let rightCardFixer = rightCardFixed.offsetTop
+let sideCardTwoFixer = sideCardTwoFixed.offsetTop
+let sideMenuFixer = sideMenuFixed.offsetTop
+
+
+function scrollFunction(){
+
+    // fixed header position onscroll 
+    if (window.pageYOffset > fixed){
+        headerDiv.classList.add("fixed")
+    }else{
+        headerDiv.classList.remove("fixed")
+    }
+
+
+    // fixed session filter position div onscroll 
+    if (window.pageYOffset >= (fixSessionFilter-58)){
+        sessionFilter.classList.add("card-filter-stick")
+        sessionFilterOuter.classList.add("card-stick-padding")
+    }else{
+        sessionFilter.classList.remove("card-filter-stick")
+        sessionFilterOuter.classList.remove("card-stick-padding")
+    }
+
+
+    // fixed second column  card position onscroll 
+    if (window.pageYOffset >= (sideCardFixer - 72)){
+        sideCardFixed.classList.add("side-card-stick")
+        sideCardOuter.classList.add("side-card-stick-height")
+        nextSideCardFix.classList.add("next-side-card-fixer")
+    } else {
+        sideCardFixed.classList.remove("side-card-stick")
+        sideCardOuter.classList.remove("side-card-stick-height")
+        nextSideCardFix.classList.remove("next-side-card-fixer")
+    }
+
+
+    if (window.pageYOffset >= (sideCardTwoFixer - 390)){
+        sideCardTwoFixed.classList.add("side-card-stick")
+        sideCardOuter.classList.add("side-card-stick-height")
+        nextSideCardFix.classList.add("next-side-card-fixer")
+    } else {
+        sideCardTwoFixed.classList.remove("side-card-stick")
+        sideCardOuter.classList.remove("side-card-stick-height")
+        nextSideCardFix.classList.remove("next-side-card-fixer")
+    }
+
+    // fixed fourth column card position onscroll
+    if (window.pageYOffset >= (rightCardFixer - 72)){
+        rightCardFixed.classList.add("right-card-stick")
+        rightCardOuter.classList.add("right-card-stick-height")
+        nextSideCardFix.classList.add("next-side-card-fixer")
+    } else {
+        rightCardFixed.classList.remove("right-card-stick")
+        rightCardOuter.classList.remove("right-card-stick-height")
+        nextSideCardFix.classList.remove("next-side-card-fixer")
+    }
+
+}
+
+
+

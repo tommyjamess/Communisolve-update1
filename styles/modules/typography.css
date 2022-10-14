@@ -1,0 +1,7 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.company h1{
+    font-size: var(--fontsize-logo);
+}

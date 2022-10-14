@@ -1,0 +1,42 @@
+.content-container{
+    width: 100%;
+    max-width: 100%;
+    min-height: 40rem;
+}
+
+.bars-container{
+    display: flex;
+    padding-inline: var(--content-padding-inline);
+    padding-block: var(--space-card-vertical);
+    /* padding-top: 30px; */
+}
+/* .fixed + .bars-container{
+    padding-top: 30px;
+} */
+.main-bar{
+    display: flex;
+    /* max-height: 50rem; */
+    padding-top: var(--space-one);
+    /* overflow-y: auto; */
+}
+.col-one{
+    min-width: 150px;
+    max-width: 150px;
+}
+.col-two{
+    min-width: 230px;
+    max-width: 230px;
+}
+.col-three{
+    min-width: 440px;
+    max-width: 440px;
+}
+.col-one,
+.col-three,
+.col-two{
+    min-height: 30rem;
+    margin-right: 20px;
+}
+/* .col-three{
+    border: 1px solid black;
+} */
