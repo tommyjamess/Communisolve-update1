@@ -12,12 +12,14 @@ let rightCardFixed = document.querySelector(".rightCardFixed")
 let rightCardOuter = document.querySelector(".right-card--outer")
 let sideCardTwoFixed = document.querySelector(".sideCardTwoFixed")
 let sideCardOuter = document.querySelector(".side-card--outer")
+let sideCardTwoOuter = document.querySelector(".side-card-two--outer")
 let nextSideCardFix = document.querySelector(".nextSideCardFix")
 let sideMenuFixed = document.querySelector(".sideMenuFixed")
 let sideMenuOuter = document.querySelector("sideMenuOuter")
+let headerContainerOuter = document.querySelector(".header-container-outer")
 
-let turnDark = document.getElementById("turnDark")
-let = mainContainer = document.querySelector(".content-container")
+
+let mainBar = document.querySelector(".main-bar")
 
 
 // session filters highlights
@@ -77,13 +79,16 @@ function scrollFunction(){
     // fixed header position onscroll 
     if (window.pageYOffset > fixed){
         headerDiv.classList.add("fixed")
+        sideMenuFixed.classList.add("side-menu-fixer")
     }else{
+
         headerDiv.classList.remove("fixed")
+        sideMenuFixed.classList.remove("side-menu-fixer")
     }
 
 
     // fixed session filter position div onscroll 
-    if (window.pageYOffset >= (fixSessionFilter-58)){
+    if (window.pageYOffset >= (fixSessionFilter-80)){
         sessionFilter.classList.add("card-filter-stick")
         sessionFilterOuter.classList.add("card-stick-padding")
     }else{
@@ -93,7 +98,7 @@ function scrollFunction(){
 
 
     // fixed second column  card position onscroll 
-    if (window.pageYOffset >= (sideCardFixer - 72)){
+    if (window.pageYOffset >= (sideCardFixer - 88)){
         sideCardFixed.classList.add("side-card-stick")
         sideCardOuter.classList.add("side-card-stick-height")
         nextSideCardFix.classList.add("next-side-card-fixer")
@@ -104,9 +109,9 @@ function scrollFunction(){
     }
 
 
-    if (window.pageYOffset >= (sideCardTwoFixer - 390)){
+    if (window.pageYOffset >= (sideCardTwoFixer -400)){
         sideCardTwoFixed.classList.add("side-card-stick")
-        sideCardOuter.classList.add("side-card-stick-height")
+        sideCardTwoOuter.classList.add("side-card-stick-height")
         nextSideCardFix.classList.add("next-side-card-fixer")
     } else {
         sideCardTwoFixed.classList.remove("side-card-stick")
@@ -115,7 +120,7 @@ function scrollFunction(){
     }
 
     // fixed fourth column card position onscroll
-    if (window.pageYOffset >= (rightCardFixer - 72)){
+    if (window.pageYOffset >= (rightCardFixer - 88)){
         rightCardFixed.classList.add("right-card-stick")
         rightCardOuter.classList.add("right-card-stick-height")
         nextSideCardFix.classList.add("next-side-card-fixer")
@@ -124,6 +129,7 @@ function scrollFunction(){
         rightCardOuter.classList.remove("right-card-stick-height")
         nextSideCardFix.classList.remove("next-side-card-fixer")
     }
+    
 
 }
 

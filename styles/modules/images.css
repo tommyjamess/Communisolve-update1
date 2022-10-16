@@ -1,7 +1,3 @@
-.logo-name img{
-    width: var(--logo-size);
-    margin-right: var(--space-card-vertical);
-}
 
 .side-menu img{
     width: var(--icon-size);
