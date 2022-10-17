@@ -16,7 +16,7 @@ let sideCardTwoOuter = document.querySelector(".side-card-two--outer")
 let nextSideCardFix = document.querySelector(".nextSideCardFix")
 let sideMenuFixed = document.querySelector(".sideMenuFixed")
 let sideMenuOuter = document.querySelector("sideMenuOuter")
-let headerContainerOuter = document.querySelector(".header-container-outer")
+// let headerContainerOuter = document.querySelector(".header-container-outer")
 
 
 let mainBar = document.querySelector(".main-bar")

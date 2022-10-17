@@ -150,17 +150,20 @@
 }
 .card-time{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     border-bottom: 1px solid var(--line-color);
 }
 .username-elipsis{
     display: flex;
     justify-content: space-between;
-    width: 368px;
     align-items: center;
+}
+.username-time{
+    width: 100%;
 }
 .user-avater{
     display: flex;
+    flex-basis: 80%;
 }
 
 .specialization{
@@ -171,20 +174,18 @@
     margin-top: 2px;
 }
 
-.time-menu{
-    display: flex;
-}
 .start-time{
     display: flex;
     align-items: center;
+}
+.start-time span{
+    margin-right:15px ;
 }
 
 .start-time p{
     margin-right: 5px;
 }
-.start-time span{
-    margin-right: 12px;
-}
+
 .time-menu i{
     color: var(--color-grey);
     font-size: 20px;
@@ -207,6 +208,10 @@
     max-height: 20px;
     padding-inline: 5px;
     border-radius: 90px;
+}
+.card-menu--icon i{
+    color: #222222;
+    font-size: 15px;
 }
 .card-menu--icon:hover{
     background-color: var(--color-light-gray);

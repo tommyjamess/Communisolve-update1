@@ -1,15 +1,19 @@
-
+.header-container{
+    background: var(--color-white);
+    width: 100%;
+}
 .header-container--inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: var(--page-wall-spacing);
     padding-block: var(--space-card-horizontal);
-    background: var(--color-white);
     z-index: 200;
     max-height: 37px;
+    background-color: var(--color-white);
     width: 100%;
 }
+
 .header-list{
     display: flex;
     flex-basis: 29.5%;
@@ -100,7 +104,6 @@ i:hover{
     .logo-name h1{
         display: none;
     }
-    
     .header-list{
         display: flex;
         justify-content: space-between;
@@ -127,12 +130,16 @@ i:hover{
     .menuIcon{
         display: block;
     }
-    
-    
 
 }
 @media (min-width:1500px){
-    .header-container--inner{
-        max-width: 1190px;
+    .header-container{
+        display: flex;
+        justify-content: center;
     }
+    
+    .header-container--inner{
+        width: 1347px;
+    }
+   
 }

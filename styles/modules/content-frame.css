@@ -73,12 +73,13 @@
         justify-content: center;
     }
 }
-
 @media (min-width:1500px){
-    body{
-        display:flex ;
+    .content-container{
+        display: flex;
         justify-content: center;
-        background-color: var(--color-light-gray);
     }
-    
+    .bars-container{
+        width: 1347px;
+        padding-inline: var(--page-wall-spacing);
+    }
 }
