@@ -32,6 +32,7 @@
 .col-one{
     width: 140px;
     max-width: 140px;
+    padding-left: 7.5px;
 }
 .col-two{
     display: flex;
