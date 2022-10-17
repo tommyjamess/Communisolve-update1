@@ -74,7 +74,7 @@
     }
 }
 
-@media (min-width:1800px){
+@media (min-width:1500px){
     body{
         display:flex ;
         justify-content: center;
