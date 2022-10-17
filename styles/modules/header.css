@@ -1,33 +1,41 @@
-.header-container{
+
+.header-container--inner{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-inline: var(--page-wall-spacing);
     padding-block: var(--space-card-horizontal);
     background: var(--color-white);
     z-index: 200;
     max-height: 37px;
+    width: 100%;
 }
 .header-list{
-    flex-basis: 97%;
     display: flex;
+    flex-basis: 29.5%;
     justify-content: space-between;
+    align-items: center;
 }
-.menuIcon{
-    flex-basis: 2%;
-    display: none;
+@media(min-width:521.78px) and (max-width:750px){
+    .search-bar{
+        margin-right: 30px;
+    }
 }
 .logo-name{
     display: flex;
-    align-items: center;
 }
-.logo-name img{
-    width: 16px;
-    margin-right:8px;
+.logo{
+    margin-right: 10px;
 }
-.search-mode{
-    display: flex;
-    align-items: center;
+
+.menuIcon{
+    display: none;
 }
+
+.logo-name h1{
+    font-size: var(--fontsize-logo);
+}
+
 .search-bar{
     display: flex;
     align-items: center;
@@ -37,6 +45,7 @@
     padding-inline: 7px;
     border-radius: var(--border-radius-small);
     background: var(--color-light-gray);
+    
 }
 .search-bar input{
     border: none;
@@ -51,10 +60,12 @@
 }
 .search-bar i{
     font-size: 15px;
+    padding-right: 5px;
 }
 .search{
-    margin-right: 67px;
-
+    width: 229px;
+    display: flex;
+    justify-content: center;
 }
 .search-icon{
     margin-right: 14px;
@@ -86,17 +97,14 @@ i:hover{
 
 
 @media (max-width:521.78px){
-    .company{
+    .logo-name h1{
         display: none;
     }
-    .logo-name{
-       flex-basis: 10%;
-       margin-right: 53px;
-    }
-    .search-mode{
-        flex-basis:60%;
-        justify-content: center;
-        /* border: 1px solid black; */
+    
+    .header-list{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 75%;
     }
     .search-bar{
         min-width: 320px;
@@ -105,28 +113,26 @@ i:hover{
         display: none;
     }
 }
-@media (min-width:521px) and (max-width:1000px){
-    .logo-name{
-        flex-basis: none;
-    } 
-    .search-mode{
-        flex-basis: none;
-    }
-    .search-bar{
-        width: 229px;
+
+@media (min-width:521.77px) and (max-width:1000px){
+    .header-list{
+        flex-basis: 40%;
     }
 }
+
 @media (max-width:1274px){
-    
-    .header-list{
-        display: flex;
-        justify-content: space-between;
-    }
-    
     .mode{
         display: none;
     }
     .menuIcon{
         display: block;
+    }
+    
+    
+
+}
+@media (min-width:1800px){
+    .header-container--inner{
+        max-width: 1190px;
     }
 }

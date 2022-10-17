@@ -100,12 +100,15 @@
 
 
 .fixed {
+    display: flex;
+    justify-content: center;
     position:fixed;
     width:100%;
     top:0;
     left:0;
-    /* margin-bottom: 300px;         */
 }
+
+    
 
 .card-filter-stick{
     position:fixed;
