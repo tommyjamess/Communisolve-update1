@@ -131,7 +131,7 @@ i:hover{
     
 
 }
-@media (min-width:1800px){
+@media (min-width:1500px){
     .header-container--inner{
         max-width: 1190px;
     }
