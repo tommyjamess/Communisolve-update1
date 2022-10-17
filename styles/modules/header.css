@@ -27,9 +27,10 @@
 }
 .logo-name{
     display: flex;
+    align-items: center;
 }
 .logo{
-    margin-right: 10px;
+    width: 36px;
 }
 
 .menuIcon{
@@ -63,8 +64,9 @@
     outline: none;
 }
 .search-bar i{
-    font-size: 15px;
-    padding-right: 5px;
+    font-size: 16px;
+    padding-right: 8px;
+    color:#858585;
 }
 .search{
     width: 229px;

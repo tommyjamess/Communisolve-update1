@@ -150,6 +150,7 @@
 .side-menu-stick{
     position: fixed;
     width: 150px;
+    margin-top: 10px;
 }
 
 .side-menu-fixer{
