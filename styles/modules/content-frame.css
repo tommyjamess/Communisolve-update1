@@ -13,7 +13,7 @@
 }
 
 .content-container{
-    /* width: 100%; */
+    width: 100%;
     max-width: 100%;
     padding-inline: var(--page-wall-spacing);
     padding-bottom: 10rem;
