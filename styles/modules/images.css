@@ -2,7 +2,7 @@
 .side-menu img{
     width: var(--icon-size);
 }
-.user-avater img{
+#user-avater{
     width: 50px;
     margin-right: 15px;
 }

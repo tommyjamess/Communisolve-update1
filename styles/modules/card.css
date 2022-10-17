@@ -150,8 +150,14 @@
 }
 .card-time{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     border-bottom: 1px solid var(--line-color);
+}
+.username-elipsis{
+    display: flex;
+    justify-content: space-between;
+    width: 368px;
+    align-items: center;
 }
 .user-avater{
     display: flex;
@@ -170,7 +176,7 @@
 }
 .start-time{
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 .start-time p{
@@ -185,12 +191,15 @@
 }
 
 .session-type{
-    background-color: var(--color-brandcolor) ;
+    background: var(--color-brandcolor);
+    padding-inline: 15px;
+    padding-block: 1px;
+    border-radius: 5px;
     color: var(--color-white);
-    font-weight: var(--fontweight-500);
-    padding-inline: 10px;
-    border-radius: 40px;
-    z-index: 100;
+}
+.time-sessiontype{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -216,6 +225,18 @@
     padding-block: var(--space-one);
     max-width: 480px;
 }
+.joined-sessionlevel{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--space-two);
+}
+.session-level{
+    background: rgba(133, 133, 133, 0.5);
+    padding-inline: 15px;
+    padding-block: 1px;
+    border-radius: 5px;
+    color: var(--color-white);
+}
 @media (max-width:521.78px){
     .session-image img{
         max-width: 100%;
@@ -224,7 +245,6 @@
 .joined-users{
     display: flex;
     align-items: center;
-    padding-inline: var(--space-two);
 }
 .joined-users img{
     max-width: 16px;
