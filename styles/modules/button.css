@@ -1,5 +1,30 @@
+button:hover{
+    cursor: pointer;
+}
 .join-session-btn{
     background-color: var(--color-brandcolor);
     border: none;
     border-radius: 8px;
+}
+
+/* aks cards  */
+.option-btns{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+}
+
+.option-btns button{
+    background-color: transparent;
+    height: 37px;
+    width: 100%;
+    border: 1px solid var(--color-brandcolor);
+    text-align: left;
+    padding-inline: 14px;
+    border-radius: 8px;
+    color: #000000;
+}
+.option-btns button:hover{
+    background-color: var(--color-brandcolor);
+    color: white;
 }

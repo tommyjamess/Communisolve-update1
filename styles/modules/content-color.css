@@ -1,3 +1,10 @@
 .content-container{
     background-color: var(--color-light-gray);
 }
+
+.brand-background-color{
+    background-color: var(--color-brandcolor);
+}
+.brand-background-color-light{
+    background-color: var(--color-brandcolor-light);
+}

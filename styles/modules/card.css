@@ -192,7 +192,6 @@
 }
 
 .session-type{
-    background: var(--color-brandcolor);
     padding-inline: 15px;
     padding-block: 1px;
     border-radius: 5px;
@@ -285,4 +284,10 @@
 }
 .session-reactions i:hover{
     color: var(--color-brandcolor);
+}
+
+
+/* ask session  */
+.ask-votes p{
+    color: #858585;
 }
