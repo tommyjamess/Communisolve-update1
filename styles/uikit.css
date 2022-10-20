@@ -1,14 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 @import url(./modules/header.css);
-@import url(./modules/images.css);
 @import url(./modules/main.css);
-@import url(./modules/variables.css);
-@import url(./modules/typography.css);
-@import url(./modules/forms.css);
-@import url(./modules/content-frame.css);
-@import url(./modules/content-color.css);
 @import url(./modules/menu-bar.css);
-@import url(./modules/card.css);
-@import url(./modules/button.css);
+@import url(./modules/frame.css);
+@import url(./modules/variables.css);
+@import url(./modules/secondary-card.css);
+@import url(./modules/primary-card.css);
+@import url(./modules/buttons.css);

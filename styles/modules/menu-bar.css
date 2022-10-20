@@ -1,71 +1,25 @@
 .side-menu{
-    width: fit-content;
+    padding-left: 10px;
+    padding-top: 6.8px;
 }
 .side-menu * + *{
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .side-menu a{
     display: flex;
+    align-items: center;
+    grid-column-gap: 10px;
     text-decoration: none;
 }
 
-.side-menu a div{
-    max-width: 30px;
-    min-width: 30px;
-    padding-top: 14px;
-}
-.side-menu a i{
-    font-size: var(--icon-size);
+.side-menu i{
+    font-size: 21px;
     color: black;
 }
-.side-menu a:hover > p,
-.side-menu a:hover i{
-    color: var(--color-brandcolor);
-}
-.side-menu a * + *{
-    margin-left: 13px;
-}
+
 .side-menu p{
     font-size: 13px;
-    color: var(--color-grey);
-}
-
-.bottom-menu{
-    display: flex;
-    justify-content: space-around;
-    padding-block: 10px;
-    position:fixed;
-    width: 100%;
-    bottom: 0;
-    background-color:var(--color-white) ;
-}
-.bottom-menu div{
-    padding-block: 5px;
-    padding-inline: 7px;
-    border-radius: 50%;
-}
-.bottom-menu div:hover{
-    background-color: #d9d9d9;
-    color: var(--color-brandcolor);
-}
-.bottom-menu i{
-    font-size: 24px;
-}
-@media (min-width:1274px){
-    .bottom-menu{
-        display: none;
-    }
-}
-
-@media (min-width:1000px){
-    .bottom-menu{
-        display: none;
-    }
-}
-
-@media only screen  and (max-width:1274px){
-    .col-one{
-        display: none;
-    }
+    color: #858585;
+    margin-bottom: 10px;
 }
