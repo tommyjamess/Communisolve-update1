@@ -25,3 +25,43 @@
     color: #858585;
     margin-bottom: 10px;
 }
+
+
+
+/* bottom menu  */
+
+
+
+.bottom-menu{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 10px;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+}
+.bottom-menu div{
+    padding-block: 5px;
+    padding-inline: 7px;
+    border-radius: 50%;
+}
+.bottom-menu div:hover{
+    background-color: #d9d9d9;
+    color: var(--color-brandcolor);
+}
+.bottom-menu i{
+    font-size: 24px;
+}
+/* @media (min-width:1274px){
+    .bottom-menu{
+        display: none;
+    }
+}
+
+@media (min-width:1000px){
+    .bottom-menu{
+        display: none;
+    }
+} */

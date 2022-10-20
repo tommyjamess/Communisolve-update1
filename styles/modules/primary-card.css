@@ -229,9 +229,9 @@
     }
 }
 
-@media (min-width:1559px){
+@media (min-width:1559px) and (max-width:10000px){
     .card-filter-stick{
-        width: 22.6%;
+        max-width: 457px;
     }
 }
 .card-filterfix{
@@ -250,9 +250,10 @@
         max-width: 20.9%;
     }
 }
-@media (min-width:1559px){
+@media (min-width:1559px) and (max-width:10000px){
     .side-card-stick{
-        max-width: 15%;
+        max-width: 259px;
+        border: 1px solid gold;
     }
 }
 
@@ -276,9 +277,9 @@
         max-width: 20.9%;
     }
 }
-@media (min-width:1559px){
+@media (min-width:1559px) and (max-width:5000px){
     .right-card-stick{
-        max-width: 15%;
+        max-width: 259px;
     }
 }
 .right-card-stick-height{
