@@ -219,7 +219,7 @@
 
 @media (min-width:1559px){
     .card-filter-stick{
-        width: 31.8%;
+        width: 27%;
     }
 }
 .card-filterfix{
@@ -240,7 +240,7 @@
 }
 @media (min-width:1559px){
     .side-card-stick{
-        max-width: 12.4%;
+        max-width: 15%;
     }
 }
 
@@ -266,7 +266,7 @@
 }
 @media (min-width:1559px){
     .right-card-stick{
-        max-width: 12.4%;
+        max-width: 15%;
     }
 }
 .right-card-stick-height{
