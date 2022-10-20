@@ -1,3 +1,6 @@
+.main{
+    margin-right: 12px;
+}
 .filter{
     margin-bottom: 12px;
     z-index: 100;
@@ -205,7 +208,7 @@
     position:fixed;
     width: 35.5%;
 
-    transform: translateY(-75.5%);
+    transform: translateY(-72.8%);
 }
 @media (min-width:600px) and (max-width:899px){
     .card-filter-stick{
@@ -225,7 +228,7 @@
 
 @media (min-width:899px) and (max-width:1270px){
     .card-filter-stick{
-        width: 54.3%;
+        width: 54.5%;
     }
 }
 
@@ -242,7 +245,7 @@
 
 .side-card-stick{
     position:fixed;
-    max-width: 14.5%;
+    max-width: 15.02%;
     transform: translateY(-106%);
 }
 @media (max-width:1270px){
@@ -253,7 +256,6 @@
 @media (min-width:1559px) and (max-width:10000px){
     .side-card-stick{
         max-width: 259px;
-        border: 1px solid gold;
     }
 }
 
@@ -269,7 +271,7 @@
 
 .right-card-stick{
     position:fixed;
-    max-width: 14.5%;
+    max-width: 15.02%;
     transform: translateY(-106%);
 }
 @media (max-width:1270px){

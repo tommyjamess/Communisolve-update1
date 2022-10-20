@@ -4,8 +4,8 @@
 }
 .page-container{
     display: flex;
-    justify-content: space-around;
     max-width: 1559px;
+    padding-bottom:80px
 }
 @media (max-width:1559px){
     .head-content,
@@ -15,7 +15,7 @@
 }
 
 .column{
-    padding-top:15px;
+    padding-top:12px;
 }
 
 .col-1{
