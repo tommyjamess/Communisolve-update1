@@ -1,7 +1,6 @@
 .filter{
     margin-bottom: 12px;
     z-index: 100;
-    border: 1px solid olivedrab;
 }
 
 .card-filter-bottom--padding{
@@ -131,7 +130,6 @@
 }
 .session-description{
     text-align: justify;
-    padding-inline: 12px;
 }
 .session-image img{
     padding-block: 10px;
@@ -153,7 +151,14 @@
 #user-avater{
     min-width:60px;
     max-width:60px;
-    margin-right:10px;
+    margin-right:8px;
+}
+@media (max-width:900px){
+    #user-avater{
+        min-width:45px;
+        max-width:45px;
+        margin-right:6px;
+    }
 }
 
 .joined-users{
@@ -203,16 +208,18 @@
     transform: translateY(-75.5%);
 }
 @media (min-width:600px) and (max-width:899px){
+    .card-filter-stick{
+        max-width: 80%;
+    }
+    
     .main{
         padding-inline: 10%;
     }
 }
+
 @media (max-width:900px){
     .card-filter-stick{
         width: 100%;
-    }
-    .filter-outer{
-        border: 1px solid red;
     }
 }
 
@@ -224,7 +231,7 @@
 
 @media (min-width:1559px){
     .card-filter-stick{
-        width: 27%;
+        width: 22.6%;
     }
 }
 .card-filterfix{
@@ -240,7 +247,7 @@
 }
 @media (max-width:1270px){
     .side-card-stick{
-        max-width: 21.6%;
+        max-width: 20.9%;
     }
 }
 @media (min-width:1559px){
@@ -266,7 +273,7 @@
 }
 @media (max-width:1270px){
     .right-card-stick{
-        max-width: 21.6%;
+        max-width: 20.9%;
     }
 }
 @media (min-width:1559px){

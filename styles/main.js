@@ -78,7 +78,7 @@ let sideCardTwoFixer = sideCardTwoFixed.offsetTop
 function scrollFunction(){
 
     // fixed session filter position div onscroll 
-    if (window.pageYOffset >= (fixSessionFilter-0)){
+    if (window.pageYOffset >= (fixSessionFilter + 19)){
         sessionFilter.classList.add("card-filter-stick")
         sessionFilterOuter.classList.add("card-filterfix")
     }else{

@@ -2,7 +2,6 @@
     padding-left: 15px;
     padding-top: 6.8px;
     position: fixed;
-    /* border: 1px solid black; */
 }
 .side-menu * + *{
     margin-top: 8px;
