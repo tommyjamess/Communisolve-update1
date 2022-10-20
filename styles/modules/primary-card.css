@@ -149,11 +149,12 @@
     padding-block: 1px;
     border-radius: 5px;
     color: white;
+    margin-right: 8px;
 }
 
 #user-avater{
-    min-width:60px;
-    max-width:60px;
+    min-width:50px;
+    max-width:50px;
     margin-right:8px;
 }
 @media (max-width:900px){
@@ -167,6 +168,7 @@
 .joined-users{
     display: flex;
     align-items: center;
+    padding-left: 8px;
 }
 .joined-users img{
     max-width: 16px;
@@ -186,12 +188,15 @@
 .session-reactions{
     display: flex;
     justify-content: space-between;
+    padding-inline: 40px;
 }
 .session-reactions i{
-    font-size: 21px;
+    font-size: 18px;
     color: var(--color-grey);
     margin-right: 5px;
+    margin-left: 5px;
 }
+
 .session-reactions button{
     display: flex;
     background-color: transparent;
@@ -285,5 +290,5 @@
     }
 }
 .right-card-stick-height{
-    height: 303px;
+    height: 295px;
 }

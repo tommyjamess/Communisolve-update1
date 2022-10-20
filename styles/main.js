@@ -12,8 +12,10 @@ let sideCardFixed = document.querySelector(".sideCardFixed")
 let rightCardFixed = document.querySelector(".rightCardFixed")
 let rightCardOuter = document.querySelector(".right-card--outer")
 let sideCardTwoFixed = document.querySelector(".sideCardTwoFixed")
+let rightCardTwoFixed = document.querySelector(".rightCardTwoFixed")
 let sideCardOuter = document.querySelector(".side-card--outer")
 let sideCardTwoOuter = document.querySelector(".side-card-two--outer")
+let rightCardTwoOuter = document.querySelector(".right-card-two--outer")
 let nextSideCardFix = document.querySelector(".nextSideCardFix")
 let sideMenuFixed = document.querySelector(".sideMenuFixed")
 let sideMenuOuter = document.querySelector("sideMenuOuter")
@@ -72,7 +74,8 @@ let fixSessionFilter = sessionFilter.offsetTop;
 let sideCardFixer = sideCardFixed.offsetTop
 let rightCardFixer = rightCardFixed.offsetTop
 let sideCardTwoFixer = sideCardTwoFixed.offsetTop
-// let sideMenuFixer = sideMenuFixed.offsetTop
+let rightCardTwoFixer = rightCardTwoFixed.offsetTop
+
 
 
 function scrollFunction(){
@@ -116,6 +119,16 @@ function scrollFunction(){
         nextSideCardFix.classList.add("next-side-card-fixer")
     } else {
         rightCardFixed.classList.remove("right-card-stick")
+        rightCardOuter.classList.remove("right-card-stick-height")
+        nextSideCardFix.classList.remove("next-side-card-fixer")
+    }
+
+    if (window.pageYOffset >= (rightCardTwoFixer - 355)){
+        rightCardTwoFixed.classList.add("right-card-stick")
+        rightCardTwoOuter.classList.add("right-card-stick-height")
+        nextSideCardFix.classList.add("next-side-card-fixer")
+    } else {
+        rightCardTwoFixed.classList.remove("right-card-stick")
         rightCardOuter.classList.remove("right-card-stick-height")
         nextSideCardFix.classList.remove("next-side-card-fixer")
     }
