@@ -1,7 +1,7 @@
 .filter{
     margin-bottom: 12px;
-    padding-inline: 15px;
     z-index: 100;
+    border: 1px solid olivedrab;
 }
 
 .card-filter-bottom--padding{
@@ -50,7 +50,6 @@
     display: flex;
     flex-direction: column;
     grid-row-gap: 12px;
-    padding-inline: 15px;
 }
 .card{
     min-height: 30rem;
@@ -111,7 +110,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 
 .card-menu--icon{
     max-height: 20px;
@@ -200,7 +198,7 @@
 
 .card-filter-stick{
     position:fixed;
-    width: 38.9%;
+    width: 35.5%;
 
     transform: translateY(-75.5%);
 }
@@ -213,15 +211,15 @@
     }
 }
 
-@media (max-width:1270px){
+@media (min-width:899px) and (max-width:1270px){
     .card-filter-stick{
-        min-width: 49%;
+        width: 54.3%;
     }
 }
 
 @media (min-width:1559px){
     .card-filter-stick{
-        max-width: 32.3%;
+        width: 31.8%;
     }
 }
 .card-filterfix{
@@ -232,18 +230,22 @@
 
 .side-card-stick{
     position:fixed;
-    /* max-width: 16.5%; */
-    width: 230px;
+    max-width: 14.5%;
     transform: translateY(-106%);
 }
 @media (max-width:1270px){
     .side-card-stick{
-        max-width: 23%;
+        max-width: 21.6%;
+    }
+}
+@media (min-width:1559px){
+    .side-card-stick{
+        max-width: 12.4%;
     }
 }
 
 .side-card-stick-height{
-    height: 295px;
+    height: 288px;
 }
 
 
@@ -254,12 +256,17 @@
 
 .right-card-stick{
     position:fixed;
-    width: 230px;
+    max-width: 14.5%;
     transform: translateY(-106%);
 }
 @media (max-width:1270px){
     .right-card-stick{
-        max-width: 23%;
+        max-width: 21.6%;
+    }
+}
+@media (min-width:1559px){
+    .right-card-stick{
+        max-width: 12.4%;
     }
 }
 .right-card-stick-height{

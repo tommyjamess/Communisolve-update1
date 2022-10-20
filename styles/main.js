@@ -110,7 +110,7 @@ function scrollFunction(){
     }
 
     // fixed fourth column card position onscroll
-    if (window.pageYOffset >= (rightCardFixer - 88)){
+    if (window.pageYOffset >= (rightCardFixer - 60)){
         rightCardFixed.classList.add("right-card-stick")
         rightCardOuter.classList.add("right-card-stick-height")
         nextSideCardFix.classList.add("next-side-card-fixer")

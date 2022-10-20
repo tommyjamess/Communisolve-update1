@@ -10,8 +10,7 @@
 }
 
 .header-page{
-    height: 40px;
-    
+    height: 40px;  
 }
 .header-content{
     width: 100%;
@@ -24,8 +23,9 @@
     width: 100%;
     background-color: white;
 }
-
-
+.h1{
+    padding-left: 8px;
+}
 
 .h1,
 .h2

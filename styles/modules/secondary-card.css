@@ -1,6 +1,11 @@
-
+.left-side{
+    padding-left: 10px;
+}
+.right-side{
+    padding-left: 10px;
+}
 .secondary-card{
-    width: 100%;
+    width: 94.5%;
     min-height: 280px;
     max-height: 280px;
     background-color: white;

@@ -1,6 +1,8 @@
 .side-menu{
-    padding-left: 10px;
+    padding-left: 15px;
     padding-top: 6.8px;
+    position: fixed;
+    /* border: 1px solid black; */
 }
 .side-menu * + *{
     margin-top: 8px;
@@ -16,6 +18,7 @@
 .side-menu i{
     font-size: 21px;
     color: black;
+    min-width: 35px;
 }
 
 .side-menu p{
