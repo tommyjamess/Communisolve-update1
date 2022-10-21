@@ -147,6 +147,7 @@
     /* max-height: 267px;
     overflow-y: auto; */
 }
+
 /* .ask-session-image::-webkit-scrollbar{
     display: none;
 }
@@ -159,6 +160,7 @@
     position:absolute;
     transform: translateY(11.8rem) translateX(21.5rem);
 } */
+
 .ask-session-image img{
    width: 50%;
 }

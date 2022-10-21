@@ -1,0 +1,159 @@
+
+
+
+
+.input-style select{
+    border: none;
+}
+.input-style select:focus{
+    outline: none;
+}
+.input-style select option{
+    text-align: center;
+}
+
+.create-session{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 300;
+    background-color: var(--color-pop-background);
+    overflow-y: auto;
+    display: none;
+}
+.create-ask-session{
+    border: 1px solid white;
+    flex-basis: 33%;
+    /* width: 486px; */
+    height: 94%;
+    margin-right: 12px;
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 100px;
+    transform: translateY(10%);
+}
+
+
+
+
+.create-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-plate{
+    padding-inline: 43px;
+    padding-block: 20px;
+}
+.form-plate form{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 30px;
+}
+.form-plate button{
+    border: none;
+}
+.form-plate select{
+  width: 100%;
+}
+.exitCreate{
+    color: var(--color-grey);
+}
+.exitCreate:hover{
+    cursor: pointer;
+}
+.input-style{
+    display: flex;
+    height: 38px;
+    border: 1px solid var(--line-color);
+    border-radius: var(--card-border-radius);
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-top: 5px;
+}
+
+
+.single-input label{
+    margin-left: 12px;
+}
+
+
+.double-options .industryOrInterest{
+    margin-bottom: 10px;
+}
+
+#Interest{
+    display: none;
+}
+
+.industryOrInterest{
+    display: flex;
+    grid-column-gap: 80px;
+}
+
+.industryOrInterest div{
+    align-items: center;
+    display: flex;
+}
+.industryOrInterest input{
+    width: 17px;
+    height: 17px;
+}
+
+.industryOrInterest * + *{
+    margin-left: 10px;
+}
+
+.industryOrInterest label{
+    margin-left: 12px;
+}
+
+.question{
+    height: 97px;
+    border: 1px solid var(--line-color);
+    border-radius: var(--card-border-radius);
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-top: 5px;
+}
+
+.question textarea{
+    width: 100%;
+    height: 85px;
+    border: none;
+}
+.question textarea:focus{
+    outline: none;
+}
+
+
+@media (max-width:600px){
+    .create-session{
+        padding-inline: 20px;
+    }
+    .create-ask-session{
+        min-width: 100%;
+        margin-right: 0px;
+    }
+}
+@media (max-width:900px){
+    .create-session{
+        flex-basis: 80%;
+    }
+}
+@media (max-width:1200px){
+    .create-ask-session{
+        flex-basis: 50%;
+        /* margin-right: 12px; */
+    }
+}
+@media (min-width:1559px) and (max-width:10000px){
+    .create-ask-session{
+        max-width:30rem ;
+    }
+}
