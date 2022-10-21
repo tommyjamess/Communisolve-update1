@@ -55,7 +55,7 @@
     grid-row-gap: 12px;
 }
 .card{
-    min-height: 30rem;
+    /* min-height: 30rem; */
     border-radius: var(--card-border-radius);
     background-color: white;
 }
@@ -92,6 +92,7 @@
 }
 .start-time span{
     margin-right:15px ;
+    color: var(--color-green);
 }
 
 .start-time p{
@@ -142,21 +143,22 @@
 .ask-session-image{
     display: flex;
     flex-wrap: wrap;
-    max-height: 267px;
-    overflow-y: auto;
+    padding-block: 10px;
+    /* max-height: 267px;
+    overflow-y: auto; */
 }
-.ask-session-image::-webkit-scrollbar{
+/* .ask-session-image::-webkit-scrollbar{
     display: none;
 }
 .ask-session-image{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-.images-count{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+} */
+/* .images-count{
     height: 2px;
     position:absolute;
     transform: translateY(11.8rem) translateX(21.5rem);
-}
+} */
 .ask-session-image img{
    width: 50%;
 }
@@ -211,6 +213,7 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 40px;
+    border-top: 1px solid var(--line-color);
 }
 @media (max-width:900px){
     .session-reactions{
