@@ -4,6 +4,7 @@
 
 .input-style select{
     border: none;
+    background-color: transparent;
 }
 .input-style select:focus{
     outline: none;
@@ -93,7 +94,7 @@
 
 .industryOrInterest{
     display: flex;
-    grid-column-gap: 80px;
+    grid-column-gap: 30px;
 }
 
 .industryOrInterest div{
