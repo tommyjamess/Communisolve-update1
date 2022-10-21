@@ -7,6 +7,11 @@
     max-width: 1559px;
     padding-bottom:80px
 }
+@media (max-width:1270px){
+   .page-container{
+        padding-left: 0.6%;
+   }
+}
 @media (max-width:1559px){
     .head-content,
     .page-container{
