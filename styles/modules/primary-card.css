@@ -139,6 +139,27 @@
     padding-block: 10px;
     width: 100%;
 }
+.ask-session-image{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 267px;
+    overflow-y: auto;
+}
+.ask-session-image::-webkit-scrollbar{
+    display: none;
+}
+.ask-session-image{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.images-count{
+    height: 2px;
+    position:absolute;
+    transform: translateY(11.8rem) translateX(21.5rem);
+}
+.ask-session-image img{
+   width: 50%;
+}
 .joined-sessionlevel{
     display: flex;
     justify-content: space-between;
