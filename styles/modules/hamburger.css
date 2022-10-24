@@ -46,13 +46,11 @@
     display: flex;
     align-items: center;
     grid-column-gap: 15px;
-    /* width: fit-content; */
     padding-right: 10px;
     margin-bottom: 20px;
 }
 .mode-list{
     display: flex;
-    /* justify-content: center; */
 }
 .mode-list img{
     width: 40px;
