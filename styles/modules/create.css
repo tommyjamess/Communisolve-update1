@@ -251,7 +251,7 @@ input[type="file"]::file-selector-button {
 
 @media (max-width:600px){
     .create-session-inner{
-        min-width: 90%;
+        min-width: 97%;
         margin-right: 0px;
     }
 }
