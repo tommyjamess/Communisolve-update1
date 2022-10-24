@@ -18,6 +18,7 @@
 }
 .input-style select option{
     text-align: left;
+    padding-block: 30px;
 }
 .input-style input{
     border: none;
@@ -247,6 +248,11 @@ input[type="file"]::file-selector-button {
     width: 18px;
 }
 
+
+.option-description{
+    text-align: center;
+    color: var(--color-grey);
+}
 
 
 @media (max-width:600px){

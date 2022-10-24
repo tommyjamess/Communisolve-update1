@@ -152,6 +152,7 @@ bNextBtns.forEach(function(btn, index){
             bform4.style.display = "none";
             bform5.style.display = "none";
             bform6.style.display = "block";
+
         }
     })
 })
@@ -291,3 +292,9 @@ function Category(){
         subIdea.style.display = "block"
     }
 }
+
+
+
+
+
+
