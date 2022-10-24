@@ -90,6 +90,9 @@ body{
 .text-decor-none{
     text-decoration: none;
 }
+.text-align-center{
+    text-align: center;
+}
 
 
 /* color */

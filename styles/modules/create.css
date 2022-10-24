@@ -1,7 +1,14 @@
 
-
-
-
+.start-time {
+    display: flex;
+    grid-column-gap: 20px;
+}
+.start-time p{
+    color: var(--color-grey);
+}
+.input-style{
+    align-items: center;
+}
 .input-style select{
     border: none;
     background-color: transparent;
@@ -12,40 +19,27 @@
 .input-style select option{
     text-align: center;
 }
-
-.create-session{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
+.input-style input{
+    border: none;
     width: 100%;
-    min-height: 100%;
-    z-index: 300;
-    background-color: var(--color-pop-background);
-    overflow-y: auto;
-    display: none;
 }
-.create-ask-session{
-    border: 1px solid white;
-    flex-basis: 35.4%;
-    /* width: 486px; */
-    height: 94%;
-    margin-right: 12px;
-    background-color: var(--color-white);
-    border-radius: var(--card-border-radius);
-    margin-bottom: 100px;
-    transform: translateY(10%);
+.input-style input:focus{
+    outline: none;
 }
 
-
-
-
-.create-title{
-    text-align: center;
-    margin-bottom: 30px;
+input[type="file"]::file-selector-button {
+    border: none;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: none;
+    transition: 1s;
 }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: none;
+    border:none;
+}
+
 
 .form-plate{
     padding-inline: 20px;
@@ -62,10 +56,23 @@
 .form-plate select{
   width: 100%;
 }
-.exitCreate{
+
+.exitCreateBrainstorm,
+.exitCreateAsk{
+    position: absolute;
+    left: 90%;
+    top: 3%;
+}
+.exitCreateAsk{
     color: var(--color-grey);
 }
-.exitCreate:hover{
+.exitCreateBrainstorm{
+    color: var(--color-grey);
+}
+.exitCreateAsk:hover{
+    cursor: pointer;
+}
+.exitCreateBrainstorm:hover{
     cursor: pointer;
 }
 .input-style{
@@ -88,6 +95,9 @@
     margin-bottom: 10px;
 }
 
+
+.emotion-sub,
+.idea-sub,
 #Interest{
     display: none;
 }
@@ -113,6 +123,14 @@
 .industryOrInterest label{
     margin-left: 12px;
 }
+.multipleInput{
+    display: flex;
+    justify-content: space-between;
+}
+.mutipleInputChild{
+    flex-basis: 45%!important;
+    grid-column-gap: 5px;
+}
 
 .question{
     height: 97px;
@@ -132,9 +150,87 @@
     outline: none;
 }
 
+.displayAsk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 300;
+    background-color: var(--color-pop-background);
+    overflow-y: auto;
+    display: none;
+}
+.displayBrainstorm{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.Bform6,
+.Bform5,
+.Bform4,
+.Bform3,
+.Bform2{
+    display: none;
+}
+
+.guidelines .single-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.create-session{
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    z-index: 300;
+    background-color: var(--color-pop-background);
+    overflow-y: auto;
+    padding-block: 80px;
+}
+.create-session-inner{
+    border: 1px solid white;
+    flex-basis: 35.4%;
+    min-height: 39rem;
+    margin-right: 12px;
+    padding-block: 20px;
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 100px;
+    transform: translateY(20%);
+}
+
+
+.multipleBtn{
+    display: flex;
+    grid-column-gap: 23px;
+}
+.multipleBtn .goBack{
+    border: 1px solid var(--color-brandcolor);
+    background-color: white;
+    color: var(--color-brandcolor);
+}
+
+.create-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.radio{
+    height: 18px;
+    width: 18px;
+}
+
+
 
 @media (max-width:600px){
-    .create-ask-session{
+    .create-session-inner{
         min-width: 100%;
         margin-right: 0px;
     }
@@ -143,18 +239,18 @@
     .create-session{
         flex-basis: 100%;
     }
-    .create-ask-session{
+    .create-session-inner{
         flex-basis: 100%;
     }
 }
 @media (max-width:1270px){
-    .create-ask-session{
+    .create-session-inner{
         flex-basis: 54.5%;
         /* margin-right: 12px; */
     }
 }
 @media (min-width:1559px) and (max-width:10000px){
-    .create-ask-session{
+    .create-session-inner{
         max-width:28.5rem ;
     }
 }
