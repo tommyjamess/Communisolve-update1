@@ -41,6 +41,7 @@
     color: var(--color-brandcolor);
 }
 
+
 @media (min-width:1270px){
     .hiddenMenuOuter{
         display: none;
