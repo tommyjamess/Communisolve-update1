@@ -44,6 +44,7 @@ input[type="file"]::file-selector-button {
 .form-plate{
     padding-inline: 20px;
     padding-block: 20px;
+    min-height: 33rem;
 }
 .form-plate form{
     display: flex;
@@ -57,24 +58,21 @@ input[type="file"]::file-selector-button {
   width: 100%;
 }
 
+.exitCreatePoll,
 .exitCreateBrainstorm,
 .exitCreateAsk{
     position: absolute;
     left: 90%;
     top: 3%;
-}
-.exitCreateAsk{
     color: var(--color-grey);
 }
-.exitCreateBrainstorm{
-    color: var(--color-grey);
-}
+
+.exitCreatePoll:hover,
+.exitCreateBrainstorm:hover,
 .exitCreateAsk:hover{
     cursor: pointer;
 }
-.exitCreateBrainstorm:hover{
-    cursor: pointer;
-}
+
 .input-style{
     display: flex;
     height: 38px;
@@ -149,6 +147,20 @@ input[type="file"]::file-selector-button {
 .question textarea:focus{
     outline: none;
 }
+.displayPoll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 300;
+    background-color: var(--color-pop-background);
+    overflow-y: auto;
+    display: none;
+}
 
 .displayAsk{
     display: flex;
@@ -169,6 +181,8 @@ input[type="file"]::file-selector-button {
     justify-content: center;
     display: none;
 }
+.Pform3,
+.Pform2,
 .Bform6,
 .Bform5,
 .Bform4,
@@ -207,11 +221,17 @@ input[type="file"]::file-selector-button {
     transform: translateY(20%);
 }
 
+.singleBtn{
+    display: flex;
+    padding-inline: 20px;
+}
 
 .multipleBtn{
     display: flex;
     grid-column-gap: 23px;
+    padding-inline: 20px;
 }
+
 .multipleBtn .goBack{
     border: 1px solid var(--color-brandcolor);
     background-color: white;

@@ -12,13 +12,20 @@ a:hover{
     border-radius: 8px;
    
 }
+
+.pnext-btn,
 .next-btn{
     text-align: center;
     padding-block: 5px;
 }
+
 .back-btn{
     text-align: center;
     padding-block: 5px;
+}
+
+.pnext-btn:hover{
+    cursor: pointer;
 }
 .next-btn:hover{
     cursor: pointer;

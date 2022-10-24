@@ -12,9 +12,17 @@ let brainstorm = document.querySelector(".Brainstorm")
 let createBrainstormUi = document.querySelector(".displayBrainstorm")
 let exitCreateBrainstorm = document.querySelectorAll(".exitCreateBrainstorm")
 
+// create Poll session varialbles 
+let poll = document.querySelector(".Poll")
+let createPollUi = document.querySelector(".displayPoll")
+let exitCreatePoll = document.querySelectorAll(".exitCreatePoll")
+
+
 // brainstorm form next buttons 
 let bNextBtns = document.querySelectorAll(".next-btn")
 let bBackBtns = document.querySelectorAll(".back-btn")
+let pNextBtn = document.querySelectorAll(".pnext-btn")
+let pBackBtn = document.querySelectorAll(".pback-btn")
 
 
 
@@ -66,6 +74,20 @@ exitCreateBrainstorm.forEach((btn) =>{
 })
 
 
+// display poll session 
+poll.addEventListener("click", ()=>{
+    createPollUi.style.display = "flex"
+})
+
+
+exitCreatePoll.forEach((btn) =>{
+
+    btn.addEventListener("click", ()=>{
+        createPollUi.style.display = "none"
+    })
+    
+})
+
 
 let = bform1 = createBrainstormUi.children[0]
 let = bform2 = createBrainstormUi.children[1]
@@ -78,7 +100,6 @@ bNextBtns.forEach(function(btn, index){
 
     simpleComplex = document.getElementById("simpleComp")
     standardCustom = document.getElementById("standardCustom")
-    let end = true
     
     btn.addEventListener("click", (e)=>{
         if(index == 0){
@@ -206,6 +227,44 @@ bBackBtns.forEach((btn,index)=>{
             
     })
 })
+
+
+
+let = pform1 = createPollUi.children[0]
+let = pform2 = createPollUi.children[1]
+let = pform3 = createPollUi.children[2]
+
+
+pNextBtn.forEach( (btn, index)=>{
+    btn.addEventListener("click", ()=>{
+        if (index == 0){
+            pform1.style.display = "none"
+            pform2.style.display = "block"
+            pform3.style.display = "none"
+        }
+        if(index == 1){
+            pform1.style.display = "none"
+            pform2.style.display = "none"
+            pform3.style.display = "block"
+        }
+    })
+})
+
+pBackBtn.forEach((btn, index)=>{
+    btn.addEventListener("click", ()=>{
+        if(index == 0){
+            pform1.style.display = "block"
+            pform2.style.display = "none"
+            pform3.style.display = "none"
+        }
+        if(index == 1){
+            pform1.style.display = "none"
+            pform2.style.display = "block"
+            pform3.style.display = "none"
+        }
+    })
+})
+
 
 
 
