@@ -144,8 +144,15 @@ let container = document.querySelector(".page")
 let headContainer = document.querySelector(".header-page")
 
 
+
+// function menuIcon(){
+//     console.log("i have been clicked")
+//     menu.style.transform = "translateX(0%) translateY(8%)"
+// }
+
 menuIcon.forEach((icon)=>{
     icon.addEventListener("click", ()=>{
+        console.log(icon)
         menu.style.transform = "translateX(0%) translateY(8%)"
     })
 })
