@@ -6,6 +6,7 @@
     right: 0;
     min-width: 15.4rem;
     max-width: 15.4rem;
+    padding-top:20px;
     height: 100%;
 
     z-index: 300;
@@ -39,6 +40,22 @@
 .hiddenMenu a:hover > p,
 .hiddenMenu a:hover i{
     color: var(--color-brandcolor);
+}
+
+.mode-list{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 15px;
+    /* width: fit-content; */
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.mode-list{
+    display: flex;
+    /* justify-content: center; */
+}
+.mode-list img{
+    width: 40px;
 }
 
 
