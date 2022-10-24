@@ -183,6 +183,13 @@
     max-width:50px;
     margin-right:8px;
 }
+.userProfile{
+    padding-inline: 20px;
+}
+.userProfile img{
+    width: 40px;
+}
+.userProfile img{}
 @media (max-width:900px){
     #user-avater{
         min-width:45px;
