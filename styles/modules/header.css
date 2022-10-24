@@ -130,6 +130,9 @@
         margin-inline: 15px;
         align-items: center;
     }
+    .menuIcon:hover{
+        cursor: pointer;
+    }
     .h4 .search-bar{
         display: none;
     }

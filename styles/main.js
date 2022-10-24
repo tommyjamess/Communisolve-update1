@@ -137,3 +137,19 @@ function scrollFunction(){
 }
 
 
+// Hamburgaer 
+let menu = document.querySelector(".hiddenMenuOuter")
+let menuIcon = document.querySelectorAll(".menuIcon")
+let container = document.querySelector(".card-container")
+
+
+menuIcon.forEach((icon)=>{
+    icon.addEventListener("click", ()=>{
+        menu.style.transform = "translateX(0%) translateY(9%)"
+    })
+})
+
+container.addEventListener("click", ()=>{
+    menu.style.transform = "translateX(250px) translateY(9%)"
+})
+
