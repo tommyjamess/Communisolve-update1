@@ -1,8 +1,9 @@
 
+
 let filters = document.querySelectorAll(".filterTwo");
-let allfilter = document.querySelector(".allfilter");
-let activefilter = document.querySelector(".activefilter");
-let startingfilter = document.querySelector(".startingfilter")
+let allfilter = document.querySelectorAll(".allfilter")
+let activefilter = document.querySelectorAll(".activefilter")
+let startingfilter = document.querySelectorAll(".startingfilter")
 
 let sessionFilter = document.querySelector(".filter")
 let sessionFilterOuter = document.querySelector(".filter-outer")
@@ -28,40 +29,43 @@ let sideMenuOuter = document.querySelector("sideMenuOuter")
 // session filters highlights
 
 // all filter 
-allfilter.addEventListener("click", (e)=>{
-    allfilter.classList.add("selected-filter")
-    allfilter.firstElementChild.classList.add("selected")
+allfilter.forEach((filter)=>{
+    filter.addEventListener("click", (e)=>{
+        filter.classList.add("selected-filter")
+        filter.children[0].classList.add("selected")
 
-    activefilter.classList.remove("selected-filter")
-    activefilter.firstElementChild.classList.remove("selected")
+        filter.nextElementSibling.classList.remove("selected-filter")
+        filter.nextElementSibling.children[0].classList.remove("selected")
 
-    startingfilter.classList.remove("selected-filter")
-    startingfilter.firstElementChild.classList.remove("selected")
+        filter.previousElementSibling.classList.remove("selected-filter")
+        filter.previousElementSibling.children[0].classList.remove("selected")
+    })
 })
 
-// active filter
-activefilter.addEventListener("click", (e)=>{
-    activefilter.classList.add("selected-filter")
-    activefilter.firstElementChild.classList.add("selected")
+activefilter.forEach((filter)=>{
+    filter.addEventListener("click", (e)=>{
+        filter.classList.add("selected-filter")
+        filter.children[0].classList.add("selected")
 
-    allfilter.classList.remove("selected-filter")
-    allfilter.firstElementChild.classList.remove("selected")
+        filter.previousElementSibling.classList.remove("selected-filter")
+        filter.previousElementSibling.children[0].classList.remove("selected")
 
-    startingfilter.classList.remove("selected-filter")
-    startingfilter.firstElementChild.classList.remove("selected")
+        filter.nextElementSibling.classList.remove("selected-filter")
+        filter.nextElementSibling.children[0].classList.remove("selected")
+    })
 })
 
+startingfilter.forEach((filter)=>{
+    filter.addEventListener("click", ()=>{
+        filter.classList.add("selected-filter")
+        filter.children[0].classList.add("selected")
 
-// starting session filter 
-startingfilter.addEventListener("click", (e)=>{
-    startingfilter.classList.add("selected-filter")
-    startingfilter.firstElementChild.classList.add("selected")
+        filter.previousElementSibling.classList.remove("selected-filter")
+        filter.previousElementSibling.children[0].classList.remove("selected")
 
-    activefilter.classList.remove("selected-filter")
-    activefilter.firstElementChild.classList.remove("selected")
-
-    allfilter.classList.remove("selected-filter")
-    allfilter.firstElementChild.classList.remove("selected")
+        filter.nextElementSibling.classList.remove("selected-filter")
+        filter.nextElementSibling.children[0].classList.remove("selected")
+    })
 })
 
 
@@ -145,17 +149,11 @@ let headContainer = document.querySelector(".header-page")
 
 
 
-// function menuIcon(){
-//     console.log("i have been clicked")
-//     menu.style.transform = "translateX(0%) translateY(8%)"
-// }
+function openMenu(){
+    console.log("i have been clicked")
+    menu.style.transform = "translateX(0%) translateY(8%)"
+}
 
-menuIcon.forEach((icon)=>{
-    icon.addEventListener("click", ()=>{
-        console.log(icon)
-        menu.style.transform = "translateX(0%) translateY(8%)"
-    })
-})
 
 container.addEventListener("click", ()=>{
     menu.style.transform = "translateX(250px) translateY(8%)"
