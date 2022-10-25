@@ -37,8 +37,9 @@ allfilter.forEach((filter)=>{
         filter.nextElementSibling.classList.remove("selected-filter")
         filter.nextElementSibling.children[0].classList.remove("selected")
 
-        filter.previousElementSibling.classList.remove("selected-filter")
-        filter.previousElementSibling.children[0].classList.remove("selected")
+        filter.parentNode.children[2].classList.remove("selected-filter")
+        filter.parentNode.children[2].children[0].classList.remove("selected")
+
     })
 })
 
@@ -63,8 +64,9 @@ startingfilter.forEach((filter)=>{
         filter.previousElementSibling.classList.remove("selected-filter")
         filter.previousElementSibling.children[0].classList.remove("selected")
 
-        filter.nextElementSibling.classList.remove("selected-filter")
-        filter.nextElementSibling.children[0].classList.remove("selected")
+
+        filter.parentNode.children[0].classList.remove("selected-filter")
+        filter.parentNode.children[0].children[0].classList.remove("selected")
     })
 })
 
