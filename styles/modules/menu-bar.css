@@ -78,7 +78,7 @@
     width: 270px;
 
     position: absolute;
-    transform: translateY(55%) translateX(-39%);
+    /* transform: translateY(55%) translateX(-39%); */
     border-radius: var(--card-border-radius);
     background-color: var(--color-white);
     /* display: none; */
