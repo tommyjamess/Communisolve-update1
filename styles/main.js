@@ -151,12 +151,40 @@ let headContainer = document.querySelector(".header-page")
 
 function openMenu(){
     console.log("i have been clicked")
-    menu.style.transform = "translateX(0%) translateY(8%)"
+    menu.style.transform = "translateX(0%)"
 }
 
 
 container.addEventListener("click", ()=>{
-    menu.style.transform = "translateX(250px) translateY(8%)"
+    menu.style.transform = "translateX(250px) translateY(0%)"
 })
+
+
+// card menu 
+let card = document.querySelectorAll(".card")
+let cardMenu = document.querySelectorAll(".cardMenu")
+let cardMenuIcon = document.querySelectorAll(".card-menu--icon")
+let closeCardMenu = document.querySelectorAll(".close-card-menu")
+
+
+cardMenu.forEach((menu)=>{
+    menu.style.display = "none"
+})
+
+
+cardMenuIcon.forEach((icon)=>{
+    icon.addEventListener("click", ()=>{
+        icon.nextElementSibling.style.display = "block";
+    })
+})
+
+closeCardMenu.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        item.parentElement.parentElement.style.display = "none";
+    })
+})
+
+
+
 
 

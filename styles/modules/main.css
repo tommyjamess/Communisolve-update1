@@ -99,6 +99,9 @@ body{
 .color-white{
     color: var(--color-white);
 }
+.color-black{
+    color: black;
+}
 
 .filter-padding{
     padding-bottom: 7px;
