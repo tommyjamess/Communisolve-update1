@@ -75,13 +75,15 @@
 .cardMenu{
     border: 1px solid var(--line-color);
     height: 270px;
-    width: 270px;
+    min-width: 270px;
+    max-width: 270px;
 
     position: absolute;
     /* transform: translateY(55%) translateX(-39%); */
     border-radius: var(--card-border-radius);
     background-color: var(--color-white);
     /* display: none; */
+    z-index: 50;
 }
 
 .closeCardMenu{
