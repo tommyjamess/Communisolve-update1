@@ -167,9 +167,9 @@ let cardMenuIcon = document.querySelectorAll(".card-menu--icon")
 let closeCardMenu = document.querySelectorAll(".close-card-menu")
 
 
-// cardMenu.forEach((menu)=>{
-//     menu.style.display = "none"
-// })
+cardMenu.forEach((menu)=>{
+    menu.style.display = "none"
+})
 
 
 cardMenuIcon.forEach((icon)=>{
