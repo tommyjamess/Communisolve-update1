@@ -246,7 +246,31 @@
     color: var(--color-brandcolor);
 }
 
+/* card menu  */
+.cardMenu{
+    border: 1px solid var(--line-color);
+    height: 270px;
+    width: 270px;
 
+    position: absolute;
+    transform: translateY(55%) translateX(-39%);
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-white);
+    display: none;
+}
+
+.closeCardMenu{
+    display: flex;
+    justify-content: right;
+}
+.closeCardMenu i{
+    color: var(--color-grey);
+    margin-right: 7px;
+    margin-top: 5px;
+}
+.closeCardMenu i:hover{
+    cursor: pointer;
+}
 
 @media (max-width:900px){
     .session-reactions .font-size-12{
