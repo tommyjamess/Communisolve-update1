@@ -10,7 +10,7 @@
     z-index: 300;
     background-color: var(--color-white);
     padding-left: 20px;
-
+    padding-top: 10px;
     transform: translateX(250px);
 
     transition: 0.5s ease;
