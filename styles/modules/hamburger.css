@@ -56,9 +56,3 @@
     width: 40px;
 }
 
-
-@media (min-width:1270px){
-    .hiddenMenuOuter{
-        display: none;
-    }
-}
