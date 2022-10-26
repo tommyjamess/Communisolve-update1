@@ -150,7 +150,7 @@ let container = document.querySelector(".page")
 let headContainer = document.querySelector(".header-page")
 
 
-menu.style.transform = "translateX(250px)"
+// menu.style.transform = "translateX(250px)"
 function openMenu(){
     console.log("i have been clicked")
     menu.style.transform = "translateX(0%)"
