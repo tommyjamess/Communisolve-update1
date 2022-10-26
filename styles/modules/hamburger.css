@@ -1,7 +1,7 @@
 
 .hiddenMenuOuter{
     position: fixed;
-    transform:translateX(250px) translateY(0px);
+    transform:translateX(250px) translateY(-5%);
     top: 0;
     right: 0;
     min-width: 15.4rem;
