@@ -163,28 +163,29 @@ container.addEventListener("click", ()=>{
 
 
 // card menu 
-// let card = document.querySelectorAll(".card")
-// let cardMenu = document.querySelectorAll(".cardMenu")
-// let cardMenuIcon = document.querySelectorAll(".card-menu--icon")
-// let closeCardMenu = document.querySelectorAll(".close-card-menu")
+let card = document.querySelectorAll(".card")
+let cardMenu = document.querySelectorAll(".cardMenu")
+let cardMenuIcon = document.querySelectorAll(".card-menu--icon")
+let closeCardMenu = document.querySelectorAll(".close-card-menu")
 
 
-// // cardMenu.forEach((menu)=>{
-// //     menu.style.display = "none"
-// // })
+cardMenu.forEach((menu)=>{
+    menu.style.height = "270px"
+    menu.style.width = "270px"
+})
 
 
-// cardMenuIcon.forEach((icon)=>{
-//     icon.addEventListener("click", ()=>{
-//         icon.nextElementSibling.style.display = "block";
-//     })
-// })
+cardMenuIcon.forEach((icon)=>{
+    icon.addEventListener("click", ()=>{
+        icon.nextElementSibling.style.display = "block";
+    })
+})
 
-// closeCardMenu.forEach((item)=>{
-//     item.addEventListener("click", ()=>{
-//         item.parentElement.parentElement.style.display = "none";
-//     })
-// })
+closeCardMenu.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        item.parentElement.parentElement.style.display = "none";
+    })
+})
 
 
 
