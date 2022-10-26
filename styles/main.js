@@ -169,10 +169,10 @@ let cardMenuIcon = document.querySelectorAll(".card-menu--icon")
 let closeCardMenu = document.querySelectorAll(".close-card-menu")
 
 
-cardMenu.forEach((menu)=>{
-    menu.style.height = "270px"
-    menu.style.width = "270px"
-})
+// cardMenu.forEach((menu)=>{
+//     menu.style.height = "270px"
+//     menu.style.width = "270px"
+// })
 
 
 cardMenuIcon.forEach((icon)=>{

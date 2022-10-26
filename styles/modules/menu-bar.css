@@ -74,10 +74,10 @@
 /* card menu  */
 .cardMenu{
     border: 1px solid var(--line-color);
-    /* min-height: 270px;
+    min-height: 270px;
     max-height: 270px;
     min-width: 270px;
-    max-width: 270px; */
+    max-width: 270px;
 
     /* position: absolute; */
     /* transform: translateY(55%) translateX(-39%); */
