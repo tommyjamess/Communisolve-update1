@@ -1,13 +1,13 @@
 
 .hiddenMenuOuter{
     position: fixed;
-    transform:translateX(250px) translateY(-5%);
+    transform:translateX(250px);
     top: 0;
     right: 0;
     min-width: 15.4rem;
     max-width: 15.4rem;
-    padding-top:20px;
-    /* height: 100%; */
+    /* padding-top:20px; */
+    height: 100%;
 
     z-index: 300;
     background-color: var(--color-white);

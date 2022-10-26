@@ -153,7 +153,7 @@ let headContainer = document.querySelector(".header-page")
 
 function openMenu(){
     console.log("i have been clicked")
-    menu.style.transform = "translateX(0%) translateY(0%)"
+    menu.style.transform = "translateX(0%)"
 }
 
 
