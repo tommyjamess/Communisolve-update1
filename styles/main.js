@@ -158,7 +158,7 @@ function openMenu(){
 
 
 container.addEventListener("click", ()=>{
-    menu.style.transform = "translateX(250px) translateY(0%)"
+    menu.style.transform = "translateX(250px)"
 })
 
 
