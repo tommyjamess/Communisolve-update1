@@ -84,7 +84,6 @@
     border-radius: var(--card-border-radius);
     background-color: var(--color-white);
     /* display: none; */
-    z-index: 50;
 }
 
 .closeCardMenu{
