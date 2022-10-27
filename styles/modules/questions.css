@@ -43,7 +43,7 @@
     padding-block: 10px;
 }
 .sessionAnswer p{
-    text-align: justify;
+    text-align: left;
 }
 .actQuestion .question-title{
     margin-left: 20px;
