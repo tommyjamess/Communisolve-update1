@@ -30,9 +30,7 @@
     padding-inline: 10px;
     padding-block: 10px;
 }
-.sessionQuestion p{
-    text-align: justify;
-}
+
 .sessionAnswer{
     width: 60%;
     margin-left: auto;
@@ -42,9 +40,7 @@
     padding-inline: 10px;
     padding-block: 10px;
 }
-.sessionAnswer p{
-    text-align: left;
-}
+
 .actQuestion .question-title{
     margin-left: 20px;
     margin-bottom: 3px;
