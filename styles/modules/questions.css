@@ -79,3 +79,59 @@
     padding-inline: 5px;
     border-radius: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+.toggleImageOuter{
+    display: flex;
+    justify-content: center;
+}
+.toggleImageOuter p{
+    margin-right: 10px;
+}
+/* toggle in label designing */
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 30px;
+    height : 15px;
+    background-color: grey;
+    border-radius: 30px;
+    border: 2px solid gray;
+}
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    top: -0.3px;
+    left: 1px;
+    transition:  all 0.5s;
+}
+       
+/* Toggle text */
+
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+    left : 14px;
+}
+       
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: var(--color-brandcolor);
+}
+       
+/* Checkbox vanished */
+.checkbox {
+    display : none;
+}
