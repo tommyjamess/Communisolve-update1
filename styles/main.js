@@ -205,3 +205,66 @@ imageCheckbox.addEventListener("click", ()=>{
     }
 })
 
+
+// session  and feedback 
+
+let displaySession = document.querySelector(".displaySession")
+let displayFeedback = document.querySelector(".displayFeedback")
+
+let questionPage = document.querySelector(".questionAnswerOuter")
+let feedbackPage = document.querySelector(".feedbackOuter")
+
+displayFeedback.addEventListener("click", ()=>{
+    questionPage.style.display = "none";
+    feedbackPage.style.display = "block";
+})
+
+displaySession.addEventListener("click", ()=>{
+    questionPage.style.display = "block";
+    feedbackPage.style.display = "none";
+})
+
+
+// questions and answers 
+let questions = document.querySelectorAll(".questionItem")
+let answers = document.querySelectorAll(".answerList")
+let questionList = document.querySelector(".questionsList")
+let exitAnswer = document.querySelectorAll(".exitAnswer")
+let ansTOQuestion = document.querySelector(".answersToQuestions")
+
+
+
+
+
+
+questions.forEach((item, index)=>{
+    item.addEventListener("click", ()=>{
+        if (index == 0){
+            answers.forEach((ans, number)=>{
+                if (number == 0){
+                    ans.style.display = "block";
+                    questionList.style.display = "none";
+                }
+            })
+        }
+
+        if (index == 1){
+            answers.forEach((ans, number)=>{
+                if (number == 1){
+                    ans.style.display = "block";
+                    questionList.style.display = "none";
+                }
+            })
+        }
+    })
+})
+
+
+exitAnswer.forEach((icon)=>{
+    icon.addEventListener("click", ()=>{
+        answers.forEach((ans)=>{
+            ans.style.display = "none";
+            questionList.style.display = "block";
+        }) 
+    })
+})

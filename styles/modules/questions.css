@@ -105,6 +105,57 @@
 }
 
 
+/* feedback session*/
+.feedbackOuter{
+    display: none;
+}
+
+.feedback-guide{
+    color: var(--color-brandcolor);
+    padding-inline: 30px;
+}
+
+.questionsList{
+    background-color: rgb(112, 12, 179, 0.2);
+    padding-inline: 20px;
+    padding-block: 20px;
+}
+.questionsList * + *{
+    margin-top: 10px;
+}
+.questionItem{
+    border: 1px solid var(--line-color);
+    border-radius: 8px;
+    background-color: white;
+    padding-inline: 10px;
+    padding-block: 10px;
+}
+.questionItem:hover{
+    cursor: pointer;
+}
+
+.answerList{
+    display: none;
+    background-color: rgb(112, 12, 179, 0.2);
+    padding: 20px;
+}
+.answerList * + *{
+    margin-top: 10px;
+}
+
+
+
+/* answers  */
+
+.answers{
+    border: 1px solid var(--line-color);
+    border-radius: 8px;
+    background-color: white;
+    padding-inline: 10px;
+    padding-block: 10px;
+}
+
+
 
 
 
