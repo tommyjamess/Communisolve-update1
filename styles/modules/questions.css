@@ -7,6 +7,7 @@
     width: 100%;
     margin-top: 10px;
     border-radius: var(--card-border-radius);
+    /* display: none; */
 }
 
 .questionAnswer{

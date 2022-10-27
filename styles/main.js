@@ -190,8 +190,18 @@ closeCardMenu.forEach((item)=>{
 
 let imageCheckbox = document.querySelector(".imageCheckbox")
 let activeSessionImg = document.querySelector(".activeSessionImg")
+let activeImg = document.querySelector(".activeImg")
+
 
 imageCheckbox.addEventListener("click", ()=>{
-    activeSessionImg.style.display = "none";
+    if(imageCheckbox.value=="on"){
+        activeImg.style.display = "none";
+        console.log("on")
+        imageCheckbox.value = "False"
+    }else if(imageCheckbox.value=="False"){
+        console.log("false")
+        imageCheckbox.value = "on"
+        activeImg.style.display = "block";
+    }
 })
 
