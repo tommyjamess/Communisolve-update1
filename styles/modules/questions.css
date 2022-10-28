@@ -1,7 +1,6 @@
 .sessionPage{
     position: fixed;
     width: 100%;
-    border: 1px solid black;
 }
 .activeSession{
     border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
@@ -28,7 +27,6 @@
     min-height: 450px;
     max-height: 450px;
     overflow-y: auto;
-    border: 1px solid black;
 }
 @media (max-width:1270px){
     .questionAnswer{
