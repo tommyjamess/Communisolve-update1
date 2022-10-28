@@ -145,8 +145,6 @@
 
 
 
-/* answers  */
-
 .answers{
     border: 1px solid var(--line-color);
     border-radius: 8px;
@@ -154,8 +152,14 @@
     padding-inline: 10px;
     padding-block: 10px;
 }
+.exitAnswer:hover{
+    cursor: pointer;
+}
 
-
+.answerStyle{
+    background-color: var(--color-brandcolor);
+    color: white;
+}
 
 
 

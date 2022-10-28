@@ -256,8 +256,18 @@ questions.forEach((item, index)=>{
                 }
             })
         }
+
+        if (index == 2){
+            answers.forEach((ans, number)=>{
+                if (number == 2){
+                    ans.style.display = "block";
+                    questionList.style.display = "none";
+                }
+            })
+        }
     })
 })
+
 
 
 exitAnswer.forEach((icon)=>{
@@ -266,5 +276,23 @@ exitAnswer.forEach((icon)=>{
             ans.style.display = "none";
             questionList.style.display = "block";
         }) 
+    })
+})
+
+
+
+// pick answers chosen 
+let answerItem = document.querySelectorAll(".answers")
+
+answerItem.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        if(item.previousElementSibling.classList.contains("answerStyle") || item.nextElementSibling.classList.contains("answerStyle")){
+            item.previousElementSibling.classList.remove("answerStyle")
+            item.nextElementSibling.classList.remove("answerStyle")
+            item.classList.add("answerStyle")
+        }else{
+            item.classList.add("answerStyle")
+        }
+        
     })
 })
