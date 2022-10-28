@@ -280,6 +280,21 @@ exitAnswer.forEach((icon)=>{
 })
 
 
+// reduce chatbox on input click 
+
+let chatInput = document.querySelector(".answerInput")
+let chatBox = document.querySelector(".questionAnswer")
+
+chatInput.addEventListener("focus", ()=>{
+    // chatBox.style.display = "none"
+    chatBox.style.maxHeight = "300px"
+    console.log("change")
+    
+})
+
+
+
+
 
 // pick answers chosen 
 // let answerItem = document.querySelectorAll(".answers")

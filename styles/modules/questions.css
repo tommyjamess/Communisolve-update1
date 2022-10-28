@@ -28,6 +28,7 @@
     min-height: 450px;
     max-height: 450px;
     overflow-y: auto;
+    border: 1px solid black;
 }
 @media (max-width:1270px){
     .questionAnswer{
@@ -37,13 +38,14 @@
 @media (max-width:600px){
     .questionAnswer{
         width: 96%;
-        /* min-height: 480px; */
+        min-height: 0px;
         max-height: 480px;
     }
 }
 @media (max-width:500px){
     .questionAnswer{
         width: 95%;
+        min-height: 0px;
         max-height: 480px;
     }
 }
