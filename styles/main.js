@@ -287,7 +287,7 @@ let chatBox = document.querySelector(".questionAnswer")
 
 chatInput.addEventListener("focus", ()=>{
     // chatBox.style.display = "none"
-    chatBox.style.maxHeight = "250px"
+    chatBox.style.maxHeight = "200px"
     console.log("change")
     
 })
