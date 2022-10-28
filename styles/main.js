@@ -283,6 +283,7 @@ exitAnswer.forEach((icon)=>{
 // reduce chatbox on input click 
 
 let chatInput = document.querySelector(".answerInput")
+let focusOut = document.querySelector(".answerInput")
 let chatBox = document.querySelector(".questionAnswer")
 
 
@@ -293,7 +294,7 @@ chatInput.addEventListener("input", ()=>{
     }
     
 })
-chatInput.addEventListener("focusout", ()=>{
+focusOut.addEventListener("focusout", ()=>{
     chatBox.style.maxHeight = "480px"
 })
 
