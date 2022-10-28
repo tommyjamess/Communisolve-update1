@@ -37,11 +37,14 @@
 @media (max-width:600px){
     .questionAnswer{
         width: 96%;
+        /* min-height: 480px; */
+        max-height: 480px;
     }
 }
 @media (max-width:500px){
     .questionAnswer{
         width: 95%;
+        max-height: 480px;
     }
 }
 
