@@ -39,6 +39,11 @@
         width: 96%;
     }
 }
+@media (max-width:500px){
+    .questionAnswer{
+        width: 95%;
+    }
+}
 
 .questionAnswer::-webkit-scrollbar{
     display: none;
