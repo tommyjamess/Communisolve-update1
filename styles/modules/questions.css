@@ -169,6 +169,11 @@
 }
 
 
+.leaveSession{
+    color: grey;
+    margin-left: 20px;
+}
+
 /* feedback session*/
 .feedbackOuter{
     display: none;
