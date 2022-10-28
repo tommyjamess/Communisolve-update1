@@ -17,10 +17,7 @@
     margin-top: 10px;
     border-radius: var(--card-border-radius);
 }
-.questionAnswerOuter{
-    /* max-width: 477px; */
-    border: 1px solid black;
-}
+
 
 .questionAnswer{
     border: 1px solid var(--line-color);
@@ -35,6 +32,11 @@
 @media (max-width:1270px){
     .questionAnswer{
         width: 96.7%;
+    }
+}
+@media (max-width:600px){
+    .questionAnswer{
+        width: 96%;
     }
 }
 
