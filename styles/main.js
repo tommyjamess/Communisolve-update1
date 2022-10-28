@@ -282,17 +282,15 @@ exitAnswer.forEach((icon)=>{
 
 
 // pick answers chosen 
-let answerItem = document.querySelectorAll(".answers")
+// let answerItem = document.querySelectorAll(".answers")
 
-answerItem.forEach((item)=>{
-    item.addEventListener("click", ()=>{
-        if(item.previousElementSibling.classList.contains("answerStyle") || item.nextElementSibling.classList.contains("answerStyle")){
-            item.previousElementSibling.classList.remove("answerStyle")
-            item.nextElementSibling.classList.remove("answerStyle")
-            item.classList.add("answerStyle")
-        }else{
-            item.classList.add("answerStyle")
-        }
-        
-    })
-})
+// answerItem.forEach((item, index)=>{
+//     item.addEventListener("click", ()=>{
+//         console.log(item)
+//         answerItem.forEach((thisItem)=>{
+//             // thisItem.classList.remove("answerStyle")
+//             item.classList.add("answerStyle")
+//             thisItem.classList.
+//         })
+//     })
+// })

@@ -1,12 +1,25 @@
+.sessionPage{
+    position: fixed;
+    width: 100%;
+    border: 1px solid black;
+}
 .activeSession{
     border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
     border-bottom: 1px solid var(--line-color);
     margin-bottom: 0px;
 }
+.activeSessionImg{
+    position: fixed;
+    max-width: 477px;
+}
 .activeSessionImg img{
     width: 100%;
     margin-top: 10px;
     border-radius: var(--card-border-radius);
+}
+.questionAnswerOuter{
+    /* max-width: 477px; */
+    border: 1px solid black;
 }
 
 .questionAnswer{
@@ -15,6 +28,22 @@
     padding-block: 10px;
     border-radius: var(--card-border-radius);
     background-color: rgb(112, 12, 179, 0.2);
+    min-height: 450px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+@media (max-width:1270px){
+    .questionAnswer{
+        width: 96.7%;
+    }
+}
+
+.questionAnswer::-webkit-scrollbar{
+    display: none;
+}
+.questionAnswer{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .actQuestion {
