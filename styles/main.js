@@ -195,13 +195,17 @@ let activeSessionImg = document.querySelector(".activeSessionImg")
 let activeImg = document.querySelector(".activeImg")
 
 
+if (imageCheckbox.value = "off"){
+    activeImg.style.display = "none";
+}
+
 imageCheckbox.addEventListener("click", ()=>{
-    if(imageCheckbox.value=="on"){
-        activeImg.style.display = "none";
-        imageCheckbox.value = "False"
-    }else if(imageCheckbox.value=="False"){
-        imageCheckbox.value = "on"
+    if(imageCheckbox.value=="off"){
         activeImg.style.display = "block";
+        imageCheckbox.value = "on"
+    }else if(imageCheckbox.value=="on"){
+        imageCheckbox.value = "off"
+        activeImg.style.display = "none";
     }
 })
 

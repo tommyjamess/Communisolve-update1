@@ -8,13 +8,38 @@
     margin-bottom: 0px;
 }
 .activeSessionImg{
-    position: fixed;
-    max-width: 477px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 .activeSessionImg img{
-    width: 100%;
+    max-width: 35%;
+    margin-right: 12px;
     margin-top: 10px;
     border-radius: var(--card-border-radius);
+    /* display: none; */
+}
+@media (max-width:1270px){
+    .activeSessionImg img{
+        max-width: 53%;
+    }
+}
+@media (max-width:900px){
+    .activeSessionImg img{
+        max-width: 77%;
+        margin-right: 0px;
+        margin-left: 2px;
+    }
+}
+@media (max-width:600px){
+    .activeSessionImg img{
+        max-width: 96%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 }
 
 
