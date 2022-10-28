@@ -293,8 +293,10 @@ chatInput.addEventListener("input", ()=>{
     }
     
 })
-chatInput.addEventListener("focusout", ()=>{
+chatInput.addEventListener("focusout", (e)=>{
     chatBox.style.maxHeight = "480px"
+
+    e.preventDefault()
 })
 
 
