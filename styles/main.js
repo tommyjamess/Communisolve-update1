@@ -285,10 +285,15 @@ exitAnswer.forEach((icon)=>{
 let chatInput = document.querySelector(".answerInput")
 let chatBox = document.querySelector(".questionAnswer")
 
-chatInput.addEventListener("focus", ()=>{
-    // chatBox.style.display = "none"
-    chatBox.style.maxHeight = "200px"
-    console.log("change")
+
+
+chatInput.addEventListener("input", ()=>{
+    if(chatInput.value != null){
+        chatBox.style.maxHeight = "200px"
+    }
+    // console.log(chatInput.value)
+    
+    
     
 })
 
