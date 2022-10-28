@@ -38,7 +38,7 @@
     .activeSessionImg img{
         max-width: 96%;
         margin-right: 0px;
-        margin-left: 0px;
+        margin-left: 2px;
     }
 }
 
@@ -49,7 +49,7 @@
     padding-block: 10px;
     border-radius: var(--card-border-radius);
     background-color: rgb(112, 12, 179, 0.2);
-    min-height: 450px;
+    /* min-height: 450px; */
     max-height: 450px;
     overflow-y: auto;
 }
@@ -188,6 +188,8 @@
     background-color: rgb(112, 12, 179, 0.2);
     padding-inline: 20px;
     padding-block: 20px;
+    min-height: 480px;
+    max-height: 480px;
 }
 .questionsList * + *{
     margin-top: 10px;
@@ -198,6 +200,7 @@
     background-color: white;
     padding-inline: 10px;
     padding-block: 10px;
+    /* min-height: 480px; */
 }
 .questionItem:hover{
     cursor: pointer;
@@ -207,6 +210,8 @@
     display: none;
     background-color: rgb(112, 12, 179, 0.2);
     padding: 20px;
+    min-height: 480px;
+    max-height: 480px;
 }
 .answerList * + *{
     margin-top: 10px;
