@@ -82,19 +82,10 @@ let sideCardFixer = sideCardFixed.offsetTop;
 let rightCardFixer = rightCardFixed.offsetTop;
 let sideCardTwoFixer = sideCardTwoFixed.offsetTop;
 let rightCardTwoFixer = rightCardTwoFixed.offsetTop;
-var fixProfileFilter = profileFilter.offsetTop;
 
 // console.log(typeof fixProfileFilter)
 
 function scrollFunction(){
-
-    // fix profile filter 
-    // if (window.pageYOffset >= (fixProfileFilter + 70)){
-    //     profileFilter.classList.add("profile-filter-stick")
-    // }else{
-    //     profileFilter.classList.remove("profile-filter-stick")
-    // }
-    // fixed session filter position div onscroll 
 
     if(sessionFilter.classList.contains("profile-filter")){
         if (window.pageYOffset >= (fixSessionFilter + 142)){
@@ -311,11 +302,8 @@ let chatBox = document.querySelector(".questionAnswer")
 
 
 
-chatInput.addEventListener("input", ()=>{
-    if(chatInput.value != null){
-        chatBox.style.maxHeight = "200px"
-    }
-    
+chatInput.addEventListener("focus", ()=>{
+    chatBox.style.maxHeight = "200px"
 })
 chatInput.addEventListener("focusout", (e)=>{
     chatBox.style.maxHeight = "480px"

@@ -53,6 +53,11 @@
     max-height: 450px;
     overflow-y: auto;
 }
+.questionAnswerInner{
+    height: fit-content;
+    margin-top: 90px;
+}
+
 @media (max-width:1270px){
     .questionAnswer{
         width: 96.7%;
@@ -61,14 +66,14 @@
 @media (max-width:600px){
     .questionAnswer{
         width: 96%;
-        min-height: 0px;
+        min-height: 200px;
         max-height: 480px;
     }
 }
 @media (max-width:500px){
     .questionAnswer{
         width: 95%;
-        min-height: 0px;
+        min-height: 200px;
         max-height: 480px;
     }
 }
@@ -154,7 +159,7 @@
 }
 
 .submitAnswer{
-    background: rgba(112, 12, 179, 0.5);
+    background: var(--color-brandcolor);
     color: white;
     width: 40px;
     height: 35px;
@@ -188,8 +193,16 @@
     background-color: rgb(112, 12, 179, 0.2);
     padding-inline: 20px;
     padding-block: 20px;
+    /* padding-top: 420px; */
     min-height: 480px;
     max-height: 480px;
+    overflow-y: auto;
+    
+    display: flex;
+}
+.questionListInner{
+    height: fit-content;
+    margin-top: auto;
 }
 .questionsList * + *{
     margin-top: 10px;
@@ -200,7 +213,6 @@
     background-color: white;
     padding-inline: 10px;
     padding-block: 10px;
-    /* min-height: 480px; */
 }
 .questionItem:hover{
     cursor: pointer;
@@ -241,7 +253,7 @@
 
 
 
-
+/* switch   */
 
 .toggleImageOuter{
     display: flex;
