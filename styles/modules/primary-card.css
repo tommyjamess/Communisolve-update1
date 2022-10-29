@@ -259,6 +259,9 @@
     .card-filter-stick{
         max-width: 80%;
     }
+    .profile-filter-stick{
+        max-width: 80%;
+    }
     
     .main{
         padding-inline: 10%;
@@ -269,16 +272,25 @@
     .card-filter-stick{
         width: 100%;
     }
+    .profile-filter-stick{
+        width: 100%;
+    }
 }
 
 @media (min-width:899px) and (max-width:1270px){
     .card-filter-stick{
-        width: 54.5%;
+        width: 54.2%;
+    }
+    .profile-filter-stick{
+        width:54.2% ;
     }
 }
 
 @media (min-width:1559px) and (max-width:10000px){
     .card-filter-stick{
+        max-width: 457px;
+    }
+    .profile-filter-stick{
         max-width: 457px;
     }
 }
