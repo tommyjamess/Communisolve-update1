@@ -228,7 +228,9 @@
 .answerList * + *{
     margin-top: 10px;
 }
-
+.answerListInner{
+    margin-top: 220px;
+}
 
 
 
