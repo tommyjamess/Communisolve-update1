@@ -21,55 +21,29 @@ let rightCardTwoOuter = document.querySelector(".right-card-two--outer")
 let nextSideCardFix = document.querySelector(".nextSideCardFix")
 let sideMenuFixed = document.querySelector(".sideMenuFixed")
 let sideMenuOuter = document.querySelector("sideMenuOuter")
-// let headerContainerOuter = document.querySelector(".header-container-outer")
 
-
-// let page = document.querySelector(".page")
 
 
 // session filters highlights
-
-// all filter 
 allfilter.forEach((filter)=>{
-    filter.addEventListener("click", (e)=>{
-        filter.classList.add("selected-filter")
-        filter.children[0].classList.add("selected")
-
-        filter.nextElementSibling.classList.remove("selected-filter")
-        filter.nextElementSibling.children[0].classList.remove("selected")
-
-        filter.parentNode.children[2].classList.remove("selected-filter")
-        filter.parentNode.children[2].children[0].classList.remove("selected")
-
-    })
-})
-
-activefilter.forEach((filter)=>{
-    filter.addEventListener("click", (e)=>{
-        filter.classList.add("selected-filter")
-        filter.children[0].classList.add("selected")
-
-        filter.previousElementSibling.classList.remove("selected-filter")
-        filter.previousElementSibling.children[0].classList.remove("selected")
-
-        filter.nextElementSibling.classList.remove("selected-filter")
-        filter.nextElementSibling.children[0].classList.remove("selected")
-    })
-})
-
-startingfilter.forEach((filter)=>{
     filter.addEventListener("click", ()=>{
+        removeFIlterHighlight()
+        filter.classList.add("clicked")
         filter.classList.add("selected-filter")
         filter.children[0].classList.add("selected")
-
-        filter.previousElementSibling.classList.remove("selected-filter")
-        filter.previousElementSibling.children[0].classList.remove("selected")
-
-
-        filter.parentNode.children[0].classList.remove("selected-filter")
-        filter.parentNode.children[0].children[0].classList.remove("selected")
     })
 })
+
+
+function removeFIlterHighlight(){
+    allfilter.forEach((filter)=>{
+        if((filter.classList.contains("clicked")) || (filter.classList.contains("selected-filter")) ){
+            filter.classList.remove("clicked")
+            filter.classList.remove("selected-filter")
+            filter.children[0].classList.remove("selected")
+        }
+    })
+}
 
 
 
@@ -246,7 +220,7 @@ let answers = document.querySelectorAll(".answerList")
 let questionList = document.querySelector(".questionsList")
 let exitAnswer = document.querySelectorAll(".exitAnswer")
 let ansTOQuestion = document.querySelector(".answersToQuestions")
-
+let questionListInner = document.querySelectorAll(".questionListInner")
 
 
 
@@ -290,12 +264,13 @@ exitAnswer.forEach((icon)=>{
         answers.forEach((ans)=>{
             ans.style.display = "none";
             questionList.style.display = "block";
+            questionList.childNodes[1].style.marginTop = "230px";
         }) 
     })
 })
 
 
-// reduce chatbox on input click 
+// reduce chatbox on keyboard use
 
 let chatInput = document.querySelector(".answerInput")
 let chatBox = document.querySelector(".questionAnswer")
@@ -316,15 +291,30 @@ chatInput.addEventListener("focusout", (e)=>{
 
 
 // pick answers chosen 
-// let answerItem = document.querySelectorAll(".answers")
+let answerItem = document.querySelectorAll(".answers")
 
-// answerItem.forEach((item, index)=>{
-//     item.addEventListener("click", ()=>{
-//         console.log(item)
-//         answerItem.forEach((thisItem)=>{
-//             // thisItem.classList.remove("answerStyle")
-//             item.classList.add("answerStyle")
-//             thisItem.classList.
-//         })
-//     })
-// })
+answerItem.forEach((item, index)=>{
+    item.addEventListener("click", (e)=>{
+        removeOtherBackground()
+        e.currentTarget.classList.add("answerStyle")
+        item.classList.add("clicked")
+        
+        
+        // if(item.previousElementSibling.classList.contains("answerStyle")){
+        //     item.previousElementSibling.classList.remove("answerStyle")
+        // }
+        // if(item.nextElementSibling.classList.contains("answerStyle")){
+        //     item.nextElementSibling.classList.remove("answerStyle")
+        // }
+    })
+})
+
+function removeOtherBackground(){
+    answerItem.forEach((thisItem)=>{
+        if(thisItem.classList.contains("clicked")){
+            thisItem.classList.remove("answerStyle")
+            thisItem.classList.remove("clicked")
+        }
+    })
+    console.log("i have been reached")
+}
