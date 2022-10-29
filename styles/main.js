@@ -6,6 +6,7 @@ let activefilter = document.querySelectorAll(".activefilter")
 let startingfilter = document.querySelectorAll(".startingfilter")
 
 let sessionFilter = document.querySelector(".filter")
+let profileFilter = document.querySelector(".profile-filter")
 let sessionFilterOuter = document.querySelector(".filter-outer")
 let cardcorrection = document.querySelector("column")
 
@@ -77,23 +78,42 @@ startingfilter.forEach((filter)=>{
 window.onscroll = function() {scrollFunction()};
 
 let fixSessionFilter = sessionFilter.offsetTop;
-let sideCardFixer = sideCardFixed.offsetTop
-let rightCardFixer = rightCardFixed.offsetTop
-let sideCardTwoFixer = sideCardTwoFixed.offsetTop
-let rightCardTwoFixer = rightCardTwoFixed.offsetTop
+let sideCardFixer = sideCardFixed.offsetTop;
+let rightCardFixer = rightCardFixed.offsetTop;
+let sideCardTwoFixer = sideCardTwoFixed.offsetTop;
+let rightCardTwoFixer = rightCardTwoFixed.offsetTop;
+var fixProfileFilter = profileFilter.offsetTop;
 
-
+// console.log(typeof fixProfileFilter)
 
 function scrollFunction(){
 
+    // fix profile filter 
+    // if (window.pageYOffset >= (fixProfileFilter + 70)){
+    //     profileFilter.classList.add("profile-filter-stick")
+    // }else{
+    //     profileFilter.classList.remove("profile-filter-stick")
+    // }
     // fixed session filter position div onscroll 
-    if (window.pageYOffset >= (fixSessionFilter + 19)){
-        sessionFilter.classList.add("card-filter-stick")
-        sessionFilterOuter.classList.add("card-filterfix")
+
+    if(sessionFilter.classList.contains("profile-filter")){
+        if (window.pageYOffset >= (fixSessionFilter + 142)){
+            sessionFilter.classList.add("profile-filter-stick")
+            sessionFilterOuter.classList.add("card-profileFilter-fix")
+        }else{
+            sessionFilter.classList.remove("profile-filter-stick")
+            sessionFilterOuter.classList.remove("card-profileFilter-fix")
+        }
     }else{
-        sessionFilter.classList.remove("card-filter-stick")
-        sessionFilterOuter.classList.remove("card-filterfix")
+        if (window.pageYOffset >= (fixSessionFilter + 19)){
+            sessionFilter.classList.add("card-filter-stick")
+            sessionFilterOuter.classList.add("card-filterfix")
+        }else{
+            sessionFilter.classList.remove("card-filter-stick")
+            sessionFilterOuter.classList.remove("card-filterfix")
+        }
     }
+    
 
 
     // fixed second column  card position onscroll 
