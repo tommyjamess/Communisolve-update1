@@ -188,6 +188,9 @@
     color: var(--color-brandcolor);
     padding-inline: 30px;
 }
+.questionsListOuter{
+    overflow-x: hidden;
+}
 
 .questionsList{
     background-color: rgb(112, 12, 179, 0.2);
@@ -199,7 +202,15 @@
     overflow-y: auto;
     
     display: flex;
+
+    animation-name: animQuestList;
+    animation-duration: 0.8s;
 }
+@keyframes animQuestList{
+    from {transform: translateX(-100px);}
+    to {transform: translateX(0px);}
+}
+
 .questionListInner{
     height: fit-content;
     margin-top: auto;
@@ -218,12 +229,21 @@
     cursor: pointer;
 }
 
+.answersToQuestions{
+    overflow-x: hidden;
+}
 .answerList{
     display: none;
     background-color: rgb(112, 12, 179, 0.2);
     padding: 20px;
     min-height: 480px;
     max-height: 480px;
+    animation-name: animAnsList;
+    animation-duration: 0.8s;
+}
+@keyframes animAnsList{
+    from {transform: translateX(100px);}
+    to {transform: translateX(0px);}
 }
 .answerList * + *{
     margin-top: 10px;

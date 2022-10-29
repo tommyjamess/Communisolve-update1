@@ -188,6 +188,7 @@ imageCheckbox.addEventListener("click", ()=>{
     if(imageCheckbox.value=="off"){
         activeImg.style.display = "block";
         imageCheckbox.value = "on"
+        
     }else if(imageCheckbox.value=="on"){
         imageCheckbox.value = "off"
         activeImg.style.display = "none";
@@ -233,6 +234,7 @@ questions.forEach((item, index)=>{
                 if (number == 0){
                     ans.style.display = "block";
                     questionList.style.display = "none";
+
                 }
             })
         }
