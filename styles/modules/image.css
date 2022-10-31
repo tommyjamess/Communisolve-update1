@@ -1,0 +1,28 @@
+.multipleImages{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.eachImage{
+    max-width: 70%;
+    animation-name: seeImage;
+    animation-duration: 0.5s;
+}
+@keyframes seeImage{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.viewImageStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    
+}

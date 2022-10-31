@@ -343,3 +343,5 @@ function removeOtherBackground(){
     })
     console.log("i have been reached")
 }
+
+
