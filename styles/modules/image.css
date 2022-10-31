@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .eachImage{
-    max-width: 70%;
+    max-width: 90%;
     animation-name: seeImage;
     animation-duration: 0.5s;
 }
