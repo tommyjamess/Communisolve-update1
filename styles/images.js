@@ -2,7 +2,7 @@
 let imgs = document.querySelectorAll('.viewImage');
 
 imgs.forEach((image)=>{
-    image.addEventListener("click", ()=>{
+    image.addEventListener("click", (e)=>{
         if(image.classList.contains("viewImageStyle")){
             image.classList.remove("viewImageStyle")
             image.children[0].classList.remove("eachImage")
@@ -10,6 +10,7 @@ imgs.forEach((image)=>{
             image.classList.add("viewImageStyle")
             image.children[0].classList.add("eachImage")
         }
+        e.preventDefault()
         
     })
 })
