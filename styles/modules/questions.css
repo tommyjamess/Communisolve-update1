@@ -1,6 +1,11 @@
+
 .sessionPage{
     position: fixed;
     width: 100%;
+}
+.mainSessionCard{
+    display: flex;
+    flex-direction: column;
 }
 .activeSession{
     border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
@@ -10,13 +15,13 @@
 .activeSessionImg{
     position: absolute;
     left: 0;
-    width: 100%;
-
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 .activeSessionImg img{
-    max-width: 35%;
+    max-width: 33.5%;
     margin-right: 12px;
     margin-top: 12px;
     border-radius: var(--card-border-radius);

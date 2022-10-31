@@ -1,7 +1,6 @@
-// session image fullscreen 
-let imgs = document.querySelectorAll('.viewImage');
+let imges = document.querySelectorAll('.viewImage');
 
-imgs.forEach((image)=>{
+imges.forEach((image)=>{
     image.addEventListener("click", (e)=>{
         if(image.classList.contains("viewImageStyle")){
             image.classList.remove("viewImageStyle")
@@ -14,3 +13,29 @@ imgs.forEach((image)=>{
         
     })
 })
+
+
+
+// session image toggle 
+
+let imageCheckbox = document.querySelector(".imageCheckbox")
+let activeSessionImg = document.querySelector(".activeSessionImg")
+let activeImg = document.querySelector(".activeImg")
+
+
+if (imageCheckbox.value = "off"){
+    activeImg.style.display = "none";
+}
+
+imageCheckbox.addEventListener("click", ()=>{
+    if(imageCheckbox.value=="off"){
+        activeImg.style.display = "block";
+        imageCheckbox.value = "on"
+        
+    }else if(imageCheckbox.value=="on"){
+        imageCheckbox.value = "off"
+        activeImg.style.display = "none";
+    }
+})
+
+
