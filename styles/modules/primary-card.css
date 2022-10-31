@@ -2,6 +2,7 @@
     margin-right: 12px;
 }
 
+
 .profile-filter,
 .filter{
     margin-bottom: 12px;
@@ -229,6 +230,10 @@
     color: var(--color-brandcolor);
 }
 
+
+.filteredContent{
+    display: none;
+}
 
 
 @media (max-width:900px){

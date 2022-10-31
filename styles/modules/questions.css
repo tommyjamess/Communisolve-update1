@@ -18,9 +18,9 @@
 .activeSessionImg img{
     max-width: 35%;
     margin-right: 12px;
-    margin-top: 10px;
+    margin-top: 12px;
     border-radius: var(--card-border-radius);
-    /* display: none; */
+    box-shadow: 2px 3px 2px 2px rgb(128, 128, 128, 0.4);
 }
 @media (max-width:1270px){
     .activeSessionImg img{
@@ -49,7 +49,7 @@
     padding-block: 10px;
     border-radius: var(--card-border-radius);
     background-color: rgb(112, 12, 179, 0.2);
-    /* min-height: 450px; */
+    min-height: 450px;
     max-height: 450px;
     overflow-y: auto;
 }

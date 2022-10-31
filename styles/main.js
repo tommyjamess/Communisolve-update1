@@ -22,17 +22,47 @@ let nextSideCardFix = document.querySelector(".nextSideCardFix")
 let sideMenuFixed = document.querySelector(".sideMenuFixed")
 let sideMenuOuter = document.querySelector("sideMenuOuter")
 
+let filteredContainer = document.querySelector(".filteredContentContainer")
+let filteredContent = document.querySelectorAll(".filteredContent")
 
 
+filteredContainer.children[0].style.display = "block"
 // session filters highlights
-allfilter.forEach((filter)=>{
+allfilter.forEach((filter, index)=>{
     filter.addEventListener("click", ()=>{
         removeFIlterHighlight()
         filter.classList.add("clicked")
         filter.classList.add("selected-filter")
         filter.children[0].classList.add("selected")
+
+        if (index == 0){
+            closeOtherFilteredContent()
+            filteredContainer.children[0].style.display = "block"
+            filteredContainer.children[0].classList.add("on-display")
+        }
+        if (index == 1){
+            closeOtherFilteredContent()
+            filteredContainer.children[1].style.display = "block"
+            filteredContainer.children[1].classList.add("on-display")
+        }
+        if (index == 2){
+            closeOtherFilteredContent()
+            filteredContainer.children[2].style.display = "block"
+            filteredContainer.children[2].classList.add("on-display")
+        }
     })
 })
+
+function closeOtherFilteredContent(){
+    filteredContent.forEach((container)=>{
+        if(container.classList.contains("on-display")){
+            container.classList.remove("on-display")
+            container.style.display = "none"
+            
+        }
+    })
+}
+
 
 
 function removeFIlterHighlight(){
@@ -301,14 +331,6 @@ answerItem.forEach((item, index)=>{
         removeOtherBackground()
         e.currentTarget.classList.add("answerStyle")
         item.classList.add("clicked")
-        
-        
-        // if(item.previousElementSibling.classList.contains("answerStyle")){
-        //     item.previousElementSibling.classList.remove("answerStyle")
-        // }
-        // if(item.nextElementSibling.classList.contains("answerStyle")){
-        //     item.nextElementSibling.classList.remove("answerStyle")
-        // }
     })
 })
 
