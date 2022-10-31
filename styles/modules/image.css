@@ -12,6 +12,11 @@
     from{transform: scale(0);}
     to{transform: scale(1);}
 }
+@media (max-width:900px){
+    .eachImage{
+        max-width: 100%;
+    }
+}
 .viewImageStyle{
     display: flex;
     justify-content: center;
