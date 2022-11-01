@@ -32,8 +32,6 @@
 
 /* bottom menu  */
 
-
-
 .bottom-menu{
     display: flex;
     justify-content: space-around;
@@ -43,6 +41,10 @@
     bottom: 0;
     left: 0;
     background-color:white;
+}
+.bottom-menu a{
+    text-align: none;
+    color: black;
 }
 .bottom-menu div{
     padding-block: 5px;

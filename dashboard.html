@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./styles/uikit.css">
     <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <script src="https://use.fontawesome.com/07a137f978.js"></script>
-    <title>Explore</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
+    <title>Dashboard</title>
 </head>
 <body>
     <div class=" header-page">
@@ -88,7 +89,6 @@
     <div class="page page-background">
         <div class="page-container"> 
             <div class="col-1 column ">
-
                 <div class="side-menu sideMenuFixed side-menu-stick">
                     <a href="index.html" class="selected text-decor-none "><div><i class="fa fa-home " aria-hidden="true"></i></div> <p class="font-weight-700">Home</p></a>
                     <a href="explore.html" class="text-decor-none"><div><i class="fa fa-compass" aria-hidden="true"></i></div> <p class="font-weight-700">Explore</p></a>
@@ -243,499 +243,128 @@
                         </div>
                         <div class="card-filter top-border-line card-filter-bottom--padding bottom-border-radius majorSessionFilter">
                             <div class="session-filter selected-filter  filter-padding allfilter">
-                                <p class="selected font-size-13 font-weight-600">Trending</p>
+                                <p class="selected font-size-13 font-weight-600">Industry</p>
                             </div>
                             <div class="session-filter filter-padding allfilter" >
-                                <p class="font-size-13 font-weight-600">Suggested for you</p>
+                                <p class="font-size-13 font-weight-600">Interest</p>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
 
                 <div class="filteredContentContainer">
                     <div class="card-container on-display filteredContent">
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="dashboard-card cardspacing">
+                            <div class="singleMeasure">
+                                <div class="dashboard-inner">
+                                    <div class="measure-title"><p class="font-size-17 font-weight-700">Simple</p></div>
+                                </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">sessions</p>
                                         </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">solutions</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysolution"  class="chart"></canvas>
                                         </div>
                                     </div>
                                 </div>
-                    
                             </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                            </div>
-                            <div class="session-description ">
-                                <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image viewImage">
-                                <img src="/images/general images/man.jpg" alt="">
-                            </div>
-                            <div class="joined-sessionlevel">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
+                            <div class="singleMeasure">
+                                
+                                <div class="dashboard-inner">
+                                    <div class="measure-title"><p class="font-size-17 font-weight-700">Comprehensive</p></div>
                                 </div>
-                                <span class=" session-level font-size-12 font-weight-700">Simple</span>
-                            </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                    
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">sessions</p>
                                         </div>
-                                        <p class="specialization font-size-12 font-weight-500">JavaScript Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">solutions</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysolution"  class="chart"></canvas>
                                         </div>
                                     </div>
                                 </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                    
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <form action=""><button class="font-weight-600 font-size-12">Option 1</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 2</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 3</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 4</button></form>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="session-image viewImage">
-                                <img src="/images/general images/man.jpg" alt="">
-                            </div>
-                    
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                    
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <form action=""><button class="font-weight-600 font-size-12">Option 1</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 2</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 3</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 4</button></form>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                            </div>
-                            <div class="session-description ">
-                                <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image viewImage">
-                                <img src="/images/general images/man.jpg" alt="">
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
-                                </div>
-                                <span class=" session-level font-size-12 font-weight-700">Simple</span>
-                            </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
                             </div>
                         </div>
                     </div>
-                    <div class="card-container filteredContent">
-                        
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
+                    <div class="card-container on-display filteredContent">
+                        <div class="dashboard-card cardspacing">
+                            <div class="singleMeasure">
+                                <div class="dashboard-inner">
+                                    <div class="measure-title"><p class="font-size-17 font-weight-700">Simple</p></div>
+                                </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">sessions</p>
                                         </div>
-                                        <p class="specialization font-size-12 font-weight-500">JavaScript Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">solutions</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysolution"  class="chart"></canvas>
                                         </div>
                                     </div>
                                 </div>
-                    
                             </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                    
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <form action=""><button class="font-weight-600 font-size-12">Option 1</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 2</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 3</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 4</button></form>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
+                            <div class="singleMeasure">
+                                
+                                <div class="dashboard-inner">
+                                    <div class="measure-title"><p class="font-size-17 font-weight-700">Comprehensive</p></div>
                                 </div>
-                            </div>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">sessions</p>
                                         </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-700">solutions</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysolution"  class="chart"></canvas>
                                         </div>
                                     </div>
                                 </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="session-image viewImage">
-                                <img src="/images/general images/man.jpg" alt="">
-                            </div>
-                    
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                    
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <form action=""><button class="font-weight-600 font-size-12">Option 1</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 2</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 3</button></form>
-                                <form action=""><button class="font-weight-600 font-size-12">Option 4</button></form>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                            </div>
-                            <div class="session-description ">
-                                <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image viewImage">
-                                <img src="/images/general images/man.jpg" alt="">
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
-                                </div>
-                                <span class=" session-level font-size-12 font-weight-700">Simple</span>
-                            </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <p class="font-size-14">20</p></button></form>
-                                <form action=""><button><p class="font-size-12">Star</p><i class="fa fa-star-o" aria-hidden="true"></i> <p class="font-size-14">150</p></button></form>
-                                <form action=""><button><p class="font-size-12">Comment</p><i class="fa fa-comments-o" aria-hidden="true"></i> <p class="font-size-14">5</p></button></form>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="fa fa-share-square-o" aria-hidden="true"></i> <p class="font-size-14">30</p></button></form>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-
+                
                 <div class="create-session displayBrainstorm">
                     <div class="create-session-inner Bform1">
                         <div class="form-plate">
@@ -1261,10 +890,7 @@
                                         <p class="font-size-12 font-weight-600">Minutes</p>
                                         <input type="number" name="" id="">
                                     </div>
-                                </div>
-                               
-                                
-                                
+                                </div>         
                             </form>
                         </div>
                         <div class="multipleBtn">
@@ -1425,14 +1051,16 @@
             <a href="notification.html" class="text-decor-none"><div><i class="fa fa-bell-o" aria-hidden="true"></i></div> <p class="font-weight-700">Notifications</p></a>
             <a href="dashboard.html" class="text-decor-none"><div><i class = "material-icons custom">dashboard</i></div> <p class="font-weight-700">Dashboard</p></a>
         </div>
-        
 
     </div>
     
+<!-- <script src="/styles/main.js"></script> -->
 <script src="/styles/menu.js"></script>
 <script src="/styles/filter.js"></script>
 <script src="/styles/create_session.js"></script>
 <script src="/styles/images.js"></script>
 <script src="/styles/fix.js"></script>
+<script src="/styles/chart.js"></script>
+
 </body>
 </html>
