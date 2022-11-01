@@ -29,10 +29,23 @@
     justify-content: space-around;
     grid-column-gap: 20px;
 }
+.comprehensive-card{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    max-width: 100%;
+}
+.comprehensive-card::-webkit-scrollbar{
+    display: none;
+}
+.comprehensive-card{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 .measure-card{
     height: 240px;
     /* flex-basis: 50%; */
-    width: 50%;
+    min-width: 48%;
     border-radius: 20px;
     background-color: var(--color-white);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
