@@ -9,7 +9,7 @@ openGuide.forEach((icon)=>{
             icon.parentElement.parentElement.style.maxHeight = "none";
             
         }else{
-            icon.parentElement.parentElement.style.maxHeight = "30px";
+            icon.parentElement.parentElement.style.maxHeight = "40px";
         }
     })
 })
