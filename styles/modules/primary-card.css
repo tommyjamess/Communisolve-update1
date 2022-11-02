@@ -203,12 +203,12 @@
 .session-reactions{
     display: flex;
     justify-content: space-between;
-    padding-inline: 40px;
+    padding-block: 15px;
     border-top: 1px solid var(--line-color);
 }
 @media (max-width:900px){
     .session-reactions{
-        padding-inline: 20px;
+        padding-inline: 40px;
     }
 }
 .session-reactions i{
