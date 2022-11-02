@@ -104,9 +104,15 @@
 .mode img{
     width: 25px;
 }
+
+.mode i:hover,
+.mode img:hover{
+    cursor: pointer;
+}
 .mode i{
     font-size:17px ;
 }
+
 
 @media (max-width:900px){
     .h3 .menuIcon,

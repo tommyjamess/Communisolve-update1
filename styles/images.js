@@ -20,7 +20,7 @@ imges.forEach((image)=>{
 
 let imageCheckbox = document.querySelector(".imageCheckbox")
 let activeSessionImg = document.querySelector(".activeSessionImg")
-let activeImg = document.querySelector(".activeImg")
+let activeImg = document.querySelectorAll(".activeImg")
 
 
 if (imageCheckbox.value = "off"){

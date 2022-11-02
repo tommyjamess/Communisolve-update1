@@ -1,0 +1,95 @@
+.auth-page{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-light-gray);
+
+}
+.auth-page--inner{
+    display: flex;
+    align-items: center;
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 640px;
+    max-height: 640px;
+
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-white);
+    padding-inline: 41px;
+}
+
+
+
+.auth-logo{
+    display: flex;
+    justify-content: center;
+}
+.auth-logo--inner{
+    text-align: center;
+}
+.auth-logo img{
+    width: 80px;
+}
+.auth-logo p{
+    color: #000000;
+}
+
+.signup-input * + *{
+    margin-top: 21px;
+}
+.signup-input input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding-inline: 10px;
+    color: grey;
+
+    border: 1px solid var(--line-color);
+}
+
+.signup-input input:focus{
+    outline: none;
+}
+.signup-input button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-brandcolor);
+    color: var(--color-white);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.has-account{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+    /* padding-inline: 41px; */
+}
+.has-account p{
+    color: var(--color-grey);
+}
+.has-account a{
+    text-decoration: none;
+    color: var(--color-brandcolor);
+}
+.agreement{
+    margin-top: 24px;
+}
+.agreement p{
+    color: var(--color-grey);
+}
+.agreement-links{
+    display: flex;
+    grid-column-gap: 5px;
+    margin-top: 6px;
+}
+
+.agreement-links a{
+    text-decoration: none;
+    color: var(--color-brandcolor);
+}

@@ -40,3 +40,18 @@ closeCardMenu.forEach((item)=>{
         item.parentElement.parentElement.style.display = "none";
     })
 })
+
+
+
+// action menu
+let headerAvater = document.querySelector(".headerAvater")
+let userActionMenu = document.querySelector(".userActionMenu")
+
+userActionMenu.style.display = "none";
+headerAvater.addEventListener("click", ()=>{
+    if(userActionMenu.style.display == "none"){
+        userActionMenu.style.display = "block"
+    }else{
+        userActionMenu.style.display = "none"
+    }
+})

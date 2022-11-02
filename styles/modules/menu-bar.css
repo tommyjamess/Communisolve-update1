@@ -101,3 +101,42 @@
     cursor: pointer;
 }
 
+
+
+
+/* user action  */
+.userActionMenu{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    transform: translateX(-82%) translateY(61%);
+
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-white);
+
+    box-shadow: 0px 2px 7px 0px rgb(128, 128, 128, 0.5);
+    padding-inline: 20px;
+    padding-block: 20px;
+}
+
+
+.userActionInner i{
+    font-size: 20px;
+    color: var(--color-grey);
+    margin-right: 20px;
+}
+.userActionInner a{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-block: 5px;
+    padding-inline: 5px;
+    border-radius: 8px;
+}
+.userActionInner a:hover{
+    background-color: var(--color-light-gray);
+}
+.userActionInner p{
+    color: black;
+}
