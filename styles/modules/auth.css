@@ -1,3 +1,6 @@
+/* .AuthPlate{
+    display: none !important;
+} */
 .auth-page{
     position: fixed;
     height: 100%;
@@ -53,10 +56,10 @@
     border: 1px solid var(--line-color);
 }
 
-.signup-input input:focus{
+.auth-page input:focus{
     outline: none;
 }
-.signup-input button{
+.auth-page button{
     width: 100%;
     height: 40px;
     background-color: var(--color-brandcolor);
@@ -97,3 +100,32 @@
 .agreement-text{
     text-align: center;
 }
+
+
+.auth-code-input p{
+    text-align: center;
+}
+.auth-code{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.auth-code input{
+    height: 40px;
+    padding-inline: 10px;
+    border: 1px solid var(--line-color);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.auth-code input[type=number]::-webkit-inner-spin-button, 
+.auth-code input[type=number]::-webkit-outer-spin-button { 
+  margin: 0; 
+  display: none;
+}
+.verify-btn{
+    margin-top: 21px;
+}
+
+

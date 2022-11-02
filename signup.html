@@ -11,7 +11,7 @@
     <title>signup</title>
 </head>
 <body>
-    <div class="auth-page">
+    <div class="auth-page signUPPlate">
         <div class="auth-page--inner">
             <div class="AuthContentAlignment">
                 <div class="auth-logo">
@@ -26,7 +26,7 @@
                             <input type="text" placeholder="fullname">
                             <input type="email" placeholder="email">
                             <input type="password" placeholder="password">
-                            <button type="submit">Next</button>
+                            <button id="signUp">Next</button>
                         </div>
                         <div class="has-account">
                             <p class="font-size-12 font-weight-600">Already have an account?</p>
@@ -45,6 +45,37 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    <div class="auth-page AuthPlate">
+        <div class="auth-page--inner">
+            <div class="AuthContentAlignment">
+                <div class="auth-logo">
+                    <div class="auth-logo--inner">
+                        <img src="images/general images/CommuniSolve_Logo.svg" alt="">
+                        <p class="font-size-16 font-weight-700">Verify your account</p>
+                    </div>
+                </div>
+                <div class="auth-code-input">
+                    <p class="font-size-12">A 6 digit code has been sent to  info@communisolve.co. 
+                        Enter the 6 digit code below to verify your account</p>
+
+                    <form action="">
+                        <div class="auth-code">
+                            <input type="number" maxlength="6">
+                        </div>
+
+                        <button class="verify-btn">VERIFY</button>
+                    </form>
+
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="styles/auth.js" type="text/javascript"></script>
 </body>
 </html>
