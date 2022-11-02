@@ -95,6 +95,7 @@
 .openSubComment{
     color: var(--color-grey);
     margin-bottom: 5px;
+    font-size: 11px;
 }
 .openSubComment:hover{
     cursor: pointer;
