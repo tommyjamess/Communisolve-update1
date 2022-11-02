@@ -15,16 +15,3 @@ commentBtn.forEach((btn)=>{
 })
 
 // open sub comments 
-let openSubComment = document.querySelectorAll(".openSubComment")
-let subCommentContent = document.querySelectorAll(".subComments")
-
-openSubComment.forEach((btn)=>{
-    btn.addEventListener("click", ()=>{
-        if(btn.parentElement.classList.contains("openSubCommentContent")){
-            btn.parentElement.classList.remove("openSubCommentContent")
-        }else{
-            btn.parentElement.classList.add("openSubCommentContent")
-        }
-        
-    })
-})

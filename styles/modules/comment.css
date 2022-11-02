@@ -84,33 +84,110 @@
 
 
 /* subcomments  */
-.openSubCommentContent{
-    max-height: 400px !important;
-}
-.subComments{
-    margin-top: 5px;
-    max-height: 22px;
-    overflow-y: hidden;
-}
 .openSubComment{
     color: var(--color-grey);
-    margin-bottom: 5px;
+
+    margin-top: 7px;
     font-size: 11px;
 }
 .openSubComment:hover{
     cursor: pointer;
 }
 
-.subComment--inner{
-    padding-block: 8px;
-    min-height: 100px;
-    max-height: 350px;
-    overflow-y: auto;
+/* thread  */
+.thread-outer{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
 }
-.subComment--inner::-webkit-scrollbar{
+
+.thread{
+    min-width: 470px;
+    max-width: 470px;
+    height: 100%;
+    background-color: var(--color-white);
+}
+
+
+
+.thread-title{
+    border-bottom: 1px solid var(--line-color);
+    display: flex;
+    grid-column-gap: 30px;
+    padding-block: 5px;
+    padding-inline: 20px;
+}
+
+.close-thread{
+    width: fit-content;
+    float: left;
+    color: var(--color-grey);
+}
+.close-thread:hover{
+    cursor: pointer;
+}
+.thread-list{
+    padding-inline: 20px;
+    padding-block: 20px;
+
+    overflow-y: auto;
+    max-height: 480px;
+}
+.thread-list::-webkit-scrollbar{
     display: none;
 }
-.subComment--inner{
+.thread-list{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.thread-message{
+    font-size: 12px;
+}
+.thread-list .comment-user{
+    font-size: 11px;
+}
+
+.thread-comment{
+    padding-block: 10px;
+    padding-inline: 20px;
+    display: flex;
+    grid-column-gap: 10px;
+    background-color: var(--color-white);
+}
+.thread-comment textarea{
+    width: 100%;
+    max-width: 100%;
+    height:40px ;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--line-color);
+
+}
+
+.thread-comment textarea:focus{
+    height: 60px;
+    outline: none;
+}
+.thread-comment img{
+    max-width: 30px;
+    max-height: 30px;
+}
+.thread-comment button{
+    max-height: 40px;
+    padding-inline: 10px;
+    border-radius: 10%;
+    background-color: var(--color-brandcolor);
+    color: var(--color-white);
+    font-weight: 700;
+}
+.thread select{
+    width: 100%;
+    display: flex;
 }
