@@ -76,7 +76,40 @@
     max-width: 91%;
     margin-left: auto;
 }
+.subCommentLevel .user-comment-avater img,
 .commentOwnerLevel .user-comment-avater img{
     max-width: 25px;
     max-height: 25px;
+}
+
+
+/* subcomments  */
+.openSubCommentContent{
+    max-height: 400px !important;
+}
+.subComments{
+    margin-top: 5px;
+    max-height: 22px;
+    overflow-y: hidden;
+}
+.openSubComment{
+    color: var(--color-grey);
+    margin-bottom: 5px;
+}
+.openSubComment:hover{
+    cursor: pointer;
+}
+
+.subComment--inner{
+    padding-block: 8px;
+    min-height: 100px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+.subComment--inner::-webkit-scrollbar{
+    display: none;
+}
+.subComment--inner{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
