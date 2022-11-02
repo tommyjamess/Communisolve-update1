@@ -3,6 +3,8 @@ let signup = document.querySelector(".signUPPlate")
 let authenticate = document.querySelector(".AuthPlate")
 
 
+
+
 authenticate.style.display = "none";
 signUpBtn.addEventListener("click", (e)=>{
     e.preventDefault()
