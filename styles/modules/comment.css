@@ -96,21 +96,21 @@
 
 /* thread  */
 .thread-outer{
-    display: flex;
-    margin-top: 40px;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2000;
+    /* display: flex; */
+    /* margin-top: 40px; */
+    /* justify-content: center; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%;
+    height: 100%; */
+    /* z-index: 2000; */
 }
 
 .thread{
-    min-width: 470px;
-    max-width: 470px;
-    height: 100%;
+    /* min-width: 470px;
+    max-width: 470px; */
+    /* height: 100%; */
     background-color: var(--color-white);
 }
 
