@@ -96,19 +96,13 @@
 
 /* thread  */
 .thread-outer{
-    /* display: flex; */
-    /* margin-top: 40px; */
-    /* justify-content: center; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* width: 100%;
-    /* z-index: 2000; */
+    height: 600px;
+    border: 1px solid black;
 }
 
 .thread{
     background-color: var(--color-white);
-    height: 550px;
+    height: 600px;
 }
 
 
@@ -134,7 +128,7 @@
     padding-block: 20px;
 
     overflow-y: auto;
-    max-height: 498px;
+    max-height: 550px;
 }
 .thread-list::-webkit-scrollbar{
     display: none;
