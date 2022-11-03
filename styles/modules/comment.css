@@ -103,15 +103,12 @@
     /* top: 0; */
     /* left: 0; */
     /* width: 100%;
-    height: 100%; */
     /* z-index: 2000; */
 }
 
 .thread{
-    /* min-width: 470px;
-    max-width: 470px; */
-    /* height: 100%; */
     background-color: var(--color-white);
+    height: 550px;
 }
 
 
@@ -137,7 +134,7 @@
     padding-block: 20px;
 
     overflow-y: auto;
-    max-height: 500px;
+    max-height: 498px;
 }
 .thread-list::-webkit-scrollbar{
     display: none;
