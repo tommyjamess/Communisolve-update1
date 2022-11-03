@@ -205,10 +205,11 @@
     justify-content: space-between;
     padding-block: 15px;
     border-top: 1px solid var(--line-color);
+    
 }
 @media (max-width:900px){
     .session-reactions{
-        padding-inline: 40px;
+        padding-inline: 20px;
     }
 }
 .session-reactions i{
