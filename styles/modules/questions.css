@@ -21,7 +21,7 @@
     width: 100%;
 }
 .activeSessionImg img{
-    max-width: 33.5%;
+    /* max-width: 33.5%; */
     margin-right: 12px;
     margin-top: 12px;
     border-radius: var(--card-border-radius);
@@ -47,7 +47,9 @@
     }
 }
 
-
+.questionAnswerOuter{
+    border: 1px solid black;
+}
 .questionAnswer{
     border: 1px solid var(--line-color);
     margin: 10px 10px;

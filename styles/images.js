@@ -20,17 +20,17 @@ imges.forEach((image)=>{
 
 let imageCheckbox = document.querySelector(".imageCheckbox")
 let activeSessionImg = document.querySelector(".activeSessionImg")
-let activeImg = document.querySelectorAll(".activeImg")
+let activeImg = document.querySelector(".activeImg")
 
 
-if (imageCheckbox.value = "off"){
-    activeImg.style.display = "none";
-}
+activeImg.style.display = "none";
 
 imageCheckbox.addEventListener("click", ()=>{
+    console.log(imageCheckbox)
     if(imageCheckbox.value=="off"){
         activeImg.style.display = "block";
         imageCheckbox.value = "on"
+        // activeSessionImg.nextElementSibling.style.height = "300px"
         
     }else if(imageCheckbox.value=="on"){
         imageCheckbox.value = "off"

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     max-height: 0px;
-    /* display: none; */
     overflow: hidden;
     padding-inline: 20px;
     border-radius: 0px 0px 10px 10px;
