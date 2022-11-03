@@ -1,30 +1,4 @@
-.comment-page{
-    display: flex;
-    justify-content: center;
-    max-height: 0px;
-    overflow: hidden;
-    padding-inline: 20px;
-    border-radius: 0px 0px 10px 10px;
-}
-.openComment{
-    max-height: 550px;
-}
-.comment-page--inner{
-    width: 100%;
-    border-top: 1px solid var(--line-color);
-    padding-block: 20px;
-}
-.comment-list-outer{
-    max-height:400px ;
-    overflow-y: auto;
-}
-.comment-list-outer::-webkit-scrollbar{
-    display: none;
-}
-.comment-list-outer{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
+
 .comment-page--inner input{
     width: 100%;
     height: 35px;
@@ -38,7 +12,6 @@
 }
 
 .singleComment{
-    margin-bottom: 20px;
     display: flex;
 }
 .user-comment-avater{
@@ -70,37 +43,83 @@
 }
 
 
-/* session owner comments  */
-.commentOwnerLevel{
-    max-width: 91%;
-    margin-left: auto;
+/* session comments  */
+.commentObject{
+    margin-bottom: 10px;
 }
-.subCommentLevel .user-comment-avater img,
-.commentOwnerLevel .user-comment-avater img{
+.commentLevelTwo{
+    margin-left: auto;
+    max-width: 91%;
+}
+.commentOwnerLevel .user-comment-avater img,
+.commentLevelTwo .user-comment-avater img{
     max-width: 25px;
     max-height: 25px;
 }
 
-
-/* subcomments  */
 .openSubComment{
     color: var(--color-grey);
-
-    margin-top: 7px;
     font-size: 11px;
+    /* width: 91%; */
+    margin-left: auto;
 }
 .openSubComment:hover{
     cursor: pointer;
 }
 
+.subComments{
+    padding-top: 10px;
+}
+
+
 /* thread  */
 .thread-outer{
-    height: 600px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+
+    display: none;
 }
 
 .thread{
     background-color: var(--color-white);
-    height: 600px;
+    flex-basis: 35.4%;
+    height: 100%;
+    margin-right: 10px;
+}
+@media (max-width:600px){
+    .thread{
+        min-width: 99%;
+        margin-right: 0px;
+    }
+}
+@media (min-width:601px) and (max-width:900px){
+    .thread{
+        min-width: 79%;
+        margin-right: -5px;
+    }
+}
+@media (max-width:1270px){
+    .thread{
+        flex-basis: 54.5%;
+    }
+}
+@media (min-width:1559px) and (max-width:10000px){
+    .thread{
+        max-width:28.5rem ;
+    }
+}
+.thread-inner{
+    min-height: 88%;
+    max-height: 88%;
 }
 
 
@@ -144,8 +163,8 @@
 }
 
 .thread-comment{
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
     width: 100%;
     padding-block: 10px;
     padding-inline: 20px;

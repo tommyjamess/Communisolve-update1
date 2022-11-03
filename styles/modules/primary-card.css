@@ -204,6 +204,7 @@
     display: flex;
     justify-content: space-between;
     padding-block: 15px;
+    padding-inline: 25px;
     border-top: 1px solid var(--line-color);
     
 }
