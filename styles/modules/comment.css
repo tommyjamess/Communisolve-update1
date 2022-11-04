@@ -94,6 +94,7 @@
     flex-basis: 35.4%;
     height: 100%;
     margin-right: 10px;
+    border: 1px solid green;
 }
 @media (max-width:600px){
     .thread{
