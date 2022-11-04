@@ -48,3 +48,31 @@ openSubComment.forEach((btn)=>{
         }
     })
 })
+
+
+let commentInput = document.querySelectorAll("#commentInput")
+
+commentInput.forEach((item)=>{
+    item.addEventListener("focus", ()=>{
+        commentBoxUp()
+    })
+})
+
+commentInput.forEach((item)=>{
+    item.addEventListener("focusout", ()=>{
+        commentBoxDown()
+    })
+})
+
+
+function commentBoxUp(){
+    commentInput.forEach((item)=>{
+        item.parentElement.style.transform = "translateY(-30%)"
+    })
+}
+
+function commentBoxDown(){
+    commentInput.forEach((item)=>{
+        item.parentElement.style.transform = "translateY(0%)"
+    })
+}
