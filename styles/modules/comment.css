@@ -119,10 +119,6 @@
     }
 }
 
-.thread-inner{
-    border: 1px solid black;
-}
-
 
 
 .thread-title{
@@ -144,6 +140,7 @@
 .thread-list{
     overflow-y: auto;
     max-height: 550px;
+    padding-bottom: 80px;
 }
 .thread-list::-webkit-scrollbar{
     display: none;
