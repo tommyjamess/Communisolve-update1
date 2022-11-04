@@ -87,7 +87,6 @@
     align-items: center;
     background-color: rgb(0, 0, 0, 0.5);
     display: none;
-    border: 1px solid green;
 }
 
 .thread-inner{

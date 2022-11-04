@@ -223,10 +223,10 @@
                 <div class="filter-outer">
                     <div class="filter">
                         <div class="card-filter top-border-line card-filter-bottom--padding bottom-border-radius majorSessionFilter activeSession">
-                            <div class="session-filter selected-filter  filter-padding allfilter  displaySession">
+                            <div class="session-filter selected-filter  filter-padding allfilter">
                                 <p class="selected font-size-13 font-weight-600">Session</p>
                             </div>
-                            <div class="session-filter filter-padding allfilter displayFeedback">
+                            <div class="session-filter filter-padding allfilter">
                                 <p class="font-size-13 font-weight-600">Feedback</p>
                             </div>
                             <div class="session-filter filter-padding  toggleImageOuter">
@@ -241,13 +241,13 @@
                 </div>
 
                 <div class="filteredContentContainer">
-                    <div class="card-container">
+                    <div class="card-container on-display filteredContent">
                         <div class="card mainSessionCard">
-                            <div class="activeSessionImg viewImage">
-                                <img src="./images/general images/man.jpg" alt="" class="activeImg">
-                            </div>
                             <div class="questionAnswerOuter">
                                 <div class="questionAnswer">
+                                    <div class="activeSessionImg viewImage">
+                                        <img src="./images/general images/man.jpg" alt="" class="activeImg">
+                                    </div>
                                     <div class="questionAnswerInner">
                                         <div class="actQuestion">
                                             <p class="font-size-13 font-weight-600 question-title">Question</p>
@@ -328,6 +328,11 @@
                                     </div>
                                 </form>
                             </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card-container filteredContent" >
+                        <div class="card mainSessionCard">
                             <!-- feedback  -->
                             <div class="feedbackOuter">
                                 <div class="feedback">
@@ -336,39 +341,43 @@
                                     </div>
                                     <div class="questionsListOuter">
                                         <div class="questionsList">
+                                            <div class="activeSessionImg viewImage">
+                                                <img src="./images/general images/man.jpg" alt="" class="activeImg">
+                                            </div>
                                             <div class="questionListInner">
                                                 <div class="questionItem"><p class="font-size-13 font-weight-600" >Who are the target audience of communisolve?</p></div>
                                                 <div class="questionItem"><p class="font-size-13 font-weight-600" >At what point did Communisolve become a suitable product for the market?</p></div>
                                                 <div class="questionItem"><p class="font-size-13 font-weight-600" >Who are the target audience of communisolve?</p></div>
-                                                <div class="questionItem"><p class="font-size-13 font-weight-600" >Who are the target audience of communisolve?</p></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="answersToQuestions">
-                                        <div class="answerList">
-                                            <i class="material-icons custom exitAnswer font-weight-700">close</i>
-                                            <div class="answerListInner">
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answers list one</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer A</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer B</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer C</p></div>
+                                    <div class="answersContainer" style="border: 1px solid red;">
+                                        <div class="answersToQuestions">
+                                            <div class="answerList">
+                                                <i class="material-icons custom exitAnswer font-weight-700">close</i>
+                                                <div class="answerListInner">
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answers list one</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer A</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer B</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer C</p></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="answerList">
-                                            <i class="material-icons custom exitAnswer font-weight-700">close</i>
-                                            <div class="answerListInner">
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answers list two</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer A</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer B</p></div>
+                                            <div class="answerList">
+                                                <i class="material-icons custom exitAnswer font-weight-700">close</i>
+                                                <div class="answerListInner">
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answers list two</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer A</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer B</p></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="answerList">
-                                            <i class="material-icons custom exitAnswer font-weight-700">close</i>
-                                            <div class="answerListInner">
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answers list three</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer A</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer B</p></div>
-                                                <div class="answers"><p class="font-size-13 font-weight-600" >Answer C</p></div>
+                                            <div class="answerList">
+                                                <i class="material-icons custom exitAnswer font-weight-700">close</i>
+                                                <div class="answerListInner">
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answers list three</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer A</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer B</p></div>
+                                                    <div class="answers"><p class="font-size-13 font-weight-600" >Answer C</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -524,9 +533,9 @@
     </div>
     
     <script src="/styles/session.js"></script>
-    <script src="/styles/menu.js"></script>
+    <!-- <script src="/styles/menu.js"></script> -->
     <script src="/styles/filter.js"></script>
     <script src="/styles/images.js"></script>
-    <script src="/styles/fix.js"></script>
+    <!-- <script src="/styles/fix.js"></script> -->
 </body>
 </html>

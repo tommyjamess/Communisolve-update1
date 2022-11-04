@@ -13,7 +13,7 @@
     margin-bottom: 0px;
 }
 .activeSessionImg{
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     display: flex;
     justify-content: center;
@@ -21,35 +21,31 @@
     width: 100%;
 }
 .activeSessionImg img{
-    /* max-width: 33.5%; */
-    margin-right: 12px;
-    margin-top: 12px;
+    max-width: 100%;
+    /* margin-right: 12px; */
     border-radius: var(--card-border-radius);
     box-shadow: 2px 3px 2px 2px rgb(128, 128, 128, 0.4);
 }
 @media (max-width:1270px){
     .activeSessionImg img{
-        max-width: 53%;
+        max-width: 100%;
     }
 }
 @media (max-width:900px){
     .activeSessionImg img{
-        max-width: 77%;
+        max-width: 100%;
         margin-right: 0px;
         margin-left: 2px;
     }
 }
 @media (max-width:600px){
     .activeSessionImg img{
-        max-width: 96%;
+        max-width: 100%;
         margin-right: 0px;
         margin-left: 2px;
     }
 }
 
-.questionAnswerOuter{
-    border: 1px solid black;
-}
 .questionAnswer{
     border: 1px solid var(--line-color);
     margin: 10px 10px;
@@ -58,11 +54,19 @@
     background-color: rgb(112, 12, 179, 0.2);
     min-height: 450px;
     max-height: 450px;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 .questionAnswerInner{
     height: fit-content;
-    margin-top: 90px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+.questionAnswerInner::-webkit-scrollbar{
+    display: none;
+}
+.questionAnswerInner{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 @media (max-width:1270px){
@@ -173,13 +177,12 @@
     margin-left: 10px;
     border-radius: 60%;
     display: flex;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 .send-time{
     color: grey;
 }
-
 
 .leaveSession{
     color: grey;
@@ -187,40 +190,30 @@
 }
 
 /* feedback session*/
-.feedbackOuter{
-    display: none;
-}
-
 .feedback-guide{
     color: var(--color-brandcolor);
     padding-inline: 30px;
-}
-.questionsListOuter{
-    overflow-x: hidden;
 }
 
 .questionsList{
     background-color: rgb(112, 12, 179, 0.2);
     padding-inline: 20px;
     padding-block: 20px;
-    /* padding-top: 420px; */
     min-height: 480px;
     max-height: 480px;
     overflow-y: auto;
     
     display: flex;
+    flex-direction: column;
 
     animation-name: animQuestList;
     animation-duration: 0.8s;
 }
-@keyframes animQuestList{
-    from {transform: translateX(-100px);}
-    to {transform: translateX(0px);}
-}
+
 
 .questionListInner{
     height: fit-content;
-    margin-top: auto;
+    /* margin-top: auto; */
 }
 .questionsList * + *{
     margin-top: 10px;
@@ -236,37 +229,76 @@
     cursor: pointer;
 }
 
+
+
+/* answers  */
+.answersContainer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+}
 .answersToQuestions{
-    overflow-x: hidden;
+    flex-basis: 35.6%;
+    /* min-height: 39rem; */
+    height: 72%;
+    margin-top: 109px;
+    margin-right: 10px;
+}
+@media (max-width:600px){
+    .answersToQuestions{
+        min-width: 99%;
+        margin-right: 0px;
+    }
+}
+@media (min-width:601px) and (max-width:900px){
+    
+    .answersToQuestions{
+        min-width: 79%;
+        margin-right: -5px;
+    }
+}
+@media (max-width:1270px){
+    .answersToQuestions{
+        flex-basis: 54.5%;
+        /* margin-right: 12px; */
+    }
+}
+@media (min-width:1559px) and (max-width:10000px){
+    .create-session-inner{
+        max-width:28.5rem ;
+    }
 }
 .answerList{
     display: none;
-    background-color: rgb(112, 12, 179, 0.2);
+    background-color: var(--color-white);
     padding: 20px;
-    min-height: 480px;
-    max-height: 480px;
     animation-name: animAnsList;
     animation-duration: 0.8s;
 }
-@keyframes animAnsList{
-    from {transform: translateX(100px);}
-    to {transform: translateX(0px);}
-}
+
 .answerList * + *{
     margin-top: 10px;
 }
 .answerListInner{
-    margin-top: 220px;
+    height: 100%;
 }
-
-
 
 .answers{
     border: 1px solid var(--line-color);
     border-radius: 8px;
-    background-color: white;
+    background-color: rgb(112, 12, 179, 0.2);
     padding-inline: 10px;
     padding-block: 10px;
+}
+.answers:hover{
+    background-color: var(--color-brandcolor);
+    color: white;
 }
 .exitAnswer:hover{
     cursor: pointer;

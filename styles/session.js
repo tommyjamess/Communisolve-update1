@@ -1,24 +1,25 @@
 // session  and feedback 
 
 let displaySession = document.querySelector(".displaySession")
-let displayFeedback = document.querySelector(".displayFeedback")
+// let displayFeedback = document.querySelector(".displayFeedback")
 
 let questionPage = document.querySelector(".questionAnswerOuter")
-let feedbackPage = document.querySelector(".feedbackOuter")
+// let feedbackPage = document.querySelector(".feedbackOuter")
 
-displayFeedback.addEventListener("click", ()=>{
-    questionPage.style.display = "none";
-    feedbackPage.style.display = "block";
-})
+// displayFeedback.addEventListener("click", ()=>{
+//     questionPage.style.display = "none";
+//     feedbackPage.style.display = "block";
+// })
 
-displaySession.addEventListener("click", ()=>{
-    questionPage.style.display = "block";
-    feedbackPage.style.display = "none";
-})
+// displaySession.addEventListener("click", ()=>{
+//     questionPage.style.display = "block";
+//     feedbackPage.style.display = "none";
+// })
 
 
 // questions and answers 
 let questions = document.querySelectorAll(".questionItem")
+let answerContainer = document.querySelector(".answersContainer")
 let answers = document.querySelectorAll(".answerList")
 let questionList = document.querySelector(".questionsList")
 let exitAnswer = document.querySelectorAll(".exitAnswer")
@@ -27,15 +28,15 @@ let questionListInner = document.querySelectorAll(".questionListInner")
 
 
 
-
-
 questions.forEach((item, index)=>{
     item.addEventListener("click", ()=>{
+        answerContainer.style.display = "flex";
         if (index == 0){
             answers.forEach((ans, number)=>{
                 if (number == 0){
                     ans.style.display = "block";
-                    questionList.style.display = "none";
+                    // answerContainer.style.display = "none";
+                    // questionList.style.display = "none";
 
                 }
             })
@@ -45,7 +46,7 @@ questions.forEach((item, index)=>{
             answers.forEach((ans, number)=>{
                 if (number == 1){
                     ans.style.display = "block";
-                    questionList.style.display = "none";
+                    // questionList.style.display = "none";
                 }
             })
         }
@@ -54,7 +55,7 @@ questions.forEach((item, index)=>{
             answers.forEach((ans, number)=>{
                 if (number == 2){
                     ans.style.display = "block";
-                    questionList.style.display = "none";
+                    // questionList.style.display = "none";
                 }
             })
         }
@@ -68,7 +69,8 @@ exitAnswer.forEach((icon)=>{
         answers.forEach((ans)=>{
             ans.style.display = "none";
             questionList.style.display = "block";
-            questionList.childNodes[1].style.marginTop = "230px";
+            answerContainer.style.display = "none";
+            // questionList.childNodes[1].style.marginTop = "230px";
         }) 
     })
 })
@@ -113,7 +115,6 @@ function removeOtherBackground(){
             thisItem.classList.remove("clicked")
         }
     })
-    console.log("i have been reached")
 }
 
 

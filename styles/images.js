@@ -18,24 +18,43 @@ imges.forEach((image)=>{
 
 // session image toggle 
 
-let imageCheckbox = document.querySelector(".imageCheckbox")
-let activeSessionImg = document.querySelector(".activeSessionImg")
-let activeImg = document.querySelector(".activeImg")
+let imageCheckbox = document.querySelectorAll(".imageCheckbox")
+let activeSessionImg = document.querySelectorAll(".activeSessionImg")
+let activeImg = document.querySelectorAll(".activeImg")
 
 
-activeImg.style.display = "none";
-
-imageCheckbox.addEventListener("click", ()=>{
-    console.log(imageCheckbox)
-    if(imageCheckbox.value=="off"){
-        activeImg.style.display = "block";
-        imageCheckbox.value = "on"
-        // activeSessionImg.nextElementSibling.style.height = "300px"
-        
-    }else if(imageCheckbox.value=="on"){
-        imageCheckbox.value = "off"
-        activeImg.style.display = "none";
-    }
+activeImg.forEach((image)=>{
+    image.style.display = "none";
 })
+
+imageCheckbox.forEach((check)=>{
+    check.addEventListener("click", ()=>{
+
+        if(check.value=="off"){
+            activeImg.forEach((image)=>{
+                image.style.display = "block";
+                check.value = "on"
+            })
+        }else{
+            activeImg.forEach((image)=>{
+                image.style.display = "none";
+                check.value = "off"
+            })
+        }
+            
+    })
+})
+
+// imageCheckbox.addEventListener("click", ()=>{
+//     if(imageCheckbox.value=="off"){
+//         activeImg.style.display = "block";
+//         imageCheckbox.value = "on"
+//         // activeSessionImg.nextElementSibling.style.height = "300px"
+        
+//     }else if(imageCheckbox.value=="on"){
+//         imageCheckbox.value = "off"
+//         activeImg.style.display = "none";
+//     }
+// })
 
 
