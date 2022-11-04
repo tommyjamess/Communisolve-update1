@@ -45,6 +45,9 @@ a:hover{
     flex-direction: column;
     grid-row-gap: 10px;
 }
+.option-btns-inner * + *{
+    margin-top: 10px;
+}
 
 .option-btns button{
     background-color: transparent;
@@ -59,4 +62,71 @@ a:hover{
 .option-btns button:hover{
     background-color: var(--color-brandcolor);
     color: white;
+}
+
+
+
+.optionChoice{
+    position: absolute;
+    left: 0;
+    /* transform: translateY(-110%); */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+
+    display: none;
+}
+.optionChoiceInner{
+    min-width: 35.5%;
+    margin-right: 10px;
+    border: 1px solid var(--line-color);
+    background-color: var(--color-white);
+    padding-inline: 20px;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0px 2px 5px 0px rgb(128, 128, 128, 0.5);
+}
+@media (max-width:1270px){
+    .optionChoiceInner{
+        min-width: 54%;
+       
+    }
+}
+@media (max-width:900px){
+    .optionChoiceInner{
+        min-width: 79%;
+       margin-right: -3px;
+    }
+}
+@media (max-width:600px){
+    .optionChoiceInner{
+        min-width: 100%;
+        margin-right: 1px;
+    }
+}
+.optionChoiceInner p{
+    margin-block: 20px;
+}
+.optionChoiceInner textarea{
+    height: 55px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid var(--line-color);
+    border-radius: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+.optionChoiceInner textarea:focus{
+    outline: none;
+}
+.optionForm{
+    display: flex;
+    grid-column-gap: 20px;
+}
+.optionForm form{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.optionForm button{
+    text-align: center;
 }
