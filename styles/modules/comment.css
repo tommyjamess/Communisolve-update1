@@ -145,7 +145,7 @@
 .thread-list{
     overflow-y: auto;
     
-    max-height: 90%;
+    max-height: 88%;
 }
 .thread-list::-webkit-scrollbar{
     display: none;
