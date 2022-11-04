@@ -144,11 +144,8 @@
 }
 .thread-list{
     overflow-y: auto;
-    /* max-height: 550px; */
     
-    max-height: 85%;
-    /* padding-bottom: 80px; */
-    border: 1px solid goldenrod;
+    max-height: 90%;
 }
 .thread-list::-webkit-scrollbar{
     display: none;
@@ -178,7 +175,6 @@
     grid-column-gap: 10px;
     background-color: var(--color-white);
     z-index: 3000;
-    border: 1px solid red;
 }
 
 .thread-comment textarea{
