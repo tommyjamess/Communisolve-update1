@@ -145,8 +145,9 @@
 .thread-list{
     overflow-y: auto;
     max-height: 550px;
+    
     /* max-height: 100%; */
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     border: 1px solid goldenrod;
 }
 .thread-list::-webkit-scrollbar{
