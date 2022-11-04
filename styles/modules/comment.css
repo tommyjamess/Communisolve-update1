@@ -46,6 +46,7 @@
 /* session comments  */
 .commentObject{
     margin-bottom: 10px;
+    padding-inline: 20px;
 }
 .commentLevelTwo{
     margin-left: auto;
@@ -142,8 +143,6 @@
     cursor: pointer;
 }
 .thread-list{
-    padding-inline: 20px;
-
     overflow-y: auto;
     max-height: 550px;
 }
