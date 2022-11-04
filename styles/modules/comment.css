@@ -171,6 +171,7 @@
     grid-column-gap: 10px;
     background-color: var(--color-white);
     z-index: 3000;
+    border: 1px solid red;
 }
 
 .thread-comment textarea{
