@@ -145,6 +145,7 @@
     overflow-y: auto;
     max-height: 550px;
     padding-bottom: 80px;
+    border: 1px solid goldenrod;
 }
 .thread-list::-webkit-scrollbar{
     display: none;
