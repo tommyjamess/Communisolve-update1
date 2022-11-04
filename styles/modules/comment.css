@@ -118,9 +118,9 @@
         max-width:28.5rem ;
     }
 }
+
 .thread-inner{
-    max-height: 84%;
-    overflow-y: hidden;
+    border: 1px solid black;
 }
 
 
