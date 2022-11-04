@@ -119,7 +119,7 @@
     }
 }
 .thread-inner{
-    height: 84%;
+    max-height: 84%;
     overflow-y: hidden;
 }
 

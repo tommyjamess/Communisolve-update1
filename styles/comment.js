@@ -67,7 +67,7 @@ commentInput.forEach((item)=>{
 
 function commentBoxUp(){
     commentInput.forEach((item)=>{
-        item.parentElement.style.transform = "translateY(-60%)"
+        item.parentElement.style.transform = "translateY(-40%)"
     })
 }
 
