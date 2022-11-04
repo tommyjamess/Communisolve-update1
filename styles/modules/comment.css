@@ -119,8 +119,8 @@
     }
 }
 .thread-inner{
-    min-height: 84%;
-    max-height: 84%;
+    /* min-height: 84%;
+    max-height: 84%; */
     overflow-y: hidden;
 }
 
@@ -173,11 +173,7 @@
     background-color: var(--color-white);
     z-index: 3000;
 }
-@media (max-width:900px){
-    .thread-comment{
-        
-    }
-}
+
 .thread-comment textarea{
     width: 100%;
     max-width: 100%;
