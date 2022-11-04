@@ -1,6 +1,11 @@
 let commentBtn = document.querySelectorAll("#commentBtn")
 let commentPage = document.querySelectorAll(".comment-page")
 let closeThread = document.querySelectorAll(".close-thread")
+let thread = document.querySelectorAll(".thread-outer")
+
+thread.forEach((item)=>{
+    item.style.display = "none";
+})
 
 
 commentBtn.forEach((btn)=>{
@@ -15,17 +20,19 @@ commentBtn.forEach((btn)=>{
 })
 
 
+
 closeThread.forEach((close)=>{
     close.addEventListener("click", ()=>{
-        close.parentElement.parentElement.parentElement.parentElement.style.display = "none"
+        close.parentElement.parentElement.parentElement.style.display = "none"
     })
 })
+
+
+
 
 // open sub comments 
 let openSubComment = document.querySelectorAll(".openSubComment")
 let subCommentContent = document.querySelectorAll(".subComments")
-
-
 
 
 subCommentContent.forEach((comment)=>{
