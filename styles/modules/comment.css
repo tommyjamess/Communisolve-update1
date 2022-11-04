@@ -119,8 +119,7 @@
     }
 }
 .thread-inner{
-    /* min-height: 84%;
-    max-height: 84%; */
+    height: 84%;
     overflow-y: hidden;
 }
 
