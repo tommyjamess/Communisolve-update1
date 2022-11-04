@@ -89,7 +89,10 @@
     display: none;
 }
 
-
+.thread-inner{
+    /* max-height: 85%; */
+    max-height: 85%;
+}
 .thread{
     background-color: var(--color-white);
     flex-basis: 35.4%;
