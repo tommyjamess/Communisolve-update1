@@ -121,7 +121,7 @@
 
 
 .userActionInner i{
-    font-size: 20px;
+    font-size: 13px;
     color: var(--color-grey);
     margin-right: 20px;
 }
@@ -139,4 +139,5 @@
 }
 .userActionInner p{
     color: black;
+    font-size: 12px;
 }

@@ -56,8 +56,13 @@
     width: 40px;
 }
 
-
-.hiddenMenuOuter .userActionInner{
-   padding-top: 60px;
+.hiddenMenuOuter .userActionOuter{
+    height: 100%;
+    padding-block: 30px;
 }
-
+.hiddenMenuOuter .userActionInner{
+    padding-top: 0px;
+}
+.hiddenMenuOuter .userActionInner a{
+    padding-inline: 0px;
+}
