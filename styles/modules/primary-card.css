@@ -5,8 +5,11 @@
 
 .profile-filter,
 .filter{
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     z-index: 100;
+}
+.filter-outer{
+    margin-bottom: -6px;
 }
 
 .card-filter-bottom--padding{
@@ -70,7 +73,8 @@
 .username-elipsis{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    line-height: 15px;
 }
 .username-time{
     width: 100%;
@@ -82,12 +86,13 @@
 
 .specialization{
     color: #858585;
+    /* border: 1px solid black; */
+    height: fit-content;
 }
 @media (max-width:700px){
     .specialization{
-        max-width:230px ;
-        border: 1px solid white;
-        line-height: 15px;
+        max-width:42% ;
+        /* line-height: 15px; */
     }
 }
 
@@ -138,12 +143,16 @@
 
 .session-title{
     display: flex;
+    padding-inline: 10px;
+    margin-top: 10px;
 }
 .session-title p{
-    line-height: 10px;
+    
 }
 .session-description{
     padding-inline: 12px;
+    padding-block: 0px;
+    margin-top: 10px;
 }
 .session-image img{
     padding-block: 10px;
