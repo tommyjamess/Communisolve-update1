@@ -85,7 +85,7 @@
 }
 @media (max-width:700px){
     .specialization{
-        max-width:250px ;
+        max-width:230px ;
         border: 1px solid white;
         line-height: 15px;
     }
