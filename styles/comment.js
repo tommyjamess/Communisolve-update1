@@ -56,14 +56,14 @@ commentInput.forEach((item)=>{
 })
 
 
-function commentBoxUp(){
-    commentInput.forEach((item)=>{
-        item.parentElement.style.transform = "translateY(-70%)"
-    })
-}
+// function commentBoxUp(){
+//     commentInput.forEach((item)=>{
+//         item.parentElement.style.transform = "translateY(-70%)"
+//     })
+// }
 
-function commentBoxDown(){
-    commentInput.forEach((item)=>{
-        item.parentElement.style.transform = "translateY(0%)"
-    })
-}
+// function commentBoxDown(){
+//     commentInput.forEach((item)=>{
+//         item.parentElement.style.transform = "translateY(0%)"
+//     })
+// }
