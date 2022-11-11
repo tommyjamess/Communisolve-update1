@@ -13,7 +13,6 @@
     margin-bottom: 0px;
 }
 .activeSessionImg{
-    /* position: absolute; */
     left: 0;
     display: flex;
     justify-content: center;
@@ -44,6 +43,10 @@
         margin-right: 0px;
         margin-left: 2px;
     }
+}
+.questionAnswerOuter{
+    border: 1px solid black;
+    height: 100%;
 }
 
 .questionAnswer{
@@ -213,7 +216,6 @@
 
 .questionListInner{
     height: fit-content;
-    /* margin-top: auto; */
 }
 .questionsList * + *{
     margin-top: 10px;
