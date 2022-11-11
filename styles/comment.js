@@ -1,11 +1,10 @@
 let commentBtn = document.querySelectorAll("#commentBtn")
 let commentPage = document.querySelectorAll(".comment-page")
 let closeThread = document.querySelectorAll(".close-thread")
-let thread = document.querySelectorAll(".thread-outer")
 
-thread.forEach((item)=>{
-    item.style.display = "none";
-})
+// thread.forEach((item)=>{
+//     item.style.display = "none";
+// })
 
 
 commentBtn.forEach((btn)=>{
@@ -16,14 +15,6 @@ commentBtn.forEach((btn)=>{
         }else{
             btn.parentElement.nextElementSibling.style.display = "none"
         }
-    })
-})
-
-
-
-closeThread.forEach((close)=>{
-    close.addEventListener("click", ()=>{
-        close.parentElement.parentElement.parentElement.style.display = "none"
     })
 })
 

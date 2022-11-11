@@ -3,6 +3,7 @@
 }
 
 
+.fix-comment-header,
 .profile-filter,
 .filter{
     /* margin-bottom: 12px; */
@@ -220,19 +221,20 @@
     display: flex;
     justify-content: space-between;
     padding-block: 10px;
-    padding-inline: 25px;
-    border-top: 1px solid var(--line-color);
-    
+    padding-inline: 20px;
+    border-top: 1px solid var(--line-color); 
+}
+.session-reactions p{
+    font-size: 10px;
 }
 @media (max-width:900px){
     .session-reactions{
-        padding-inline: 20px;
+        /* padding-inline: 20px; */
     }
 }
 .session-reactions i{
     font-size: 18px;
     color: var(--color-grey);
-    margin-right: 5px;
     margin-left: 5px;
 }
 
@@ -241,25 +243,33 @@
     background-color: transparent;
     border: none;
     align-items: center;
+    justify-content: center;
 }
+
 .session-reactions i:hover{
     color: var(--color-brandcolor);
+}
+
+.reaction-counts{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    margin-bottom: 10px;
+}
+.likeCount p,
+.shareCount p,
+.commentCount p{
+    font-size: 10px;
+    color: var(--color-grey);
+}
+.reaction-counts span{
+    margin-right: 2px;
+    font-size: 12px;
 }
 
 
 .filteredContent{
     display: none;
-}
-
-
-
-@media (max-width:900px){
-    .session-reactions .font-size-12{
-        font-size: 10px;
-    }
-    .session-reactions .font-size-14{
-        font-size: 12px;
-    }
 }
 
 
