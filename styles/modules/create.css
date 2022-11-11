@@ -217,8 +217,6 @@ input[type="file"]::file-selector-button {
     padding-block: 20px;
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
-    /* margin-bottom: 100px; */
-    /* transform: translateY(20%); */
 }
 
 .singleBtn{

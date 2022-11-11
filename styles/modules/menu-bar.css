@@ -46,19 +46,24 @@
     text-align: none;
     color: black;
 }
-.bottom-menu div{
-    padding-block: 5px;
-    padding-inline: 7px;
+.bottom-menu i{
+    /* padding-block: 5px; */
+    padding-inline: 5px;
     border-radius: 50%;
 }
-.bottom-menu div:hover{
+.bottom-menu i:hover{
     background-color: #d9d9d9;
     color: var(--color-brandcolor);
 }
 .bottom-menu i{
     font-size: 24px;
 }
-
+.bottom-menu div{
+    text-align: center;
+}
+.bottom-menu p{
+    font-size: 10px;
+}
 
 
 @media (min-width:1274px){
