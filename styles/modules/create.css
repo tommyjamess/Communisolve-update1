@@ -62,9 +62,8 @@ input[type="file"]::file-selector-button {
 .exitCreatePoll,
 .exitCreateBrainstorm,
 .exitCreateAsk{
-    position: absolute;
-    left: 90%;
-    top: 3%;
+    transform: translateY(-250%);
+    float: right;
     color: var(--color-grey);
 }
 
@@ -207,8 +206,8 @@ input[type="file"]::file-selector-button {
     min-height: 100%;
     z-index: 300;
     background-color: var(--color-pop-background);
-    overflow-y: auto;
-    padding-block: 80px;
+    /* overflow-y: auto; */
+    /* padding-block: 80px; */
 }
 .create-session-inner{
     border: 1px solid white;
@@ -218,8 +217,8 @@ input[type="file"]::file-selector-button {
     padding-block: 20px;
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
-    margin-bottom: 100px;
-    transform: translateY(20%);
+    /* margin-bottom: 100px; */
+    /* transform: translateY(20%); */
 }
 
 .singleBtn{
