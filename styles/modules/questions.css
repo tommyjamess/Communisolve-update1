@@ -3,9 +3,9 @@
     position: fixed;
     width: 100%;
 }
+
 .mainSessionCard{
-    display: flex;
-    flex-direction: column;
+    /* height: 50rem; */
 }
 .activeSession{
     border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
@@ -21,7 +21,6 @@
 }
 .activeSessionImg img{
     max-width: 100%;
-    /* margin-right: 12px; */
     border-radius: var(--card-border-radius);
     box-shadow: 2px 3px 2px 2px rgb(128, 128, 128, 0.4);
 }
@@ -45,8 +44,7 @@
     }
 }
 .questionAnswerOuter{
-    border: 1px solid black;
-    height: 100%;
+    
 }
 
 .questionAnswer{
@@ -55,14 +53,15 @@
     padding-block: 10px;
     border-radius: var(--card-border-radius);
     background-color: rgb(112, 12, 179, 0.2);
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 490px;
+    max-height: 490px;
     overflow-y: hidden;
+    /* height: 200%; */
 }
 .questionAnswerInner{
-    height: fit-content;
     max-height: 450px;
     overflow-y: auto;
+    padding-bottom: 20px;
 }
 .questionAnswerInner::-webkit-scrollbar{
     display: none;
@@ -72,25 +71,25 @@
     scrollbar-width: none;  /* Firefox */
 }
 
-@media (max-width:1270px){
+/* @media (max-width:1270px){
     .questionAnswer{
         width: 96.7%;
     }
-}
-@media (max-width:600px){
+} */
+/* @media (max-width:600px){
     .questionAnswer{
         width: 96%;
         min-height: 200px;
         max-height: 480px;
     }
-}
-@media (max-width:500px){
+} */
+/* @media (max-width:500px){
     .questionAnswer{
         width: 95%;
         min-height: 200px;
         max-height: 480px;
     }
-}
+} */
 
 .questionAnswer::-webkit-scrollbar{
     display: none;
@@ -247,7 +246,6 @@
 }
 .answersToQuestions{
     flex-basis: 35.6%;
-    /* min-height: 39rem; */
     height: 72%;
     margin-top: 109px;
     margin-right: 10px;
@@ -268,14 +266,9 @@
 @media (max-width:1270px){
     .answersToQuestions{
         flex-basis: 54.5%;
-        /* margin-right: 12px; */
     }
 }
-@media (min-width:1559px) and (max-width:10000px){
-    .create-session-inner{
-        max-width:28.5rem ;
-    }
-}
+
 .answerList{
     display: none;
     background-color: var(--color-white);

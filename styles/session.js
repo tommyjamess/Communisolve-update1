@@ -1,20 +1,8 @@
 // session  and feedback 
 
 let displaySession = document.querySelector(".displaySession")
-// let displayFeedback = document.querySelector(".displayFeedback")
 
 let questionPage = document.querySelector(".questionAnswerOuter")
-// let feedbackPage = document.querySelector(".feedbackOuter")
-
-// displayFeedback.addEventListener("click", ()=>{
-//     questionPage.style.display = "none";
-//     feedbackPage.style.display = "block";
-// })
-
-// displaySession.addEventListener("click", ()=>{
-//     questionPage.style.display = "block";
-//     feedbackPage.style.display = "none";
-// })
 
 
 // questions and answers 
@@ -35,9 +23,6 @@ questions.forEach((item, index)=>{
             answers.forEach((ans, number)=>{
                 if (number == 0){
                     ans.style.display = "block";
-                    // answerContainer.style.display = "none";
-                    // questionList.style.display = "none";
-
                 }
             })
         }
@@ -46,7 +31,6 @@ questions.forEach((item, index)=>{
             answers.forEach((ans, number)=>{
                 if (number == 1){
                     ans.style.display = "block";
-                    // questionList.style.display = "none";
                 }
             })
         }
@@ -55,7 +39,6 @@ questions.forEach((item, index)=>{
             answers.forEach((ans, number)=>{
                 if (number == 2){
                     ans.style.display = "block";
-                    // questionList.style.display = "none";
                 }
             })
         }
@@ -70,7 +53,6 @@ exitAnswer.forEach((icon)=>{
             ans.style.display = "none";
             questionList.style.display = "block";
             answerContainer.style.display = "none";
-            // questionList.childNodes[1].style.marginTop = "230px";
         }) 
     })
 })
@@ -78,20 +60,20 @@ exitAnswer.forEach((icon)=>{
 
 // reduce chatbox on keyboard use
 
-let chatInput = document.querySelector(".answerInput")
-let chatBox = document.querySelector(".questionAnswer")
+// let chatInput = document.querySelector(".answerInput")
+// let chatBox = document.querySelector(".questionAnswer")
 
 
 
-chatInput.addEventListener("focus", ()=>{
-    chatBox.style.maxHeight = "200px"
-    chatBox.style.transition = "0.5s"
-})
-chatInput.addEventListener("focusout", (e)=>{
-    chatBox.style.maxHeight = "480px"
+// chatInput.addEventListener("focus", ()=>{
+//     chatBox.style.maxHeight = "200px"
+//     chatBox.style.transition = "0.5s"
+// })
+// chatInput.addEventListener("focusout", (e)=>{
+//     chatBox.style.maxHeight = "480px"
 
-    e.preventDefault()
-})
+//     e.preventDefault()
+// })
 
 
 
