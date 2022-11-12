@@ -48,6 +48,11 @@
     margin-bottom: 10px;
     padding-inline: 15px;
 }
+@media (max-width:900px){
+    .commentObject{
+        padding-inline: 12px;
+    }
+}
 .commentLevelTwo{
     margin-left: auto;
     max-width: 91%;
@@ -157,7 +162,6 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    /* z-index: 3000; */
 }
 .thread-comment-inner{
     display: flex;
@@ -170,18 +174,20 @@
     grid-column-gap: 10px;
     background-color: var(--color-white);
     width: 35.5%;
-    margin-right: 12px;
+    /* margin-right: 12px; */
 }
 @media (max-width:600px){
     .thread-comment{
         min-width: 100%;
         margin-right: 0px;
+        margin-left: 12px;
     }
 }
 @media (min-width:599px) and (max-width:900px){
     .thread-comment{
         min-width: 80%;
-        margin-left: 15px;
+        margin-left: 17px;
+        
     }
 }
 @media (max-width:1270px){
