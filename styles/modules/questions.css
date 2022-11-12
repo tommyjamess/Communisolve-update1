@@ -53,7 +53,6 @@
     padding-block: 10px;
     border-radius: var(--card-border-radius);
     background-color: rgb(112, 12, 179, 0.2);
-    /* min-height: 490px; */
     max-height: 490px;
     overflow-y: hidden;
 }

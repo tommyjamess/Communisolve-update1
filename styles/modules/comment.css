@@ -46,7 +46,7 @@
 /* session comments  */
 .commentObject{
     margin-bottom: 10px;
-    padding-inline: 20px;
+    padding-inline: 15px;
 }
 .commentLevelTwo{
     margin-left: auto;
@@ -165,7 +165,7 @@
 }
 .thread-comment{
     padding-block: 10px;
-    padding-inline: 20px;
+    padding-inline: 10px;
     display: flex;
     grid-column-gap: 10px;
     background-color: var(--color-white);
@@ -211,8 +211,8 @@
     outline: none;
 }
 .thread-comment img{
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 40px;
+    max-height: 40px;
 }
 .thread-comment button{
     max-height: 40px;
