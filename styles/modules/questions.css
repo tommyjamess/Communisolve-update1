@@ -1,7 +1,11 @@
-
+.sessionPage{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-background);
+    height: 100vh;
+}
 .sessionPageInner{
-    margin-bottom:-80px;
-    padding-bottom: 50px;
+    width: 36%;
 }
 .session-header-page{
     height: 30px;
