@@ -45,7 +45,6 @@ html, body{
 
 .questionAnswerOuter{
     height: 100%;
-    /* margin-top: 10px; */
 }
 .questionAnswer{
     height: 100%;
@@ -81,14 +80,14 @@ html, body{
     .activeSessionImg img{
         max-width: 100%;
         margin-right: 0px;
-        margin-left: 2px;
+        /* margin-left: 2px; */
     }
 }
 @media (max-width:600px){
     .activeSessionImg img{
         max-width: 100%;
         margin-right: 0px;
-        margin-left: 2px;
+        /* margin-left: 2px; */
     }
 }
 
