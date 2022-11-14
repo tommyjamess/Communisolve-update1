@@ -8,7 +8,6 @@ html, body{
     justify-content: center;
     background-color: var(--color-background);
     min-height: 100%;
-    background-color: red;
 }
 .sessionPageInner{
     width: 36%;
@@ -47,10 +46,16 @@ html, body{
     height: 100%;
 }
 .questionAnswer{
-    height: 100%;
+    max-height: 570px;
     background-color: rgb(112, 12, 179, 0.2);
+    overflow-y: auto;
 }
-
+.QAImage{
+    background-color: var(--color-white);
+}
+.QAImage .activeImg{
+    margin-block: 10px;
+}
 
 
 
@@ -91,12 +96,10 @@ html, body{
 }
 
 
-
 .questionAnswerInner{
-    max-height:550px;
+    max-height:570px;
     overflow-y: auto;
     padding-bottom: 20px;
-    margin-top: 10px;
 }
 .questionAnswerInner::-webkit-scrollbar{
     display: none;
@@ -104,6 +107,9 @@ html, body{
 .questionAnswerInner{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+.QAContainer{
+    max-height: 200px!important;
 }
 
 

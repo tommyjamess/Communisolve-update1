@@ -21,6 +21,7 @@ imges.forEach((image)=>{
 let imageCheckbox = document.querySelectorAll(".imageCheckbox")
 let activeSessionImg = document.querySelectorAll(".activeSessionImg")
 let activeImg = document.querySelectorAll(".activeImg")
+let questionAnswerInner = document.querySelector(".questionAnswerInner")
 
 
 activeImg.forEach((image)=>{
@@ -34,11 +35,13 @@ imageCheckbox.forEach((check)=>{
             activeImg.forEach((image)=>{
                 image.style.display = "block";
                 check.value = "on"
+                questionAnswerInner.classList.add("QAContainer")
             })
         }else{
             activeImg.forEach((image)=>{
                 image.style.display = "none";
                 check.value = "off"
+                questionAnswerInner.classList.remove("QAContainer")
             })
         }
             
