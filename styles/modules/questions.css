@@ -87,24 +87,16 @@ html, body{
     .activeSessionImg img{
         max-width: 100%;
         margin-right: 0px;
-        /* margin-left: 2px; */
     }
 }
 
 
-/* .questionAnswer{
-    border: 1px solid var(--line-color);
-    margin: 10px 10px;
-    padding-block: 10px;
-    border-radius: var(--card-border-radius);
-    background-color: rgb(112, 12, 179, 0.2);
-    overflow-y: hidden;
-    min-height: 100%;
-} */
+
 .questionAnswerInner{
-    max-height: 450px;
+    max-height:550px;
     overflow-y: auto;
     padding-bottom: 20px;
+    margin-top: 10px;
 }
 .questionAnswerInner::-webkit-scrollbar{
     display: none;
