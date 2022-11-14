@@ -1,11 +1,18 @@
+html, body{
+    min-height: 100% !important;
+    height: 100%;
+}
+
 .sessionPage{
     display: flex;
     justify-content: center;
     background-color: var(--color-background);
-    height: 100vh;
+    min-height: 100%;
+    background-color: red;
 }
 .sessionPageInner{
     width: 36%;
+    min-height: 100%;
 }
 @media (max-width:600px){
     .sessionPageInner{
@@ -28,12 +35,17 @@
     }
 }
 
+.sessionContentContainer{
+    height: 94%;
+}
+
+.questionAnswerCard{
+    height: 94%;
+}
 
 .questionAnswerOuter{
-    height: 85vh;
-    min-height: 100%;
-    border: 1px solid black;
-    margin-top: 10px;
+    height: 100%;
+    /* margin-top: 10px; */
 }
 .questionAnswer{
     min-height: 100%;
@@ -168,13 +180,12 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-inline: 10px;
-    padding-block: 8px;
 }
 .enterAnswerInner{
     display: flex;
     width: 36%;
     background-color: var(--color-white);
+    padding: 8px;
 }
 
 .enterAnswer{
