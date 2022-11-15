@@ -1,23 +1,40 @@
-let imges = document.querySelectorAll('.viewImage');
+let sessionVisual = document.querySelectorAll(".sessionVisual")
 
-imges.forEach((image)=>{
-    image.addEventListener("click", (e)=>{
-        if(image.classList.contains("viewImageStyle")){
-            image.classList.remove("viewImageStyle")
-            image.children[0].classList.remove("eachImage")
-        }else{
-            image.classList.add("viewImageStyle")
-            image.children[0].classList.add("eachImage")
-        }
-        e.preventDefault()
-        
+sessionVisual.forEach((item) => {
+    item.addEventListener("click", () => {
+        item.nextElementSibling.style.display = "flex"
     })
 })
 
+let popImages = document.querySelectorAll(".popImagesInner")
+
+popImages.forEach((item) => {
+    item.firstElementChild.classList.add("popImg")
+})
+
+var i = 0
+
+function Next(){
+    var popImg = document.querySelectorAll(".popImg")
+    popImg.forEach((item) => {
+        if(item.nextElementSibling){
+            item.classList.remove("popImg")
+            item.nextElementSibling.classList.add("popImg")
+        }
+    })
+}
+function Prev(){
+    var popImg = document.querySelectorAll(".popImg")
+    popImg.forEach((item) => {
+        if(item.previousElementSibling){
+            item.classList.remove("popImg")
+            item.previousElementSibling.classList.add("popImg")
+        }
+    })
+}
 
 
 // session image toggle 
-
 let imageCheckbox = document.querySelectorAll(".imageCheckbox")
 let activeSessionImg = document.querySelectorAll(".activeSessionImg")
 let activeImg = document.querySelectorAll(".activeImg")
@@ -48,16 +65,13 @@ imageCheckbox.forEach((check)=>{
     })
 })
 
-// imageCheckbox.addEventListener("click", ()=>{
-//     if(imageCheckbox.value=="off"){
-//         activeImg.style.display = "block";
-//         imageCheckbox.value = "on"
-//         // activeSessionImg.nextElementSibling.style.height = "300px"
-        
-//     }else if(imageCheckbox.value=="on"){
-//         imageCheckbox.value = "off"
-//         activeImg.style.display = "none";
-//     }
-// })
 
+// exit pop images 
+let exitPopImages = document.querySelectorAll(".exitPopImages")
+
+exitPopImages.forEach((item) => {
+    item.addEventListener("click", () => {
+        item.parentElement.style.display = "none"
+    })
+})
 
