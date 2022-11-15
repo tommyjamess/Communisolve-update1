@@ -42,7 +42,7 @@ function scrollFunction(){
             sessionFilterOuter.classList.remove("card-profileFilter-fix")
         }
     }else{
-        if (window.pageYOffset >= (fixSessionFilter + 19)){
+        if (window.pageYOffset >= (fixSessionFilter + 28)){
             sessionFilter.classList.add("card-filter-stick")
             sessionFilterOuter.classList.add("card-filterfix")
         }else{

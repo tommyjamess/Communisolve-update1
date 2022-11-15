@@ -275,23 +275,23 @@
 
 .card-filter-stick{
     position:fixed;
-    width: 35.5%;
+    width: 35.4%;
 
-    transform: translateY(-72.8%);
+    transform: translateY(-76%);
 }
 .profile-filter-stick{
     position: fixed;
-    width: 35.5%;
-    transform: translateY(-87.8%);
+    width: 35.4%;
+    transform: translateY(-88%);
 }
 
 
 @media (min-width:600px) and (max-width:899px){
     .card-filter-stick{
-        max-width: 80%;
+        max-width: 79.5%;
     }
     .profile-filter-stick{
-        max-width: 80%;
+        max-width: 79.5%;
     }
     
     .main{
@@ -301,10 +301,10 @@
 
 @media (max-width:900px){
     .card-filter-stick{
-        width: 100%;
+        width: 99.4%;
     }
     .profile-filter-stick{
-        width: 100%;
+        width: 99.4%;
     }
 }
 
@@ -329,7 +329,7 @@
     margin-bottom: 115px;
 }
 .card-profileFilter-fix{
-    margin-bottom: 237px;
+    margin-bottom: 227px;
 }
 
 
