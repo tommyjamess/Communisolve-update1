@@ -59,8 +59,6 @@ exitAnswer.forEach((icon)=>{
 
 
 
-
-
 // pick answers chosen 
 let answerItem = document.querySelectorAll(".answers")
 
@@ -80,5 +78,3 @@ function removeOtherBackground(){
         }
     })
 }
-
-
