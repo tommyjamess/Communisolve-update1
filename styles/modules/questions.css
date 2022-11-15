@@ -1,7 +1,7 @@
-html, body{
+/* html, body{
     height: 100% !important;
     height: 100%;
-}
+} */
 
 .sessionPage{
     position: absolute;
@@ -43,6 +43,7 @@ html, body{
 
 .questionAnswerCard{
     max-height: 100%;
+    margin-top: 5px;
 }
 
 .questionAnswerOuter{
@@ -255,14 +256,21 @@ html, body{
 .feedback-guide{
     color: var(--color-brandcolor);
     padding-inline: 30px;
+    border-top: 1px solid var(--line-color);
+    margin-top: 5px;
 }
-
+.feedbackOuter{
+    height: 94vh;
+}
+.questionsListOuter{
+    height: 100%;
+}
 .questionsList{
     background-color: rgb(112, 12, 179, 0.2);
     padding-inline: 20px;
     padding-block: 20px;
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 87vh;
+    max-height: 87vh;
     overflow-y: auto;
     
     display: flex;
@@ -274,8 +282,17 @@ html, body{
 
 
 .questionListInner{
-    height: fit-content;
+    max-height: 87vh;
+    overflow-y: auto;
 }
+.questionListInner::-webkit-scrollbar{
+    display: none;
+}
+.questionListInner{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 .questionsList * + *{
     margin-top: 10px;
 }
