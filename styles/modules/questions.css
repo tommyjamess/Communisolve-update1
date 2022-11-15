@@ -102,7 +102,7 @@ html, body{
 .questionAnswerInner{
     max-height:100%;
     overflow-y: auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     border: 1px solid red;
 }
 .questionAnswerInner::-webkit-scrollbar{
