@@ -173,7 +173,7 @@
     grid-column-gap: 10px;
     background-color: var(--color-white);
     width: 35.5%;
-    /* margin-right: 12px; */
+    margin-right: 12px;
 }
 @media (max-width:600px){
     .thread-comment{
