@@ -112,7 +112,7 @@ html, body{
     scrollbar-width: none;  /* Firefox */
 }
 .QAContainer{
-    max-height: 60%;
+    max-height: 50vh;
 }
 
 
