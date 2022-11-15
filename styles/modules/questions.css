@@ -4,14 +4,17 @@ html, body{
 }
 
 .sessionPage{
+    position: absolute;
     display: flex;
     justify-content: center;
     background-color: var(--color-background);
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .sessionPageInner{
     width: 36%;
-    max-height: 100%;
+    height: 100%;
+    
 }
 @media (max-width:600px){
     .sessionPageInner{
@@ -35,18 +38,18 @@ html, body{
 }
 
 .sessionContentContainer{
-    height: 94%;
+    max-height: 100%;
 }
 
 .questionAnswerCard{
-    height: 94%;
+    max-height: 100%;
 }
 
 .questionAnswerOuter{
     height: 100%;
 }
 .questionAnswer{
-    max-height: 570px;
+    max-height: 92vh;
     background-color: rgb(112, 12, 179, 0.2);
     overflow-y: auto;
 }
@@ -97,9 +100,10 @@ html, body{
 
 
 .questionAnswerInner{
-    max-height:570px;
+    max-height:100%;
     overflow-y: auto;
     padding-bottom: 20px;
+    border: 1px solid red;
 }
 .questionAnswerInner::-webkit-scrollbar{
     display: none;
