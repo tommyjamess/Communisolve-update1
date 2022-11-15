@@ -12,20 +12,7 @@
         max-width: 100%;
     }
 }
-.viewImageStyle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    position: fixed;
-    left: 0;
-    top: 0;
 
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0, 0, 0, 0.6);
-    
-}
 
 
 .popImages{
