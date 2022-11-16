@@ -1,10 +1,7 @@
-/* html, body{
-    height: 100% !important;
-    height: 100%;
-} */
+
 
 .sessionPage{
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     background-color: var(--color-background);
