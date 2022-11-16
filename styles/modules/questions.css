@@ -76,6 +76,7 @@
     border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 .QAImage{
     background-color: var(--color-white);
@@ -284,18 +285,26 @@
     margin-top: 5px;
 }
 .feedbackOuter{
-    height: 94vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.feedback{
+    flex-basis: 100%;
+    margin-top: 42px;
 }
 .questionsListOuter{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .questionsList{
     background-color: rgb(112, 12, 179, 0.2);
     padding-inline: 20px;
-    padding-block: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px;
     min-height: 87vh;
     max-height: 87vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     
     display: flex;
     flex-direction: column;
@@ -306,7 +315,6 @@
 
 
 .questionListInner{
-    max-height: 87vh;
     overflow-y: auto;
 }
 .questionListInner::-webkit-scrollbar{
