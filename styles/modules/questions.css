@@ -137,7 +137,6 @@
     scrollbar-width: none;  /* Firefox */
 }
 .QAContainer{
-    /* max-height: 50vh; */
     flex-basis: 100%;
 }
 
@@ -225,19 +224,16 @@
 @media (max-width:600px){
     .enterAnswerInner{
         min-width: 100%;
-        /* margin-left: 15px; */
     }
 }
 @media (min-width:599px) and (max-width:900px){
     .enterAnswerInner{
         min-width: 81.5%;
-        /* margin-left: 15px; */
     }
 }
 @media (max-width:1270px){
     .enterAnswerInner{
         width: 55.5%;
-        /* margin-right: 12px; */
     }
 }
 @media (min-width:1559px) and (max-width:10000px){
@@ -295,8 +291,30 @@
     margin-top: 40px;
 }
 .questionsListOuter{
+    position: fixed;
+    width: 36%;
     display: flex;
     flex-direction: column;
+}
+@media (max-width:600px){
+    .questionsListOuter{
+        min-width: 100%;
+    }
+}
+@media (min-width:599px) and (max-width:900px){
+    .questionsListOuter{
+        min-width: 81.5%;
+    }
+}
+@media (max-width:1270px){
+    .questionsListOuter{
+        width: 55.5%;
+    }
+}
+@media (min-width:1559px) and (max-width:10000px){
+    .enterAnswer{
+        max-width:28.5rem;
+    }
 }
 .questionsList{
     background-color: rgb(112, 12, 179, 0.2);
@@ -305,7 +323,6 @@
     padding-top: 20px;
     min-height: 87vh;
     max-height: 87vh;
-    /* overflow-y: auto; */
     
     display: flex;
     flex-direction: column;
@@ -315,9 +332,11 @@
 }
 
 @keyframes animQuestList {
-    from{transform: translateX(-80px);}
+    from{transform: translateX(-50px);}
     to{transform: translateX(0px);}
 }
+
+
 
 .questionListInner{
     overflow-y: auto;
@@ -363,12 +382,12 @@
 .answersToQuestions{
     width: 36%;
     max-height: 95%;
-    margin-top: 40px;
+    margin-top: 43px;
     background-color: var(--color-white);
 }
 @media (max-width:600px){
     .answersToQuestions{
-        min-width: 99%;
+        min-width: 100%;
         margin-right: 0px;
     }
 }
@@ -390,11 +409,11 @@
     height: 100%;
     padding: 20px;
     animation-name: animAnsList;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
 }
 
 @keyframes animAnsList {
-    from{transform: translateX(80px);}
+    from{transform: translateX(50px);}
     to{transform: translateX(0px);}
 }
 
