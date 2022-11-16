@@ -74,6 +74,8 @@
     background-color: rgb(112, 12, 179, 0.2);
     overflow-y: auto;
     border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
+    display: flex;
+    flex-direction: column;
 }
 .QAImage{
     background-color: var(--color-white);
@@ -134,7 +136,8 @@
     scrollbar-width: none;  /* Firefox */
 }
 .QAContainer{
-    max-height: 50vh;
+    /* max-height: 50vh; */
+    flex-basis: 100%;
 }
 
 
