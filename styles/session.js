@@ -1,13 +1,11 @@
 // session  and feedback 
 
 let displaySession = document.querySelector(".displaySession")
-
 let questionPage = document.querySelector(".questionAnswerOuter")
 
-
 // questions and answers 
-let questions = document.querySelectorAll(".questionItem")
-let answerContainer = document.querySelector(".answersContainer")
+let questionItem = document.querySelectorAll(".questionItem")
+let answersContainer = document.querySelector(".answersContainer")
 let answers = document.querySelectorAll(".answerList")
 let questionList = document.querySelector(".questionsList")
 let exitAnswer = document.querySelectorAll(".exitAnswer")
@@ -16,32 +14,15 @@ let questionListInner = document.querySelectorAll(".questionListInner")
 
 
 
-questions.forEach((item, index)=>{
+questionItem.forEach((item, index)=>{
     item.addEventListener("click", ()=>{
-        answerContainer.style.display = "flex";
-        if (index == 0){
-            answers.forEach((ans, number)=>{
-                if (number == 0){
-                    ans.style.display = "block";
-                }
-            })
-        }
-
-        if (index == 1){
-            answers.forEach((ans, number)=>{
-                if (number == 1){
-                    ans.style.display = "block";
-                }
-            })
-        }
-
-        if (index == 2){
-            answers.forEach((ans, number)=>{
-                if (number == 2){
-                    ans.style.display = "block";
-                }
-            })
-        }
+        answers.forEach((answerItem, answerIndex) => {
+            if(index == answerIndex){
+                questionList.style.display = "none"
+                answerItem.style.display = "block"
+                answersContainer.style.display = "flex";
+            }
+        })
     })
 })
 
@@ -52,7 +33,7 @@ exitAnswer.forEach((icon)=>{
         answers.forEach((ans)=>{
             ans.style.display = "none";
             questionList.style.display = "block";
-            answerContainer.style.display = "none";
+            answersContainer.style.display = "none";
         }) 
     })
 })
