@@ -128,6 +128,7 @@
     max-height:100%;
     overflow-y: auto;
     padding-bottom: 50px;
+    padding-top: 20px;
 }
 .questionAnswerInner::-webkit-scrollbar{
     display: none;
