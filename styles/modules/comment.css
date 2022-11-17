@@ -46,7 +46,7 @@
 /* session comments  */
 .commentObject{
     margin-bottom: 10px;
-    padding-inline: 15px;
+    /* padding-inline: 15px; */
 }
 @media (max-width:900px){
     .commentObject{
@@ -54,9 +54,14 @@
     }
 }
 .commentLevelTwo{
-    margin-left: auto;
-    max-width: 91%;
+    /* margin-left: auto; */
+    /* max-width: 91%; */
 }
+.subComments{
+    max-width: 420px;
+    margin-left: auto;
+}
+
 .commentOwnerLevel .user-comment-avater img,
 .commentLevelTwo .user-comment-avater img{
     max-width: 25px;
@@ -149,6 +154,9 @@
     margin-top: 0px;
     border-bottom: 1px solid var(--line-color);
     margin-bottom: 10px;
+}
+.commentBox{
+    padding-inline: 10px;
 }
 .thread-message{
     font-size: 12px;
