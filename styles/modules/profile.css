@@ -44,6 +44,13 @@
 .profile-title{
     color: var(--color-grey);
 }
+.followers-count{
+    display: flex;
+    grid-column-gap: 30px;
+}
+.followers-count p{
+    color: grey;
+}
 .followBtn{
     margin-top: 10px;
     padding-inline: 20px;
