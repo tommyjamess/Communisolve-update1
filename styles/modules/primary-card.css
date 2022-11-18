@@ -211,10 +211,10 @@
 .session-level{
     background: rgba(133, 133, 133, 0.5);
     padding-inline: 15px;
-    padding-block: 1px;
     border-radius: 5px;
     color: white;
     margin-right: 8px;
+    font-size: 10px;
 }
 
 #user-avater{
