@@ -214,7 +214,7 @@
     border-radius: 5px;
     color: white;
     padding-top: 1px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
     font-size: 10px;
 }
 
@@ -236,7 +236,6 @@
 .joined-users{
     display: flex;
     align-items: center;
-    padding-left: 8px;
 }
 .joined-users img{
     max-width: 16px;
