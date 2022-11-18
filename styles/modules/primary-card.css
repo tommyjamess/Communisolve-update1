@@ -68,9 +68,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* height: 30px; */
     padding-inline: 10px;
-    padding-block: 10px;
+    /* padding-block: 10px; */
+    padding-top: 10px;
 }
 .cardInterest p{
     font-size: 10px;
@@ -165,11 +165,11 @@
 
 .card-menu--icon{
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 .card-menu--icon i{
     color: #222222;
-    font-size: 17px;
+    font-size: 15px;
     border-radius: 10px;
 }
 .card-menu--icon i:hover{
