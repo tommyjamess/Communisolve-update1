@@ -73,17 +73,20 @@
     padding-block: 10px;
 }
 .cardInterest p{
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
-    font-weight: 600;
+    font-weight: 700;
     padding-inline: 15px;
-    padding-top: 2.5px;
+    padding-block: 2px;
+    height: fit-content;
     border-radius:5px;
     background-color: var(--color-light-gray);
 }
 .cardInterest button{
-    font-size: 12px;
+    font-size: 10px;
     padding-inline: 15px;
+    height: fit-content;
+    padding-block: 2px;
     border-radius: 5px;
     background-color: var(--color-light-gray);
     color: var(--color-brandcolor);
@@ -123,7 +126,7 @@
 }
 @media (max-width:700px){
     .specialization{
-        max-width:42% ;
+        max-width:72% ;
         /* line-height: 15px; */
     }
 }
