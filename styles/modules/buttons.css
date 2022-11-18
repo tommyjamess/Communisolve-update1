@@ -51,7 +51,7 @@ a:hover{
 
 .option-btns button{
     background-color: transparent;
-    height: 37px;
+    height: 33px;
     width: 100%;
     border: 1px solid var(--color-brandcolor);
     text-align: left;
