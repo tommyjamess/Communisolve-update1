@@ -176,6 +176,8 @@
 }
 .commentUserTitle{
     margin-bottom: 7px;
+    font-weight: 600;
+    color: var(--color-grey);
 }
 .vote{
     font-size: 11px;
