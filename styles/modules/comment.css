@@ -38,12 +38,13 @@
     display: flex;
     grid-column-gap: 5px;
 }
-.comment-user{
-    margin-bottom: 8px;
-}
+
 
 
 /* session comments  */
+.actual-comment{
+    margin-top: 8px;
+}
 .commentObject{
     margin-bottom: 10px;
     /* padding-inline: 15px; */
@@ -159,7 +160,7 @@
     padding-inline: 10px;
 }
 .thread-message{
-    font-size: 12px;
+    font-size: 13px;
 }
 .thread-list .comment-user{
     font-size: 11px;
