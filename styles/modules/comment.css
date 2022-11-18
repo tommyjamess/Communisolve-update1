@@ -55,11 +55,10 @@
     }
 }
 .commentLevelTwo{
-    /* margin-left: auto; */
-    /* max-width: 91%; */
+    margin-left: auto;
+    max-width: 91%;
 }
 .subComments{
-    max-width: 420px;
     margin-left: auto;
 }
 
