@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./styles/uikit.css">
+    <script src="https://use.fontawesome.com/07a137f978.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Votes</title>
+</head>
+<body>
+    <div class="page page-background">
+        <div class="page-container"> 
+            <div class="col-1 column ">
+                <div class="side-menu sideMenuFixed side-menu-stick">
+                    <a href="index.html" class="selected text-decor-none "><div><i class="mdi mdi mdi-home-outline"></i></div> <p class="font-weight-700">Home</p></a>
+                    <a href="explore.html" class="text-decor-none"><div><i class="mdi mdi-compass-outline"></i></div> <p class="font-weight-700">Explore</p></a>
+                    <a href="circles.html" class="text-decor-none"><div><i class="mdi mdi-lightbulb-group-outline"></i></div> <p class="font-weight-700">Circles</p></a>
+                    <a href="connect.html" class="text-decor-none"><div><i class="mdi mdi-signal-variant"></i></div> <p class="font-weight-700">Connections</p></a>
+                    <a href="groups.html" class="text-decor-none"><div><i class="mdi mdi-account-group-outline"></i></div> <p class="font-weight-700">Groups</p></a>
+                    <a href="index.html" class="text-decor-none"><div><i class="mdi mdi-at"></i></div> <p class="font-weight-700">Private</p></a>
+                    <a href="profile.html" class="text-decor-none"><div><i class="mdi mdi-account-circle-outline"></i></div> <p class="font-weight-700">Profile</p></a>
+                    <a href="notification.html" class="text-decor-none"><div><i class="mdi mdi-bell-outline"></i></div> <p class="font-weight-700">Notifications</p></a>
+                    <a href="dashboard.html" class="text-decor-none"><div><i class ="mdi mdi-view-dashboard-outline"></i></div> <p class="font-weight-700">Dashboard</p></a>
+                </div>
+            </div>
+            <div class="col-2 column side-card left-side">
+                
+                <!-- <div class="other-cards">
+                    <div class="secondary-card ">
+                        <div class="card-tint"></div>
+                        <div class="card-title  card-title--active"><i class="mdi mdi-circle font-size-16"></i><p class="font-size-12">Active</p></div>
+                        <div class="side-card--content">
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Summer suggestion</p>
+                                    <span>The summer class we ha.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Holiday classes</p>
+                                    <span>The summer class</span>
+                                </div>
+                            </div>
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600"">Let there be light</p>
+                                    <span>In the beginning...</span>
+                                </div>
+                            </div>
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600"">Summer suggestion</p>
+                                    <span>The summer class we had...</span>
+                                </div>
+                            </div>
+                            
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600"">Holiday classes</p>
+                                    <span>The summer class...</span>
+                                </div>
+                            </div>
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600"">Let there be light</p>
+                                    <span>In the beginning..</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="side-card--outer">
+                        <div class="secondary-card sideCardFixed">
+                            <div class="card-tint"></div>
+                            <div class="card-title"><i class="mdi mdi-lightbulb-on-outline font-size-22"></i><p class="font-size-12">Suggested for you</p></div>
+                            <div class="side-card--content">
+                                <div class="side-content-plate">
+                                    <div class="user-occupation">
+                                        <p class="font-size-13 font-weight-600">Summer suggestion</p>
+                                        <span>The summer class.</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="side-content-plate">
+                                    <div class="user-occupation">
+                                        <p class="font-size-13 font-weight-600">Holiday classes</p>
+                                        <span>The summer class.</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <div class="user-occupation">
+                                        <p class="font-size-13 font-weight-600">Let there be light</p>
+                                        <span>In the beginning.</span>
+                                    </div>
+                                </div>  
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-card--outer side-card-two--outer">
+                        <div class="secondary-card sideCardTwoFixed nextSideCardFix">
+                            <div class="card-tint"></div>
+                            <div class="card-title"><i class="mdi mdi-signal-variant font-size-22"></i> <p class="font-size-12">Circles for you</p></div>
+                            <div class="side-card--content">
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">Joe Biden</p>
+                                        <span class="">United States President</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600">Adekunle Gold</p>
+                                        <span>React Js Developer</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600">Joe Biden</p>
+                                        <span>United States President</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">Adekunle Gold</p>
+                                        <span>React Js Developer</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate user-based-plate-text">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation">
+                                        <p class="font-size-13 font-weight-600">Adekunle Gold</p>
+                                        <span>React Js Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+            <div class="col-3 column main">
+                <div class="thread-title-outer">
+                    <div class="thread-title">
+                        <a href="index.html" class="text-decor-none">
+                            <div class="close-thread">
+                                <i class ="mdi mdi-arrow-left font-size-22 font-size-22"></i>
+                            </div>
+                        </a>
+                        <p class="font-size-18 font-weight-700">Polls</p>
+                    </div>
+                </div>
+                <div class="thread-outer">
+                    <div class="thread">
+
+                        <div class="thread-inner">
+                            <div class="thread-list">
+                                <div class="card threadRelatedCard">
+                                    <div class="card-time cardspacing">
+                                        <img src="/images/general images/averta.svg" alt="" id="user-avater" >
+                                        <div class="user-avater card-padding-inline">
+                                            <div class="username-time">
+                                                <div class="username-elipsis">
+                                                    <p class="username font-size-13 font-weight-600">Username</p>
+                                                    <div class="start-time">
+                                                        <p class="font-size-10 font-weight-500">Starts in:</p>
+                                                        <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
+                                                        <div class="card-menu--icon"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
+                                                        <div class="cardMenu">
+                                                            <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
+                                                            <div class="card-menu">
+                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="specialization font-size-12 font-weight-500">Python Django Developer  Django Developer</p>
+                                                <div class="time-sessiontype">
+                                                    <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
+                                                    <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                            
+                                    <div class="session-title">
+                                        <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
+                                    </div>
+                                    <div class="session-description">
+                                        <p class="font-size-14">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
+                                    </div>
+                                    <div class="session-image viewImage ">
+                                        <img src="/images/general images/man.jpg" alt="" class="">
+                                    </div>           
+                                </div>
+                                <div class="commentBox">
+                                    <div class="commentObject">
+                                        <div class="commentLevelOne singleComment">
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                            <div class="commentContent">
+                                                <div class="commentMenu">
+                                                    <p class="username font-size-13 font-weight-600 comment-user">Username</p>
+                                                    <div class="commentMenuIcon"><i class="mdi mdi-dots-vertical "></i></div>
+                                                </div>
+                                                <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
+                                                <p class="vote">Option 3</p>
+                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                <div class="comment-reaction-list">
+                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                    <p class="vote-time font-size-10 font-weight-500">1min</p>
+                                                </div>
+                                                <p class="font-size-12 openSubComment">view (4) replies</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="subComments">
+                                            <div class="commentObject">
+                                                <div class="commentLevelTwo singleComment">
+                                                    <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                                    <div class="commentContent">
+                                                        <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
+                                                        <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                        <div class="comment-reaction-list">
+                                                            <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                            <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                        </div>
+                                                        <p class="font-size-12 openSubComment">view (3) replies</p>
+                                                    </div>
+                                                </div> 
+                                                <div class="subComments">
+                                                    <div class="commentObject">
+                                                        <div class="commentLevelTwo singleComment">
+                                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                                            <div class="commentContent">
+                                                                <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
+                                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                                <div class="comment-reaction-list">
+                                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    
+                                                    <div class="commentObject">
+                                                        <div class="commentLevelTwo singleComment">
+                                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                                            <div class="commentContent">
+                                                                <p class="font-size-12 font-weight-600 comment-user"></p>
+                                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                                <div class="comment-reaction-list">
+                                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                                </div>
+                                                        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="commentObject">
+                                                <div class="commentLevelTwo singleComment">
+                                                    <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                                    <div class="commentContent">
+                                                        <p class="font-size-12 font-weight-600 comment-user"></p>
+                                                        <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                        <div class="comment-reaction-list">
+                                                            <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                            <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                        </div>
+                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="thread-comment-outer">
+                                <div class="thread-comment-inner">
+                                    <div class="thread-comment">
+                                        <img src="images/general images/Ellipse 1109.png" alt="">
+                                        <textarea name="" id="commentInput"   placeholder="Write comment"  ></textarea>
+                                        <button>Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 column side-card right-side">
+                <!-- <div class="other-cards">
+                    <div class="secondary-card">
+                        <div class="card-tint"></div>
+                        <div class="card-title card-title--active"><i class="mdi mdi-circle font-size-16"></i><p class="font-size-12">Trending</p></div>
+                        <div class="side-card--content">
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Let there be light</p>
+                                    <span>In the beginning..</span>
+                                </div>
+                            </div>
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Summer suggestion</p>
+                                    <span>The summer class...</span>
+                                </div>
+                            </div>
+                    
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Holiday classes</p>
+                                    <span>The summer class.</span>
+                                </div>
+                            </div>
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Let there be light</p>
+                                    <span>In the beginning...</span>
+                                </div>
+                            </div>
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Summer suggestion</p>
+                                    <span>The summer class.</span>
+                                </div>
+                            </div>
+                    
+                            <div class="side-content-plate">
+                                <div class="user-occupation">
+                                    <p class="font-size-13 font-weight-600">Holiday classes</p>
+                                    <span>The summer class.</span>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="right-card--outer">
+                        <div class="secondary-card rightCardFixed nextSideCardFix">
+                            <div class="card-tint"></div>
+                            <div class="card-title"><i class="mdi mdi-account-group-outline font-size-22"></i><p class="font-size-12">Groups for you</p></div>
+                            <div class="side-card--content">
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">React Developers</p>
+                                        <span>Best react developers</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">Python Experts</p>
+                                        <span>Python developers</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">Computer Engineers</p>
+                                        <span>Python developers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-card-two--outer">
+                        <div class="secondary-card rightCardTwoFixed nextSideCardFix">
+                            <div class="card-tint"></div>
+                            <div class="card-title"><i class=" mdi mdi-signal-variant font-size-22" ></i><p class="font-size-12">Who to connect with</p></div>
+                            <div class="side-card--content">
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">React Developers</p>
+                                        <span>Best react developers</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">Python Experts</p>
+                                        <span>Python developers</span>
+                                    </div>
+                                </div>
+                                <div class="side-content-plate">
+                                    <img src="/images/general images/averta.svg" alt="">
+                                    <div class="user-occupation user-based-plate-text">
+                                        <p class="font-size-13 font-weight-600"">Computer Engineers</p>
+                                        <span>Python developers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="col-1 column "> 
+
+                
+            </div>
+        </div>
+    </div>
+    
+    
+<!-- <script src="/styles/main.js"></script> -->
+<script src="/styles/menu.js"></script>
+<script src="/styles/main.js"></script>
+<script src="/styles/filter.js"></script>
+<script src="/styles/create_session.js"></script>
+<script src="/styles/images.js"></script>
+<script src="/styles/fix.js"></script>
+<script src="/styles/comment.js"></script>
+</body>
+</html>
