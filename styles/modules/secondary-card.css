@@ -22,12 +22,23 @@
     border-bottom: 1px solid  var(--line-color);
     color: #000000;
     font-weight: 700;
+    
 
     display: flex;
     align-items: center;
 }
 .card-title i{
     margin-right: 10px;
+    /* border: 1px solid black; */
+    min-width: 25px;
+    max-width: 25px;
+    min-height: 25px;
+    max-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-light-gray);
+
+    font-size: 18px;
 }
 .card-title--active i{
     margin-right: 10px;
