@@ -18,7 +18,7 @@
 }
 .card-title{
     padding-block: 7px;
-    padding-inline: 15px;
+    padding-inline: 9px;
     border-bottom: 1px solid  var(--line-color);
     color: #000000;
     font-weight: 700;
