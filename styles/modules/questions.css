@@ -70,6 +70,7 @@
     height: 100%;
 }
 .questionAnswer{
+    min-height: 92vh;
     max-height: 92vh;
     background-color: rgb(112, 12, 179, 0.2);
     overflow-y: auto;
