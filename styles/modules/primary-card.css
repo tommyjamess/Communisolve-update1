@@ -319,6 +319,11 @@
     width: 35.4%;
     transform: translateY(-88%);
 }
+.no-creation-stick{
+    position: fixed;
+    width: 35.4%;
+    transform: translateY(-37%);
+}
 
 
 @media (min-width:600px) and (max-width:899px){
@@ -326,6 +331,9 @@
         max-width: 79.5%;
     }
     .profile-filter-stick{
+        max-width: 79.5%;
+    }
+    .no-creation-stick{
         max-width: 79.5%;
     }
     
@@ -341,6 +349,9 @@
     .profile-filter-stick{
         width: 99.4%;
     }
+    .no-creation-stick{
+        width: 99.4%;
+    }
 }
 
 @media (min-width:899px) and (max-width:1270px){
@@ -348,6 +359,9 @@
         width: 54.2%;
     }
     .profile-filter-stick{
+        width:54.2% ;
+    }
+    .no-creation-stick{
         width:54.2% ;
     }
 }
@@ -359,12 +373,18 @@
     .profile-filter-stick{
         max-width: 457px;
     }
+    .no-creation-stick{
+        max-width: 457px;
+    }
 }
 .card-filterfix{
     margin-bottom: 115px;
 }
 .card-profileFilter-fix{
     margin-bottom: 227px;
+}
+.card-noCreation-fix{
+    margin-bottom: 50px;
 }
 
 

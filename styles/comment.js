@@ -56,3 +56,27 @@ commentInput.forEach((item)=>{
 })
 
 
+// star rating 
+
+let stars = document.querySelectorAll(".starItem")
+
+stars.forEach((item, index) => {
+    item.addEventListener("click", ()=> {
+        resetAllStars()
+        checkOtherStars(index)
+    })
+})
+
+function resetAllStars() {
+    stars.forEach((item) => {
+        item.classList.remove("active")
+    })
+}
+
+function checkOtherStars(index) {
+    stars.forEach((thisitem, thisIndex) => {
+        if(index <= thisIndex){
+            thisitem.classList.add("active")
+        }
+    })
+}

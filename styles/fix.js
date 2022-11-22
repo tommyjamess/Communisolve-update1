@@ -41,6 +41,14 @@ function scrollFunction(){
             sessionFilter.classList.remove("profile-filter-stick")
             sessionFilterOuter.classList.remove("card-profileFilter-fix")
         }
+    }else if(sessionFilter.classList.contains("no-creation")){
+        if (window.pageYOffset >= (fixSessionFilter - 38)){
+            sessionFilter.classList.add("no-creation-stick")
+            sessionFilterOuter.classList.add("card-noCreation-fix")
+        }else{
+            sessionFilter.classList.remove("no-creation-stick")
+            sessionFilterOuter.classList.remove("card-noCreation-fix")
+        }
     }else{
         if (window.pageYOffset >= (fixSessionFilter + 28)){
             sessionFilter.classList.add("card-filter-stick")

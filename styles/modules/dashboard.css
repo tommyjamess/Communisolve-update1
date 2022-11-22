@@ -4,6 +4,8 @@
     min-height: 50rem;
     max-height: 50rem;
     background-color: var(--color-white);
+    margin-top: 15px;
+    padding-top: 10px;
 }
 /* @media (max-width:1270px){
     .dashboard-card{
