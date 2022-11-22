@@ -317,7 +317,7 @@
 .profile-filter-stick{
     position: fixed;
     width: 35.4%;
-    transform: translateY(-90.2%);
+    transform: translateY(-90.5%);
 }
 .no-creation-stick{
     position: fixed;
@@ -381,7 +381,7 @@
     margin-bottom: 115px;
 }
 .card-profileFilter-fix{
-    margin-bottom: 268px;
+    margin-bottom: 278px;
 }
 .card-noCreation-fix{
     margin-bottom: 50px;
