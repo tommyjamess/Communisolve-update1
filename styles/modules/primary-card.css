@@ -317,7 +317,7 @@
 .profile-filter-stick{
     position: fixed;
     width: 35.4%;
-    transform: translateY(-90.4%);
+    transform: translateY(-90.2%);
 }
 .no-creation-stick{
     position: fixed;
@@ -331,7 +331,7 @@
         max-width: 79.5%;
     }
     .profile-filter-stick{
-        max-width: 79.5%;
+        max-width: 79.4%;
     }
     .no-creation-stick{
         max-width: 79.5%;
@@ -347,7 +347,7 @@
         width: 99.4%;
     }
     .profile-filter-stick{
-        width: 99.4%;
+        width: 99.3%;
     }
     .no-creation-stick{
         width: 99.4%;
@@ -359,7 +359,7 @@
         width: 54.2%;
     }
     .profile-filter-stick{
-        width:54.2% ;
+        width:54.1% ;
     }
     .no-creation-stick{
         width:54.2% ;
