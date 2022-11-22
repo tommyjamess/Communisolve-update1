@@ -34,7 +34,7 @@ let rightCardTwoFixer = rightCardTwoFixed.offsetTop;
 function scrollFunction(){
 
     if(sessionFilter.classList.contains("profile-filter")){
-        if (window.pageYOffset >= (fixSessionFilter + 142)){
+        if (window.pageYOffset >= (fixSessionFilter + 183)){
             sessionFilter.classList.add("profile-filter-stick")
             sessionFilterOuter.classList.add("card-profileFilter-fix")
         }else{

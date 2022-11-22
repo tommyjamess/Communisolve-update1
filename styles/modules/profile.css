@@ -1,7 +1,7 @@
 
 .profile-info{
-    min-height: 180px;
-    max-height: 180px;
+    min-height: 220px;
+    max-height: 220px;
     padding-top: 0px;
 }
 .profile-backdrop{
@@ -36,7 +36,8 @@
 .profile-text{
     display: flex;
     justify-content: space-between;
-    height: 60%;
+    height: 65%;
+    /* background-color: green; */
     /* padding-top: 30px; */
     padding-left: 20px;
 }
@@ -47,9 +48,21 @@
 .followers-count{
     display: flex;
     grid-column-gap: 30px;
+    margin-top: 3px;
 }
 .followers-count p{
-    color: grey;
+  color: grey;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.followers-count p span{
+    margin-left: 10px;
+}
+.followers-count i{
+    font-size: 6px;
+    color: var(--color-grey);
+    margin-right: 5px;
 }
 .followBtn{
     margin-top: 10px;
