@@ -128,6 +128,11 @@
     padding-bottom: 50px;
     padding-top: 20px;
 }
+@media (max-height:1600px){
+    .questionAnswerInner{
+        padding-bottom: 80px;
+    }
+}
 .questionAnswerInner::-webkit-scrollbar{
     display: none;
 }
