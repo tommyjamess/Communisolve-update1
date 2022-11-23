@@ -225,6 +225,7 @@
     .enterAnswerInner{
         min-width: 100%;
         margin-right: 0px;
+        margin-left: 12px;
     }
 }
 @media (min-width:599px) and (max-width:900px){
