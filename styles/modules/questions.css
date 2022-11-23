@@ -292,19 +292,16 @@
 }
 .feedbackOuter{
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    width:100%;
+    
     
 }
 .feedback{
     flex-basis: 100%;
-    margin-top: 40px;
+    margin-top: 15px;
 }
 .questionsListOuter{
-    position: fixed;
-    width: 36%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 @media (max-width:600px){
     .questionsListOuter{
@@ -318,7 +315,7 @@
 }
 @media (max-width:1270px){
     .questionsListOuter{
-        width: 55.5%;
+        width: 100%;
     }
 }
 @media (min-width:1559px) and (max-width:10000px){
@@ -333,9 +330,6 @@
     padding-top: 20px;
     min-height: 87vh;
     max-height: 87vh;
-    
-    display: flex;
-    flex-direction: column;
 
     animation-name: animQuestList;
     animation-duration: 0.8s;
@@ -393,6 +387,7 @@
     width: 36%;
     max-height: 95%;
     margin-top: 43px;
+    margin-right: 12px;
     background-color: var(--color-white);
 }
 @media (max-width:600px){
@@ -405,11 +400,14 @@
     
     .answersToQuestions{
         min-width: 79%;
+        margin-left: 4px;
+        margin-right: 0px;
     }
 }
 @media (max-width:1270px){
     .answersToQuestions{
         flex-basis: 54.5%;
+        /* margin-left: 1px; */
     }
 }
 
