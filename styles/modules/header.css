@@ -64,9 +64,11 @@
 }
 .header-title{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 25px;
     width: 95%;
+    padding-inline: 10px;
 }
 
 .header-title--backarrow{
@@ -74,6 +76,10 @@
 }
 .header-title--backarrow i{
     color: var(--color-grey);
+}
+.header-info--outer{
+    display: flex;
+    grid-column-gap: 5px;
 }
 .header-info{
     display: flex;
@@ -91,6 +97,12 @@
 .header-info i{
     font-weight: 700;
     color: var(--color-brandcolor);
+}
+.header-info--outer .joined-users img{
+    max-width: 18px !important;
+}
+.header-info--outer .joined-users{
+    margin-right: -25px;
 }
 .search{
     display: flex;

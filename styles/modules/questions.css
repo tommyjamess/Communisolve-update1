@@ -444,8 +444,8 @@
     color: white;
 }
 .exitAnswer{
-    font-size: 28px;
-    color: var(--color-grey);
+    font-size: 22px;
+    color: black;
 }
 .exitAnswer:hover{
     cursor: pointer;
