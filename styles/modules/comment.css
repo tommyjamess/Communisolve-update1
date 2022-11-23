@@ -50,11 +50,11 @@
 .commentObject{
     margin-bottom: 10px;
 }
-@media (max-width:900px){
+/* @media (max-width:900px){
     .commentObject{
         padding-inline: 12px;
     }
-}
+} */
 .commentMenu{
     float:right;
     border-radius: 8px;
