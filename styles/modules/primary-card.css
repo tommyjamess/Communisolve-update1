@@ -181,9 +181,7 @@
     padding-inline: 10px;
     margin-top: 10px;
 }
-.session-title p{
-    
-}
+
 .session-description{
     padding-inline: 10px;
     padding-block: 0px;
@@ -377,6 +375,7 @@
         max-width: 457px;
     }
 }
+
 .card-filterfix{
     margin-bottom: 115px;
 }

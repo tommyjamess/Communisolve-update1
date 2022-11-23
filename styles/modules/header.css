@@ -64,7 +64,7 @@
 }
 .header-title{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     height: 25px;
     width: 95%;
@@ -72,7 +72,7 @@
 }
 
 .header-title--backarrow{
-    margin-right: 32px;
+    margin-right: 5px;
 }
 .header-title--backarrow i{
     color: var(--color-grey);
@@ -80,6 +80,7 @@
 .header-info--outer{
     display: flex;
     grid-column-gap: 5px;
+    margin-left: auto;
 }
 .header-info{
     display: flex;
@@ -102,7 +103,7 @@
     max-width: 18px !important;
 }
 .header-info--outer .joined-users{
-    margin-right: -25px;
+    margin-right: -20px;
 }
 .search{
     display: flex;
