@@ -43,6 +43,9 @@
     align-items: center;
     grid-column-gap: 20px;
 }
+.ask-reactions:hover{
+    cursor: pointer;
+}
 
 
 
@@ -50,11 +53,7 @@
 .commentObject{
     margin-bottom: 10px;
 }
-/* @media (max-width:900px){
-    .commentObject{
-        padding-inline: 12px;
-    }
-} */
+
 .commentMenu{
     float:right;
     border-radius: 8px;
@@ -193,20 +192,20 @@
 }
 .starList{
     position: absolute;
-    transform: translateX(78.7%) translateY(-10%);
+    transform: translateX(61%) translateY(-13%);
     background-color: white;
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
     grid-column-gap: 10px;
+    display: none;
 }
-.starList li{
-    list-style: none;
-}
-.starList li i:hover{
-    color: gold;
-}
+
 .active{
     color:gold !important;
+}
+.starList label:hover{
+    cursor: pointer;
 }
 .starList input[type="radio"]{
     display: none;
@@ -214,6 +213,14 @@
 .starList i{
     font-size: 20px;
     text-shadow: 1px 1px 2px grey;
+}
+.starList button{
+    background-color: var(--color-brandcolor);
+    color: white;
+    height:fit-content;
+    padding-inline: 3px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 0px grey;
 }
 
 .thread-message{
@@ -224,10 +231,21 @@
     margin-top: -4px;
     height: fit-content;
 }
+.starRating{
+    display: flex;
+    align-items: center;
+}
 .starRating i{
     color: gold;
+    font-size: 18px;
 }
-
+.starRating p{
+    font-size: 10px;
+    height: fit-content;
+}
+.starRating:hover{
+    cursor: pointer;
+}
 .thread-list .comment-user{
     font-size: 11px;
 }

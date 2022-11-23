@@ -57,6 +57,20 @@ commentInput.forEach((item)=>{
 
 
 // star rating 
+let starRating = document.querySelectorAll('.starRating')
+let confirmRating = document.querySelectorAll('.confirmRating')
+
+starRating.forEach((item) => {
+    item.addEventListener("click", ()=>{
+        item.parentElement.nextElementSibling.nextElementSibling.style.display = "flex"
+    })
+})
+
+confirmRating.forEach((item)=> {
+    item.addEventListener("click", ()=> {
+        item.parentElement.style.display = "none"
+    })
+})
 
 let stars = document.querySelectorAll(".starItem")
 
