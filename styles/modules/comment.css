@@ -344,8 +344,7 @@ input[type="radio"]{
 .stanceChoicesOuter{
     position: absolute;
     left: 0;
-    bottom: 0;
-    padding-block: 12px;
+    bottom: 10;
     width: 100%;
     z-index: 4000;
 
@@ -356,12 +355,13 @@ input[type="radio"]{
 .stanceChoices{
     width: 35.5%;
     margin-right: 12px;
-    height: 50px;
+    height: 40px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     grid-column-gap: 20px;
+    padding-bottom: 12px;
 }
 @media (max-width:600px){
     .stanceChoices{
