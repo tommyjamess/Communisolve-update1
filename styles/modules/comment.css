@@ -351,6 +351,13 @@ input[type="radio"]{
     display: flex;
     justify-content: center;
     display: none;
+
+    animation-name: stanceAnim;
+    animation-duration: 0.5s;
+}
+@keyframes stanceAnim {
+    from{transform: translateY(50%);}
+    to{transform: translateY(0%);}
 }
 .stanceChoices{
     width: 35.5%;
