@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="./styles/uikit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/07a137f978.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ask</title>
@@ -340,18 +341,14 @@
                                                     </div>
                                                     <p class="vote-time ask-vote-time font-size-10 font-weight-500">1min</p>
                                                     <div class="starList">                                                 
+                                                        <ul class="starListInner">
+                                                            <i class="mdi mdi-star starItem"><label for="star_1"></label><input type="radio" name="rate" id="star_1" value="1"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_2"></label><input type="radio" name="rate" id="star_1" value="2"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_3"></label><input type="radio" name="rate" id="star_1" value="3"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_4"></label><input type="radio" name="rate" id="star_1" value="4"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_5"></label><input type="radio" name="rate" id="star_1" value="5"></i>
+                                                        </ul>
                                                         <button class="confirmRating">rate</button>
-
-                                                        <label for="star_1"><i class="mdi mdi-star starItem"> <input type="radio" name="" id="star_1" value="5"></i></label>
-                                                        
-                                                        <label for="star_2"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_2" value="4"></i></label>
-                                                        
-                                                        <label for="star_3"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_3" value="3"></i></label>
-                                                        
-                                                        <label for="star_4"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_4" value="2"></i></label>
-                                                        
-                                                        <label for="star_5"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_5" value="1"></i></label>
-                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -377,18 +374,14 @@
                                                     </div>
                                                     <p class="vote-time ask-vote-time font-size-10 font-weight-500">1min</p>
                                                     <div class="starList">                                                 
+                                                        <ul class="starListInner">
+                                                            <i class="mdi mdi-star starItem"><label for="star_1"></label><input type="radio" name="rate" id="star_1" value="1"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_2"></label><input type="radio" name="rate" id="star_1" value="2"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_3"></label><input type="radio" name="rate" id="star_1" value="3"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_4"></label><input type="radio" name="rate" id="star_1" value="4"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_5"></label><input type="radio" name="rate" id="star_1" value="5"></i>
+                                                        </ul>
                                                         <button class="confirmRating">rate</button>
-
-                                                        <label for="star_1"><i class="mdi mdi-star starItem"> <input type="radio" name="" id="star_1" value="5"></i></label>
-                                                        
-                                                        <label for="star_2"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_2" value="4"></i></label>
-                                                        
-                                                        <label for="star_3"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_3" value="3"></i></label>
-                                                        
-                                                        <label for="star_4"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_4" value="2"></i></label>
-                                                        
-                                                        <label for="star_5"><i class="mdi mdi-star starItem"><input type="radio" name="" id="star_5" value="1"></i></label>
-                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -565,7 +558,14 @@
         </div>
     </div>
     
-    
+    <Script>
+        $(".starItem").on("click",function(){
+            $(".starItem").removeClass('active');
+            $(".starItem").removeClass('secondary-active');
+            $(this).addClass("active");
+            $(this).prevAll().addClass('secondary-active');
+        })
+    </Script>
 <script src="/styles/main.js"></script>
 <script src="/styles/menu.js"></script>
 <script src="/styles/main.js"></script>

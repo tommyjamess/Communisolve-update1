@@ -192,28 +192,35 @@
 }
 .starList{
     position: absolute;
-    transform: translateX(61%) translateY(-13%);
+    transform: translateX(69%) translateY(-13%);
     background-color: white;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
     grid-column-gap: 10px;
     display: none;
 }
 
-.active{
-    color:gold !important;
+.starListInner{
+    display: flex;
+    grid-column-gap: 5px;
 }
-.starList label:hover{
-    cursor: pointer;
+.starItem{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px 6px grey;
+    font-size: 20px !important;
 }
-.starList input[type="radio"]{
+.starItem:hover{
+    color: gold;
+}
+.starItem.active, .starItem.secondary-active{
+    color:gold;
+}
+input[type="radio"]{
     display: none;
 }
-.starList i{
-    font-size: 20px;
-    text-shadow: 1px 1px 2px grey;
-}
+
 .starList button{
     background-color: var(--color-brandcolor);
     color: white;
