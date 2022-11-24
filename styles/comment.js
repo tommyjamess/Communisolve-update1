@@ -72,3 +72,13 @@ confirmRating.forEach((item)=> {
     })
 })
 
+
+let askInputButton = document.querySelector(".askInputButton")
+
+askInputButton.addEventListener("click", (e)=> {
+    e.preventDefault();
+    askInputButton.nextElementSibling.style.display = "flex"
+})
+
+let stanceChoices = document.querySelector(".stanceChoices button")
+
