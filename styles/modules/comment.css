@@ -344,7 +344,7 @@ input[type="radio"]{
 .stanceChoicesOuter{
     position: absolute;
     left: 0;
-    bottom: 20%;
+    bottom: 13%;
     width: 100%;
     z-index: 4000;
 
@@ -375,6 +375,7 @@ input[type="radio"]{
 @media (max-width:600px){
     .stanceChoices{
         min-width: 100%;
+        max-width: 100%;
         margin-left: 15px;
     }
 }
@@ -410,7 +411,7 @@ input[type="radio"]{
 }
 
 .closeStance{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: center;
     height: 25px;
@@ -418,7 +419,6 @@ input[type="radio"]{
     border-radius: 50%;
     background-color: var(--color-light-gray);
     color: var(--color-grey);
-    transform: translateX(14rem) translateY(-0.6rem);
 }
 
 .closeStance:hover{
