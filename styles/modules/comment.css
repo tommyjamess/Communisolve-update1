@@ -337,6 +337,14 @@ input[type="radio"]{
     color: var(--color-white);
     font-weight: 700;
 }
+.thread-comment button{
+    max-height: 40px;
+    padding-inline: 10px;
+    border-radius: 10%;
+    background-color: var(--color-brandcolor);
+    color: var(--color-white);
+    font-weight: 700;
+}
 .thread select{
     width: 100%;
     display: flex;
