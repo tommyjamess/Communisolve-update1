@@ -87,3 +87,42 @@ let closeStance = document.querySelector(".closeStance")
 closeStance.addEventListener("click", ()=> {
     stanceChoicesOuter.style.display = "none"
 })
+
+
+// comment menu 
+let openCommentMenu = document.querySelectorAll(".openCommentMenu")
+let commentMenuCard = document.querySelectorAll(".commentMenuCard")
+let singleComment = document.querySelectorAll(".singleComment")
+
+
+openCommentMenu.forEach((item) => {
+    item.addEventListener("click", ()=> {
+        if(!item.firstElementChild.classList.contains("showSubMenu")){
+            item.firstElementChild.classList.add("showSubMenu")
+        }
+    })
+    
+})
+
+singleComment.forEach((item) =>{
+    item.addEventListener("click", ()=> {
+        closeCommentMenu()
+    })
+})
+
+function closeCommentMenu() {
+    commentMenuCard.forEach((item) => {
+        item.classList.remove("showSubMenu")
+    })
+}
+
+let closeCommentMenuAlt = document.querySelectorAll(".closeCommentMenu")
+
+closeCommentMenuAlt.forEach((item) => {
+    item.addEventListener("click", (e)=> {
+        e.preventDefault()
+        console.log(item)
+        item.parentElement.parentElement.classList.remove("showSubMenu")
+    })
+})
+
