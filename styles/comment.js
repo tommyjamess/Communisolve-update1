@@ -80,5 +80,10 @@ askInputButton.addEventListener("click", (e)=> {
     askInputButton.nextElementSibling.style.display = "flex"
 })
 
-let stanceChoices = document.querySelector(".stanceChoices button")
+let stanceChoicesOuter = document.querySelector(".stanceChoicesOuter")
+let closeStance = document.querySelector(".closeStance")
 
+
+closeStance.addEventListener("click", ()=> {
+    stanceChoicesOuter.style.display = "none"
+})
