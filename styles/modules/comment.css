@@ -192,7 +192,7 @@
 }
 .starList{
     position: absolute;
-    transform: translateX(69%) translateY(-13%);
+    transform: translateX(95%) translateY(-13%);
     background-color: white;
     display: flex;
     align-items: center;
@@ -249,6 +249,16 @@ input[type="radio"]{
 .starRating p{
     font-size: 10px;
     height: fit-content;
+}
+.userStance{
+    padding-inline: 10px;
+    padding-block: 1px;
+    border-radius: 3px;
+    background-color:var(--color-brandcolor) ;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    box-shadow: 1px 1px 1px 0px grey;
 }
 .starRating:hover{
     cursor: pointer;
