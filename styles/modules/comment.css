@@ -475,7 +475,7 @@ input[type="radio"]{
 }
 @media (max-width:600px){
     .commentMenuCardOuter{
-        right: 7%;
+        right: 8%;
     }
 }
 .commentMenuCard{
