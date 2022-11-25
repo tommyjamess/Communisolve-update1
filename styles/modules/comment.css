@@ -59,6 +59,7 @@
     float:right;
     position: absolute;
     left: 65%;
+    transform: translateY(-3%);
     border-radius: 8px;
     padding-block: 5px;
     padding-inline: -10px;
