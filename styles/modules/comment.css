@@ -75,7 +75,7 @@
 }
 @media (max-width:600px){
     .commentMenu{
-        left: 95%;
+        left: 93.4%;
     }
 }
 .commentMenu:hover{
@@ -475,7 +475,7 @@ input[type="radio"]{
 }
 @media (max-width:600px){
     .commentMenuCardOuter{
-        right: 8%;
+        right: 7%;
     }
 }
 .commentMenuCard{
