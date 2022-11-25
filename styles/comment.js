@@ -91,14 +91,14 @@ closeStance.addEventListener("click", ()=> {
 
 // comment menu 
 let openCommentMenu = document.querySelectorAll(".openCommentMenu")
-let commentMenuCard = document.querySelectorAll(".commentMenuCard")
+let commentMenuCardOuter = document.querySelectorAll(".commentMenuCardOuter")
 let singleComment = document.querySelectorAll(".singleComment")
 
 
 openCommentMenu.forEach((item) => {
     item.addEventListener("click", ()=> {
-        if(!item.firstElementChild.classList.contains("showSubMenu")){
-            item.firstElementChild.classList.add("showSubMenu")
+        if(!item.nextElementSibling.classList.contains("showSubMenu")){
+            item.nextElementSibling.classList.add("showSubMenu")
         }
     })
     
@@ -111,7 +111,7 @@ singleComment.forEach((item) =>{
 })
 
 function closeCommentMenu() {
-    commentMenuCard.forEach((item) => {
+    commentMenuCardOuter.forEach((item) => {
         item.classList.remove("showSubMenu")
     })
 }
@@ -119,10 +119,8 @@ function closeCommentMenu() {
 let closeCommentMenuAlt = document.querySelectorAll(".closeCommentMenu")
 
 closeCommentMenuAlt.forEach((item) => {
-    item.addEventListener("click", (e)=> {
-        e.preventDefault()
-        console.log(item)
-        item.parentElement.parentElement.classList.remove("showSubMenu")
+    item.addEventListener("click", ()=> {
+        item.parentElement.parentElement.parentElement.classList.remove("showSubMenu")
     })
 })
 
