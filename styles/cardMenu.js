@@ -17,20 +17,12 @@ closeMenuCard.forEach((item) => {
     })
 })
 
-// mainCardContainer.forEach((item) =>{
-//     item.addEventListener("click", ()=> {
-//         mainCardMenuOuter.forEach((thisItem) => {
-//             if(thisItem.style.display == "block"){
-//                 thisItem.style.display ="none"
-//             }
-//         })
-//     })
-// })
+window.onscroll = function() {scrollFunctionInnerCard()};
 
-// function closeMainCardMenu() {
-//     mainCardMenuOuter.forEach((item) => {
-//         if(item.style.display == "block"){
-//             item.style.display ="none"
-//         }
-//     })
-// }
+let itemTop = mainCardMenuOuter.offsetTop;
+
+function scrollFunctionInnerCard() {
+    mainCardMenuOuter.forEach((item)=> {
+        item.style.display = "none";
+    })
+}
