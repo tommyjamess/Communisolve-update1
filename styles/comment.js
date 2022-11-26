@@ -1,6 +1,7 @@
 let commentBtn = document.querySelectorAll("#commentBtn")
 let commentPage = document.querySelectorAll(".comment-page")
 let closeThread = document.querySelectorAll(".close-thread")
+let singleComment = document.querySelectorAll(".singleComment")
 
 // thread.forEach((item)=>{
 //     item.style.display = "none";
@@ -61,9 +62,11 @@ let starRating = document.querySelectorAll('.starRating')
 let confirmRating = document.querySelectorAll('.confirmRating')
 
 starRating.forEach((item) => {
-    item.addEventListener("click", ()=>{
-        item.parentElement.nextElementSibling.nextElementSibling.style.display = "flex"
-    })
+    if(item.parentElement.nextElementSibling.nextElementSibling.style.display != "flex"){
+        item.addEventListener("click", ()=>{
+            item.parentElement.nextElementSibling.nextElementSibling.style.display = "flex"
+        })
+    }
 })
 
 confirmRating.forEach((item)=> {
@@ -73,26 +76,12 @@ confirmRating.forEach((item)=> {
 })
 
 
-let askInputButton = document.querySelector(".askInputButton")
-
-askInputButton.addEventListener("click", (e)=> {
-    e.preventDefault();
-    askInputButton.nextElementSibling.style.display = "flex"
-})
-
-let stanceChoicesOuter = document.querySelector(".stanceChoicesOuter")
-let closeStance = document.querySelector(".closeStance")
-
-
-closeStance.addEventListener("click", ()=> {
-    stanceChoicesOuter.style.display = "none"
-})
 
 
 // comment menu 
 let openCommentMenu = document.querySelectorAll(".openCommentMenu")
 let commentMenuCardOuter = document.querySelectorAll(".commentMenuCardOuter")
-let singleComment = document.querySelectorAll(".singleComment")
+
 
 
 openCommentMenu.forEach((item) => {
@@ -124,3 +113,19 @@ closeCommentMenuAlt.forEach((item) => {
     })
 })
 
+// show fact or opinion button on submit 
+
+let askInputButton = document.querySelector(".askInputButton")
+
+askInputButton.addEventListener("click", (e)=> {
+    e.preventDefault();
+    askInputButton.nextElementSibling.style.display = "flex"
+})
+
+let stanceChoicesOuter = document.querySelector(".stanceChoicesOuter")
+let closeStance = document.querySelector(".closeStance")
+
+
+closeStance.addEventListener("click", ()=> {
+    stanceChoicesOuter.style.display = "none"
+})
