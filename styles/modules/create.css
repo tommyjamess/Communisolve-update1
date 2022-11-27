@@ -62,7 +62,6 @@ input[type="file"]::file-selector-button {
 .exitCreateBrainstorm,
 .exitCreateAsk{
     position: absolute;
-    transform: translateY(-250%);
     right: 34%;
     color: var(--color-grey);
 }

@@ -53,9 +53,12 @@ function scrollFunction(){
         if (window.pageYOffset >= (fixSessionFilter - 0)){
             // sessionFilter.classList.add("no-creation-stick")
             // sessionFilterOuter.classList.add("card-noCreation-fix")
+        }else{
+
         }
     }else{
         if (window.pageYOffset >= (fixSessionFilter + 28)){
+            console.log("got this")
             sessionFilter.classList.add("card-filter-stick")
             sessionFilterOuter.classList.add("card-filterfix")
         }else{
