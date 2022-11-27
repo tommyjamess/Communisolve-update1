@@ -78,6 +78,21 @@
     padding-inline: 2px;
     padding-block: 2px;
 }
+@media (max-width:1270px){
+    .notifMenuIcon{
+        right: 24.1%;
+    }
+}
+@media (max-width:900px){
+    .notifMenuIcon{
+        right: 10.9%;
+    }
+}
+@media (max-width:600px){
+    .notifMenuIcon{
+        right: 1.6%;
+    }
+}
 .notifMenuIcon:hover{
     background-color: var(--color-light-gray);
 }

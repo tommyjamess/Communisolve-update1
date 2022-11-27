@@ -32,7 +32,6 @@ let rightCardTwoFixer = rightCardTwoFixed.offsetTop;
 
 
 function scrollFunction(){
-
     if(sessionFilter.classList.contains("profile-filter")){
         if (window.pageYOffset >= (fixSessionFilter + 192)){
             sessionFilter.classList.add("profile-filter-stick")
@@ -51,14 +50,13 @@ function scrollFunction(){
         }
     }else if(sessionFilter.classList.contains("no-filter")){
         if (window.pageYOffset >= (fixSessionFilter - 0)){
-            // sessionFilter.classList.add("no-creation-stick")
-            // sessionFilterOuter.classList.add("card-noCreation-fix")
+            
         }else{
 
         }
     }else{
         if (window.pageYOffset >= (fixSessionFilter + 28)){
-            console.log("got this")
+        
             sessionFilter.classList.add("card-filter-stick")
             sessionFilterOuter.classList.add("card-filterfix")
         }else{
@@ -67,6 +65,11 @@ function scrollFunction(){
         }
     }
     
+    
+    
+
+
+
 
 
     // fixed second column  card position onscroll 
@@ -90,6 +93,8 @@ function scrollFunction(){
         sideCardOuter.classList.remove("side-card-stick-height")
         nextSideCardFix.classList.remove("next-side-card-fixer")
     }
+
+
 
     // fixed fourth column card position onscroll
     if (window.pageYOffset >= (rightCardFixer - 60)){

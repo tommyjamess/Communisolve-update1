@@ -247,6 +247,69 @@
                 <div class="filteredContentContainer">
                     <div class="card-container on-display filteredContent">
                         <div class="card">
+                            <div class="cardInterest">
+                                <p class="">Technology</p>
+                                <div class="cardInterestChild">
+                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-book-edit-outline"></i>
+                                                        <button><span>Edit session</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-update"></i>
+                                                        <button><span>Update session</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button>
+                                                            <span>Connect to @username</span>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-pipe-disconnected"></i>
+                                                        <button><span>Disconnect from @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-flag-outline"></i>
+                                                        <button><span>Report session</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-delete-outline"></i>
+                                                        <button><span>Delete session</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card-time cardspacing">
                                 <img src="/images/general images/averta.svg" alt="" id="user-avater" >
                                 <div class="user-avater card-padding-inline">
@@ -255,8 +318,7 @@
                                             <p class="username font-size-13 font-weight-600">Username</p>
                                             <div class="start-time">
                                                 <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="mdi mdi-dots-horizontal font-size-18"></i></div>
+                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
                                                 <div class="cardMenu">
                                                     <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
                                                     <div class="card-menu">
@@ -268,21 +330,32 @@
                                         <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
                                         <div class="time-sessiontype">
                                             <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
+                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
                                         </div>
                                     </div>
                                 </div>
                     
                             </div>
                     
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
+                            <div class="session-title ">
+                                <p class="font-size-14 font-weight-700">Qunatom mechanics</p>
                             </div>
-                            <div class="session-description ">
-                                <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
+                            <div class="session-description">
+                                <p class="font-size-14">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
                             </div>
-                            <div class="session-image viewImage ">
-                                <img src="/images/general images/man.jpg" alt="" class="">
+                            <div class="session-image ">
+                                <div class="sessionVisual">
+                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
+                                </div>
+                                <div class="popImages">
+                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
+                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
+                                    <div class="popImagesInner">
+                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
+                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
+                                    </div>
+                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
+                                </div>
                             </div>
                             <div class="joined-sessionlevel">
                                 <div class="joined-users ">
@@ -291,230 +364,36 @@
                                     <img src="/images/general images/averta.svg" alt="">
                                     <p class="user-count font-size-10">+20</p>
                                 </div>
-                                <span class=" session-level font-size-12 font-weight-700">Simple</span>
+                                <span class=" session-level font-weight-700">Standard</span>
                             </div>
                             <form action="" class="cardspacing">
                                 <button class="join-session-btn font-weight-600 font-size-14">Join</button>
                             </form>
-                            <div class="session-reactions">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-14">20</p></button></form>
-                                <button id="commentBtn"><p class="font-size-12">Comment</p><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-14">5</p></button>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="mdi mdi-share-variant-outline"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                            <div class="thread-outer">
-                                <div class="thread">
-                                    <!-- <div class="thread-inner"> -->
-                                        <div class="thread-title">
-                                            <div class="close-thread">
-                                                <i class = "mdi mdi-keyboard-backspace font-size-22 font-size-22"></i>
-                                            </div>
-                                            <p class="font-size-18 font-weight-700">Brainstorm</p>
-                                        </div>
-        
-                                        <div class="thread-inner">
-                                            <div class="thread-list">
-                                                <div class="card threadRelatedCard">
-                                                    <div class="card-time cardspacing">
-                                                        <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                                        <div class="user-avater card-padding-inline">
-                                                            <div class="username-time">
-                                                                <div class="username-elipsis">
-                                                                    <p class="username font-size-13 font-weight-600">Username</p>
-                                                                    <div class="start-time">
-                                                                        <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                                        <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                                        <div class="card-menu--icon"><i class="mdi mdi-dots-horizontal font-size-18"></i></div>
-                                                                        <div class="cardMenu">
-                                                                            <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                                            <div class="card-menu">
-                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                                                <div class="time-sessiontype">
-                                                                    <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                                                    <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                            
-                                                    </div>
-                                            
-                                                    <div class="session-title cardspacing">
-                                                        <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                                                    </div>
-                                                    <div class="session-description ">
-                                                        <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                                                    </div>
-                                                    <div class="session-image viewImage ">
-                                                        <img src="/images/general images/man.jpg" alt="" class="">
-                                                    </div>           
-                                                </div>
-                                                <div class="commentObject" >
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamefour</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                            <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="subComments">
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                                    <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="subComments">
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                            <p class="font-size-12 openSubComment">view (2) replies</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="subComments">
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                            
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                        
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                            
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="thread-comment">
-                                                <img src="images/general images/Ellipse 1109.png" alt="">
-                                                <textarea name="" id="commentInput"   placeholder="Write comment"  ></textarea>
-                                                <button>Send</button>
-                                            </div>
-                                        </div>
-                                    <!-- </div> -->
-                                  
-                                      
+                            <div class="reaction-counts">
+                                <div class="likeCount">
+                                    <p><span>800</span> likes</p>
                                 </div>
+                                <div class="commentCount">
+                                    <p><span>800</span> comments</p>
+                                </div>
+                                <div class="shareCount">
+                                    <p><span>5k</span> shares</p>
+                                </div>
+                            </div>
+                            <div class="session-reactions">
+                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
+                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
+                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
                             </div>
                         </div>
                         <div class="card">
+                            <div class="cardInterest">
+                                <p class="">Technology</p>
+                                <div class="cardInterestChild">
+                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="card-menu--icon"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
+                                </div>
+                            </div>
                             <div class="card-time cardspacing">
                                 <img src="/images/general images/averta.svg" alt="" id="user-avater" >
                                 <div class="user-avater card-padding-inline">
@@ -522,36 +401,47 @@
                                         <div class="username-elipsis">
                                             <p class="username font-size-13 font-weight-600">Username</p>
                                             <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                                <p class="font-size-10 font-weight-500">Ends in:</p>
+                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
                                                 <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu small  font-weight-700"></i></div>
+                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
                                                     <div class="card-menu">
                     
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="specialization font-size-12 font-weight-500">JavaScript Developer</p>
+                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
                                         <div class="time-sessiontype">
                                             <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
+                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
                                         </div>
                                     </div>
                                 </div>
                     
                             </div>
                     
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
+                            <div class="session-title ">
+                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
                             </div>
                             <div class="ask-session-image">
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                    
+                                <div class="sessionVisual sessionMultiVisual">
+                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
+                                    <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
+                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
+                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
+                                </div>
+                                <div class="popImages">
+                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
+                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
+                                    <div class="popImagesInner">
+                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
+                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
+                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg">
+                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg">
+                                    </div>
+                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
+                                </div>
                             </div>
                             <div class="option-btns cardspacing">
                                 <div class="optionChoice">
@@ -576,223 +466,32 @@
                                     <p class="user-count font-size-12">45 Votes</p>
                                 </div>
                             </div>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-14">20</p></button></form>
-                                <button id="commentBtn"><p class="font-size-12">Comment</p><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-14">5</p></button>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="mdi mdi-share-variant-outline"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                            <div class="thread-outer">
-                                <div class="thread">
-                                    <!-- <div class="thread-inner"> -->
-                                        <div class="thread-title">
-                                            <div class="close-thread">
-                                                <i class = "mdi mdi-keyboard-backspace font-size-22 font-size-22"></i>
-                                            </div>
-                                            <p class="font-size-18 font-weight-700">Brainstorm</p>
-                                        </div>
-        
-                                        <div class="thread-inner">
-                                            <div class="thread-list">
-                                                <div class="card threadRelatedCard">
-                                                    <div class="card-time cardspacing">
-                                                        <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                                        <div class="user-avater card-padding-inline">
-                                                            <div class="username-time">
-                                                                <div class="username-elipsis">
-                                                                    <p class="username font-size-13 font-weight-600">Username</p>
-                                                                    <div class="start-time">
-                                                                        <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                                        <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                                        <div class="card-menu--icon"><i class="mdi mdi-dots-horizontal font-size-18"></i></div>
-                                                                        <div class="cardMenu">
-                                                                            <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                                            <div class="card-menu">
-                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                                                <div class="time-sessiontype">
-                                                                    <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                                                    <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                            
-                                                    </div>
-                                            
-                                                    <div class="session-title cardspacing">
-                                                        <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                                                    </div>
-                                                    <div class="session-description ">
-                                                        <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                                                    </div>
-                                                    <div class="session-image viewImage ">
-                                                        <img src="/images/general images/man.jpg" alt="" class="">
-                                                    </div>           
-                                                </div>
-                                                <div class="commentObject" >
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamefour</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                            <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="subComments">
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                                    <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="subComments">
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                            <p class="font-size-12 openSubComment">view (2) replies</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="subComments">
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                            
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                        
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                            
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="thread-comment">
-                                                <img src="images/general images/Ellipse 1109.png" alt="">
-                                                <textarea name="" id="commentInput"   placeholder="Write comment"  ></textarea>
-                                                <button>Send</button>
-                                            </div>
-                                        </div>
-                                    <!-- </div> -->
+                            <div class="reaction-counts">
+                                <div class="likeCount">
+                                    <p><span>800</span> likes</p>
+                                </div>
+                                <div class="commentCount">
+                                    <p><span>800</span> comments</p>
+                                </div>
+                                <div class="shareCount">
+                                    <p><span>5k</span> shares</p>
                                 </div>
                             </div>
+                            <div class="session-reactions">
+                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
+                                <a href="votes.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
+                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
+                            </div>
+                            
                         </div>
                         <div class="card">
+                            <div class="cardInterest">
+                                <p class="">Technology</p>
+                                <div class="cardInterestChild">
+                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="card-menu--icon"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
+                                </div>
+                            </div>
                             <div class="card-time cardspacing">
                                 <img src="/images/general images/averta.svg" alt="" id="user-avater" >
                                 <div class="user-avater card-padding-inline">
@@ -800,537 +499,6 @@
                                         <div class="username-elipsis">
                                             <p class="username font-size-13 font-weight-600">Username</p>
                                             <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="session-image viewImage">
-                                <img src="/images/general images/man.jpg" alt="">
-                            </div>
-                    
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-14">20</p></button></form>
-                                <button id="commentBtn"><p class="font-size-12">Comment</p><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-14">5</p></button>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="mdi mdi-share-variant-outline"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                            <div class="thread-outer">
-                                <div class="thread">
-                                    <!-- <div class="thread-inner"> -->
-                                        <div class="thread-title">
-                                            <div class="close-thread">
-                                                <i class = "mdi mdi-keyboard-backspace font-size-22 font-size-22"></i>
-                                            </div>
-                                            <p class="font-size-18 font-weight-700">Brainstorm</p>
-                                        </div>
-        
-                                        <div class="thread-inner">
-                                            <div class="thread-list">
-                                                <div class="card threadRelatedCard">
-                                                    <div class="card-time cardspacing">
-                                                        <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                                        <div class="user-avater card-padding-inline">
-                                                            <div class="username-time">
-                                                                <div class="username-elipsis">
-                                                                    <p class="username font-size-13 font-weight-600">Username</p>
-                                                                    <div class="start-time">
-                                                                        <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                                        <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                                        <div class="card-menu--icon"><i class="mdi mdi-dots-horizontal font-size-18"></i></div>
-                                                                        <div class="cardMenu">
-                                                                            <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                                            <div class="card-menu">
-                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                                                <div class="time-sessiontype">
-                                                                    <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                                                    <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                            
-                                                    </div>
-                                            
-                                                    <div class="session-title cardspacing">
-                                                        <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                                                    </div>
-                                                    <div class="session-description ">
-                                                        <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                                                    </div>
-                                                    <div class="session-image viewImage ">
-                                                        <img src="/images/general images/man.jpg" alt="" class="">
-                                                    </div>           
-                                                </div>
-                                                <div class="commentObject" >
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamefour</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                            <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="subComments">
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                                    <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="subComments">
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                            <p class="font-size-12 openSubComment">view (2) replies</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="subComments">
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                            
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                        
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                            
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="thread-comment">
-                                                <img src="images/general images/Ellipse 1109.png" alt="">
-                                                <textarea name="" id="commentInput"   placeholder="Write comment"  ></textarea>
-                                                <button>Send</button>
-                                            </div>
-                                        </div>
-                                    <!-- </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color-light font-size-12 font-weight-700">Simple</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <div class="optionChoice">
-                                    <div class="optionChoiceInner">
-                                        <p class="font-size-12 font-weight-700">Great choice, kindly state why</p>
-                                        <textarea name="" id=""  ></textarea>
-                                        <div class="optionForm">
-                                            <form action=""><button class="ignore">Ingore</button></form>
-                                            <form action=""><button class="submit">Submit</button></form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="option-btns-inner">
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 1</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 2</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 3</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 4</button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions cardspacing">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-14">20</p></button></form>
-                                <button id="commentBtn"><p class="font-size-12">Comment</p><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-14">5</p></button>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="mdi mdi-share-variant-outline"></i> <p class="font-size-14">30</p></button></form>
-                            </div>
-                            <div class="thread-outer">
-                                <div class="thread">
-                                    <!-- <div class="thread-inner"> -->
-                                        <div class="thread-title">
-                                            <div class="close-thread">
-                                                <i class = "mdi mdi-keyboard-backspace font-size-22 font-size-22"></i>
-                                            </div>
-                                            <p class="font-size-18 font-weight-700">Brainstorm</p>
-                                        </div>
-        
-                                        <div class="thread-inner">
-                                            <div class="thread-list">
-                                                <div class="card threadRelatedCard">
-                                                    <div class="card-time cardspacing">
-                                                        <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                                        <div class="user-avater card-padding-inline">
-                                                            <div class="username-time">
-                                                                <div class="username-elipsis">
-                                                                    <p class="username font-size-13 font-weight-600">Username</p>
-                                                                    <div class="start-time">
-                                                                        <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                                        <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                                        <div class="card-menu--icon"><i class="mdi mdi-dots-horizontal font-size-18"></i></div>
-                                                                        <div class="cardMenu">
-                                                                            <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                                            <div class="card-menu">
-                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                                                <div class="time-sessiontype">
-                                                                    <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                                                    <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                            
-                                                    </div>
-                                            
-                                                    <div class="session-title cardspacing">
-                                                        <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                                                    </div>
-                                                    <div class="session-description ">
-                                                        <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                                                    </div>
-                                                    <div class="session-image viewImage ">
-                                                        <img src="/images/general images/man.jpg" alt="" class="">
-                                                    </div>           
-                                                </div>
-                                                <div class="commentObject" >
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamefour</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                            <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="subComments">
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                                    <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="subComments">
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                            <p class="font-size-12 openSubComment">view (2) replies</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="subComments">
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                            
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                        
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                            
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="thread-comment">
-                                                <img src="images/general images/Ellipse 1109.png" alt="">
-                                                <textarea name="" id="commentInput"   placeholder="Write comment"  ></textarea>
-                                                <button>Send</button>
-                                            </div>
-                                        </div>
-                                    <!-- </div> -->      
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                <div class="card-menu--icon"><i class="mdi mdi-dots-horizontal font-size-18"></i></div>
                                                 <div class="cardMenu">
                                                     <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
                                                     <div class="card-menu">
@@ -1342,251 +510,51 @@
                                         <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
                                         <div class="time-sessiontype">
                                             <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
+                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
                                         </div>
                                     </div>
                                 </div>
                     
                             </div>
                     
-                            <div class="session-title cardspacing">
-                                <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
+                            <div class="session-title">
+                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
                             </div>
-                            <div class="session-description ">
-                                <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image viewImage ">
-                                <img src="/images/general images/man.jpg" alt="" class="">
-                            </div>
-                            <div class="joined-sessionlevel">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
+                            <div class="session-image ">
+                                <div class="sessionVisual">
+                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
                                 </div>
-                                <span class=" session-level font-size-12 font-weight-700">Simple</span>
+                                <div class="popImages">
+                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
+                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
+                                    <div class="popImagesInner">
+                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
+                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
+                                    </div>
+                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
+                                </div>
                             </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
+                            <div class="reaction-counts">
+                                <div class="likeCount">
+                                    <p><span>1k</span> Answers</p>
+                                </div>
+                                <div class="likeCount">
+                                    <p><span>800</span> likes</p>
+                                </div>
+                                <div class="commentCount">
+                                    <p><span>800</span> comments</p>
+                                </div>
+                                <div class="shareCount">
+                                    <p><span>5k</span> shares</p>
+                                </div>
+                            </div>
                             <div class="session-reactions">
-                                <form action=""><button><p class="font-size-12">Like</p><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-14">20</p></button></form>
-                                <button id="commentBtn"><p class="font-size-12">Comment</p><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-14">5</p></button>
-                                <form action=""><button><p class="font-size-12">Share</p><i class="mdi mdi-share-variant-outline"></i> <p class="font-size-14">30</p></button></form>
+                                <a href="ask-answers.html" class="text-decor-none"><button><p>Answer</p><i class="mdi mdi-pencil-outline"></i></button></a>
+                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
+                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
+                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
                             </div>
-                            <div class="thread-outer">
-                                <div class="thread">
-                                    <!-- <div class="thread-inner"> -->
-                                        <div class="thread-title">
-                                            <div class="close-thread">
-                                                <i class = "mdi mdi-keyboard-backspace font-size-22 font-size-22"></i>
-                                            </div>
-                                            <p class="font-size-18 font-weight-700">Brainstorm</p>
-                                        </div>
-        
-                                        <div class="thread-inner">
-                                            <div class="thread-list">
-                                                <div class="card threadRelatedCard">
-                                                    <div class="card-time cardspacing">
-                                                        <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                                        <div class="user-avater card-padding-inline">
-                                                            <div class="username-time">
-                                                                <div class="username-elipsis">
-                                                                    <p class="username font-size-13 font-weight-600">Username</p>
-                                                                    <div class="start-time">
-                                                                        <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                                        <span class="colored-green font-size-10 font-weight-500">20:15:10</span>
-                                                                        <div class="card-menu--icon"><i class="mdi mdi-dots-horizontal font-size-18"></i></div>
-                                                                        <div class="cardMenu">
-                                                                            <div class="closeCardMenu"><i class="material-icons close-card-menu small custom  font-weight-700">close</i></div>
-                                                                            <div class="card-menu">
-                                            
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                                                <div class="time-sessiontype">
-                                                                    <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                                                    <span class="session-type brand-background-color font-size-12 font-weight-700">Comprehensive</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                            
-                                                    </div>
-                                            
-                                                    <div class="session-title cardspacing">
-                                                        <p class="font-size-13 font-weight-700">Qunatom mechanics</p>
-                                                    </div>
-                                                    <div class="session-description ">
-                                                        <p class="font-size-14 cardspacing">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                                                    </div>
-                                                    <div class="session-image viewImage ">
-                                                        <img src="/images/general images/man.jpg" alt="" class="">
-                                                    </div>           
-                                                </div>
-                                                <div class="commentObject" >
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamefour</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                            <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="subComments">
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                                    <p class="font-size-12 openSubComment">view (4) replies</p>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="subComments">
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div class="commentObject">
-                                                                    <div class="commentLevelTwo singleComment">
-                                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                        <div class="commentContent">
-                                                                            <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                            <div class="comment-reaction-list">
-                                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                            </div>
-                                                                            <p class="font-size-12 openSubComment">view (2) replies</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="subComments">
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user">Sessionowner</p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                        <div class="commentObject">
-                                                                            <div class="commentLevelTwo singleComment">
-                                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                                <div class="commentContent">
-                                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                                    <div class="comment-reaction-list">
-                                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                                    </div>
-                                                                            
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                        
-                                                        <div class="commentObject">
-                                                            <div class="commentLevelTwo singleComment">
-                                                                <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                                <div class="commentContent">
-                                                                    <p class="font-size-12 font-weight-600 comment-user"></p>
-                                                                    <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                                    <div class="comment-reaction-list">
-                                                                        <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                        <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                                    </div>
-                                                            
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="commentObject">
-                                                    <div class="commentLevelOne singleComment">
-                                                        <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
-                                                        <div class="commentContent">
-                                                            <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
-                                                            <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
-                                                            <div class="comment-reaction-list">
-                                                                <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
-                                                                <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="thread-comment">
-                                                <img src="images/general images/Ellipse 1109.png" alt="">
-                                                <textarea name="" id="commentInput"   placeholder="Write comment"  ></textarea>
-                                                <button>Send</button>
-                                            </div>
-                                        </div>
-                                    <!-- </div> -->
-                                  
-                                      
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <div class="card-container filteredContent">
@@ -1802,555 +770,6 @@
                     </div>
                 </div>
                 
-                <div class="create-session displayBrainstorm">
-                    <div class="create-session-inner Bform1">
-                        <div class="form-plate">
-                            
-                            <h1 class="create-title font-weight-700 font-size-18">Brainstorm with others</h1><i class="mdi mdi-window-close exitCreateBrainstorm font-weight-700 font-size-22"></i>
-                            <form action="">
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700" >Level</label>
-                                    <div class="input-style">
-                                        <select name="" id="simpleComp" >
-                                            <option value=""></option>
-                                            <option value="Simple">Simple</option>
-                                            <option value="Comprehensive">Comprehensive</option>
-                                        </select>
-                                        
-                                    </div>
-                                    <p class="option-description font-size-12">Comprehensive offers responders the option to state fact or opinion</p>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Class</label>
-                                    <div class="input-style">
-                                        <select name="" id="">
-                                            <option value=""></option>
-                                            <option value="">Open</option>
-                                            <option value="">Close</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="double-options">
-                                    <div class="industryOrInterest">
-                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="radio" name="industry-interest" id="industry-interest"></div>
-                                        <div class="interest"><label for="" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="radio" name="industry-interest" id="industry-interest"></div>
-                                    </div>
-                                    <div class="choicesOutput">
-                                        <div class="single-input industry" id="Industry">
-                                            <div class="input-style">
-                                                <select name="" id="">
-                                                    <option value=""></option>
-                                                    <option value="">Technology</option>
-                                                    <option value="">Fashion</option>
-                                                    <option value="">Agriculture</option>
-                                                    <option value="">Construction</option>
-                                                    <option value="">Mining</option>
-                                                    <option value="">Manufacturing</option>
-                                                    <option value="">Retail</option>
-                                                    <option value="">Entertainment</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="single-input interest" id="Interest">
-                                            <div class="input-style">
-                                                <select name="" id="">
-                                                    <option value=""></option>
-                                                    <option value="">Photography</option>
-                                                    <option value="">Reading</option>
-                                                    <option value="">Sports</option>
-                                                    <option value="">Science</option>
-                                                    <option value="">Cooking</option>
-                                                    <option value="">Music</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Type</label>
-                                    <div class="input-style">
-                                        <select name="" id="standardCustom">
-                                            <option value=""></option>
-                                            <option value="Standard">Standard</option>
-                                            <option value="Custom">Custom</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="multipleInput">
-                                    <div class="single-input mutipleInputChild ">
-                                        <label for="" class="font-size-13 font-weight-700">Category</label>
-                                        <div class="input-style">
-                                            <select name="t" id="category" onchange="Category()" >
-                                                <option value="" ></option>
-                                                <option value="thought"  >Thought</option>
-                                                <option value="emotion" >Emotion</option>
-                                                <option value="idea" >Idea</option>
-                                                <option value="emotion">Emotion</option>
-                                                <option value="emotion">Emotion</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="double-options mutipleInputChild">
-                                        <div class="choicesOutput ">
-                                            <div class="single-input thought-sub subCat" id="thought">
-                                                <label for="" class="font-size-13 font-weight-700">Sub Category</label>
-                                                <div class="input-style">
-                                                    <select name="" id="">
-                                                        <option value=""></option>
-                                                        <option value="">thought</option>
-                                                        <option value="">Fashion</option>
-                                                        <option value="">Agriculture</option>
-                                                        <option value="">Construction</option>
-                                                        <option value="">Mining</option>
-                                                        <option value="">Manufacturing</option>
-                                                        <option value="">Retail</option>
-                                                        <option value="">Entertainment</option>
-                                    
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="single-input emotion-sub subCat" id="emotion">
-                                                <label for="" class="font-size-13 font-weight-700">Sub Category</label>
-                                                <div class="input-style">
-                                                    <select name="" id="">
-                                                        <option value=""></option>
-                                                        <option value="">Emotion</option>
-                                                        <option value="">Reading</option>
-                                                        <option value="">Sports</option>
-                                                        <option value="">Science</option>
-                                                        <option value="">Cooking</option>
-                                                        <option value="">Music</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="single-input idea-sub subCat" id="idea">
-                                                <label for="" class="font-size-13 font-weight-700">Sub Category</label>
-                                                <div class="input-style">
-                                                    <select name="" id="">
-                                                        <option value=""></option>
-                                                        <option value="">Idea</option>
-                                                        <option value="">Reading</option>
-                                                        <option value="">Sports</option>
-                                                        <option value="">Science</option>
-                                                        <option value="">Cooking</option>
-                                                        <option value="">Music</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn">Next</a>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="create-session-inner Bform2">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Brainstorm with others</h1><i class="mdi mdi-window-close exitCreateBrainstorm font-weight-700 font-size-22"></i>
-                            <form action="">
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Topic</label>
-                                    <div class="input-style">
-                                        <input type="text" class="Btopic">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Description</label>
-                                    <div class="question">
-                                        <textarea name="" id="" cols="30" rows="10" class="Bdescript"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Upload Image</label>
-                                    <div class="input-style">
-                                       <input type="file" name="" id="" class="Bimage">
-                                    </div>
-                                </div>
-                                
-                                <div class="start-time">
-                                    <div class="input-style">
-                                        <p class="font-size-12 font-weight-600">Days</p>
-                                        <input type="number" name="" id="" class="Bdays">
-                                    </div>
-                                    <div class="input-style">
-                                        <p class="font-size-12 font-weight-600">Hours</p>
-                                        <input type="number" name="" id="">
-                                    </div>
-                                    <div class="input-style">
-                                        <p class="font-size-12 font-weight-600">Minutes</p>
-                                        <input type="number" name="" id="">
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                        <div class="multipleBtn">
-                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn">Back</a>
-                            <a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn">Next</a>
-                        </div>
-                    </div>
-                    <div class="create-session-inner Bform3 guidelines">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Guidelines</h1><i class="mdi mdi-window-close exitCreateBrainstorm font-weight-700 font-size-22"></i>
-                            <form action="">
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 1</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 2</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 3</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 4</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 5</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 6</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 7</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 8</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 9</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                <div class="single-input">                                    
-                                    <label for="" class="font-size-13 font-weight-700">Guideline 10</label>                                    
-                                    <input type="radio" class="radio">                                    
-                                </div>  
-                                
-                            </form>
-                        </div>
-                        <div class="multipleBtn">
-                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn">Back</a>
-                            <a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn">Next</a>
-                        </div>
-                    </div>
-                    <div class="create-session-inner Bform4">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Simple Custom</h1><i class="mdi mdi-window-close exitCreateBrainstorm font-weight-700 font-size-22"></i>
-                            <form action="">
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 1</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 2</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 3</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 4</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 5</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                        <div class="multipleBtn">
-                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn">Back</a>
-                            <a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn">Next</a>
-                        </div>
-                    </div>
-                    <div class="create-session-inner Bform5">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Comprehensive Custom</h1><i class="mdi mdi-window-close exitCreateBrainstorm font-weight-700 font-size-22"></i>
-                            <form action="">
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 1</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 2</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 3</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 4</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question 5</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                
-                                
-                                
-                                
-                                
-                            </form>
-                        </div>
-                        <div class="multipleBtn">
-                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn">Back</a>
-                            <a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn">Next</a>
-                        </div>
-                    </div>
-                    <div class="create-session-inner Bform6">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Preview</h1><i class="mdi mdi-window-close exitCreateBrainstorm font-weight-700 font-size-22"></i>
-                            <form action="" class="Bpreview">
-                                
-                            </form>
-                        </div>
-                        <div class="multipleBtn">
-                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn">Back</a>
-                            <a class=" brand-background-color all-btns font-weight-600 font-size-14 next-btn ">Submit</a>
-                        </div>
-                    </div>
-                </div> 
-                <div class="create-session displayAsk">
-                    <div class="create-session-inner">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Ask a question</h1><i class="mdi mdi-window-close exitCreateAsk font-weight-700 font-size-22"></i>
-                            <form action="">
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Level</label>
-                                    <div class="input-style">
-                                        <select name="" id="">
-                                            <option value=""></option>
-                                            <option value="">Simple</option>
-                                            <option value="">Comprehensive</option>
-                                        </select>
-                                        
-                                    </div>
-                                    <p class="option-description font-size-12">Comprehensive offers responders the option to state fact or opinion</p>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Class</label>
-                                    <div class="input-style">
-                                        <select name="" id="">
-                                            <option value=""></option>
-                                            <option value="">Open</option>
-                                            <option value="">Close</option>
-                                        </select>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="double-options">
-                                    <div class="industryOrInterest">
-                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="radio" name="industry-interest" id="industry-interest"></div>
-                                        <div class="interest"><label for="" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="radio" name="industry-interest" id="industry-interest"></div>
-                                    </div>
-                                    <div class="choicesOutput">
-                                        <div class="single-input industry" id="Industry">
-                                            <div class="input-style">
-                                                <select name="" id="">
-                                                    <option value=""></option>
-                                                    <option value="">Technology</option>
-                                                    <option value="">Fashion</option>
-                                                    <option value="">Agriculture</option>
-                                                    <option value="">Construction</option>
-                                                    <option value="">Mining</option>
-                                                    <option value="">Manufacturing</option>
-                                                    <option value="">Retail</option>
-                                                    <option value="">Entertainment</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="single-input interest" id="Interest">
-                                            <div class="input-style">
-                                                <select name="" id="">
-                                                    <option value=""></option>
-                                                    <option value="">Photography</option>
-                                                    <option value="">Reading</option>
-                                                    <option value="">Sports</option>
-                                                    <option value="">Science</option>
-                                                    <option value="">Cooking</option>
-                                                    <option value="">Music</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Question</label>
-                                    <div class="question">
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                        <div class="singleBtn"><button class=" brand-background-color all-btns font-weight-600 font-size-14">Submit</button></div>
-                    </div>
-                </div>
-                <div class="create-session displayPoll">
-                    <div class="create-session-inner Pform1">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Create a poll</h1><i class="mdi mdi-window-close exitCreatePoll font-weight-700 font-size-22"></i>
-                            <form action="">
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Level</label>
-                                    <div class="input-style">
-                                        <select name="" id="">
-                                            <option value="" ></option>
-                                            <option value="">Simple</option>
-                                            <option value="">Comprehensive</option>
-                                        </select>
-                                        
-                                    </div>
-                                    <p class="option-description font-size-12">Comprehensive offers responders the option to state fact or opinion</p>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Class</label>
-                                    <div class="input-style">
-                                        <select name="" id="">
-                                            <option value=""></option>
-                                            <option value="">Open</option>
-                                            <option value="">Close</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                
-                                <div class="double-options">
-                                    <div class="industryOrInterest">
-                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="radio" name="industry-interest" id="industry-interest"></div>
-                                        <div class="interest"><label for="" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="radio" name="industry-interest" id="industry-interest"></div>
-                                    </div>
-                                    <div class="choicesOutput">
-                                        <div class="single-input industry" id="Industry">
-                                            <div class="input-style">
-                                                <select name="" id="">
-                                                    <option value=""></option>
-                                                    <option value="">Technology</option>
-                                                    <option value="">Fashion</option>
-                                                    <option value="">Agriculture</option>
-                                                    <option value="">Construction</option>
-                                                    <option value="">Mining</option>
-                                                    <option value="">Manufacturing</option>
-                                                    <option value="">Retail</option>
-                                                    <option value="">Entertainment</option>
-                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="single-input interest" id="Interest">
-                                            <div class="input-style">
-                                                <select name="" id="">
-                                                    <option value=""></option>
-                                                    <option value="">Photography</option>
-                                                    <option value="">Reading</option>
-                                                    <option value="">Sports</option>
-                                                    <option value="">Science</option>
-                                                    <option value="">Cooking</option>
-                                                    <option value="">Music</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-   
-                            </form>
-                            
-                        </div>
-                        <div class="singleBtn"><a class=" brand-background-color all-btns font-weight-600 font-size-14 next-btn pnext-btn ">Next</a></div>
-                    </div>
-                    <div class="create-session-inner Pform2">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Create a poll</h1><i class="mdi mdi-window-close exitCreatePoll font-weight-700 font-size-22"></i>
-                            <form action="">
-                                
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Topic</label>
-                                    <div class="input-style">
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="single-input">
-                                    <label for="" class="font-size-13 font-weight-700">Upload Image</label>
-                                    <div class="input-style">
-                                        <input type="file" name="" id="">
-                                    </div>
-                                </div>
-                                
-                                <div class="start-time">
-                                    <div class="input-style">
-                                        <p class="font-size-12 font-weight-600">Days</p>
-                                        <input type="number" name="" id="">
-                                    </div>
-                                    <div class="input-style">
-                                        <p class="font-size-12 font-weight-600">Hours</p>
-                                        <input type="number" name="" id="">
-                                    </div>
-                                    <div class="input-style">
-                                        <p class="font-size-12 font-weight-600">Minutes</p>
-                                        <input type="number" name="" id="">
-                                    </div>
-                                </div>
-                               
-                                
-                                
-                            </form>
-                        </div>
-                        <div class="multipleBtn">
-                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn pback-btn">Back</a>
-                            <a class=" brand-background-color all-btns font-weight-600 font-size-14  pnext-btn">Next</a>
-                        </div>
-                    </div>
-                    <div class="create-session-inner Pform3">
-                        <div class="form-plate">
-                            <h1 class="create-title font-weight-700 font-size-18">Preview</h1><i class="mdi mdi-window-close exitCreatePoll font-weight-700 font-size-22"></i>
-                            <form action="">
-                                
-                            </form>
-                        </div>
-                        <div class="multipleBtn">
-                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn pback-btn">Back</a>
-                            <a class=" brand-background-color all-btns font-weight-600 font-size-14 pnext-btn ">Submit</a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col-2 column side-card right-side">
                 <div class="other-cards">
