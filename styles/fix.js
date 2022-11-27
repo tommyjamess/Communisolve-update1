@@ -116,6 +116,16 @@ function scrollFunction(){
         rightCardOuter.classList.remove("right-card-stick-height")
         nextSideCardFix.classList.remove("next-side-card-fixer")
     }
+
+
+
+
+    // main card menu -- i moved it here? scroll function can only appear once in this js file
+    let mainCardMenuOuterTwo = document.querySelectorAll(".mainCardMenuOuter")
+
+    mainCardMenuOuterTwo.forEach((item)=> {
+        item.style.display = "none";
+    })
     
 
 }

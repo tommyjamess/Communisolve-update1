@@ -18,11 +18,3 @@ closeMenuCard.forEach((item) => {
 })
 
 // window.onscroll = function() {scrollFunctionInnerCard()};
-
-// let itemTop = mainCardMenuOuter.offsetTop;
-
-// function scrollFunctionInnerCard() {
-//     mainCardMenuOuter.forEach((item)=> {
-//         item.style.display = "none";
-//     })
-// }

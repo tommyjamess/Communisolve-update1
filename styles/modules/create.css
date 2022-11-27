@@ -63,6 +63,7 @@ input[type="file"]::file-selector-button {
 .exitCreateAsk{
     position: absolute;
     right: 34%;
+    transform: translateY(-250%);
     color: var(--color-grey);
 }
 
