@@ -143,9 +143,10 @@ a:hover{
 .floatingButtonOuter{
     position: fixed;
     bottom: 15%;
-    right: 6.5%;
+    right: 4.7%;
     overflow-y: hidden;
     padding-inline: 4px;
+    padding-block: 4px;
 }
 .hiddenFloatMenu{
     display: none;
