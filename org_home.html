@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/uikit.css">
     <script src="https://use.fontawesome.com/07a137f978.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home</title>
+    <title>Organization</title>
 </head>
 <body>
     <div class=" header-page">
@@ -94,136 +94,65 @@
     </div>
     <div class="page page-background">
         <div class="page-container"> 
-            <div class="col-1 column ">
-                <div class="side-menu sideMenuFixed side-menu-stick">
-                    <a href="index.html" class="selected text-decor-none "><div><i class="mdi mdi mdi-home-outline"></i></div> <p class="font-weight-700">Home</p></a>
-                    <a href="explore.html" class="text-decor-none"><div><i class="mdi mdi-compass-outline"></i></div> <p class="font-weight-700">Explore</p></a>
-                    <a href="circles.html" class="text-decor-none"><div><i class="mdi mdi-lightbulb-group-outline"></i></div> <p class="font-weight-700">Circles</p></a>
-                    <a href="connect.html" class="text-decor-none"><div><i class="mdi mdi-human-greeting-proximity"></i></div> <p class="font-weight-700">Connections</p></a>
-                    <a href="groups.html" class="text-decor-none"><div><i class="mdi mdi-account-group-outline"></i></div> <p class="font-weight-700">Groups</p></a>
-                    <a href="private.html" class="text-decor-none"><div><i class="mdi mdi-account-sync-outline"></i></div> <p class="font-weight-700">Private</p></a>
-                    <a href="profile.html" class="text-decor-none"><div><i class="mdi mdi-account-circle-outline"></i></div> <p class="font-weight-700">Profile</p></a>
-                    <a href="notification.html" class="text-decor-none"><div><i class="mdi mdi-bell-outline"></i></div> <p class="font-weight-700">Notifications</p></a>
-                    <a href="dashboard.html" class="text-decor-none"><div><i class ="mdi mdi-view-dashboard-outline"></i></div> <p class="font-weight-700">Dashboard</p></a>
+            <div class="col-1 column  ">
+                <div class="orgColOne side-menu sideMenuFixed side-menu-stick ">
+                    <div class="orgName">
+                        <img src="images/general images/Ellipse 1109.png" alt="">
+                        <p>Organization Name</p>
+                    </div>
+                    
+                    <div class="orgTeams">
+                        <p>Teams</p>
+                        <i class="mdi mdi-chevron-down teamOptions"></i>
+                    </div>
+                    <div class="teamAction">
+                        <ul>
+                            <li><a href="">Create Team</a></li>
+                            <li><a href="">Join Team</a></li>
+                            <li><a href="">Leave Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="teams">
+                        <ul>
+                            <li class="teamName"><p class="activeTeam">Marketing</p></li>
+                            <li class="teamName"><p>Technology</p></li>
+                            <li class="teamName"><p>Finance</p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="col-2 column side-card left-side">  
                 <div class="other-cards">
-                    <div class="secondary-card ">
-                        <div class="card-tint"></div>
-                        <div class="card-title  card-title--active"><i class="mdi mdi-circle font-size-16"></i><p class="font-size-12">Active</p></div>
-                        <div class="side-card--content">
-                            <div class="side-content-plate">
-                                <div class="user-occupation">
-                                    <p class="font-size-13 font-weight-600">Summer suggestion</p>
-                                    <span>The summer class we ha.</span>
+                    <div class="secondary-card session--secondary-card orgColTwoCard">
+                        <div class="orgColTwoTitle"> <p>Organization</p></div>
+                        <div class="side-card--content session---side-card-content">
+                            <div class="orgFilter">
+                                <div class="orgFilterList">
+                                    <ul>
+                                        <li class="orgFilterItem orgActiveView"><p>Sessions</p></li>
+                                        <li class="orgFilterItem"><p>Chat</p></li>
+                                        <li class="orgFilterItem"><p>Project</p></li>
+                                        <li class="orgFilterItem"><p>Notification</p></li>
+                                        <li class="orgFilterItem"><p>Profile</p></li>
+                                        <li class="orgFilterItem"><p>Dashboard</p></li>
+                                    </ul>
                                 </div>
                             </div>
-                            
-                            <div class="side-content-plate">
-                                <div class="user-occupation">
-                                    <p class="font-size-13 font-weight-600">Holiday classes</p>
-                                    <span>The summer class</span>
-                                </div>
-                            </div>
-                            <div class="side-content-plate">
-                                <div class="user-occupation">
-                                    <p class="font-size-13 font-weight-600"">Let there be light</p>
-                                    <span>In the beginning...</span>
-                                </div>
-                            </div>
-                            <div class="side-content-plate">
-                                <div class="user-occupation">
-                                    <p class="font-size-13 font-weight-600"">Summer suggestion</p>
-                                    <span>The summer class we had...</span>
-                                </div>
-                            </div>
-                            
-                            <div class="side-content-plate">
-                                <div class="user-occupation">
-                                    <p class="font-size-13 font-weight-600"">Holiday classes</p>
-                                    <span>The summer class...</span>
-                                </div>
-                            </div>
-                            <div class="side-content-plate">
-                                <div class="user-occupation">
-                                    <p class="font-size-13 font-weight-600"">Let there be light</p>
-                                    <span>In the beginning..</span>
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
-                    <div class="side-card--outer">
+
+
+                    <div class="secondary-card " style="display: none;">
+    
+                    </div>
+                    <div class="side-card--outer" style="display: none;">
                         <div class="secondary-card sideCardFixed">
-                            <div class="card-tint"></div>
-                            <div class="card-title"><i class="mdi mdi-lightbulb-on-outline font-size-22"></i><p class="font-size-12">Suggested for you</p></div>
-                            <div class="side-card--content">
-                                <div class="side-content-plate">
-                                    <div class="user-occupation">
-                                        <p class="font-size-13 font-weight-600">Summer suggestion</p>
-                                        <span>The summer class.</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="side-content-plate">
-                                    <div class="user-occupation">
-                                        <p class="font-size-13 font-weight-600">Holiday classes</p>
-                                        <span>The summer class.</span>
-                                    </div>
-                                </div>
-                                <div class="side-content-plate">
-                                    <div class="user-occupation">
-                                        <p class="font-size-13 font-weight-600">Let there be light</p>
-                                        <span>In the beginning.</span>
-                                    </div>
-                                </div>  
-                                
-                                
-                            </div>
+                            
                         </div>
                     </div>
-                    <div class="side-card--outer side-card-two--outer">
+                    <div class="side-card--outer side-card-two--outer" style="display: none;">
                         <div class="secondary-card sideCardTwoFixed nextSideCardFix">
-                            <div class="card-tint"></div>
-                            <div class="card-title"><i class="mdi mdi-lightbulb-group-outline font-size-22"></i> <p class="font-size-12">Circles for you</p></div>
-                            <div class="side-card--content">
-                                <div class="side-content-plate">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <div class="user-occupation user-based-plate-text">
-                                        <p class="font-size-13 font-weight-600">Joe Biden</p>
-                                        <span class="">United States President</span>
-                                    </div>
-                                </div>
-                                <div class="side-content-plate">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <div class="user-occupation user-based-plate-text">
-                                        <p class="font-size-13 font-weight-600">Adekunle Gold</p>
-                                        <span>React Js Developer</span>
-                                    </div>
-                                </div>
-                                <div class="side-content-plate">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <div class="user-occupation user-based-plate-text">
-                                        <p class="font-size-13 font-weight-600">Joe Biden</p>
-                                        <span>United States President</span>
-                                    </div>
-                                </div>
-                                <div class="side-content-plate">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <div class="user-occupation user-based-plate-text">
-                                        <p class="font-size-13 font-weight-600"">Adekunle Gold</p>
-                                        <span>React Js Developer</span>
-                                    </div>
-                                </div>
-                                <div class="side-content-plate user-based-plate-text">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <div class="user-occupation">
-                                        <p class="font-size-13 font-weight-600">Adekunle Gold</p>
-                                        <span>React Js Developer</span>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -2205,6 +2134,20 @@
     <div class="hiddenMenuOuter">
         <div class="mode-list">
             <img src="/images/general images/averta.svg" alt="">
+            <div class="hiddenMenuUsername">
+                <p>Organization Name </p>
+            </div>
+        </div>
+        <div class="orgTeams">
+            <p>Teams</p>
+            <i class="mdi mdi-chevron-down teamOptions"></i>
+        </div>
+        <div class="hiddenMenuTeamAction">
+            <ul>
+                <li><a href="">Create a team</a></li>
+                <li><a href="">Join a team</a></li>
+                <li><a href="">Leave a team</a></li>
+            </ul>
         </div>
         <div class="hiddenMenu">
             <a href="index.html" class="selected text-decor-none "><div><i class="mdi mdi mdi-home-outline"></i></div> <p class="font-weight-700">Home</p></a>
@@ -2243,6 +2186,7 @@
         </div>
     </div>
 
+<script src="/styles/org_main.js"></script>
 <script src="/styles/fix.js"></script>
 <script src="/styles/main.js"></script>
 <script src="/styles/menu.js"></script>

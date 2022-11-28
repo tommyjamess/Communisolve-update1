@@ -69,7 +69,6 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 10px;
-    /* padding-block: 10px; */
     padding-top: 10px;
 }
 .cardInterest p{
@@ -121,13 +120,11 @@
 
 .specialization{
     color: #858585;
-    /* border: 1px solid black; */
     height: fit-content;
 }
 @media (max-width:700px){
     .specialization{
         max-width:72% ;
-        /* line-height: 15px; */
     }
 }
 
@@ -386,7 +383,6 @@
     margin-bottom: 50px;
 }
 
-
 /* left cards */
 
 .side-card-stick{
@@ -469,11 +465,6 @@
     }
 }
 
-/* .mainMenuContent{
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 7px;
-} */
 
 .mainMenuPlate{
     font-size: 25px;

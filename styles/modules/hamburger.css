@@ -53,9 +53,13 @@
     display: flex;
 }
 .mode-list img{
-    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
 }
-
+.hiddenMenuUsername p{
+    font-size: 14px;
+    font-weight: 700;
+}
 .hiddenMenuOuter .userActionOuter{
     height: 100%;
     padding-block: 30px;

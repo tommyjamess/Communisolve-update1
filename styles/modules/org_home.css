@@ -1,0 +1,198 @@
+.orgColOne{
+    background-color: white;
+    height: 100%;
+    width: 15%;
+    border-radius: 0px 8px 0px 0px;
+}
+.orgName{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 5px;
+    border-bottom: 1px solid var(--line-color);
+    padding-block: 5px;
+}
+.orgName img{
+    max-width: 30px;
+}
+.orgName p{
+    font-weight: 700;
+    color: black;
+    font-size: 12px;
+    line-height: 17px;
+    padding-inline: 5px;
+}
+.orgTeams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.orgTeams p{
+    font-weight: 700;
+}
+.orgTeams i{
+    font-size: 25px;
+    border: none;
+    margin: 0px;
+    margin-bottom: 8px;
+    padding: 0px;
+    height: fit-content;
+    width: fit-content;
+}
+.orgTeams i:hover{
+    cursor: pointer;
+}
+
+.teamAction{
+    background-color: white;
+    border: 1px solid var(--line-color);
+    box-shadow: 0px 2px 0px 1px rgb(128, 128, 128, 0.4);
+
+    position: absolute;
+    width: 90%;
+    transform: translateY(-25%);
+
+    display: none;
+    z-index: 3000;
+    border-radius: 10px;
+}
+.displayTeamAction{
+    display: block;
+}
+.teamAction ul li{
+    list-style: none;
+    /* padding-inline: 8px; */
+    padding-block: 2px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--line-color);
+}
+.teamAction ul li:hover{
+    background-color: var(--color-light-gray);
+}
+.teamAction ul li a{
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.teams ul li{
+    list-style: none;
+    height: 25px;
+    padding-top: 10px;
+}
+.teamName p{
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+}
+.teamName:hover > p{
+    color: var(--color-brandcolor);
+}
+.teamName{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.teamName:hover{
+    cursor: pointer;
+    color: var(--color-brandcolor);
+}
+.activeTeam{
+    color: var(--color-brandcolor)!important;
+}
+.orgActiveView{
+    color: var(--color-brandcolor)!important;
+}
+
+
+
+/* second column  */
+.orgColTwoTitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom:1px solid var(--line-color);
+    padding-bottom: 15px;
+    
+}
+.orgColTwoTitle p{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.orgFilter{
+    padding-top: 20px;
+}
+.orgFilterList ul li{
+    list-style: none;
+}
+.orgFilterItem{
+    padding-left: 57px;
+    margin-bottom: 20px;
+}
+.orgFilterItem p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.orgFilterItem p:hover{
+    color: var(--color-brandcolor);
+    cursor: pointer;
+}
+
+
+
+.orgColTwoCard{
+    position: fixed;
+    width: 15%;
+}
+@media (max-width:1270px){
+    .orgColTwoCard{
+        width: 20.9%;
+    }
+}
+
+
+
+/* organization hidden menu  */
+.hiddenMenuTeamAction{
+    height: 0px;
+    overflow-y: hidden;
+    padding-left: 5px;
+}
+.openHiddenMenuAction{
+    height: 60px !important;
+}
+.hiddenMenuTeamAction ul{
+    height: fit-content;
+    display: flex;
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hiddenMenuTeamAction ul li{
+    list-style: none; 
+    width: fit-content;
+    padding-inline: 10px;
+    border-radius: 8px;
+    padding-bottom: 2px;
+    background-color: var(--color-light-gray);
+    color: black;
+    box-shadow: 0px 1px 2px 2px rgb(128, 128, 128, 0.3);
+}
+.hiddenMenuTeamAction ul li:hover{
+    cursor: pointer;
+    background-color: var(--color-brandcolor);
+}
+.hiddenMenuTeamAction ul li:hover > a{
+    color: white;
+}
+
+.hiddenMenuTeamAction ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+}

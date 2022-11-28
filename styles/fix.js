@@ -16,6 +16,8 @@ let nextSideCardFix = document.querySelector(".nextSideCardFix")
 let sideMenuFixed = document.querySelector(".sideMenuFixed")
 let sideMenuOuter = document.querySelector("sideMenuOuter")
 
+let orgColTwoCard = document.querySelector(".orgColTwoCard")
+
 
 
 
@@ -96,6 +98,7 @@ function scrollFunction(){
 
 
 
+
     // fixed fourth column card position onscroll
     if (window.pageYOffset >= (rightCardFixer - 60)){
         rightCardFixed.classList.add("right-card-stick")
@@ -126,6 +129,4 @@ function scrollFunction(){
     mainCardMenuOuterTwo.forEach((item)=> {
         item.style.display = "none";
     })
-    
-
 }
