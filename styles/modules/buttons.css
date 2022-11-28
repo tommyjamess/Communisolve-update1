@@ -135,3 +135,63 @@ a:hover{
 .optionForm button{
     text-align: center;
 }
+
+
+
+/* floating button  */
+
+.floatingButtonOuter{
+    position: fixed;
+    bottom: 15%;
+    right: 6.5%;
+    overflow-y: hidden;
+    padding-inline: 4px;
+}
+.hiddenFloatMenu{
+    display: none;
+    
+}
+
+
+.hiddenFloatMenu * + *{
+    margin-top: 10px;
+}
+.floatMenu, .floatingButton{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-brandcolor);
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0, 0.3);
+
+}
+.floatMenu:hover, .floatingButton:hover{
+    cursor: pointer;
+    background-color: #5b0893;
+}
+.floatMenu{
+    z-index: 4000;
+}
+.floatingButton{
+    margin-top: 10px;
+    z-index: 5000;
+}
+.floatingButtonOuter i{
+    color: white;
+    font-size: 25px;
+}
+
+.displayFloatingButton{
+    display: block;
+    animation-name:animFloat ;
+    animation-duration: 0.5s;
+}
+
+@keyframes animFloat {
+    from{transform: translateY(50%);}
+    to{transform: translateY(0%);}
+}

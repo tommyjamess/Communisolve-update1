@@ -17,4 +17,16 @@ closeMenuCard.forEach((item) => {
     })
 })
 
-// window.onscroll = function() {scrollFunctionInnerCard()};
+// float button 
+let hiddenFloatMenu = document.querySelector(".hiddenFloatMenu")
+let floatingButton = document.querySelector(".floatingButton")
+
+
+floatingButton.addEventListener("click", ()=> {
+    if(hiddenFloatMenu.classList.contains("displayFloatingButton")){
+        hiddenFloatMenu.classList.remove("displayFloatingButton")
+    }else{
+        hiddenFloatMenu.classList.add("displayFloatingButton")
+    }
+    
+});
