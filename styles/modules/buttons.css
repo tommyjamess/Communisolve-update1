@@ -188,11 +188,4 @@ a:hover{
 
 .displayFloatingButton{
     display: block;
-    animation-name:animFloat ;
-    animation-duration: 0.5s;
-}
-
-@keyframes animFloat {
-    from{transform: translateY(50%);}
-    to{transform: translateY(0%);}
 }

@@ -18,15 +18,24 @@ closeMenuCard.forEach((item) => {
 })
 
 // float button 
-let hiddenFloatMenu = document.querySelector(".hiddenFloatMenu")
-let floatingButton = document.querySelector(".floatingButton")
+let hiddenFloatMenu = document.querySelectorAll(".hiddenFloatMenu")
+let floatingButton = document.querySelectorAll(".floatingButton")
 
 
-floatingButton.addEventListener("click", ()=> {
-    if(hiddenFloatMenu.classList.contains("displayFloatingButton")){
-        hiddenFloatMenu.classList.remove("displayFloatingButton")
-    }else{
-        hiddenFloatMenu.classList.add("displayFloatingButton")
-    }
-    
-});
+floatingButton.forEach((item, index)=>{
+    item.addEventListener("click", ()=> {
+        showFloatMenu(index) 
+    });
+})
+
+function showFloatMenu(index){
+    hiddenFloatMenu.forEach((item, floatIndex) => {
+        if(index == floatIndex){
+            if(item.classList.contains("displayFloatingButton")){
+                item.classList.remove("displayFloatingButton")
+            }else{
+                item.classList.add("displayFloatingButton")
+            }
+        }
+    })
+}
