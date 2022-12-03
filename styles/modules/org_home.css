@@ -26,6 +26,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.hiddenMenuOuter .teamOptions{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    height: 0px;
+}
 .orgTeams p{
     font-weight: 700;
 }
@@ -55,12 +61,14 @@
     z-index: 3000;
     border-radius: 10px;
 }
+.hiddenMenuOuter .teamAction{
+    transform: translateY(2%);
+}
 .displayTeamAction{
     display: block;
 }
 .teamAction ul li{
     list-style: none;
-    /* padding-inline: 8px; */
     padding-block: 2px;
     margin: 0px;
     display: flex;
@@ -74,12 +82,21 @@
     color: black;
     font-size: 13px;
     font-weight: 500;
+    text-decoration: none;
 }
-
+.hiddenMenuOuter .teams{
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 10px;
+}
 .teams ul li{
     list-style: none;
     height: 25px;
     padding-top: 10px;
+}
+.hiddenMenuOuter .teamName i{
+    font-size: 10px;
+    margin-right: 20px;
+    color: var(--color-brandcolor);
 }
 .teamName p{
     font-size: 12px;
@@ -155,44 +172,3 @@
 
 
 
-/* organization hidden menu  */
-.hiddenMenuTeamAction{
-    height: 0px;
-    overflow-y: hidden;
-    padding-left: 5px;
-}
-.openHiddenMenuAction{
-    height: 60px !important;
-}
-.hiddenMenuTeamAction ul{
-    height: fit-content;
-    display: flex;
-    grid-row-gap: 10px;
-    grid-column-gap: 15px;
-    flex-wrap: wrap;
-}
-
-.hiddenMenuTeamAction ul li{
-    list-style: none; 
-    width: fit-content;
-    padding-inline: 10px;
-    border-radius: 8px;
-    padding-bottom: 2px;
-    background-color: var(--color-light-gray);
-    color: black;
-    box-shadow: 0px 1px 2px 2px rgb(128, 128, 128, 0.3);
-}
-.hiddenMenuTeamAction ul li:hover{
-    cursor: pointer;
-    background-color: var(--color-brandcolor);
-}
-.hiddenMenuTeamAction ul li:hover > a{
-    color: white;
-}
-
-.hiddenMenuTeamAction ul li a{
-    text-decoration: none;
-    font-size: 12px;
-    color: black;
-    font-weight: 700;
-}

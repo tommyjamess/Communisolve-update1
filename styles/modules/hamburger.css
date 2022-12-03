@@ -15,6 +15,10 @@
 
     transition: 0.5s ease;
     border: 1px solid var(--line-color);
+    overflow-y: auto;
+}
+.hiddenUsername p{
+    font-weight: 700;
 }
 
 .hiddenMenu * + *{
@@ -47,21 +51,25 @@
     align-items: center;
     grid-column-gap: 15px;
     padding-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 10px;
 }
-.mode-list{
-    display: flex;
-}
+
 .mode-list img{
     min-width: 40px;
     max-width: 40px;
+}
+.hiddenMenuUsername{
+    border-bottom: 1px solid var(--line-color);
+    border: 1px solid black;
 }
 .hiddenMenuUsername p{
     font-size: 14px;
     font-weight: 700;
 }
 .hiddenMenuOuter .userActionOuter{
-    height: 100%;
+    height: fit-content;
     padding-block: 30px;
 }
 .hiddenMenuOuter .userActionInner{
@@ -69,4 +77,10 @@
 }
 .hiddenMenuOuter .userActionInner a{
     padding-inline: 0px;
+}
+
+.teamsOuter{
+    border: 1px solid red;
+    height: 10px;
+    color: black;
 }
