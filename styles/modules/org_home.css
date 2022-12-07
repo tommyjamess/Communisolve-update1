@@ -218,11 +218,96 @@
 .project-card{
     background-color: var(--color-white);
     min-height: 150px;
-    max-height: 150px;
-}
+    padding: 20px 10px;
+    margin-bottom: 10px;
 
+}
+.proj-title-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+.projectAction{
+    display: flex;
+    grid-column-gap: 5px;
+    width: fit-content;
+}
+.projectAction button{
+    background-color: white;
+}
 .editProject i,
 .deleteProject i{
     color: var(--color-grey);
-    font-size: ;
+    font-size:19px ;
+    padding-inline: 1px;
+    padding-block: 1px;
+    border: 0.2px solid var(--line-color);
+}
+.editProject i:hover{
+    cursor: pointer;
+    background-color: var(--color-light-gray);
+    color: black;
+}
+.deleteProject i:hover{
+    cursor: pointer;
+    background-color: var(--color-light-gray);
+    color: black;
+}
+
+.projectSessionTitle p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.projectSessionParticipants{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectSessionAnchor{
+    display: flex;
+    align-items: center;
+    grid-column-gap:5px ;
+}
+.projectSessionAnchor img{
+    max-width: 24px;
+}
+.projectSessionAnchor p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.projectSessionUsers img{
+    max-width: 20px;
+}
+
+.projFiles .filesCount p{
+    font-size: 12px;
+    color: var(--color-grey);
+}
+.daysleft{
+    display: flex;
+    justify-content: space-between;
+}
+.daysleft p{
+    font-size: 12px;
+    color: var(--color-grey);
+}
+.projProgressBar{
+    border: 1px solid var(--line-color);
+    height: 15px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.progressSimulator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.proj-spacing{
+    margin-top: 8px;
 }

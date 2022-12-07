@@ -24,4 +24,32 @@ teamOptions.forEach((item)=> {
 })
 
 
+// progress bar simulator
+let progressSimulator = document.querySelectorAll(".progressSimulator")
+
+progressSimulator.forEach((item) => {
+    if(item.textContent.slice(0, -1) < 50){
+        item.style.backgroundColor = "red"
+    }else if(item.textContent.slice(0, -1) > 50){
+        item.style.backgroundColor = "green"
+    }
+    
+    
+    item.style.width = `${item.textContent}`
+})
+
+
+
+
+
+// let projectSessionUsersImgs = document.querySelectorAll(".projectSessionUsers img")
+
+
+// imgCount = projectSessionUsersImgs.length
+// console.log(imgCount)
+// projectSessionUsersImgs.forEach((img)=> {
+
+//     img.style.transform = (`translateX(-20%)+ `)
+
+// })
 
