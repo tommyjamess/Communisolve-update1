@@ -277,8 +277,12 @@
     font-size: 14px;
     font-weight: 600;
 }
+.projectSessionUsers{
+    padding-right: 10px;
+}
 .projectSessionUsers img{
-    max-width: 20px;
+    max-width: 23px;
+    margin-right: -10px;
 }
 
 .projFiles .filesCount p{
