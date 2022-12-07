@@ -221,3 +221,8 @@
     max-height: 150px;
 }
 
+.editProject i,
+.deleteProject i{
+    color: var(--color-grey);
+    font-size: ;
+}
