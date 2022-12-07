@@ -40,6 +40,22 @@ progressSimulator.forEach((item) => {
 
 
 
+// emoji list 
+click = false
+document.getElementsByClassName("emoji")[0].style.display = "none";
+function showEmoji() {
+    if ( click == false){
+        document.getElementsByClassName("emoji")[0].style.display = "flex";
+        click = true
+    }else{
+        document.getElementsByClassName("emoji")[0].style.display = "none";
+        click = false
+    }
+}
+
+function emoji(emoji){
+    document.getElementById("org-chat-input-field").value += document.getElementById(emoji).innerHTML;
+}
 
 
 // let projectSessionUsersImgs = document.querySelectorAll(".projectSessionUsers img")

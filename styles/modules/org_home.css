@@ -315,3 +315,142 @@
 .proj-spacing{
     margin-top: 8px;
 }
+
+
+/* chat  */
+.orgChatImg{
+    max-width: 30px;
+    margin-right: 10px;
+}
+.orgChatMain{
+    height: 100%;
+}
+.chats{
+    position: fixed;
+    width: 35%;
+}
+@media(max-width:1270px){
+    .chats{
+        width: 54.2%;
+    }
+}
+@media(max-width:900px){
+    .chats{
+        width: 78.2%;
+    }
+}
+@media(max-width:600px){
+    .chats{
+        width: 100%;
+    }
+}
+.chatWindow{
+    width: 100%;
+    height: 100vh;
+    /* max-height: 100%; */
+    background-color: white;
+
+    padding-top: 10px;
+    padding-inline: 20px;
+}
+.chatWindowInner{
+    min-height: 83vh;
+    max-height: 83vh;
+    overflow-y: auto;
+}
+.chatWindowInner::-webkit-scrollbar{
+    display: none;
+}
+.chatWindowInner{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.orgChatInputArea{
+    border: 1px solid var(--color-brandcolor);
+    border-radius: 50px;
+    height: 40px;
+
+    display: flex;
+    grid-column-gap: 5px;
+    z-index: 300;
+    padding-inline: 5px;
+
+}
+.orgChatInputArea input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+.orgChatInputArea input:focus{
+    outline: none;
+}
+.orgChatInputArea i{
+    font-size: 28px;
+}
+.orgChatInputArea i:hover{
+    cursor: pointer;
+}
+.orgChatInputArea button{
+    background-color: transparent;
+    border: 50%;
+}
+
+.emoji{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    transform: translateY(-100%);
+    width:91%;
+    border: 1px solid var(--line-color);
+    background-color: white;
+    transition: 0.5s height;
+}
+.emoji span{
+    font-size: 25px;
+}
+.emoji span:hover{
+    cursor: pointer;
+}
+
+.chatResponse{
+    min-height: 30px;
+    width: fit-content;
+
+    display: block;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.chatContent{
+    min-width: fit-content;
+    max-width: 350px;
+    height: fit-content;
+    font-size: 12px;
+
+}
+.in-coming{
+    background-color: var(--color-light-gray);
+    color: black;
+}
+.out-going{
+    margin-left: auto;
+    background-color: var(--color-brandcolor-light);
+    color: white;
+}
+.chat-timing{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+}
+.chat-timing p{
+    font-size: 9px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.chat-timing i{
+    font-size: 9px;
+    margin-right: -3px;
+}
