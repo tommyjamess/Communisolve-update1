@@ -1,4 +1,7 @@
 .orgColOne{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
     background-color: white;
     height: 100%;
     width: 15%;
@@ -24,7 +27,6 @@
 .orgTeams{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .hiddenMenuOuter .teamOptions{
     display: flex;
@@ -34,14 +36,14 @@
 }
 .orgTeams p{
     font-weight: 700;
+    margin-top: 10px;
 }
 .orgTeams i{
     font-size: 25px;
     border: none;
     margin: 0px;
-    margin-bottom: 8px;
     padding: 0px;
-    height: fit-content;
+    height: 0px;
     width: fit-content;
 }
 .orgTeams i:hover{
@@ -88,20 +90,30 @@
     border-bottom: 1px solid var(--line-color);
     padding-bottom: 10px;
 }
+
 .teams ul li{
     list-style: none;
     height: 25px;
-    padding-top: 10px;
+}
+.teams ul{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
 }
 .hiddenMenuOuter .teamName i{
     font-size: 10px;
     margin-right: 20px;
     color: var(--color-brandcolor);
 }
+.teamName{
+    display: flex;
+    grid-column-gap: 10px;
+}
 .teamName p{
     font-size: 12px;
     color: black;
     font-weight: 600;
+    
 }
 .teamName:hover > p{
     color: var(--color-brandcolor);
@@ -116,6 +128,9 @@
     cursor: pointer;
     color: var(--color-brandcolor);
 }
+.teamName img{
+    max-width: 30px;
+}
 .activeTeam{
     color: var(--color-brandcolor)!important;
 }
@@ -128,11 +143,16 @@
 /* second column  */
 .orgColTwoTitle{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    grid-column-gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 13px;
     border-bottom:1px solid var(--line-color);
-    padding-bottom: 15px;
+    padding-bottom: 9px;
     
+}
+.orgColTwoTitle img{
+    max-width: 30px;
 }
 .orgColTwoTitle p{
     font-size: 12px;
@@ -140,14 +160,25 @@
 }
 
 .orgFilter{
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .orgFilterList ul li{
     list-style: none;
 }
+.orgFilterList ul{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap:-5px;
+}
 .orgFilterItem{
-    padding-left: 57px;
+    display: flex;
+    align-items: center;
+    grid-column-gap: 15px;
+    padding-left: 20px;
     margin-bottom: 20px;
+}
+.orgFilterItem i{
+    font-size: 22px;
 }
 .orgFilterItem p{
     font-size: 12px;
@@ -169,6 +200,8 @@
         width: 20.9%;
     }
 }
+
+
 
 
 
