@@ -28,6 +28,13 @@
     display: flex;
     justify-content: space-between;
 }
+.orgTeams span{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-grey);
+}
+
+
 .hiddenMenuOuter .teamOptions{
     display: flex;
     align-items: center;
@@ -39,7 +46,8 @@
     margin-top: 10px;
 }
 .orgTeams i{
-    font-size: 25px;
+    font-size: 15px;
+    font-weight: 700;
     border: none;
     margin: 0px;
     padding: 0px;
@@ -57,7 +65,7 @@
 
     position: absolute;
     width: 90%;
-    transform: translateY(-25%);
+    transform: translateY(250%);
 
     display: none;
     z-index: 3000;
@@ -214,12 +222,34 @@
 /* project page  */
 .projects{
     min-height: 100%;
+    margin-top: 15px;
+}
+.createProject{
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    height: fit-content;
+    padding-inline: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 0px grey;
+    background-color: var(--color-light-gray);
+    color: var(--color-brandcolor);
+
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.createProject i{
+    font-weight: bold;
+    margin-left: 5px;
 }
 .project-card{
     background-color: var(--color-white);
     min-height: 150px;
     padding: 20px 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 
 }
 .proj-title-action{
@@ -244,16 +274,15 @@
     padding-inline: 1px;
     padding-block: 1px;
     border: 0.2px solid var(--line-color);
+    border-radius: 5px;
 }
 .editProject i:hover{
     cursor: pointer;
     background-color: var(--color-light-gray);
-    color: black;
 }
 .deleteProject i:hover{
     cursor: pointer;
     background-color: var(--color-light-gray);
-    color: black;
 }
 
 .projectSessionTitle p{
@@ -470,6 +499,14 @@
     cursor: pointer;
 }
 
+.chatResponseOuter{
+    display: flex;
+    grid-column-gap: 5px;
+}
+.chatResponseOuter img{
+    max-width: 20px;
+    max-height: 20px;
+}
 .chatResponse{
     min-height: 30px;
     width: fit-content;
