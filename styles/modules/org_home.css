@@ -35,10 +35,11 @@
 }
 
 
-.hiddenMenuOuter .teamOptions{
+.hiddenMenuOuter .orgTeams i{
     display: flex;
-    align-items: center;
-    margin-top: 8px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px;
     height: 0px;
 }
 .orgTeams p{
@@ -72,7 +73,7 @@
     border-radius: 10px;
 }
 .hiddenMenuOuter .teamAction{
-    transform: translateY(2%);
+    transform: translateY(4%);
 }
 .displayTeamAction{
     display: block;
@@ -110,7 +111,7 @@
 }
 .hiddenMenuOuter .teamName i{
     font-size: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
     color: var(--color-brandcolor);
 }
 .teamName{
@@ -146,6 +147,17 @@
     color: var(--color-brandcolor)!important;
 }
 
+.orgRooms{
+    border-bottom: 1px solid var(--line-color);
+    padding-top: 10px;
+}
+.orgRooms a{
+    text-decoration: none;
+    color: black;
+}
+.orgRooms .orgFilterItem{
+    padding-left: 0px;
+}
 
 
 /* second column  */
