@@ -335,7 +335,7 @@
 
 .chats{
     /* width: 35%; */
-    height: 83vh;
+    max-height: 83vh;
 }
 /* @media(max-width:1270px){
     .chats{
