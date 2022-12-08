@@ -469,11 +469,29 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    transform: translateY(1%);
+    transform: translateY(-25%);
     width:35.5%;
     border: 1px solid var(--line-color);
     background-color: white;
     transition: 0.5s height;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px;
+}
+@media(max-width:1270px){
+    .emoji{
+        width: 54.2%;
+    }
+}
+@media(max-width:900px){
+    .emoji{
+        width: 79.5%;
+    }
+}
+@media(max-width:600px){
+    .emoji{
+        width: 98%;
+    }
+    
 }
 .emoji span{
     font-size: 25px;
