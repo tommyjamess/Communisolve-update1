@@ -34,7 +34,9 @@
     color: var(--color-grey);
 }
 
-
+.hiddenMenuOuter .orgTeams{
+    padding-right: 10px;
+}
 .hiddenMenuOuter .orgTeams i{
     display: flex;
     font-size: 17px;
