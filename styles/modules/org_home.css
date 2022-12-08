@@ -188,6 +188,9 @@
 .orgFilter{
     padding-top: 15px;
 }
+.orgFilterList{
+    border-bottom: 1px solid var(--line-color);
+}
 .orgFilterList ul li{
     list-style: none;
 }
@@ -564,4 +567,30 @@
 .chat-timing i{
     font-size: 6px;
     margin-right: -3px;
+}
+
+
+/* add user  */
+.add-user{
+    border: 1px solid var(--line-color);
+    display: flex;
+    margin-top: -20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.add-user input{
+    border: none;
+    width: 80%;
+    padding-inline: 5px;
+}
+.add-user input:focus{
+    outline: none;
+}
+.add-user button{
+    display: flex;
+    background-color: var(--color-light-gray);
+    color: var(--color-brandcolor);
+    font-weight: 700;
+    padding: 5px 5px;
 }

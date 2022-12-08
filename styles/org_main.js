@@ -38,6 +38,51 @@ progressSimulator.forEach((item) => {
     item.style.width = `${item.textContent}`
 })
 
+// add user to group 
+let addUserForm = document.querySelectorAll(".addUserForm")
+addUserForm.forEach((item)=> {
+    item.style.display = "none"
+})
+
+addUserClicked = false
+
+
+function addUser() {
+    if(addUserClicked == false) {
+        addUserForm.forEach((item)=> {
+            item.style.display = "block";
+            addUserClicked = true
+        }) 
+    }else{
+        addUserForm.forEach((item)=> {
+            item.style.display = "none";
+            addUserClicked = false
+        }) 
+    }
+}
+
+// remove user from group 
+
+let removeUserForm = document.querySelectorAll(".removeUserForm")
+removeUserForm.forEach((item)=> {
+    item.style.display = "none"
+})
+
+removeUserClicked = false
+
+function removeUser() {
+    if(removeUserClicked == false) {
+        removeUserForm.forEach((item)=> {
+            item.style.display = "block";
+            removeUserClicked = true
+        }) 
+    }else{
+        removeUserForm.forEach((item)=> {
+            item.style.display = "none";
+            removeUserClicked = false
+        }) 
+    }
+}
 
 
 // emoji list 
@@ -56,6 +101,10 @@ function showEmoji() {
 function emoji(emoji){
     document.getElementById("org-chat-input-field").value += document.getElementById(emoji).innerHTML;
 }
+
+// add user 
+
+
 
 
 // let projectSessionUsersImgs = document.querySelectorAll(".projectSessionUsers img")
