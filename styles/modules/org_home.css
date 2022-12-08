@@ -421,6 +421,7 @@
     border-radius: 50px;
     height: 40px;
     margin-bottom: 5px;
+    background-color: white;
 
     display: flex;
     grid-column-gap: 5px;
