@@ -326,6 +326,13 @@
 .orgChatMain{
     margin-bottom: 0px;
     height: 93vh;
+    border: 1px solid red;
+    overflow-y: hidden;
+}
+@media(max-width:700px){
+    .orgChatMain{
+        height: 90vh;
+    }
 }
 
 .orgChatImg{
@@ -337,6 +344,7 @@
     /* width: 35%; */
     max-height: 83vh;
 }
+
 /* @media(max-width:1270px){
     .chats{
         width: 54.2%;
@@ -369,6 +377,12 @@
     max-height: 83vh;
     overflow-y: auto;
     padding-bottom: 70px;
+}
+@media(max-width:700px){
+    .chatWindowInner{
+        min-height: 80vh;
+        max-height: 80vh;
+    }
 }
 
 .chatWindowInner::-webkit-scrollbar{
