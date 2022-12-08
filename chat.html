@@ -11,7 +11,7 @@
     <title>Chat</title>
 </head>
 <body>
-    <div class=" header-page">
+    <div class=" header-page ">
         <div class="head-content-outer">
             <div class="head-content">
                 <div class="col-1 ">
@@ -94,7 +94,7 @@
         </div>
     </div>
     <div class="page page-background">
-        <div class="page-container"> 
+        <div class="page-container chatPageContainer" > 
             <div class="col-1 column  ">
                 <div class="orgColOne side-menu sideMenuFixed side-menu-stick ">
                     <div class="orgName">
@@ -225,29 +225,29 @@
                             </div>
                             
                         </div>
-                        <div class="orgChatInputAreaOuter">
-                            <div class="emoji">
-                                <span id="emoji1" onclick="emoji(this.id)">&#128513;</span>
-                                <span id="emoji2" onclick="emoji(this.id)">&#128514;</span>
-                                <span id="emoji3" onclick="emoji(this.id)">&#128077;</span>
-                                <span id="emoji4" onclick="emoji(this.id)">&#128078;</span>
-                                <span id="emoji5" onclick="emoji(this.id)">&#129315;</span>
-                                <span id="emoji6" onclick="emoji(this.id)">&#128513;</span>
-                            </div>
-                            <form action="">
-                                <div class="orgChatInputArea">
-                                    <i class="mdi mdi-emoticon-outline" onclick="showEmoji()"></i>
-                                    <input type="text" id="org-chat-input-field" placeholder="Message">
-                                    <button><i class="mdi mdi-send"></i></button>
-                                </div>
-                            </form>
-                            
-                        </div>
                     </div>
                 </div>
+                <div class="orgChatInputAreaOuter">
+                    <div class="emoji">
+                        <span id="emoji1" onclick="emoji(this.id)">&#128513;</span>
+                        <span id="emoji2" onclick="emoji(this.id)">&#128514;</span>
+                        <span id="emoji3" onclick="emoji(this.id)">&#128077;</span>
+                        <span id="emoji4" onclick="emoji(this.id)">&#128078;</span>
+                        <span id="emoji5" onclick="emoji(this.id)">&#129315;</span>
+                        <span id="emoji6" onclick="emoji(this.id)">&#128513;</span>
+                    </div>
+                    <form action="">
+                        <div class="orgChatInputArea">
+                            <i class="mdi mdi-emoticon-outline" onclick="showEmoji()"></i>
+                            <input type="text" id="org-chat-input-field" placeholder="Message">
+                            <button><i class="mdi mdi-send"></i></button>
+                        </div>
+                    </form>
+                    
+                </div>
             </div>
-            <div class="col-2 column side-card right-side">
-                <div class="other-cards">
+            <div class="col-2 column side-card right-side" >
+                <div class="other-cards" >
                     <div class="secondary-card">
                         <div class="card-tint"></div>
                         <div class="card-title"><i class="mdi mdi-trending-up font-size-22"></i><p class="font-size-12">Active Sessions</p></div>
@@ -399,7 +399,7 @@
     </div>
 
 <script src="/styles/org_main.js"></script>
-<script src="/styles/fix.js"></script>
+<!-- <script src="/styles/fix.js"></script> -->
 <script src="/styles/main.js"></script>
 <script src="/styles/menu.js"></script>
 <script src="/styles/filter.js"></script>
