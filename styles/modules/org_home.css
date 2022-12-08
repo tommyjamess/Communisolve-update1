@@ -448,6 +448,7 @@
 @media(max-width:600px){
     .orgChatInputArea{
         width: 98%;
+        margin-left: 2px;
     }
     
 }
