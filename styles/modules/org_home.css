@@ -410,7 +410,7 @@
 .orgChatInputAreaOuter{
     background-color: white;
     height: fit-content;
-    height: 5vh;
+    max-height: 5vh;
 }
 
 .orgChatInputArea{
