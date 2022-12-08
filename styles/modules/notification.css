@@ -13,10 +13,10 @@
     grid-column-gap: 10px;
 }
 .notifUser img{
-    max-width: 40px;
-    min-width: 40px;
-    min-height: 40px;
-    max-height: 40px;
+    max-width: 25px;
+    min-width: 25px;
+    min-height: 25px;
+    max-height: 25px;
     
 }
 .notifInfo{
@@ -53,12 +53,12 @@
 }
 .notifSessionTopic{
     font-size: 13px;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: var(--color-grey);
 }
 .notifSessionDescript{
     font-size: 13px;
-    color: var(--color-grey);
+    /* color: var(--color-grey); */
 }
 .notifTime{
     margin-top: 5px;
@@ -73,7 +73,7 @@
     right: 33.4%;
     transform: translateY(-13px);
 
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 10px;
     padding-inline: 2px;
     padding-block: 2px;
