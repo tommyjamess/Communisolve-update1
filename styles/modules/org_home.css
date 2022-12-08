@@ -326,7 +326,6 @@
 .orgChatMain{
     margin-bottom: 0px;
     height: 93vh;
-    border: 1px solid red;
 }
 
 .orgChatImg{
@@ -335,7 +334,24 @@
 }
 
 .chats{
-    max-height: 100%;
+    position: fixed;
+    width: 35%;
+    height: 92vh;
+}
+@media(max-width:1270px){
+    .chats{
+        width: 54.2%;
+    }
+}
+@media(max-width:900px){
+    .chats{
+        width: 79.5%;
+    }
+}
+@media(max-width:600px){
+    .chats{
+        width: 100%;
+    }
 }
 
 .chatWindow{
@@ -348,9 +364,10 @@
     padding-inline: 20px;
 }
 .chatWindowInner{
-    min-height: 83vh;
-    max-height: 83vh;
+    min-height: 92vh;
+    max-height: 92vh;
     overflow-y: auto;
+    padding-bottom: 70px;
 }
 
 .chatWindowInner::-webkit-scrollbar{
@@ -363,11 +380,11 @@
 .orgChatInputAreaOuter{
     position: absolute;
     bottom: 0;
-    width: 35.3%;
+    width: 100%;
     /* padding-bottom: 8px; */
     background-color: white;
 }
-@media(max-width:1270px){
+/* @media(max-width:1270px){
     .orgChatInputAreaOuter{
         width: 54.2%;
     }
@@ -381,7 +398,7 @@
     .orgChatInputAreaOuter{
         width: 100%;
     }
-}
+} */
 .orgChatInputArea{
     border: 1px solid var(--color-brandcolor);
     border-radius: 50px;
