@@ -541,13 +541,13 @@
 .in-coming{
     background-color: var(--color-light-gray);
     color: black;
-    max-width: 80%;
+    max-width: 65%;
 }
 .out-going{
     margin-left: auto;
     background-color: var(--color-brandcolor-light);
     color: white;
-    max-width: 80%;
+    max-width: 65%;
 }
 .chat-timing{
     display: flex;
