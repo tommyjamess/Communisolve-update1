@@ -12,8 +12,10 @@
 
 }
 .authLogo{
-    width: 100px;
+    width: 80px;
 }
+
+
 
 
 .auth-page--inner{
@@ -21,7 +23,6 @@
     align-items: center;
     min-width:250px ;
     width: fit-content;
-    min-height: 350px;
     height: fit-content;
     padding-block: 24px;
     padding-inline: 40px;
@@ -55,8 +56,14 @@
     margin-bottom: 16px;
     margin-top: 8px;
 }
+.auth-page-three .auth-logo--inner{
+    margin-bottom: 10px;
+}
 .auth-logo--inner{
     text-align: center;
+}
+.auth-logo--inner span{
+    color: grey;
 }
 .auth-logo--inner p{
     font-size: 16px;
@@ -89,12 +96,13 @@
     padding-left: 8px;
     border: none;  
 }
+
 .auth-page-three .signup-input div{
     display: flex;
     justify-content: center;
 }
 .auth-page-three .signup-input{
-    grid-row-gap: 75px;
+    /* grid-row-gap: 75px; */
 }
 .auth-page-three .authInputField{
     width: 70%;
@@ -218,3 +226,37 @@
 }
 
 
+
+
+/* sign up options  */
+.signupWithGoogle .googleBtn{
+    background: none!important;
+    color: black;
+    font-size: 13px;
+    border: 1px solid grey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 8px;
+}
+.googleBtn img{
+    width: 15px;
+}
+.line-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+}
+.horizontal-line{
+    border: 1px solid lightgray;
+    width: 50%;
+    height: 0px;
+}
+.org-auth-logo--inner p{
+    font-size: 20px;
+}
+.org-signup .auth-next-btn{
+    margin-top: -1px;
+}

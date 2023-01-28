@@ -18,25 +18,31 @@
             <div class="AuthContentAlignment">
                 <div>
                     <div class="auth-logo">
-                        <div class="auth-logo--inner">
-                            <p class="font-weight-700">Join CommuniSolve Today</p>
+                        <div class="auth-logo--inner org-auth-logo--inner">
+                            <p class="font-weight-700 ">First, enter your email</p>
+                            <span class="font-size-12">We suggest unsing <span class="font-weight-700 font-size-12">the email address you use at work</span></span>
                         </div>
                     </div>
                 </div>
-                <div class="signup">
+                <div class="signup org-signup">
                     <form action="">
                         <div class="signup-input">
-                            <div class="signupWithGoogle">
-                                <button class="googleBtn"><img src="images/general images/images.png" alt=""> Sign up with Google</button>
+                            <div>
+                                <label for="">Email</label>
+                                <div class="authInputField">
+                                    <i class="mdi mdi-email-outline"></i>
+                                    <input type="email" placeholder="name@work-email.com">
+                                </div>
                             </div>
-                            
+                            <button id="signUp " class="auth-next-btn">Continue</button>
                             <div class="line-container">
                                 <div class="horizontal-line"></div>
                                 <p>or</p>
                                 <div class="horizontal-line"></div>
                             </div>
-                            
-                            <button id="signUp " class="auth-next-btn" style="margin-top: -2px;">Create Account</button>
+                            <div class="signupWithGoogle">
+                                <button class="googleBtn"><img src="images/general images/images.png" alt=""> Sign up with Google</button>
+                            </div>
                         </div>
                         
                         <div class="has-account">
