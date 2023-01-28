@@ -17,11 +17,6 @@ var xValues = ["Italy",];
         data: yValues
         }]
     },
-    // options: {
-    //     title: {
-    //     display: true,
-    //     }
-    // }
 });
 
 
@@ -44,11 +39,7 @@ var xValues = [];
         data: yValues
         }]
     },
-    // options: {
-    //     title: {
-    //     display: true,
-    //     }
-    // }
+    
 });
 
 var xValues = [];
@@ -70,9 +61,5 @@ var xValues = [];
         data: yValues
         }]
     },
-    // options: {
-    //     title: {
-    //     display: true,
-    //     }
-    // }
+    
 });

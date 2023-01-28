@@ -6,12 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="./styles/uikit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/> -->
     <!-- <script src="https://use.fontawesome.com/07a137f978.js"></script> -->
     <title>login</title>
 </head>
 <body>
-    <div class="auth-page">
+    <div class="auth-page signUpPlate">
+        <img src="images/general images/CommuniSolve_Logo.svg"  class="authLogo" alt="">
+        <div class="auth-page--inner " >
+            <div class="AuthContentAlignment">
+                <div>
+                    <div class="auth-logo">
+                        <div class="auth-logo--inner">
+                            <p class="font-weight-700">Welcome Back!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="signup">
+                    <form action="">
+                        <div class="signup-input">
+                            <div>
+                                <label for="">Email</label>
+                                <div class="authInputField">
+                                    <i class="mdi mdi-email-outline"></i>
+                                    <input type="email">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="">Password</label>
+                                <div class="authInputField">
+                                    <i class="mdi mdi-lock-outline icon"></i>
+                                    <input type="password">
+                                </div>
+                            </div>
+                            <button id="signUp " class="auth-next-btn">SIGN IN</button>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="login.html" class="font-size-12 font-weight-500">Forgot Password?</a>
+                        </div>
+                        <div class="has-account">
+                            <p class="font-size-12 font-weight-600">Not yet a member?</p>
+                            <a href="signup.html" class="font-size-12 font-weight-600">SIGN UP</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="agreement">
+                    <p class="font-size-10 font-weight-400  agreement-text">By clicking the sign up button, you agree to our</p>
+                    <div class="agreement-links">
+                        <a href="" class="font-size-12 font-weight-600">Terms of service,</a>
+                        <a href="" class="font-size-12 font-weight-600">Privacy Policy </a>
+                        <p class="font-size-12 font-weight-400">and</p>
+                        <a href="" class="font-size-12 font-weight-600">Cookie Use</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="auth-page">
         <div class="auth-page--inner">
             <div class="AuthContentAlignment">
                 <div class="auth-logo">
@@ -44,6 +97,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>

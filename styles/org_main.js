@@ -102,19 +102,4 @@ function emoji(emoji){
     document.getElementById("org-chat-input-field").value += document.getElementById(emoji).innerHTML;
 }
 
-// add user 
-
-
-
-
-// let projectSessionUsersImgs = document.querySelectorAll(".projectSessionUsers img")
-
-
-// imgCount = projectSessionUsersImgs.length
-// console.log(imgCount)
-// projectSessionUsersImgs.forEach((img)=> {
-
-//     img.style.transform = (`translateX(-20%)+ `)
-
-// })
 

@@ -1,13 +1,15 @@
 // interest or industry  variables
 let choices = document.querySelectorAll(".choices")
 let choiceValue  = document.querySelector(".choicesOutput")
+let industryChoiceValue = document.querySelectorAll(".industryChoiceValue")
+let interestChoiceValue = document.querySelectorAll(".interestChoiceValue")
 
 // create ask session variables
 let ask = document.querySelector(".Ask")
 let createAskUi = document.querySelector(".displayAsk")
-let eixtCreateAsk = document.querySelector(".exitCreateAsk")
+let exitCreateAsk = document.querySelectorAll(".exitCreateAsk")
 
-// create ask session variables
+// create brainstorm session variables
 let brainstorm = document.querySelector(".Brainstorm")
 let createBrainstormUi = document.querySelector(".displayBrainstorm")
 let exitCreateBrainstorm = document.querySelectorAll(".exitCreateBrainstorm")
@@ -18,45 +20,117 @@ let createPollUi = document.querySelector(".displayPoll")
 let exitCreatePoll = document.querySelectorAll(".exitCreatePoll")
 
 
-// brainstorm form next buttons 
+// form next buttons 
 let bNextBtns = document.querySelectorAll(".next-btn")
 let bBackBtns = document.querySelectorAll(".back-btn")
 let pNextBtn = document.querySelectorAll(".pnext-btn")
 let pBackBtn = document.querySelectorAll(".pback-btn")
+let aNextBtn = document.querySelectorAll(".anext-btn")
+let aBackBtn = document.querySelectorAll(".aback-btn")
 
 
 
-// bform1 = document.querySelector(".Bform1")
-// bform2 = document.querySelector(".Bform2")
-
-choices.forEach(function(choice){
-    choice.addEventListener("click", (e)=>{
-        let interest  =  choiceValue.children[1]
-        let industry  =  choiceValue.children[0]
-        if (choice.classList.contains("interest")){
-            interest.style.display = "block"
-            industry.style.display = "none"
-
-        } else {
-            industry.style.display = "block"
-            interest.style.display = "none"
-        }
-    })
-})
-
-
-
+// Ask starts here...
 
 // display ask session 
 ask.addEventListener("click", ()=>{
     createAskUi.style.display = "flex"
 })
 
-eixtCreateAsk.addEventListener("click", ()=>{
-    createAskUi.style.display = "none"
+exitCreateAsk.forEach((item) => {
+    item.addEventListener("click", ()=>{
+        createAskUi.style.display = "none"
+    })
+})
+
+// getting all Ask forms
+AskForm = document.querySelectorAll(".Aform")
+
+// displays default form when ask opens
+AskForm.forEach((form) => {
+    if (form.classList.contains("defaultAskForm")){
+        form.style.display = "block"
+    }
+})
+
+// displays next form element
+aNextBtn.forEach((btn) => {
+    btn.addEventListener("click", ()=> {
+        if( btn.parentElement.parentElement.nextElementSibling){
+            btn.parentElement.parentElement.style.display = "none";
+            btn.parentElement.parentElement.nextElementSibling.style.display = "block"
+        }
+        
+    })
+})
+
+// displays previous form element
+aBackBtn.forEach((btn) => {
+    btn.addEventListener("click", ()=> {
+        if( btn.parentElement.parentElement.previousElementSibling){
+            btn.parentElement.parentElement.style.display = "none";
+            btn.parentElement.parentElement.previousElementSibling.style.display = "block"
+        }
+        
+    })
+})
+
+// Ask ends here...
+
+
+
+// poll starts here..
+
+// display poll session 
+poll.addEventListener("click", ()=>{
+    createPollUi.style.display = "flex"
 })
 
 
+exitCreatePoll.forEach((btn) =>{
+    btn.addEventListener("click", ()=>{
+        createPollUi.style.display = "none"
+    })
+    
+})
+
+// pNextBtn == Poll Next btn
+
+// displays next form element
+pNextBtn.forEach((btn) => {
+    btn.addEventListener("click", ()=> {
+        if( btn.parentElement.parentElement.nextElementSibling){
+            btn.parentElement.parentElement.style.display = "none";
+            btn.parentElement.parentElement.nextElementSibling.style.display = "block"
+        }
+        
+    })
+})
+
+// displays previous form element
+pBackBtn.forEach((btn) => {
+    btn.addEventListener("click", ()=> {
+        if( btn.parentElement.parentElement.previousElementSibling){
+            btn.parentElement.parentElement.style.display = "none";
+            btn.parentElement.parentElement.previousElementSibling.style.display = "block"
+        }
+        
+    })
+})
+
+// poll ends here..
+
+
+
+
+// brainstorm starts here
+
+let = bform1 = createBrainstormUi.children[0]
+let = bform2 = createBrainstormUi.children[1]
+let = bform3 = createBrainstormUi.children[2]
+let = bform4 = createBrainstormUi.children[3]
+let = bform5 = createBrainstormUi.children[4]
+let = bform6 = createBrainstormUi.children[5]
 
 
 // display brainstorm session 
@@ -66,37 +140,13 @@ brainstorm.addEventListener("click", ()=>{
 
 
 exitCreateBrainstorm.forEach((btn) =>{
-
     btn.addEventListener("click", ()=>{
         createBrainstormUi.style.display = "none"
-    })
-    
+    }) 
 })
 
 
-// display poll session 
-poll.addEventListener("click", ()=>{
-    createPollUi.style.display = "flex"
-})
-
-
-exitCreatePoll.forEach((btn) =>{
-
-    btn.addEventListener("click", ()=>{
-        createPollUi.style.display = "none"
-    })
-    
-})
-
-
-let = bform1 = createBrainstormUi.children[0]
-let = bform2 = createBrainstormUi.children[1]
-let = bform3 = createBrainstormUi.children[2]
-let = bform4 = createBrainstormUi.children[3]
-let = bform5 = createBrainstormUi.children[4]
-let = bform6 = createBrainstormUi.children[5]
-
-bNextBtns.forEach(function(btn, index){
+bNextBtns.forEach((btn, index) => {
 
     simpleComplex = document.getElementById("simpleComp")
     standardCustom = document.getElementById("standardCustom")
@@ -228,41 +278,52 @@ bBackBtns.forEach((btn,index)=>{
             
     })
 })
+// brainstorm ends here
 
 
 
-let = pform1 = createPollUi.children[0]
-let = pform2 = createPollUi.children[1]
-let = pform3 = createPollUi.children[2]
 
 
-pNextBtn.forEach( (btn, index)=>{
-    btn.addEventListener("click", ()=>{
-        if (index == 0){
-            pform1.style.display = "none"
-            pform2.style.display = "block"
-            pform3.style.display = "none"
-        }
-        if(index == 1){
-            pform1.style.display = "none"
-            pform2.style.display = "none"
-            pform3.style.display = "block"
+
+
+// chained drop down for interest and industry
+choices.forEach(function(choice){
+    choice.addEventListener("click", (e)=>{
+        if (choice.classList.contains("interest")){
+            industryChoiceValue.forEach((industryChoiceList) => {
+                industryChoiceList.style.display = "none"
+            })
+            interestChoiceValue.forEach((interestChoiceList) => {
+                interestChoiceList.style.display = "block"
+            })
+        } else {
+            industryChoiceValue.forEach((industryChoiceList) => {
+                industryChoiceList.style.display = "block"
+            })
+            interestChoiceValue.forEach((interestChoiceList) => {
+                interestChoiceList.style.display = "none"
+            })
         }
     })
 })
 
-pBackBtn.forEach((btn, index)=>{
-    btn.addEventListener("click", ()=>{
-        if(index == 0){
-            pform1.style.display = "block"
-            pform2.style.display = "none"
-            pform3.style.display = "none"
-        }
-        if(index == 1){
-            pform1.style.display = "none"
-            pform2.style.display = "block"
-            pform3.style.display = "none"
-        }
+let defaultInterest = document.querySelectorAll("#interest")
+let defaultIndustr = document.querySelectorAll("#industry")
+
+
+defaultIndustr.forEach((item) =>{
+    item.checked = true;
+    item.addEventListener("click", ()=>{
+        defaultInterest.forEach((iterestItem) => {
+            iterestItem.checked = false
+        })
+    })
+})
+defaultInterest.forEach((item) =>{
+    item.addEventListener("click", ()=>{
+        defaultIndustr.forEach((industryItem) => {
+            industryItem.checked = false
+        })
     })
 })
 
@@ -292,7 +353,6 @@ function Category(){
         subIdea.style.display = "block"
     }
 }
-
 
 
 

@@ -47,18 +47,35 @@
 }
 .side-card--content{
     padding-inline: 4px;
+
 }
 .side-card--content{
     max-height: 230px;
     overflow-y: auto;
 }
 .side-card--content::-webkit-scrollbar{
-    display: none;
+    display: block;
+    width: 4px;
 }
-.side-card--content{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+.side-card--content::-webkit-scrollbar-track{
+    background: transparent;
 }
+.side-card--content::-webkit-scrollbar-thumb{
+    background-color:var(--color-scrollbar-button);
+    border-radius: 8px;
+}
+
+.side-card--content::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 5px; 
+}
+
+.side-card--content::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 5px;
+}
+
+
 .side-content-plate{
     min-height: 48px;
     max-height: 48px;

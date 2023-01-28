@@ -1,40 +1,70 @@
-/* .AuthPlate{
-    display: none !important;
-} */
+
 .auth-page{
     position: fixed;
     height: 100%;
     width: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background-color: var(--color-light-gray);
 
 }
+.authLogo{
+    width: 100px;
+}
+
+
 .auth-page--inner{
     display: flex;
     align-items: center;
-    min-width: 360px;
-    max-width: 360px;
-    min-height: 640px;
-    max-height: 640px;
-
+    min-width:250px ;
+    width: fit-content;
+    min-height: 350px;
+    height: fit-content;
+    padding-block: 24px;
+    padding-inline: 40px;
     border-radius: var(--card-border-radius);
     background-color: var(--color-white);
-    padding-inline: 41px;
 }
 
+.auth-page-three,
+.auth-page-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.auth-process-number{
+    display: flex;
+    justify-content: left;
+}
+.auth-process-number p{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+}
 
 
 .auth-logo{
     display: flex;
     justify-content: center;
+    margin-bottom: 16px;
+    margin-top: 8px;
 }
 .auth-logo--inner{
     text-align: center;
-    margin-bottom: 21px;
+}
+.auth-logo--inner p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.auth-logo--inner .shieldIcon{
+    font-size: 60px;
+    color: grey;
 }
 .auth-logo img{
     width: 80px;
@@ -43,17 +73,47 @@
     color: #000000;
 }
 
-.signup-input * + *{
-    margin-top: 21px;
+.signup-input label{
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+.signup-input{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 16px;
 }
 .signup-input input{
-    width: 100%;
-    height: 40px;
+    width: 90%;
+    height: 36px;
+    padding-left: 8px;
+    border: none;  
+}
+.auth-page-three .signup-input div{
+    display: flex;
+    justify-content: center;
+}
+.auth-page-three .signup-input{
+    grid-row-gap: 75px;
+}
+.auth-page-three .authInputField{
+    width: 70%;
+}
+.authInputField{
+    color: lightgray;
+    font-size: 18px;
     border-radius: 8px;
     padding-inline: 10px;
-    color: grey;
-
     border: 1px solid var(--line-color);
+    
+    display: flex;
+    align-items: center;
+}
+
+.authCodeInput{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
 }
 
 .auth-page input:focus{
@@ -68,11 +128,18 @@
     font-weight: bold;
 }
 
+.forgot-password{
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+}
+.forgot-password a{
+    text-decoration: none;
+}
 .has-account{
     display: flex;
     justify-content: space-between;
     margin-top: 11px;
-    /* padding-inline: 41px; */
 }
 .has-account p{
     color: var(--color-grey);
@@ -119,6 +186,9 @@
     font-weight: bold;
     font-size: 18px;
 }
+.auth-next-btn{
+    margin-top: 16px;
+}
 .auth-code input[type=number]::-webkit-inner-spin-button, 
 .auth-code input[type=number]::-webkit-outer-spin-button { 
   margin: 0; 
@@ -127,6 +197,24 @@
 .verify-btn{
     margin-top: 21px;
     font-size: 12px;
+}
+
+
+.auth-form-list{
+    display: none;
+}
+
+.resetPassword{
+    margin-top: 24px;
+}
+.resetPassword a{
+    font-size: 12px;
+    width: 25%;
+    text-align: right;
+    text-decoration: none;
+}
+.resetPassword button{
+    margin-top: 24px;
 }
 
 

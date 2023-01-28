@@ -7,6 +7,14 @@
     width: 15%;
     border-radius: 0px 8px 0px 0px;
 }
+
+
+@media (min-width:1692px){
+    .orgColOne{
+        max-width:14.4%;
+    }
+}
+
 .orgName{
     display: flex;
     align-items: center;
@@ -164,6 +172,14 @@
     min-height: 100%;
     max-height: 100%;
 }
+
+
+@media (min-width:1692px){
+    .orgColTwo{
+        max-width: 15%;
+    }
+}
+
 .orgColTwoTitle{
     display: flex;
     grid-column-gap: 10px;
@@ -512,6 +528,10 @@
 }
 .emoji span:hover{
     cursor: pointer;
+}
+
+.chatAttachFile{
+    font-size: 25px;
 }
 
 .chatResponseOuter{

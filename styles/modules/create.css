@@ -5,6 +5,13 @@
 .start-time p{
     color: var(--color-grey);
 }
+
+.poll-timing {
+    display: flex!important;
+    grid-column-gap:18px!important;
+
+}
+
 .input-style{
     align-items: center;
 }
@@ -132,8 +139,8 @@ input[type="file"]::file-selector-button {
     display: flex;
 }
 .industryOrInterest input{
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
 }
 
 .industryOrInterest * + *{
@@ -210,6 +217,12 @@ input[type="file"]::file-selector-button {
 .Bform4,
 .Bform3,
 .Bform2{
+    display: none;
+}
+
+.Aform1,
+.Aform2,
+.Aform3{
     display: none;
 }
 

@@ -8,6 +8,9 @@
     padding-block: 15px;
     padding-inline: 10px;
 }
+.notificationCard:hover{
+    cursor: pointer;
+}
 .notifUser{
     display: flex;
     grid-column-gap: 10px;
@@ -78,6 +81,76 @@
     padding-inline: 2px;
     padding-block: 2px;
 }
+.fullNotificationContainer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    transform: translateY(-46%);
+    width: 100%;
+    display: none;
+}
+.fullNotification{
+    background-color: white;
+    width: 35%;
+    margin-right: 10px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 4px rgb(128, 128, 128, 0.3);
+}
+
+@media (max-width:1270px){
+    .fullNotification{
+        width: 50%;
+        margin-right: 0px;
+        
+    }
+}
+
+@media (max-width:900px){
+    .fullNotificationContainer{
+        transform: translateY(-45%);
+    }
+    .fullNotification{
+        width: 90%;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width:600px) and (max-width:899px){
+    .fullNotificationContainer{
+        transform: translateY(-47%);
+    }
+    .fullNotification{
+        width: 78%;
+        margin-right: 20px;
+    }
+}
+
+
+.fullNotification .notifInfo{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 8px;
+}
+.closeNotification{
+    float: right;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: grey;
+}
+.closeNotification:hover{
+    background-color: rgb(128, 128, 128, 0.2);
+}
+.notifContent p{
+    font-size: 13px;
+    line-height: 18px;
+}
+
 @media (max-width:1270px){
     .notifMenuIcon{
         right: 24.1%;

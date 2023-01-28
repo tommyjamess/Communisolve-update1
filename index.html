@@ -303,6 +303,12 @@
                                                         <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @topic, @username</span></button>
+                                                    </div>
+                                                </form>
                                                 
                                                 <form action="">
                                                     <div class="mainMenuPlate">
@@ -386,6 +392,9 @@
                                 <button class="join-session-btn font-weight-600 font-size-14">Join</button>
                             </form>
                             <div class="reaction-counts">
+                                <div class="likeCount">
+                                    <p><span>1k</span> Views</p>
+                                </div>
                                 <div class="likeCount">
                                     <p><span>800</span> likes</p>
                                 </div>
@@ -486,7 +495,7 @@
                                         <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
                                         <div class="time-sessiontype">
                                             <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
+                                            <span class="session-type brand-background-color font-size-10 font-weight-700 simple-session">Simple</span>
                                         </div>
                                     </div>
                                 </div>
@@ -910,7 +919,7 @@
                                         <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
                                         <div class="time-sessiontype">
                                             <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
+                                            <span class="session-type brand-background-color font-size-10 font-weight-700 simple-session">Simple</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1565,11 +1574,11 @@
                                 </div>
                                 <div class="double-options">
                                     <div class="industryOrInterest">
-                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="radio" name="industry-interest" id="industry-interest"></div>
-                                        <div class="interest"><label for="" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="radio" name="industry-interest" id="industry-interest"></div>
+                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="checkbox" name="checktype" id="industry" ></div>
+                                        <div class="interest"><label for="interest" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="checkbox" name="checktype" id="interest"></div>
                                     </div>
                                     <div class="choicesOutput">
-                                        <div class="single-input industry" id="Industry">
+                                        <div class="single-input industry industryChoiceValue" id="Industry">
                                             <div class="input-style">
                                                 <select name="" id="">
                                                     <option value=""></option>
@@ -1580,12 +1589,11 @@
                                                     <option value="">Mining</option>
                                                     <option value="">Manufacturing</option>
                                                     <option value="">Retail</option>
-                                                    <option value="">Entertainment</option>
-                                                    
+                                                    <option value="">Entertainment</option>   
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="single-input interest" id="Interest">
+                                        <div class="single-input interest interestChoiceValue" id="Interest" >
                                             <div class="input-style">
                                                 <select name="" id="">
                                                     <option value=""></option>
@@ -1607,6 +1615,7 @@
                                             <option value=""></option>
                                             <option value="Standard">Standard</option>
                                             <option value="Custom">Custom</option>
+                                            <option value="Custom">Guided</option>
                                         </select>
                                     </div>
                                 </div>
@@ -1875,7 +1884,7 @@
                     </div>
                 </div> 
                 <div class="create-session displayAsk">
-                    <div class="create-session-inner">
+                    <div class="create-session-inner Aform1 defaultAskForm Aform">
                         <div class="form-plate">
                             <h1 class="create-title font-weight-700 font-size-18">Ask a question</h1><i class="mdi mdi-window-close exitCreateAsk font-weight-700 font-size-22"></i>
                             <form action="">
@@ -1887,7 +1896,6 @@
                                             <option value="">Simple</option>
                                             <option value="">Comprehensive</option>
                                         </select>
-                                        
                                     </div>
                                     <p class="option-description font-size-12">Comprehensive offers responders the option to state fact or opinion</p>
                                 </div>
@@ -1905,11 +1913,11 @@
                                 
                                 <div class="double-options">
                                     <div class="industryOrInterest">
-                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="radio" name="industry-interest" id="industry-interest"></div>
-                                        <div class="interest"><label for="" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="radio" name="industry-interest" id="industry-interest"></div>
+                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="checkbox" name="checktype" id="industry" ></div>
+                                        <div class="interest"><label for="interest" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="checkbox" name="checktype" id="interest"></div>
                                     </div>
                                     <div class="choicesOutput">
-                                        <div class="single-input industry" id="Industry">
+                                        <div class="single-input industry industryChoiceValue" id="Industry">
                                             <div class="input-style">
                                                 <select name="" id="">
                                                     <option value=""></option>
@@ -1925,7 +1933,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="single-input interest" id="Interest">
+                                        <div class="single-input interest interestChoiceValue" id="Interest">
                                             <div class="input-style">
                                                 <select name="" id="">
                                                     <option value=""></option>
@@ -1939,18 +1947,50 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
+                                </div>   
+                            </form>
+                        </div>
+                        <div class="multipleBtn">
+                            <a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn anext-btn">Next</a>
+                        </div>
+                        
+                    </div>
+                    <div class="create-session-inner Aform2 Aform">
+                        <div class="form-plate">
+                            <h1 class="create-title font-weight-700 font-size-18">Ask a question</h1><i class="mdi mdi-window-close exitCreateAsk font-weight-700 font-size-22"></i>
+                            <form action="">
                                 <div class="single-input">
                                     <label for="" class="font-size-13 font-weight-700">Question</label>
                                     <div class="question">
                                         <textarea name="" id="" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
+
+                                <div class="single-input">
+                                    <label for="" class="font-size-13 font-weight-700">Upload Image</label>
+                                    <div class="input-style">
+                                       <input type="file" name="" id="" class="Bimage">
+                                    </div>
+                                </div>
                                 
                             </form>
                         </div>
-                        <div class="singleBtn"><button class=" brand-background-color all-btns font-weight-600 font-size-14">Submit</button></div>
+                        <div class="multipleBtn">
+                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn aback-btn">Back</a>
+                            <a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn anext-btn">Next</a>
+                        </div>
+                    </div>
+                    <div class="create-session-inner Aform3 Aform">
+                        <div class="form-plate">
+                            <h1 class="create-title font-weight-700 font-size-18">Preview</h1><i class="mdi mdi-window-close exitCreateAsk font-weight-700 font-size-22"></i>
+                            <form action="" class="Apreview">
+                                
+                            </form>
+                        </div>
+                        <div class="multipleBtn">
+                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn aback-btn">Back</a>
+                            <a class=" brand-background-color all-btns font-weight-600 font-size-14 next-btn">Submit</a>
+                        </div>
                     </div>
                 </div>
                 <div class="create-session displayPoll">
@@ -1983,11 +2023,11 @@
                                 
                                 <div class="double-options">
                                     <div class="industryOrInterest">
-                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="radio" name="industry-interest" id="industry-interest"></div>
-                                        <div class="interest"><label for="" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="radio" name="industry-interest" id="industry-interest"></div>
+                                        <div class="industry "><label for="industry" class="font-size-13 font-weight-700">Industry</label><input class="choices industry"  type="checkbox" name="checktype" id="industry" ></div>
+                                        <div class="interest"><label for="interest" class="font-size-13 font-weight-700">Interest</label><input class="choices interest" type="checkbox" name="checktype" id="interest"></div>
                                     </div>
                                     <div class="choicesOutput">
-                                        <div class="single-input industry" id="Industry">
+                                        <div class="single-input industry industryChoiceValue" id="Industry">
                                             <div class="input-style">
                                                 <select name="" id="">
                                                     <option value=""></option>
@@ -2003,7 +2043,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="single-input interest" id="Interest">
+                                        <div class="single-input interest interestChoiceValue" id="Interest">
                                             <div class="input-style">
                                                 <select name="" id="">
                                                     <option value=""></option>
@@ -2018,7 +2058,7 @@
                                         </div>
                                     </div>
                                 </div>
-   
+                                
                             </form>
                             
                         </div>
@@ -2043,15 +2083,15 @@
                                 </div>
                                 
                                 <div class="start-time">
-                                    <div class="input-style">
+                                    <div class="input-style poll-timing">
                                         <p class="font-size-12 font-weight-600">Days</p>
                                         <input type="number" name="" id="">
                                     </div>
-                                    <div class="input-style">
+                                    <div class="input-style poll-timing">
                                         <p class="font-size-12 font-weight-600">Hours</p>
                                         <input type="number" name="" id="">
                                     </div>
-                                    <div class="input-style">
+                                    <div class="input-style poll-timing">
                                         <p class="font-size-12 font-weight-600">Minutes</p>
                                         <input type="number" name="" id="">
                                     </div>
@@ -2244,11 +2284,11 @@
         </div>
     </div>
 
+<script src="/styles/create_session.js"></script>
 <script src="/styles/fix.js"></script>
 <script src="/styles/main.js"></script>
 <script src="/styles/menu.js"></script>
 <script src="/styles/filter.js"></script>
-<script src="/styles/create_session.js"></script>
 <script src="/styles/images.js"></script>
 <script src="/styles/cardMenu.js"></script>
 </body>

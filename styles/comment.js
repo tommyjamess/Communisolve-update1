@@ -3,9 +3,6 @@ let commentPage = document.querySelectorAll(".comment-page")
 let closeThread = document.querySelectorAll(".close-thread")
 let singleComment = document.querySelectorAll(".singleComment")
 
-// thread.forEach((item)=>{
-//     item.style.display = "none";
-// })
 
 
 commentBtn.forEach((btn)=>{

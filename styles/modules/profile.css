@@ -45,6 +45,9 @@
 .profile-title{
     color: var(--color-grey);
 }
+.profile-title:hover{
+    cursor: pointer;
+}
 .followers-count{
     display: flex;
     grid-column-gap: 30px;
@@ -72,6 +75,11 @@
     margin-right: 20px;
     border: 1px solid var(--color-brandcolor);
     background-color: var(--color-white);
+}
+.membershipProfileBtn{
+    background-color: var(--color-brandcolor);
+    color: white;
+    border-radius: 8px;
 }
 .profile-username{
     margin-top: 18px;

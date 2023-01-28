@@ -1,23 +1,18 @@
 .dashboard-card{
     /* max-width: 470px; */
     border-radius: var(--card-border-radius);
-    min-height: 50rem;
-    max-height: 50rem;
+   
     background-color: var(--color-white);
     margin-top: 15px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
-/* @media (max-width:1270px){
-    .dashboard-card{
-        max-width: 700px;
-    }
-} */
+
 .measure-title{
     padding-block:7px;
     text-align: center;
     border-radius: var(--card-border-radius);
     background-color: var(--color-white);
-    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); */
 
     margin-bottom: 20px;
     border: 1px solid var(--line-color);
@@ -28,17 +23,16 @@
 
 .measure-card-container{
     display: flex;
-    justify-content: space-around;
-    grid-column-gap: 10px;
+    justify-content: left;
+    grid-column-gap: 24px;
+    margin-top: 8px;
 }
 
 .measure-card{
     height: 200px;
-    /* flex-basis: 50%; */
     max-width: 30%;
     border-radius: 20px;
     background-color: var(--color-white);
-    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); */
     border: 1px solid var(--line-color);
 }
 
