@@ -12,9 +12,10 @@
 
 }
 .authLogo{
-    width: 80px;
+    width: 40px;
+    position: absolute;
+    top: 16px;
 }
-
 
 
 
@@ -24,6 +25,7 @@
     min-width:250px ;
     width: fit-content;
     height: fit-content;
+    min-height: 400px;
     padding-block: 24px;
     padding-inline: 40px;
     border-radius: var(--card-border-radius);

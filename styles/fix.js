@@ -19,6 +19,9 @@ let sideMenuOuter = document.querySelector("sideMenuOuter")
 let orgColTwoCard = document.querySelector(".orgColTwoCard")
 
 
+let AllFilter = document.querySelectorAll(".allfilter")
+
+
 
 
 
@@ -34,7 +37,15 @@ let rightCardTwoFixer = rightCardTwoFixed.offsetTop;
 
 
 function scrollFunction(){
-    if(sessionFilter.classList.contains("profile-filter")){
+    if(sessionFilter.classList.contains("extended-filter")){
+        if (window.pageYOffset >= (fixSessionFilter + 192)){
+            sessionFilter.classList.add("extended-filter-stick")
+            sessionFilterOuter.classList.add("card-extendedFilter-fix")
+        }else{
+            sessionFilter.classList.remove("extended-filter-stick")
+            sessionFilterOuter.classList.remove("card-extendedFilter-fix")
+        }
+    }else if(sessionFilter.classList.contains("profile-filter")){
         if (window.pageYOffset >= (fixSessionFilter + 192)){
             sessionFilter.classList.add("profile-filter-stick")
             sessionFilterOuter.classList.add("card-profileFilter-fix")
@@ -58,7 +69,6 @@ function scrollFunction(){
         }
     }else{
         if (window.pageYOffset >= (fixSessionFilter + 28)){
-        
             sessionFilter.classList.add("card-filter-stick")
             sessionFilterOuter.classList.add("card-filterfix")
         }else{
@@ -66,7 +76,26 @@ function scrollFunction(){
             sessionFilterOuter.classList.remove("card-filterfix")
         }
     }
-    
+
+
+    // fixes the menu header based on filter extension 
+    if (window.pageYOffset >= (fixSessionFilter + 192)){
+        AllFilter.forEach((item) => {
+            item.addEventListener("click", ()=> {
+                if(item.classList.contains("noExtension")){
+                    item.parentElement.parentElement.classList.add("profile-filter-stick")
+                    item.parentElement.parentElement.classList.remove("extended-filter-stick")
+                    item.parentElement.parentElement.parentElement.classList.add("card-profileFilter-fix")
+                    item.parentElement.parentElement.parentElement.classList.remove("card-extendedFilter-fix")
+                }else if((item.classList.contains("industryFilterBtn")) || (item.classList.contains("interestFilterBtn")) || (item.classList.contains("dashboardFilterBtn"))){
+                    item.parentElement.parentElement.classList.remove("profile-filter-stick")
+                    item.parentElement.parentElement.classList.add("extended-filter-stick")
+                    item.parentElement.parentElement.parentElement.classList.remove("card-profileFilter-fix")
+                    item.parentElement.parentElement.parentElement.classList.add("card-extendedFilter-fix")
+                }
+            })
+        })
+    }
     
     
 
