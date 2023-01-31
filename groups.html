@@ -231,7 +231,25 @@
                 
             </div>
             <div class="col-3 column main">
-                <div class="filter-outer ">
+                <div class="filter-outer">
+                    <div class="filter no-creation">
+                        <div class="card-filter card-filter-bottom--padding bottom-border-radius majorSessionFilter">
+                            <div class="session-filter selected-filter  filter-padding allfilter">
+                                <p class="selected font-size-13 font-weight-600">Your groups</p>
+                            </div>
+                            <div class="session-filter filter-padding allfilter" >
+                                <p class="font-size-13 font-weight-600">Groups for you</p>
+                            </div>
+                            <div class="session-filter filter-padding allfilter">
+                                <p class="selected font-size-13 font-weight-600">Your circles</p>
+                            </div>
+                            <div class="session-filter filter-padding allfilter" >
+                                <p class="font-size-13 font-weight-600">Circles for you</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="filter-outer ">
                     <div class=" filter profile-filter">
                         <div class="card-filter top-border-radius profile-info">
                             <div class="profile-info--inner">
@@ -268,1703 +286,279 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="filteredContentContainer">
                     <div class="card-container on-display filteredContent">
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
-                            </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Qunatom mechanics</p>
-                            </div>
-                            <div class="session-description">
-                                <p class="font-size-14">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
-                                </div>
-                                <span class=" session-level font-weight-700">Standard</span>
-                            </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Ends in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="sessionVisual sessionMultiVisual">
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg">
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg">
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <div class="optionChoice">
-                                    <div class="optionChoiceInner">
-                                        <p class="font-size-12 font-weight-700">Great choice, kindly state why</p>
-                                        <textarea name="" id=""  ></textarea>
-                                        <div class="optionForm">
-                                            <form action=""><button class="ignore">Ingore</button></form>
-                                            <form action=""><button class="submit">Submit</button></form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="option-btns-inner">
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 1</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 2</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 3</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 4</button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="votes.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
                         </div>
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>1k</span> Answers</p>
-                                </div>
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <a href="ask-answers.html" class="text-decor-none"><button><p>Answer</p><i class="mdi mdi-pencil-outline"></i></button></a>
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
                         </div>
                     </div>
                     <div class="card-container filteredContent">
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Tech Support</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
-                            </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Qunatom mechanics</p>
-                            </div>
-                            <div class="session-description">
-                                <p class="font-size-14">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
-                                </div>
-                                <span class=" session-level font-weight-700">Standard</span>
-                            </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Ends in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="sessionVisual sessionMultiVisual">
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg">
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg">
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <div class="optionChoice">
-                                    <div class="optionChoiceInner">
-                                        <p class="font-size-12 font-weight-700">Great choice, kindly state why</p>
-                                        <textarea name="" id=""  ></textarea>
-                                        <div class="optionForm">
-                                            <form action=""><button class="ignore">Ingore</button></form>
-                                            <form action=""><button class="submit">Submit</button></form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="option-btns-inner">
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 1</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 2</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 3</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 4</button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="votes.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
                         </div>
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>1k</span> Answers</p>
-                                </div>
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <a href="ask-answers.html" class="text-decor-none"><button><p>Answer</p><i class="mdi mdi-pencil-outline"></i></button></a>
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
                         </div>
                     </div>
                     <div class="card-container filteredContent">             
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Finance</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
-                            </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Ends in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="sessionVisual sessionMultiVisual">
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg">
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg">
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <div class="optionChoice">
-                                    <div class="optionChoiceInner">
-                                        <p class="font-size-12 font-weight-700">Great choice, kindly state why</p>
-                                        <textarea name="" id=""  ></textarea>
-                                        <div class="optionForm">
-                                            <form action=""><button class="ignore">Ingore</button></form>
-                                            <form action=""><button class="submit">Submit</button></form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="option-btns-inner">
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 1</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 2</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 3</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 4</button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="votes.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
-                        </div>
-                        <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Qunatom mechanics</p>
-                            </div>
-                            <div class="session-description">
-                                <p class="font-size-14">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
-                                </div>
-                                <span class=" session-level font-weight-700">Standard</span>
-                            </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
+                                    
                                 </div>
                             </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>1k</span> Answers</p>
-                                </div>
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <a href="ask-answers.html" class="text-decor-none"><button><p>Answer</p><i class="mdi mdi-pencil-outline"></i></button></a>
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
                         </div>
                     </div>
                     <div class="card-container filteredContent">
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Insurance</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
-                            </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Starts in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Qunatom mechanics</p>
-                            </div>
-                            <div class="session-description">
-                                <p class="font-size-14">The summer class we had last week was a disaster, so we had to change the entire process allover, the man who saw me yesterday you and him went under like who never </p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel">
-                                <div class="joined-users ">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <img src="/images/general images/averta.svg" alt="">
-                                    <p class="user-count font-size-10">+20</p>
-                                </div>
-                                <span class=" session-level font-weight-700">Standard</span>
-                            </div>
-                            <form action="" class="cardspacing">
-                                <button class="join-session-btn font-weight-600 font-size-14">Join</button>
-                            </form>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="session-image ">
-                                <div class="sessionVisual">
-                                    <div class="viewImage"><img src="/images/general images/man.jpg" alt="" class=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>1k</span> Answers</p>
-                                </div>
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <a href="ask-answers.html" class="text-decor-none"><button><p>Answer</p><i class="mdi mdi-pencil-outline"></i></button></a>
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="comment.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
                         </div>
                         <div class="card">
-                            <div class="cardInterest">
-                                <p class="">Technology</p>
-                                <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
-                                    <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
-                                    <div class="mainCardMenuOuter">
-                                        <div class="mainCardMenu">
-                                            <div class="mainMenuContent">
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-book-edit-outline"></i>
-                                                        <button><span>Edit session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-update"></i>
-                                                        <button><span>Update session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-pipe-disconnected"></i>
-                                                        <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-flag-outline"></i>
-                                                        <button><span>Report session</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-delete-outline"></i>
-                                                        <button><span>Delete session</span></button>
-                                                    </div>
-                                                </form>
-                                                
-                                                <div class="mainMenuPlate closeMenuCard">
-                                                    <i class="mdi mdi-cancel"></i>
-                                                    <span>Cancel</span>
-                                                </div>
+                            <div class="card-filter top-border-radius profile-info">
+                                <div class="profile-info--inner">
+                                    <div class="profile-backdrop">
+                                        <img src="./images/general images/man.jpg" alt="">
+                                    </div>
+                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
+                                    <div class="profile-text">
+                                        <div class="followEdit">
+                                            <h3 class="profile-username font-size-15">Group's Name</h3>
+                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+                                            <div class="followers-count">
+                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
+                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
                                             </div>
                                         </div>
+                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="card-time cardspacing">
-                                <img src="/images/general images/averta.svg" alt="" id="user-avater" >
-                                <div class="user-avater card-padding-inline">
-                                    <div class="username-time">
-                                        <div class="username-elipsis">
-                                            <p class="username font-size-13 font-weight-600">Username</p>
-                                            <div class="start-time">
-                                                <p class="font-size-10 font-weight-500">Ends in:</p>
-                                                <span class="colored-green font-size-10 font-weight-500" style="margin-right:10px;">5hrs</span>
-                                                <div class="cardMenu">
-                                                    <div class="closeCardMenu"><i class="mdi mdi-window-close close-card-menu font-weight-700 font-size-18"></i></div>
-                                                    <div class="card-menu">
-                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="specialization font-size-12 font-weight-500">Python Django Developer</p>
-                                        <div class="time-sessiontype">
-                                            <p class="last-seen colored-green font-size-10 font-weight-500">1min</p>
-                                            <span class="session-type brand-background-color font-size-10 font-weight-700">Comprehensive</span>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                    
-                            <div class="session-title ">
-                                <p class="font-size-14 font-weight-700">Who will be the next president?</p>
-                            </div>
-                            <div class="ask-session-image">
-                                <div class="sessionVisual sessionMultiVisual">
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/Mobile Phone 5.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                    <div class="viewImage multipleImages"><img src="/images/general images/man.jpg" alt=""></div>
-                                </div>
-                                <div class="popImages">
-                                    <div class="exitPopImages"><i class="mdi mdi-window-close"></i></div>
-                                    <button onclick="Prev()" class="PrevBtn"><i class="mdi mdi-chevron-left"></i></button>
-                                    <div class="popImagesInner">
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg" >                                      
-                                        <img src="/images/general images/man.jpg" alt="" class="singleSessionImg">
-                                        <img src="/images/general images/Mobile Phone 5.jpg" alt="" class="singleSessionImg">
-                                    </div>
-                                    <button onclick="Next()" class="NextBtn"><i class="mdi mdi-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="option-btns cardspacing">
-                                <div class="optionChoice">
-                                    <div class="optionChoiceInner">
-                                        <p class="font-size-12 font-weight-700">Great choice, kindly state why</p>
-                                        <textarea name="" id=""  ></textarea>
-                                        <div class="optionForm">
-                                            <form action=""><button class="ignore">Ingore</button></form>
-                                            <form action=""><button class="submit">Submit</button></form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="option-btns-inner">
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 1</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 2</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 3</button>
-                                    <button class="font-weight-600 font-size-12 selectOption">Option 4</button>
-                                </div>
-                            </div>
-                            <div class="joined-sessionlevel cardspacing">
-                                <div class="joined-users ">
-                                    <p class="user-count font-size-12">45 Votes</p>
-                                </div>
-                            </div>
-                            <div class="reaction-counts">
-                                <div class="likeCount">
-                                    <p><span>800</span> likes</p>
-                                </div>
-                                <div class="commentCount">
-                                    <p><span>800</span> comments</p>
-                                </div>
-                                <div class="shareCount">
-                                    <p><span>5k</span> shares</p>
-                                </div>
-                            </div>
-                            <div class="session-reactions">
-                                <button><p>Like</p><i class="mdi mdi-thumb-up-outline"></i></button>
-                                <a href="votes.html" class="text-decor-none"><button><p>Comment</p><i class="mdi mdi-comment-multiple-outline"></i></button></a>
-                                <button><p>Share</p><i class="mdi mdi-share-variant-outline"></i></button>
-                            </div>
-                            
                         </div>
                     </div>
                     
