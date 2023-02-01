@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --line-color:#C4C4C4;
+    --color-light-gray: #c2c2c23d;
+    --color-grey: #858585;
+    --color-white: #FFFFFF;
+    --color-brandcolor: #700CB3;
+    --color-brandcolor-dark:#360259;
+    --color-brandcolor-light: rgba(112, 12, 179, 0.6);
+    --color-secondary:rgba(112, 12, 179, 0.1);
+
+    --font-weight-700:700;
+    --font-weight-600:600;
+    --font-weight-500:500;
+    --font-weight-400:400;
+
+    --page-padding-inline:150px;
+
+
+    --header-item-spacing:40px;
+
+
+}
+
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+}
+body::-webkit-scrollbar-track{
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:grey;
+    border-radius: 8px;
+}
+
+
+
+
+/* header  */
+.header-container{
+    height: 50.5rem;
+    max-width: 100%;
+    background-image: url(/images/general\ images/banner.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: linear-gradient(to bottom, var(--color-brandcolor),var(--color-brandcolor-dark), black); */
+    /* clip-path: polygon(100% -100%, 100% 80%, 15% 95%, -100% 95%); */
+}
+
+.header-container--inner{
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    grid-column-gap: var(--header-item-spacing);
+    max-width: 80%;
+}
+
+.header-nav--outer{
+    max-width: 100%;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 56px;
+}
+
+.company-name{
+    color: var(--color-white);
+    font-weight: var(--font-weight-700);
+    font-size: 24px;
+}
+
+.link-list{
+    display: flex;
+    grid-column-gap: var(--header-item-spacing);
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+.link-list li{
+    transition: 0.5s;
+}
+
+.link-list li:hover{
+    transform: scale(1.1);
+}
+
+.link-list li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color-white);
+    font-weight: 600;
+    line-height: 20px;
+}
+
+
+.get-started-btn{
+    font-size: 15px;
+    font-weight: var(--font-weight-700);
+    padding-inline: 23px;
+    padding-block: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--color-brandcolor-dark);
+    color: var(--color-white);
+    min-width: 155px;
+    max-width: 155px;
+
+    flex-basis: 10%;
+    
+}
+
+.get-started-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+.menu-icon{
+    margin-right: 32px;
+    padding: 16px 18px;
+    border-radius: 28px;
+    transition: 0.2s;
+
+    display: none;
+}
+.menuIconClicked{
+    background-color: white;
+    color: var(--color-brandcolor);
+}
+.menu-icon i{
+    font-size: 20px;
+}
+.menu-icon:hover{
+    cursor: pointer;
+}
+
+@media (max-width:1000px){
+    .header-nav--outer{
+        max-width: 100%;
+        margin-top: 24px;
+    }
+    .header-nav{
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    .logo{
+        width: 48px;
+    }
+    .company-name{
+        font-size: 20px;
+    }
+    .link-list li a{
+        font-size: 12px;
+    }
+    .get-started-btn{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:900px){
+    .menu-icon{
+        display: block;
+    }
+  
+    .link-list{
+        position: absolute;
+        width: 100%;
+        top: 14%;
+        max-height: 0px;
+        overflow-y: hidden;
+        display: block;
+        background-color: white;
+        
+        padding-left: 16px;
+
+        transition: 0.5s;
+    }
+
+    
+    .link-list li{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .link-list li a{
+        color: var(--color-brandcolor);
+    }
+    .link-list li:hover{
+        transform:none;
+    }
+    .link-list button{
+        display: none;
+    }
+    .header-container{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* banner  */
+.banner-container{
+    display: flex;
+}
+.banner-container--inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.banner-text{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 40px;
+    padding-left: 10px;
+    padding-top: 24px;
+}
+
+.product-preview{
+    width: 320px;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+}
+
+.banner-text h1{
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: var(--font-weight-700);
+    max-width: 38rem;
+}
+
+.banner-text span{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 8px;
+}
+
+.banner-text h4{
+    color: var(--color-white);
+    font-size: 28px;
+}
+
+.banner-text p{
+    color: white;
+    font-size: 18px;
+    max-width: 37rem;
+    line-height: 28px;
+}
+
+.banner-text button{
+    width: fit-content;
+    font-size: 16px;
+    font-weight: var(--font-weight-700);
+    padding-inline: 40px;
+    padding-block: 8px;
+    border-radius: 8px;
+    border: none;
+    color: var(--color-brandcolor);
+}
+.banner-text button:hover{
+    cursor: pointer;
+}
+
+@media (max-width:1000px){
+    .product-preview{
+        width: 260px;
+    }
+}
+
+@media (max-width:900px){
+    .banner-container--inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-row-gap: 40px;
+    }
+    .banner-text{
+        text-align: center;
+    }
+    
+    .product-preview{
+        width: 520px;
+    }
+    
+}
+
+@media (max-width:700px){
+    .banner-text{
+        flex-basis: 90%;
+    }
+    .banner-text h1{
+        font-size: 32px;
+    }
+    .banner-text h4{
+        font-size: 24px;
+    }
+
+    .product-preview{
+        max-width: 400px;
+        width: 100%;
+        align-self: center;
+    }
+}
+
+@media (max-width:470px){
+    .banner-text{
+        flex-basis: 100%;
+        text-align:left;
+    }
+}
