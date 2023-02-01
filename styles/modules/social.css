@@ -562,9 +562,6 @@ body::-webkit-scrollbar-thumb{
     display: flex;
 }
 
-.footer-logo-container img{
-    height: fit-content;
-}
 
 @media (max-width:1000px){
     .footer .company-name{
@@ -583,10 +580,20 @@ body::-webkit-scrollbar-thumb{
     .footer--container{
         flex-basis: 99%;
     }
-    .footer-logo .logo{
-        width: 24px;
+    .footer-content div{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .footer .company-name{
+        display: block;
+        margin-top: 20px;
     }
     .footer-menu{
         padding-top: 0px;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: left;
+        grid-row-gap: 16px;
     }
 }
