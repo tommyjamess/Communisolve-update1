@@ -383,6 +383,12 @@
     transform: translateY(-37%);
 }
 
+@media (max-width:600px){
+    .extended-filter-stick{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
 
 @media (min-width:600px) and (max-width:899px){
     .card-filter-stick{
@@ -410,6 +416,9 @@
     .no-creation-stick{
         width: 99.4%;
     }
+    .extended-filter-stick{
+        width: 79.5%;
+    }
 }
 
 @media (min-width:899px) and (max-width:1270px){
@@ -421,6 +430,9 @@
     }
     .no-creation-stick{
         width:54.2% ;
+    }
+    .extended-filter-stick{
+        width:54.1% ;
     }
 }
 
