@@ -205,6 +205,7 @@ body::-webkit-scrollbar-thumb{
         padding-left: 16px;
 
         transition: 0.5s;
+        z-index: 1000;
     }
 
     
@@ -256,7 +257,6 @@ body::-webkit-scrollbar-thumb{
     width: 320px;
     top: 0;
     right: 0;
-    z-index: 2000;
 }
 
 .banner-text h1{
