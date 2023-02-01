@@ -49,6 +49,9 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+.page-container{
+    overflow-x: hidden;
+}
 
 
 /* header  */
