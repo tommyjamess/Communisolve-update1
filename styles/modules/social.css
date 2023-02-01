@@ -439,7 +439,16 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media (max-width:700px){
-    
+    .inActiveBtn{
+        width: 150px;
+    }
+    .activeBtn{
+        width: 150px;
+    }
+    .buttons{
+        flex-wrap: wrap;
+        grid-row-gap:16px ;
+    }
 }
 
 @media (max-width:470px){
@@ -470,7 +479,7 @@ body::-webkit-scrollbar-thumb{
 
 .testimony{
     min-height: 21rem;
-    max-height: 21rem;
+    /* max-height: 21rem; */
     max-width: 410px;
     font-size: 19px;
     line-height:32px ;
