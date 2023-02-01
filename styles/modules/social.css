@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb{
 .header-nav{
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     grid-column-gap: var(--header-item-spacing);
     max-width: 80%;
 }
@@ -147,7 +147,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .menu-icon{
-    margin-right: 32px;
+    margin-right: 8px;
     padding: 16px 18px;
     border-radius: 28px;
     transition: 0.2s;
@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb{
     .link-list{
         position: absolute;
         width: 100%;
-        top: 14%;
+        top: 12%;
         max-height: 0px;
         overflow-y: hidden;
         display: block;
@@ -411,7 +411,7 @@ body::-webkit-scrollbar-thumb{
     border: none;
     border-radius: 8px;
     color: var(--color-brandcolor);
-    border:2px solid var(--color-brandcolor);
+    border:1px solid var(--color-brandcolor);
     
 }
 
@@ -582,7 +582,7 @@ body::-webkit-scrollbar-thumb{
     }
     .footer-content div{
         width: 100%;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
     }
     .footer .company-name{
         display: block;
@@ -590,6 +590,7 @@ body::-webkit-scrollbar-thumb{
     }
     .footer-menu{
         padding-top: 0px;
+        margin-left: 12px;
     }
     .footer-content{
         flex-wrap: wrap;
