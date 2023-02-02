@@ -20,6 +20,35 @@
     padding-block:12px;
     background-color: white;
 }
+.handleFeatureFilterOverflow{
+    overflow-x: auto;
+}
+.handleFeatureFilterOverflow::-webkit-scrollbar{
+    display: block;
+    height: 0.5px;
+}
+.handleFeatureFilterOverflow::-webkit-scrollbar-track{
+    background: transparent;
+}
+.handleFeatureFilterOverflow::-webkit-scrollbar-thumb{
+    background-color:var(--color-scrollbar-button);
+    border-radius: 8px;
+}
+.handleFilterOverflow{
+    overflow-x: auto;
+}
+.handleFilterOverflow::-webkit-scrollbar{
+    display: block;
+    height: 2px;
+}
+.handleFilterOverflow::-webkit-scrollbar-track{
+    background: transparent;
+}
+.handleFilterOverflow::-webkit-scrollbar-thumb{
+    background-color:var(--color-scrollbar-button);
+    border-radius: 8px;
+}
+
 .bottom-border-line{
     border-bottom: 1px solid var(--line-color);
 }
@@ -45,6 +74,7 @@
 }
 .session-filter p{
     color: black;
+    min-width: 130px;
 }
 .session-filter:hover > p,
 .session-filter:hover i{

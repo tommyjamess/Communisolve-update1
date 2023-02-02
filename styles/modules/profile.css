@@ -4,6 +4,20 @@
     max-height: 230px;
     padding-top: 0px;
 }
+.handleProfileCardOverflow{
+    overflow-y: auto;
+}
+.handleProfileCardOverflow::-webkit-scrollbar{
+    display: block;
+    height: 0.5px;
+}
+.handleProfileCardOverflow::-webkit-scrollbar-track{
+    background: transparent;
+}
+.handleProfileCardOverflow::-webkit-scrollbar-thumb{
+    background-color:var(--color-scrollbar-button);
+    border-radius: 8px;
+}
 .profile-backdrop{
     height: 65%;
     width: 100%;
