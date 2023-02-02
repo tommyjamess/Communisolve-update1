@@ -30,7 +30,7 @@ body{
     --page-padding-inline:150px;
 
 
-    --header-item-spacing:40px;
+    --header-item-spacing:62px;
 
 
 }
@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     margin-bottom: 32px;
     grid-column-gap: var(--header-item-spacing);
-    max-width: 80%;
+    max-width: 99%;
 }
 
 .header-nav--outer{
@@ -130,7 +130,7 @@ body::-webkit-scrollbar-thumb{
     font-weight: var(--font-weight-700);
     padding-inline: 23px;
     padding-block: 12px;
-    border-radius: 8px;
+    border-radius: 12px 12px 0px 12px;
     border: none;
     background-color: var(--color-brandcolor-dark);
     color: var(--color-white);
@@ -138,12 +138,12 @@ body::-webkit-scrollbar-thumb{
     max-width: 155px;
 
     flex-basis: 10%;
-    
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 0.25);
 }
 
 .get-started-btn:hover{
     cursor: pointer;
-    box-shadow: 0px 2px 2px 2px rgb(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 0.25);
 }
 
 .menu-icon{
@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb{
     .link-list{
         position: absolute;
         width: 100%;
-        top: 12%;
+        top: 13%;
         max-height: 0px;
         overflow-y: hidden;
         display: block;
@@ -283,16 +283,42 @@ body::-webkit-scrollbar-thumb{
     max-width: 37rem;
     line-height: 28px;
 }
-
-.banner-text button{
-    width: fit-content;
-    font-size: 16px;
-    font-weight: var(--font-weight-700);
-    padding-inline: 40px;
-    padding-block: 8px;
+.banner-signupBtn{
+    display: flex;
+    align-items: center;
+    grid-row-gap: -20px;
+}
+.banner-signupBtn input{
+    height: 38px;
+    width: 250px;
+    margin-right: -50px;
     border-radius: 8px;
     border: none;
-    color: var(--color-brandcolor);
+    padding-left: 16px;
+    transition: 0.5s;
+}
+.banner-signupBtn input:focus{
+    outline: none;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.joinBtnContainer{
+    width: fit-content;
+}
+.banner-text button{
+    font-size: 12px;
+    font-weight: normal;
+    padding-inline: 23px;
+    padding-block: 12px;
+    border-radius: 12px 12px 0px 12px;
+    border: none;
+    background-color: var(--color-brandcolor-dark);
+    color: var(--color-white);
+    min-width: 155px;
+    max-width: 155px;
+    z-index: 200;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 0.25);
+    
 }
 .banner-text button:hover{
     cursor: pointer;
@@ -316,6 +342,9 @@ body::-webkit-scrollbar-thumb{
     
     .product-preview{
         width: 520px;
+    }
+    .banner-signupBtn{
+        justify-content: center;
     }
     
 }
@@ -358,35 +387,45 @@ body::-webkit-scrollbar-thumb{
 
 /* main content  */
 
-.section-one--background{
-    display: flex;
-    justify-content: center;
+.background-alt{
     background-color: rgba(237, 237, 237, 0.2);
 }
-.section-one--container{
+
+.section--background{
+    display: flex;
+    justify-content: center;
+}
+
+.section--container{
     flex-basis: 76%;
 }
 
-.section-one{
+.section{
     padding-block: 68px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 600px;
 }
-.section-one-content{
+.section-content{
     display: flex;
     flex-direction: column;
     grid-row-gap: 40px;
     width: fit-content;
     text-align: center;
-    max-width: 700px;
+    max-width: 800px;
 }
-.section-one h1{
+.section-content span{
+    font-size: 70px;
+    color: grey;
+}
+.section h1{
     font-weight: var(--font-weight-700);
     font-size: 68px;
     color: var(--color-brandcolor);
 }
 
-.section-one p{
+.section p{
     font-size: 20px;
     line-height: 28px;
 }
@@ -428,7 +467,7 @@ body::-webkit-scrollbar-thumb{
 
 
 @media (max-width:1000px){
-    .section-one h1{
+    .section h1{
         font-size: 40px;
     }
 }
