@@ -771,6 +771,42 @@ button:hover{
     font-size: 16px;
 }
 
+@media (max-width:1200px){
+    .contact-content{
+        flex-wrap: wrap;
+        padding-inline: 150px;
+    }
+    .contact-page-box{
+        flex-basis: 100%;
+    }
+    .info-side{
+        width: 100%;
+    }
+    .info-card{
+        width: 100%;
+    }
+    .form-side{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .info-text{
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .contact-text{
+        max-width: 100%;
+    }
+}
+
+@media (max-width:700px){
+    .contact-content{
+        padding-inline: 10px;
+    }
+}
+
+@media (max-width:500px){
+    
+}
 
 
 /* footer  */
