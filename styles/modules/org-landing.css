@@ -340,6 +340,7 @@ button:hover{
     .banner-text-outer{
         flex-basis: 100%;
         justify-content: center;
+        padding-top: 0px;
     }
     .banner-text{
         text-align: center;
@@ -372,6 +373,12 @@ button:hover{
     .header-container{
         height: 74rem;
     }
+    .header{
+        padding-inline: 10px;
+    }
+    .banner{
+        padding-inline: 10px;
+    }
     .logo{
         width: 50px;
     }
@@ -383,6 +390,10 @@ button:hover{
         left: -150%;
         min-width: 150%;
         height: 360px;
+    }
+
+    .banner-text h1{
+        font-size: 48px;
     }
 }
 @media (max-width:600px){
@@ -525,6 +536,12 @@ button:hover{
         flex-wrap: wrap;
     }
     
+}
+
+@media (max-width:700px){
+    .content{
+        padding-inline: 10px;
+    }
 }
 
 
@@ -839,5 +856,11 @@ button:hover{
 
     .media{
         margin-left: 0px;
+    }
+}
+
+@media (max-width:700px){
+    .footer--background{
+        padding-inline: 10px;
     }
 }
