@@ -793,14 +793,31 @@ button:hover{
         max-width: 100%;
         flex-wrap: wrap;
     }
-    .contact-text{
-        max-width: 100%;
-    }
+    
 }
 
 @media (max-width:700px){
     .contact-content{
         padding-inline: 10px;
+    }
+    .form-content{
+        padding: 52px 32px;
+    }
+    .info-card{
+        padding: 40px 16px;
+    }
+    .info-text{
+        text-align: center;
+        justify-content: center;
+    }
+    .contact-text{
+        max-width: 80%;
+    }
+    #info-title{
+        font-size: 20px;
+        padding-left: 0px;
+        text-align: center;
+
     }
 }
 
