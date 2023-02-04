@@ -395,8 +395,17 @@ button:hover{
     .banner-text h1{
         font-size: 48px;
     }
+    .banner-signupBtn{
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+    }
     .banner-signupBtn input{
-        margin-right: -60px;
+        margin-right: 0px;
+    }
+    .bannerBtn{
+        width: 210px;
+        margin-top: 10px;
     }
 }
 @media (max-width:600px){
