@@ -12,6 +12,7 @@
     margin-bottom: -6px;
 }
 
+
 .card-filter-bottom--padding{
     padding-bottom: 0px !important;
 }
@@ -83,59 +84,127 @@
 
 
 /* inner filter  */
+.dashboardFilterOuter{
+    display: none;
+}
+.industryFilterOuter{
+    display: none;
+}
+.interestFilterOuter{
+    display: none;
+}
 .dashboardFilter{
     height: 40px;
-    justify-content: space-between;
     background-color: white;
     border-radius: 0px 0px var(--card-border-radius) var(--card-border-radius);
-    border-top: 2px solid lightgray;
-}
-.innerFilterItem{
-    display: flex;
-    align-items: center;
-    width: 49%;
-    grid-column-gap: 8px;
-    padding-left: 16px;
-    justify-content: space-between;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.innerFilterItem p{
-    font-size: 13px;
-}
-.innerFilterItem span{
-    font-size: 20px;
-    height: fit-content;
-}
-.innerFilterSelected{
-    border: 1px solid var(--color-brandcolor-light);
-}
+    border-top: 1px solid var(--line-color);
 
-.industryFilter,
-.interestFilter{
-    height: 40px;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    border-top: 2px solid lightgray;
-    border-radius: 0px 0px var(--card-border-radius) var(--card-border-radius);
 }
 
-.suggestedFilter,
-.followedFilter{
+#industryBtn,
+#interestBtn{
     font-size: 13px;
     font-weight: 600;
-    padding-inline: 40px;
-    padding-block: 4px;
+    padding-inline: 32px;
+    height: 25px;
     border-radius: 28px;
-    cursor: pointer;
+    background: none;
 }
-.industrestSelected{
-    background-color: rgba(112, 12, 179, 0.1);
+#industryBtn:hover{
+    background: rgba(112, 12, 179, 0.1);
+}
+#interestBtn:hover{
+    background: rgba(112, 12, 179, 0.1);
 }
 
+.inner-filter-btn-background{
+    background: rgba(112, 12, 179, 0.1)!important;
+}
+.displayInnerFilter{
+    display: block!important;
+}
+
+.dashboardCardFilter{
+    margin-bottom: 16px;
+}
+.dashboardCardFilter select{
+    width: 100%;
+    height: 32px;
+    border: 1px solid var(--color-grey);
+    border-radius: 8px;
+}
+
+.dashboardCardFilter select:focus{
+    outline: none;
+}
+
+.dashboardCardFilter select option{
+    font-size: 14px;
+}
+
+.followingList{
+    background-color: white;
+    margin-top: 10px;
+    min-height: 35rem;
+    padding-block: 16px;
+    padding-inline: 8px;
+    border-radius: 8px;
+}
+
+.followListItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.fieldName{
+    display: flex;
+    grid-column-gap: 8px;
+}
+
+.fieldName i{
+    font-size: 18px;
+    color: var(--color-grey);
+}
+
+.fieldName p{
+    font-size: 14px;
+}
+
+.interestFollowBtn{
+    transform: translateY(-19%) translateX(16%);
+}
+
+.suggestedFollow:hover{
+    background-color: var(--color-brandcolor);
+    color: white;
+    transition: 0.2s;
+}
+
+.suggestedGroups{
+    display: none;
+}
+
+.interestDashboard{
+    display: none;
+}
+
+.displayFollowList{
+    display: block!important;
+}
+.removeFollowList{
+    display: none!important;
+}
+.displayDashboard{
+    display: block!important;
+}
+.removeDashboard{
+    display: none!important;
+}
 
 
 .card-container{
@@ -320,6 +389,9 @@
     display: flex;
     align-items: center;
 }
+.joined-users:hover{
+    cursor: pointer;
+}
 .joined-users img{
     max-width: 16px;
     min-width: 16px;
@@ -385,10 +457,290 @@
     font-size: 12px;
 }
 
+.comment-reason{
+    display: flex;
+    justify-content: space-around;
+}
+
+.comment-reason button{
+    width: 50%;
+    background: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-brandcolor);
+    padding-block: 8px;
+}
+.commentReasonHilight{
+    width: 50%;
+    border: 1px solid var(--color-brandcolor);
+}
+
 
 .filteredContent{
     display: none;
 }
+
+
+/* group */
+
+#group-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    grid-column-gap: 16px;
+}
+
+
+.groupCard{
+    padding: 16px;
+}
+.groupCard .group-profile-img{
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.groupCard h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: black;
+}
+
+.groupCard p{
+    font-size: 12px;
+    color: var(--color-brandcolor);
+    font-weight: 500;
+}
+
+.groupMenuIcon{
+    float: right;
+    margin-right: 16px;
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 28px;
+}
+.groupMenuIcon:hover{
+    cursor: pointer;
+    background-color:var(--color-light-gray);
+}
+.groupMenuIcon i{
+    font-size: 22px;
+    color: grey;
+}
+
+.groupRequestCancel{
+    float:right;
+    margin-right: -30px;
+    margin-top: 45px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 28px;
+}
+
+.groupRequestCancel i{
+    font-size: 22px;
+    color: grey;
+}
+
+.groupRequestCancel i:hover{
+    cursor: pointer;
+}
+
+.group-profile-header{
+    background-color: white;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 16px;
+    border-radius: 8px 8px 0px 0px;
+    overflow-y: hidden;
+}
+.suggestion-group-profile-header{
+    background-color: white;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 16px;
+    border-radius: 8px 8px 8px 8px;
+    overflow-y: hidden;
+}
+.group-profile-img-container{
+    display: flex;
+    justify-content: space-between;
+}
+.editGroupBtn{
+    height: 30px;
+    transform: translateY(130%) translateX(9%);
+}
+
+.joinGroupBtn{
+    height: 30px;
+    background-color: var(--color-brandcolor)!important;
+    color: white;
+    transform: translateY(130%) translateX(9%);
+}
+
+.group-information{
+    padding-inline: 16px;
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 4px;
+}
+
+.group-information h4{
+    font-size: 18px;
+}
+
+.group-information p{
+    font-size: 13px;
+    color: var(--color-grey);
+}
+
+.group-information #member-count{
+    color: var(--color-brandcolor);
+}
+
+.group-information #member-count:hover{
+    cursor: pointer;
+}
+
+.group-information #about-group{
+    max-height: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.profile-followers{
+    display: flex;
+    grid-column-gap: 16px;
+}
+
+.member-list-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.brainstorm-member-list-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.member-list{
+    padding-inline: 16px;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 32px;
+    border-radius: 8px;
+    width: 35.5%;
+    background-color: white;
+    box-shadow: 0px 0px 6px -2px grey;
+    margin-top: 52px;
+    min-height: 550px;
+    max-height: 550px;
+    padding-block: 16px;
+    overflow-y: auto;
+}
+
+@media (max-width:600px){
+    .member-list{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:600px) and (max-width:899px){
+    .member-list{
+        max-width: 79.5%;
+    }
+    
+}
+
+@media (max-width:900px){
+    .member-list{
+        width: 100%;
+        margin-left: 12px;
+    }
+   
+}
+
+@media (min-width:899px) and (max-width:1270px){
+    .member-list{
+        width: 54.2%;
+    }
+    
+}
+
+.member-list .getSearchInput{
+    border: 1px solid grey;
+    width: 250px;
+    height: 24px;
+    border-radius: 28px;
+    padding-inline: 16px;
+}
+
+.member-list .searchInput:focus{
+    outline: none;
+}
+
+.member-item{
+    display: flex;
+    grid-column-gap:8px ;
+    padding-inline: 16px;
+}
+.member-item img{
+    min-width: 35px;
+    max-width: 35px;
+    min-height: 35px;
+    max-height: 35px;
+}
+.user-div-outer{
+    width: 100%;
+}
+.user-div{
+    display: flex;
+    justify-content: space-between;
+}
+.user-div i{
+    height: 22px;
+}
+.user-div i:hover{
+    cursor: pointer;
+}
+
+.user-div h5{
+    font-size: 14px;
+}
+
+.user-div-outer .occupation{
+    font-size: 12px;
+    color: var(--color-grey);
+}
+
+.displayMemberList{
+    display: flex;
+}
+.displayBrainstormMemberList{
+    display: flex;
+}
+
+
+
+
 
 
 .card-filter-stick{
@@ -500,7 +852,6 @@
 }
 
 
-
 @media (max-width:1270px){
     .side-card-stick{
         max-width: 20.9%;
@@ -608,4 +959,9 @@
 
 .displayMainCardMenu{
     display: block;
+}
+
+
+.HeaderProfileExtension{
+    border: 1px solid red;
 }

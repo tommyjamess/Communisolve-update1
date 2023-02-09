@@ -479,10 +479,10 @@
 
 .toggleImageOuter{
     display: flex;
-    justify-content: center;
 }
+
 .toggleImageOuter p{
-    margin-right: 10px;
+    margin-right: -20px;
 }
 /* toggle in label designing */
 .toggle {

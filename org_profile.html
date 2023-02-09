@@ -231,14 +231,16 @@
                             <div class="session-filter filter-padding allfilter noExtension">
                                 <p class="font-size-13 font-weight-600">Projects</p>
                             </div>
-                            <div class="session-filter filter-padding allfilter dashboardFilterBtn">
+                            <div class="session-filter filter-padding allfilter dashboardFilterButton">
                                 <p class="font-size-13 font-weight-600">Dashboard</p>
                             </div>
-                        </div>
-                        <div class="dashboardFilter filterExtension">
-                            <div class="innerFilterItem innerFilterSelected"><p class=" font-weight-600">Industry</p> <span class="mdi mdi-chevron-down"></span></div>
-                            <div class="innerFilterItem "><p class=" font-weight-600">Interest</p> <span class="mdi mdi-chevron-down"></span></div>
-                        </div>
+                        </div>     
+                    </div>
+                </div>
+                <div class="dashboardFilterOuter inner-filter-item">
+                    <div class="dashboardFilter">
+                        <button id="industryBtn"  class="inner-filter-btn-background dashboardInnerBtn industryDashBtn">industry</button>
+                        <button id="interestBtn" class="dashboardInnerBtn interestDashBtn">Interest</button>
                     </div>
                 </div>
 
@@ -1143,7 +1145,15 @@
                         </div>
                     </div>
                     <div class="card-container filteredContent">
-                        <div class="dashboard-card ">
+                        <div class="dashboard-card industryDashboard">
+                            <div class="dashboardCardFilter">
+                                <select name="" id="" class="">
+                                    <option value="">Medicine</option>
+                                    <option value="">Engineering</option>
+                                    <option value="">Electronics</option>
+                                    <option value="">Astrology</option>
+                                </select>
+                            </div>
                             <div class="singleMeasure">
                                 <div class="dashboard-inner">
                                     <div class="measure-title"><p class="font-size-12 font-weight-700">Simple</p></div>
@@ -1255,6 +1265,126 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="dashboard-card interestDashboard">
+                            <div class="dashboardCardFilter">
+                                <select name="" id="" class="">
+                                    <option value="">Engineering</option>
+                                    <option value="">Medicine</option>
+                                    <option value="">Electronics</option>
+                                    <option value="">Astrology</option>
+                                </select>
+                            </div>
+                            <div class="singleMeasure">
+                                <div class="dashboard-inner">
+                                    <div class="measure-title"><p class="font-size-12 font-weight-700">Simple</p></div>
+                                </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Solutions</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"   class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Answers</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysolution"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Credits</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="othersolution"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Solutions</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"   class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Likes</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysolution"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Stars</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="othersolution"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="singleMeasure">
+                                
+                                <div class="dashboard-inner">
+                                    <div class="measure-title"><p class="font-size-12 font-weight-700">Comprehensive</p></div>
+                                </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Critical thinking</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"   class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Creative thinking</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysolution"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Problem solving</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="othersolution"  class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="measure-card-container">
+                                    <div class="measure-card">
+                                        <div class="measure-card--title">
+                                            <p class="font-size-14 font-weight-500">Attention span</p>
+                                        </div>
+                                        <p class="font-size-15 font-weight-700 session-count">759</p>
+                                        <div class="chart-container">
+                                            <canvas id="mysession"   class="chart"></canvas>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>                       
                     </div>
                 </div>
             </div>

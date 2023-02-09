@@ -243,7 +243,6 @@
                     <div class="thread">
                         <div class="thread-inner">
                             <div class="thread-list">
-                                
                                 <div class="card threadRelatedCard">
                                     <div class="cardInterest">
                                         <p class="">Technology</p>
@@ -316,8 +315,15 @@
                                     </div>
                                     
                                 </div>
-                               
-                                <div class="commentBox">
+                                <div class="card-filter card-filter-bottom--padding bottom-border-radius majorSessionFilter handleFilterOverflow">
+                                    <div class="session-filter selected-filter  filter-padding allfilter askReasonsBtn">
+                                        <p class="selected font-size-13 font-weight-600">Reasons</p>
+                                    </div>
+                                    <div class="session-filter filter-padding allfilter askCommentsBtn">
+                                        <p class="font-size-13 font-weight-600">Comments</p>
+                                    </div>
+                                </div>
+                                <div class="commentBox askReasons askResponseList">
                                     <div class="commentObject">
                                         <i class="mdi mdi-dots-vertical commentMenu openCommentMenu"></i>
                                         <div class="commentMenuCardOuter">
@@ -362,9 +368,9 @@
                                         </div>
                                         
                                         <div class="commentLevelOne singleComment">
-                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""> <div><p class="username font-size-13 font-weight-600 comment-user">Username</p>
+                                                </div></div>
                                             <div class="commentContent">
-                                                <p class="username font-size-13 font-weight-600 comment-user">Username</p>
                                                 <p class="commentUserTitle font-size-12 font-weight-500">Python Django Developer</p>
                                                 <p class="vote">Fact</p>
                                                 <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
@@ -434,9 +440,9 @@
                                             </div>
                                         </div>
                                         <div class="commentLevelOne singleComment">
-                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="username font-size-13 font-weight-600 comment-user">Username</p></div>
                                             <div class="commentContent">
-                                                <p class="username font-size-13 font-weight-600 comment-user">Username</p>
+                                                
                                                 <p class="commentUserTitle font-size-12 font-weight-500">Python Django Developer</p>
                                                 <p class="vote">Opinion</p>
                                                 <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
@@ -497,6 +503,80 @@
                                                             <button><span>Report</span></button>
                                                         </div>
                                                     </form>
+                                                    
+                                                    <div class="commentMenuPlate closeCommentMenu">
+                                                        <i class="mdi mdi-cancel"></i>
+                                                        <span>Cancel</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentLevelOne singleComment">
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="username font-size-13 font-weight-600 comment-user">Username</p></div>
+                                            <div class="commentContent">
+                                                
+                                                <p class="commentUserTitle font-size-12 font-weight-500">Python Django Developer</p>
+                                                <p class="vote">Opinion</p>
+                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                <div class="factLink">
+                                                    <a href="" class="font-size-12">google.com</a>
+                                                </div>
+                                                <div class="comment-reaction-list">
+                                                    <div class="ask-reactions">
+                                                        <form action="">
+                                                            <div class="reaction-item "><button class="userStance">Agree</button></div>
+                                                        </form>
+                                                        <form action="">
+                                                            <div class="reaction-item "> <button class="userStance">Disagree</button></div>
+                                                        </form>
+                                                        <div class="reaction-item starRating"> <i class="mdi mdi-star"></i></i><p>20k</p></div>
+                                                    </div>
+                                                    <p class="vote-time ask-vote-time font-size-10 font-weight-500">1min</p>
+                                                    <form class="starList">                                                 
+                                                        <ul class="starListInner">
+                                                            <i class="mdi mdi-star starItem"><label for="star_1"></label><input type="radio" name="rate" id="star_1" value="1"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_2"></label><input type="radio" name="rate" id="star_1" value="2"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_3"></label><input type="radio" name="rate" id="star_1" value="3"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_4"></label><input type="radio" name="rate" id="star_1" value="4"></i>
+                                                            <i class="mdi mdi-star starItem"><label for="star_5"></label><input type="radio" name="rate" id="star_1" value="5"></i>
+                                                        </ul>
+                                                        <button class="confirmRating">rate</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commentBox askComments askResponseList">
+                                    <div class="commentObject">
+                                        <i class="mdi mdi-dots-vertical commentMenu openCommentMenu"></i>
+                                        <div class="commentMenuCardOuter">
+                                            <div class="commentMenuCard">
+                                                <div class="commentMenuContent">
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-edit-outline"></i>
+                                                            <button><span>Edit</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-account-plus-outline"></i>
+                                                            <button><span>Connect</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-remove-multiple"></i>
+                                                            <button><span>Disconnect from user</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-flag-outline"></i>
+                                                            <button><span>Report</span></button>
+                                                        </div>
+                                                    </form>
                                                     <form action="">
                                                         <div class="commentMenuPlate">
                                                             <i class="mdi mdi-flag-outline"></i>
@@ -511,9 +591,317 @@
                                             </div>
                                         </div>
                                         <div class="commentLevelOne singleComment">
-                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""></div>
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="username font-size-13 font-weight-600 comment-user">Username</p></div>
                                             <div class="commentContent">
-                                                <p class="font-size-12 font-weight-600 comment-user">Usernamethree</p>
+                                                <p class="commentUserTitle font-size-12 font-weight-500">Python Django Developer</p>
+                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                <div class="comment-reaction-list">
+                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                </div>
+                                                <p class="font-size-12 openSubComment">view (4) replies</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="subComments">
+                                            <div class="commentObject">
+                                                <i class="mdi mdi-dots-vertical commentMenu openCommentMenu"></i>
+                                                <div class="commentMenuCardOuter">
+                                                    <div class="commentMenuCard">
+                                                        <div class="commentMenuContent">
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-book-edit-outline"></i>
+                                                                    <button><span>Edit</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-account-plus-outline"></i>
+                                                                    <button><span>Connect</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-book-remove-multiple"></i>
+                                                                    <button><span>Disconnect from user</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-flag-outline"></i>
+                                                                    <button><span>Report</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-flag-outline"></i>
+                                                                    <button><span>Delete</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <div class="commentMenuPlate closeCommentMenu">
+                                                                <i class="mdi mdi-cancel"></i>
+                                                                <span>Cancel</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="commentLevelTwo singleComment">
+                                                    <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="font-size-12 font-weight-600 comment-user">Sessionowner</p></div>
+                                                    <div class="commentContent">
+                                                        
+                                                        <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                        <div class="comment-reaction-list">
+                                                            <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                            <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                        </div>
+                                                        <p class="font-size-12 openSubComment">view (3) replies</p>
+                                                    </div>
+                                                </div> 
+                                                <div class="subComments">
+                                                    <div class="commentObject">
+                                                        <i class="mdi mdi-dots-vertical commentMenu"></i>
+                                                        <div class="commentLevelTwo singleComment">
+                                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="font-size-12 font-weight-600 comment-user">Sessionowner</p></div>
+                                                            <div class="commentContent">
+                                                                
+                                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                                <div class="comment-reaction-list">
+                                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    
+                                                    <div class="commentObject">
+                                                        <i class="mdi mdi-dots-vertical commentMenu"></i>
+                                                        <div class="commentLevelTwo singleComment">
+                                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="font-size-12 font-weight-600 comment-user">Username</p></div>
+                                                            <div class="commentContent">
+                                                                
+                                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                                <div class="comment-reaction-list">
+                                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                                </div>
+                                                        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="commentObject">
+                                                <i class="mdi mdi-dots-vertical commentMenu openCommentMenu"></i>
+                                                <div class="commentMenuCardOuter">
+                                                    <div class="commentMenuCard">
+                                                        <div class="commentMenuContent">
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-book-edit-outline"></i>
+                                                                    <button><span>Edit</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-account-plus-outline"></i>
+                                                                    <button><span>Connect</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-book-remove-multiple"></i>
+                                                                    <button><span>Disconnect from user</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-flag-outline"></i>
+                                                                    <button><span>Report</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <form action="">
+                                                                <div class="commentMenuPlate">
+                                                                    <i class="mdi mdi-flag-outline"></i>
+                                                                    <button><span>Delete</span></button>
+                                                                </div>
+                                                            </form>
+                                                            <div class="commentMenuPlate closeCommentMenu">
+                                                                <i class="mdi mdi-cancel"></i>
+                                                                <span>Cancel</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="commentLevelTwo singleComment">
+                                                    <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="font-size-12 font-weight-600 comment-user">Username</p></div>
+                                                    <div class="commentContent">
+                                                        
+                                                        <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                        <div class="comment-reaction-list">
+                                                            <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                            <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                        </div>
+                                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commentObject">
+                                        <i class="mdi mdi-dots-vertical commentMenu openCommentMenu"></i>
+                                        <div class="commentMenuCardOuter">
+                                            <div class="commentMenuCard">
+                                                <div class="commentMenuContent">
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-edit-outline"></i>
+                                                            <button><span>Edit</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-account-plus-outline"></i>
+                                                            <button><span>Connect</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-remove-multiple"></i>
+                                                            <button><span>Disconnect from user</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-flag-outline"></i>
+                                                            <button><span>Report</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-flag-outline"></i>
+                                                            <button><span>Delete</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="commentMenuPlate closeCommentMenu">
+                                                        <i class="mdi mdi-cancel"></i>
+                                                        <span>Cancel</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentLevelOne singleComment">
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="font-size-12 font-weight-600 comment-user">Usernamethree</p></div>
+                                            <div class="commentContent">
+                                                
+                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                <div class="comment-reaction-list">
+                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commentObject">
+                                        <i class="mdi mdi-dots-vertical commentMenu openCommentMenu"></i>
+                                        <div class="commentMenuCardOuter">
+                                            <div class="commentMenuCard">
+                                                <div class="commentMenuContent">
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-edit-outline"></i>
+                                                            <button><span>Edit</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-account-plus-outline"></i>
+                                                            <button><span>Connect</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-remove-multiple"></i>
+                                                            <button><span>Disconnect from user</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-flag-outline"></i>
+                                                            <button><span>Report</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-flag-outline"></i>
+                                                            <button><span>Delete</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="commentMenuPlate closeCommentMenu">
+                                                        <i class="mdi mdi-cancel"></i>
+                                                        <span>Cancel</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentLevelOne singleComment">
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="font-size-12 font-weight-600 comment-user">Usernamethree</p></div>
+                                            <div class="commentContent">
+                                                
+                                                <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
+                                                <div class="comment-reaction-list">
+                                                    <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
+                                                    <div class="reaction-item"><i class="mdi mdi-comment-multiple-outline"></i> <p class="font-size-10">1</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commentObject">
+                                        <i class="mdi mdi-dots-vertical commentMenu openCommentMenu"></i>
+                                        <div class="commentMenuCardOuter">
+                                            <div class="commentMenuCard">
+                                                <div class="commentMenuContent">
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-edit-outline"></i>
+                                                            <button><span>Edit</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-account-plus-outline"></i>
+                                                            <button><span>Connect</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-book-remove-multiple"></i>
+                                                            <button><span>Disconnect from user</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-flag-outline"></i>
+                                                            <button><span>Report</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <form action="">
+                                                        <div class="commentMenuPlate">
+                                                            <i class="mdi mdi-flag-outline"></i>
+                                                            <button><span>Delete</span></button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="commentMenuPlate closeCommentMenu">
+                                                        <i class="mdi mdi-cancel"></i>
+                                                        <span>Cancel</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentLevelOne singleComment">
+                                            <div class="user-comment-avater "><img src="images/general images/Ellipse 1109.png" alt=""><p class="font-size-12 font-weight-600 comment-user">Usernamethree</p></div>
+                                            <div class="commentContent">
+                                                
                                                 <p class="actual-comment font-size-12 thread-message">The summer class we had last week was a disaster, so we had to change the entire process allover.</p>
                                                 <div class="comment-reaction-list">
                                                     <div class="reaction-item"><i class="mdi mdi-thumb-up-outline"></i> <p class="font-size-10">20</p></div>
@@ -523,6 +911,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                             <form action="">
                                 <div class="thread-comment-outer">

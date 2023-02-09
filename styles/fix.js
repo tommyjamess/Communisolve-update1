@@ -79,23 +79,23 @@ function scrollFunction(){
 
 
     // fixes the menu header based on filter extension 
-    if (window.pageYOffset >= (fixSessionFilter + 192)){
-        AllFilter.forEach((item) => {
-            item.addEventListener("click", ()=> {
-                if(item.classList.contains("noExtension")){
-                    item.parentElement.parentElement.classList.add("profile-filter-stick")
-                    item.parentElement.parentElement.classList.remove("extended-filter-stick")
-                    item.parentElement.parentElement.parentElement.classList.add("card-profileFilter-fix")
-                    item.parentElement.parentElement.parentElement.classList.remove("card-extendedFilter-fix")
-                }else if((item.classList.contains("industryFilterBtn")) || (item.classList.contains("interestFilterBtn")) || (item.classList.contains("dashboardFilterBtn"))){
-                    item.parentElement.parentElement.classList.remove("profile-filter-stick")
-                    item.parentElement.parentElement.classList.add("extended-filter-stick")
-                    item.parentElement.parentElement.parentElement.classList.remove("card-profileFilter-fix")
-                    item.parentElement.parentElement.parentElement.classList.add("card-extendedFilter-fix")
-                }
-            })
-        })
-    }
+    // if (window.pageYOffset >= (fixSessionFilter + 192)){
+    //     AllFilter.forEach((item) => {
+    //         item.addEventListener("click", ()=> {
+    //             if(item.classList.contains("noExtension")){
+    //                 item.parentElement.parentElement.classList.add("profile-filter-stick")
+    //                 item.parentElement.parentElement.classList.remove("extended-filter-stick")
+    //                 item.parentElement.parentElement.parentElement.classList.add("card-profileFilter-fix")
+    //                 item.parentElement.parentElement.parentElement.classList.remove("card-extendedFilter-fix")
+    //             }else if((item.classList.contains("industryFilterBtn")) || (item.classList.contains("interestFilterBtn")) || (item.classList.contains("dashboardFilterBtn"))){
+    //                 item.parentElement.parentElement.classList.remove("profile-filter-stick")
+    //                 item.parentElement.parentElement.classList.add("extended-filter-stick")
+    //                 item.parentElement.parentElement.parentElement.classList.remove("card-profileFilter-fix")
+    //                 item.parentElement.parentElement.parentElement.classList.add("card-extendedFilter-fix")
+    //             }
+    //         })
+    //     })
+    // }
     
     
 

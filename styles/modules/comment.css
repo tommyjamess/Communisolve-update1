@@ -12,10 +12,12 @@
 }
 
 .singleComment{
-    display: flex;
+    display: block;
 }
 .user-comment-avater{
-    margin-right: 10px;
+    display: flex;
+    align-items: top;
+    grid-column-gap: 8px;
 }
 .user-comment-avater img{
     max-width: 30px;
@@ -175,7 +177,18 @@
 }
 .commentBox{
     padding-inline: 10px;
+    padding-block: 10px;
 }
+.askComments{
+    display: none;
+}
+.displayAskResponse{
+    display: block;
+}
+.removeAskResponse{
+    display: none;
+}
+
 .commentMenu{
     display: flex;
     align-items: center;

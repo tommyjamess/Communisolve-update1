@@ -19,12 +19,12 @@
     border: none;
     background-color: transparent;
 }
+
 .input-style select:focus{
     outline: none;
 }
 .input-style select option{
     text-align: left;
-    padding-block: 30px;
 }
 .input-style input{
     border: none;
@@ -53,11 +53,20 @@ input[type="file"]::file-selector-button {
     padding-block: 20px;
     min-height: 33rem;
 }
-.form-plate form{
+
+.overflow-form{
     display: flex;
     flex-direction: column;
     grid-row-gap: 30px;
+    min-height: 450px;
+    max-height: 450px;
+    overflow-y: auto;
+    padding-block: 10px;
+    padding-inline: 2px;
 }
+
+
+
 .form-plate button{
     border: none;
 }
@@ -150,6 +159,7 @@ input[type="file"]::file-selector-button {
 .industryOrInterest label{
     margin-left: 12px;
 }
+
 .multipleInput{
     display: flex;
     justify-content: space-between;
@@ -229,8 +239,27 @@ input[type="file"]::file-selector-button {
 .guidelines .single-input{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    grid-column-gap: 16px;
+    /* justify-content: space-between; */
 }
+
+.addQuestion{
+    display: flex;
+    padding-block: 10px;
+}
+
+.addQuestion p{
+    font-size: 12px;
+    color: var(--color-grey);
+}
+.addQuestion a{
+    font-size: 12px;
+    color: var(--color-brandcolor);
+    font-weight: 500;
+    background: none;
+    margin-left: auto;
+}
+
 .create-session{
     align-items: center;
     position: fixed;
@@ -241,8 +270,6 @@ input[type="file"]::file-selector-button {
     min-height: 100%;
     z-index: 300;
     background-color: var(--color-pop-background);
-    /* overflow-y: auto; */
-    /* padding-block: 80px; */
 }
 .create-session-inner{
     border: 1px solid white;
@@ -256,13 +283,19 @@ input[type="file"]::file-selector-button {
 
 .singleBtn{
     display: flex;
-    padding-inline: 20px;
 }
+
 
 .multipleBtn{
     display: flex;
     grid-column-gap: 23px;
     padding-inline: 20px;
+    margin-top: 16px;
+}
+.singleBtn{
+    display: flex;
+    padding-inline: 20px;
+    margin-top: 23px;
 }
 
 .multipleBtn .goBack{
@@ -311,4 +344,260 @@ input[type="file"]::file-selector-button {
     .create-session-inner{
         max-width:28.5rem ;
     }
+}
+
+.preview-item h4{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.preview-item p{
+    font-size: 14px;
+    color: grey;
+}
+
+.preview-item img{
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.prevQuestion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prevQuestList{
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.prevQuestList p{
+    margin-bottom: 8px;
+}
+.openPrevQuestList{
+    max-height: fit-content;
+    transition-duration: 0.5s;
+}
+
+
+/* polls choice  */
+
+.choice-list{
+    border: 1px solid var(--color-grey);
+    border-radius: 16px;
+    padding: 16px 16px;
+}
+
+.addChoice{
+   display: flex;
+   justify-content: right;
+   margin-top: 8px;
+}
+
+.addChoice a{
+    font-size: 12px;
+    color: var(--color-brandcolor);
+    font-weight: 600;
+}
+
+/* create Group */
+.createGroupBtnContainer{
+    background-color: white;
+    padding-block: 8px;
+    display: flex;
+    justify-content: right;
+    border-top: 1px solid var(--color-light-gray);
+}
+.createGroupBtn{
+    background: var(--color-brandcolor);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding-inline:24px;
+    padding-block: 2px;
+    border-radius:16px;
+    margin-right: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.editProfilePageOuter{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2000;
+}
+.createGroupPop{
+    background-color: white;
+    width: 35.5%;
+    height: fit-content;
+    margin-right: 12px;
+    padding-top: 8px;
+    border-radius: 8px;
+    margin-top: 32px;
+    box-shadow: 0px 0px 6px -2px grey;
+
+    min-height: 550px;
+    max-height: 550px;
+    overflow-y: scroll;
+}
+@media (max-width:600px){
+    .createGroupPop{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:600px) and (max-width:899px){
+    .createGroupPop{
+        max-width: 79.5%;
+    }
+    
+}
+
+@media (max-width:900px){
+    .createGroupPop{
+        width: 100%;
+        margin-left: 12px;
+    }
+   
+}
+
+@media (min-width:899px) and (max-width:1270px){
+    .createGroupPop{
+        width: 54.2%;
+    }
+    
+}
+
+.create-group-card-title{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 16px;
+    margin-bottom: 8px;
+}
+
+.create-group-card-title i:hover{
+    cursor: pointer;
+}
+
+.group-info{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 16px;
+    padding-block: 24px;
+    padding-inline: 16px;
+}
+.group-background-img{
+    height: 121px;
+    background-color: var(--color-light-gray);
+    margin-bottom: -40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.group-profile-img{
+    border-radius: 2px;
+    width: 80px;
+    height: 80px;
+    margin-left: 16px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 6px -2px grey;
+}
+.profile-img{
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    margin-left: 16px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 6px -2px grey;
+}
+
+.group-profile-img img{
+    max-width: 100%;
+}
+
+.group-info-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.group-info-item label{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.group-info-item input{
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid var(--color-grey);
+}
+
+.group-info-item input:focus{
+    outline: none;
+    padding-inline: 16px;
+}
+
+.group-info-item textarea{
+    width: 100%;
+    height: 85px;
+    border: none;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 10px;
+    border: 1px solid grey;
+}
+.group-info-item textarea:focus{
+    outline: none;
+}
+
+.group-info-item select{
+    height: 38px;
+    border: 1px solid grey;
+    padding-inline: 16px;
+    border-radius: 8px;
+}
+
+.group-info-item select option{
+    padding-block: 50px!important;
+}
+
+.group-info-item select:focus{
+    outline: none;
+    border-radius: 8px;
+    
+}
+
+.group-info button{
+    width: 100%;
+    height: 38px;
+    font-size:14px;
+    font-weight: 700;
+    background-color: var(--color-brandcolor);
+    color: white;
+    border-radius: 8px;
+}
+
+
+.editProfilePageOuter{
+    display: none;
+}
+
+.displayEditProfile{
+    display: flex;
 }

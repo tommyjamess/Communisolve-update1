@@ -13,3 +13,13 @@ openGuide.forEach((icon)=>{
         }
     })
 })
+
+
+
+// ask result percentage 
+
+let resultPercentage = document.querySelectorAll(".result-percentage")
+
+resultPercentage.forEach((item) => {
+    item.previousElementSibling.firstElementChild.style.flexBasis = item.textContent
+})

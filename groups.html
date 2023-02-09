@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/uikit.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://use.fontawesome.com/07a137f978.js"></script>
-    <title>Explore</title>
+    <title>Groups</title>
 </head>
 <body>
     <div class=" header-page">
@@ -231,265 +231,190 @@
                 
             </div>
             <div class="col-3 column main">
-                <div class="filter-outer ">
-                    <div class="filter no-creation ">
+                <div class="filter-outer">
+                    <div class="filter no-creation">
                         <div class="card-filter card-filter-bottom--padding bottom-border-radius majorSessionFilter handleFilterOverflow">
                             <div class="session-filter selected-filter  filter-padding allfilter">
-                                <p class="selected font-size-13 font-weight-600">Your groups</p>
+                                <p class="selected font-size-13 font-weight-600">My groups</p>
                             </div>
                             <div class="session-filter filter-padding allfilter" >
-                                <p class="font-size-13 font-weight-600">Groups for you</p>
-                            </div>
-                            <div class="session-filter filter-padding allfilter">
-                                <p class="selected font-size-13 font-weight-600">Your circles</p>
+                                <p class="font-size-13 font-weight-600">Requested</p>
                             </div>
                             <div class="session-filter filter-padding allfilter" >
-                                <p class="font-size-13 font-weight-600">Circles for you</p>
+                                <p class="font-size-13 font-weight-600">Suggested</p>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-                <!-- <div class="filter-outer ">
-                    <div class=" filter profile-filter">
-                        <div class="card-filter top-border-radius profile-info">
-                            <div class="profile-info--inner">
-                                <div class="profile-backdrop">
-                                    <img src="./images/general images/man.jpg" alt="">
-                                </div>
-                                <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                <div class="profile-text">
-                                    <div class="followEdit">
-                                        <h3 class="profile-username font-size-15">Group's Name</h3>
-                                        <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...</p>
-                                        <div class="followers-count">
-                                            <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                            <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                        </div>
-                                    </div>
-                                    <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                </div>
-                                
-                            </div>
+                <div class="createGroupBtnContainer"><button class="createGroupBtn editProfile">Create</button></div>
+
+                <div class="editProfilePageOuter">
+                    <div class="createGroupPop">
+                        <div class="create-group-card-title"><h4>Create Group</h4> <i class="mdi mdi-window-close closeEditProfileWindow"></i></div>
+                        <div class="group-background-img " style="background-image: url(./images/general\ images/man.jpg);">
+                            <button><i></i></button>
                         </div>
-                        <div class="card-filter top-border-line card-filter-bottom--padding bottom-border-radius majorSessionFilter">
-                            <div class="session-filter selected-filter  filter-padding allfilter">
-                                <p class="selected font-size-13 font-weight-600">Your groups</p>
+                        <div class="group-profile-img" style="background-image: url(./images/general\ images/man.jpg);" ></div>
+                        <form action="">
+                            <div class="group-info">
+                                <div class="group-info-item">
+                                    <label for="">Group name</label>
+                                    <input type="text">
+                                </div>
+                                <div class="group-info-item">
+                                    <label for="">About group</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="group-info-item">
+                                    <label for="">Visibility</label>
+                                    <select name="" id="">
+                                        <option value="">Private</option>
+                                        <option value="">Public</option>
+                                    </select>
+                                </div>
+                                <button>Create</button>
                             </div>
-                            <div class="session-filter filter-padding allfilter" >
-                                <p class="font-size-13 font-weight-600">Groups for you</p>
-                            </div>
-                            <div class="session-filter filter-padding allfilter" >
-                                <p class="font-size-13 font-weight-600">Your circles</p>
-                            </div>
-                            <div class="session-filter filter-padding allfilter" >
-                                <p class="font-size-13 font-weight-600">Circles for you</p>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="filteredContentContainer">
                     <div class="card-container on-display filteredContent">
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
+                            <div class="groupMenuIcon"><i class="mdi mdi-dots-horizontal"></i></div>
+                            <div class="groupCard">
+                                <a href="group-page.html" id="group-link">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/Mobile\ Phone\ 3.jpg);"></div>
+                                    <div class="groupInfo">
+                                        <h4>Python Developers</h4>
+                                        <p>members 300k</p>
                                     </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Tech Support</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
+                            <div class="groupMenuIcon"><i class="mdi mdi-dots-horizontal"></i></div>
+                            <div class="groupCard">
+                                <a href="group-page.html" id="group-link">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/Mobile\ Phone\ 3.jpg);"></div>
+                                    <div class="groupInfo">
+                                        <h4>Python Developers</h4>
+                                        <p>members 300k</p>
                                     </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Tech Support</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
-                                </div>
+                                </a>
                             </div>
                         </div>
+                        
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
+                            <div class="groupMenuIcon"><i class="mdi mdi-dots-horizontal"></i></div>
+                            <div class="groupCard">
+                                <a href="group-page.html" id="group-link">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/Mobile\ Phone\ 5.jpg);"></div>
+                                    <div class="groupInfo">
+                                        <h4>Python Developers</h4>
+                                        <p>members 300k</p>
                                     </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Group's Name</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card-container filteredContent">
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
+                            <div class="groupMenuIcon"><i class="mdi mdi-dots-horizontal"></i></div>
+                            <div class="groupRequestCancel"><i class="mdi mdi-window-close cancleRequest"></i></div>
+                            <div class="groupCard">
+                                <a href="" id="group-link">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/Mobile\ Phone\ 3.jpg);"></div>
+                                    <div class="groupInfo">
+                                        <h4>Python Developers</h4>
+                                        <p>members 300k</p>
                                     </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Finance</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
-                                </div>
+                                </a>
                             </div>
+                            
                         </div>
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
+                            <div class="groupMenuIcon"><i class="mdi mdi-dots-horizontal"></i></div>
+                            <div class="groupRequestCancel"><i class="mdi mdi-window-close cancleRequest"></i></div>
+                            <div class="groupCard">
+                                <a href="" id="group-link">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/Mobile\ Phone\ 3.jpg);"></div>
+                                    <div class="groupInfo">
+                                        <h4>Python Developers</h4>
+                                        <p>members 300k</p>
                                     </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Group's Name</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
-                                </div>
+                                </a>
                             </div>
                         </div>
+                        
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
+                            <div class="groupMenuIcon"><i class="mdi mdi-dots-horizontal"></i></div>
+                            <div class="groupRequestCancel"><i class="mdi mdi-window-close cancleRequest"></i></div>
+                            <div class="groupCard">
+                                <a href="" id="group-link">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/Mobile\ Phone\ 5.jpg);"></div>
+                                    <div class="groupInfo">
+                                        <h4>Python Developers</h4>
+                                        <p>members 300k</p>
                                     </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Group's Name</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card-container filteredContent">             
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
-                                    </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Agriculture</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
+                            <div class="suggestion-group-profile-header">
+                                <div class="group-background-img " style="background-image: url(./images/general\ images/man.jpg);">
+                                    <button><i></i></button>
                                 </div>
+                                <div class="group-profile-img-container">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/man.jpg);" ></div>
+                                    <button class="followBtn joinGroupBtn font-size-15 font-weight-600">Join</button>
+                                </div>
+            
+                                <div class="group-information">
+                                    <h4>Developer Group</h4>
+                                    <p id="about-group">All About software engineers All About software engineers All About software engineers</p>
+                                    <p id="member-count" class="member-count">Members 300k</p>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
-                                    </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Group's Name</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
+                            <div class="suggestion-group-profile-header">
+                                <div class="group-background-img " style="background-image: url(./images/general\ images/man.jpg);">
+                                    <button><i></i></button>
                                 </div>
+                                <div class="group-profile-img-container">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/man.jpg);" ></div>
+                                    <button class="followBtn joinGroupBtn font-size-15 font-weight-600">Join</button>
+                                </div>
+            
+                                <div class="group-information">
+                                    <h4>Developer Group</h4>
+                                    <p id="about-group">All About software engineers All About software engineers All About software engineers</p>
+                                    <p id="member-count" class="member-count">Members 300k</p>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-filter top-border-radius profile-info handleProfileCardOverflow">
-                                <div class="profile-info--inner">
-                                    <div class="profile-backdrop">
-                                        <img src="./images/general images/man.jpg" alt="">
-                                    </div>
-                                    <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                    <div class="profile-text">
-                                        <div class="followEdit">
-                                            <h3 class="profile-username font-size-15">Group's Name</h3>
-                                            <p class="profile-title font-size-13 font-weight-500">Lorem ipsum dolor sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...sit amet consectetur adipisicing...</p>
-                                            <div class="followers-count">
-                                                <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Members <span>500k</span></p>
-                                                <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                            </div>
-                                        </div>
-                                        <form action=""><button class="followBtn font-size-15 font-weight-600 membershipProfileBtn">Enter</button></form>
-                                    </div>
-                                    
+                            <div class=" suggestion-group-profile-header">
+                                <div class="group-background-img " style="background-image: url(./images/general\ images/man.jpg);">
+                                    <button><i></i></button>
                                 </div>
+                                <div class="group-profile-img-container">
+                                    <div class="group-profile-img" style="background-image: url(./images/general\ images/man.jpg);" ></div>
+                                    <button class="followBtn joinGroupBtn font-size-15 font-weight-600">Join</button>
+                                </div>
+            
+                                <div class="group-information">
+                                    <h4>Developer Group</h4>
+                                    <p id="about-group">All About software engineers All About software engineers All About software engineers</p>
+                                    <p id="member-count" class="member-count">Members 300k</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -728,5 +653,6 @@
     <script src="/styles/images.js"></script>
     <script src="/styles/fix.js"></script>
     <script src="/styles/cardMenu.js"></script>
+    <script src="/styles/editProfile.js"></script>
 </body>
 </html>

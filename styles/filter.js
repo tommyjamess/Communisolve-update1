@@ -65,103 +65,191 @@ function removeFIlterHighlight(){
 }
 
 
-// extended filter 
-let filterExtension = document.querySelectorAll(".filterExtension")
-let dashboardFilter = document.querySelectorAll(".dashboardFilter")
 let dashboardFilterBtn = document.querySelectorAll(".dashboardFilterBtn")
-let innerFilterItem = document.querySelectorAll(".innerFilterItem")
-let industryFilterBtn = document.querySelectorAll(".industryFilterBtn")
-let interestFilterBtn = document.querySelectorAll(".interestFilterBtn")
-let industryFilter = document.querySelectorAll(".industryFilter")
-let interestFilter = document.querySelectorAll(".interestFilter")
-
-dashboardFilter.forEach((item) => {
-    item.style.display = "none"
-})
-
-industryFilter.forEach((item) => {
-    item.style.display = "none"
-})
-
-interestFilter.forEach((item) => {
-    item.style.display = "none"
-})
-
-
+let dashboardFilter = document.querySelectorAll(".dashboardFilterOuter")
+let industryFilterOuter = document.querySelectorAll(".industryFilterOuter")
+let interestFilterOuter = document.querySelectorAll(".interestFilterOuter")
+let innerFilterItems = document.querySelectorAll(".inner-filter-item")
 
 allfilter.forEach((item) => {
-    item.addEventListener("click", () => {
-        closeOtherFilterExtension()
-        resetFixedTop()
-        if(item.classList.contains("dashboardFilterBtn")){
-            filterExtension.forEach((filterEx) => {
-                if(filterEx.classList.contains("dashboardFilter")){
-                    filterEx.style.display = "flex";
-                }
+    item.addEventListener("click", ()=> {
+        if(item.classList.contains("dashboardFilterButton")){
+            dashboardFilter.forEach((dashItem) => {
+                RemoveInnerFilter()
+                dashItem.classList.add("displayInnerFilter")
             })
-            item.parentElement.parentElement.classList.add("extended-filter")
-        }else if(item.classList.contains("industryFilterBtn")){
-            filterExtension.forEach((filterEx) => {
-                if(filterEx.classList.contains("industryFilter")){
-                    filterEx.style.display = "flex";
-                }
+        }else if(item.classList.contains("industryFilterButton")){
+            industryFilterOuter.forEach((industryItem) => {
+                RemoveInnerFilter()
+                industryItem.classList.add("displayInnerFilter")
             })
-            item.parentElement.parentElement.classList.add("extended-filter")
-        }else if(item.classList.contains("interestFilterBtn")){
-                filterExtension.forEach((filterEx) => {
-                    if(filterEx.classList.contains("interestFilter")){
-                        filterEx.style.display = "flex";
-                    }
-                })
-                item.parentElement.parentElement.classList.add("extended-filter")
-            }
+        }else if(item.classList.contains("interestFilterButton")){
+            interestFilterOuter.forEach((interestItem) => {
+                RemoveInnerFilter()
+                interestItem.classList.add("displayInnerFilter")
+            })
+        }else{
+            RemoveInnerFilter()
+        }
     })
-});
+})
 
 
-// remove sticky menu
-function resetFixedTop() {
-    allfilter.forEach((item) => {
-        item.parentElement.parentElement.classList.remove("extended-filter")
-    })
-} 
-
-
-// close other extended filters 
-function closeOtherFilterExtension(){
-    filterExtension.forEach((item) => {
-        item.style.display = "none";
+function RemoveInnerFilter(){
+    innerFilterItems.forEach((filterItem) => {
+        filterItem.classList.remove("displayInnerFilter")
     })
 }
 
-// dashboard extended filter highlight
-innerFilterItem.forEach((item) => {
+
+let industryInnerBtn = document.querySelectorAll(".industryInnerBtn")
+let interestInnerBtn = document.querySelectorAll(".interestInnerBtn")
+let dashboardInnerBtn = document.querySelectorAll(".dashboardInnerBtn")
+let followingList = document.querySelectorAll(".followingList")
+let dashboardCard = document.querySelectorAll(".dashboard-card")
+
+// dashboard 
+dashboardInnerBtn.forEach((item) => {
     item.addEventListener("click", () => {
-        if(item.previousElementSibling){
-            item.previousElementSibling.classList.remove("innerFilterSelected")
-        }
-        item.classList.add("innerFilterSelected")
-        if(item.nextElementSibling){
-            item.nextElementSibling.classList.remove("innerFilterSelected")
+        if(item.classList.contains("industryDashBtn")){
+            removeDashboardBtnBackground()
+            item.classList.add("inner-filter-btn-background")
+            showDashboardIdustry()
+        }else if(item.classList.contains("interestDashBtn")){
+            removeDashboardBtnBackground()
+            item.classList.add("inner-filter-btn-background")
+            showDashboardInterest()
         }
     })
 })
 
-// industry and industry extended filter highlight
-let industrest = document.querySelectorAll(".industrest")
-
-industrest.forEach((item) => {
-    item.addEventListener("click", () => {
-        if(item.previousElementSibling){
-            item.previousElementSibling.classList.remove("industrestSelected")
+function showDashboardInterest(){
+    dashboardCard.forEach((listItem) => {
+        if(listItem.classList.contains("interestDashboard")){
+            listItem.classList.add("displayDashboard")
+            listItem.classList.remove("removeDashboard")
+            listItem.previousElementSibling.classList.add("removeDashboard")
         }
-        item.classList.add("industrestSelected")
-        if(item.nextElementSibling){
-            item.nextElementSibling.classList.remove("industrestSelected")
+    })
+}
+
+function showDashboardIdustry(){
+    dashboardCard.forEach((listItem) => {
+        if(listItem.classList.contains("industryDashboard")){
+            listItem.classList.add("displayDashboard")
+            listItem.classList.remove("removeDashboard")
+            listItem.nextElementSibling.classList.add("removeDashboard")
+        }
+    })
+}
+
+function removeDashboardBtnBackground(){
+    dashboardInnerBtn.forEach((item) => {
+        item.classList.remove("inner-filter-btn-background")
+    })
+}
+
+// dashboard ends here 
+
+
+
+// industry and interest
+industryInnerBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+        if(item.classList.contains("Followed")){
+            removeIndustryBtnBackground()
+            item.classList.add("inner-filter-btn-background")
+            showFollowedList()
+        }else if(item.classList.contains("Suggested")){
+            removeIndustryBtnBackground()
+            item.classList.add("inner-filter-btn-background")
+            showSuggestedList()
+        }
+    })
+})
+
+interestInnerBtn.forEach((item) => {
+    item.addEventListener("click", () => {
+        if(item.classList.contains("Followed")){
+            removeInterestBtnBackground()
+            item.classList.add("inner-filter-btn-background")
+            showFollowedList()
+        }else if(item.classList.contains("Suggested")){
+            removeInterestBtnBackground()
+            item.classList.add("inner-filter-btn-background")
+            showSuggestedList()
         }
     })
 })
 
 
 
+function removeIndustryBtnBackground(){
+    industryInnerBtn.forEach((item) => {
+        item.classList.remove("inner-filter-btn-background")
+    })
+}
+function removeInterestBtnBackground(){
+    interestInnerBtn.forEach((item) => {
+        item.classList.remove("inner-filter-btn-background")
+    })
+}
 
+function showFollowedList(){
+    followingList.forEach((listItem) => {
+        if(listItem.classList.contains("followedGroups")){
+            listItem.classList.add("displayFollowList")
+            listItem.classList.remove("removeFollowList")
+            listItem.nextElementSibling.classList.add("removeFollowList")
+        }
+    })
+}
+
+function showSuggestedList(){
+    followingList.forEach((listItem) => {
+        if(listItem.classList.contains("suggestedGroups")){
+            listItem.classList.add("displayFollowList")
+            listItem.classList.remove("removeFollowList")
+            listItem.previousElementSibling.classList.add("removeFollowList")
+        }
+    })
+}
+
+// industry and interest ends here 
+
+
+// ask comments
+
+let askResponses = document.querySelectorAll(".askResponseList")
+
+allfilter.forEach((item) => {
+    item.addEventListener("click", () => {
+        if(item.classList.contains("askReasonsBtn")){
+            showReasonsCard()
+        }else if(item.classList.contains("askCommentsBtn")){
+            showCommentsCard()
+        }
+    })
+})
+
+
+
+function showReasonsCard() {
+    askResponses.forEach((item) => {
+        if(item.classList.contains("askReasons")){
+            item.classList.add("displayAskResponse")
+            item.classList.remove("removeAskResponse")
+            item.nextElementSibling.classList.add("removeAskResponse")
+        }
+    })
+}
+
+function showCommentsCard() {
+    askResponses.forEach((item) => {
+        if(item.classList.contains("askComments")){
+            item.classList.add("displayAskResponse")
+            item.classList.remove("removeAskResponse")
+            item.previousElementSibling.classList.add("removeAskResponse")
+        }
+    })
+}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/uikit.css">
     <script src="https://use.fontawesome.com/07a137f978.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css" integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home</title>
+    <title>Private</title>
 </head>
 <body>
     <div class=" header-page">
@@ -230,26 +230,20 @@
                 
             </div>
             <div class="col-3 column main">
-                <div class="filter-outer ">
-                    <div class=" filter profile-filter">
-                        <div class="card-filter top-border-radius profile-info">
-                            <div class="profile-info--inner">
-                                <div class="profile-backdrop">
-                                    <img src="./images/general images/man.jpg" alt="">
-                                </div>
-                                <div class="profileImg"><img src="./images/general images/averta.svg" alt=""></div>
-                                <div class="profile-text">
-                                    <div class="followEdit">
-                                        <h3 class="profile-username font-size-15">myusername</h3>
-                                        <p class="profile-title font-size-13 font-weight-500">Python-Django developer</p>
-                                        <div class="followers-count">
-                                            <p class="connectionCount font-size-12"> <i class="mdi mdi-circle"></i> Connections <span>500k</span></p>
-                                            <p class="followers font-size-12" ><i class="mdi mdi-circle"></i> Followers <span>7</span></p>
-                                        </div>
-                                    </div>
-                                    <form action=""><button class="followBtn font-size-15 font-weight-600">connect</button></form>
-                                </div>
-                                
+                <div class="filter-outer">
+                    <div class="filter has-create">
+                        <div class="card-filter top-border-radius handleFeatureFilterOverflow">
+                            <div class="session-filter Brainstorm">
+                                <i class="mdi mdi-head-cog-outline"></i>
+                                <p class="font-size-12 font-weight-600">Brainstorm</p>
+                            </div>
+                            <div class="session-filter Poll">
+                                <i class="mdi mdi-chart-bar"></i>
+                                <p class="font-size-12 font-weight-600">Poll</p>
+                            </div>
+                            <div class="session-filter Ask">
+                                <i class="mdi mdi-help-circle-outline"></i>
+                                <p class="font-size-12 font-weight-600">Ask</p>
                             </div>
                         </div>
                         <div class="card-filter top-border-line card-filter-bottom--padding bottom-border-radius majorSessionFilter handleFilterOverflow">
@@ -257,10 +251,10 @@
                                 <p class="selected font-size-13 font-weight-600">All</p>
                             </div>
                             <div class="session-filter filter-padding allfilter" >
-                                <p class="font-size-13 font-weight-600">Industry</p>
+                                <p class="font-size-13 font-weight-600">Active</p>
                             </div>
                             <div class="session-filter filter-padding allfilter">
-                                <p class="font-size-13 font-weight-600">Interest</p>
+                                <p class="font-size-13 font-weight-600">Starting</p>
                             </div>
                         </div>
                     </div>
@@ -324,13 +318,70 @@
                                 </div>
                             </div>
                             <div class="joined-sessionlevel">
-                                <div class="joined-users ">
+                                <div class="joined-users">
                                     <img src="/images/general images/averta.svg" alt="">
                                     <img src="/images/general images/averta.svg" alt="">
                                     <img src="/images/general images/averta.svg" alt="">
                                     <p class="user-count font-size-10">+20</p>
                                 </div>
+                                <div class="brainstorm-member-list-container">     
+                                    <div class="member-list">
+                                        <div class="create-group-card-title"><input type="text" placeholder="Search member..." class=" getSearchInput"> <i class="mdi mdi-window-close closeBrainstormMemberList"></i></div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5 class="member-name">John Doe</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Gary McKinnon</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Jonathan james</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Mary Slessor</h5>
+                                                    
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Elon Musk</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <span class=" session-level font-weight-700">Standard</span>
+                                
                             </div>
                             <form action="" class="cardspacing">
                                 <button class="join-session-btn font-weight-600 font-size-14">Join</button>
@@ -786,6 +837,62 @@
                                     <img src="/images/general images/averta.svg" alt="">
                                     <p class="user-count font-size-10">+20</p>
                                 </div>
+                                <div class="brainstorm-member-list-container">     
+                                    <div class="member-list">
+                                        <div class="create-group-card-title"><input type="text" placeholder="Search member..." class=" getSearchInput"> <i class="mdi mdi-window-close closeBrainstormMemberList"></i></div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5 class="member-name">John Doe</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Gary McKinnon</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Jonathan james</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Mary Slessor</h5>
+                                                    
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Elon Musk</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <span class=" session-level font-weight-700">Standard</span>
                             </div>
                             <form action="" class="cardspacing">
@@ -1184,6 +1291,62 @@
                                     <img src="/images/general images/averta.svg" alt="">
                                     <p class="user-count font-size-10">+20</p>
                                 </div>
+                                <div class="brainstorm-member-list-container">     
+                                    <div class="member-list">
+                                        <div class="create-group-card-title"><input type="text" placeholder="Search member..." class=" getSearchInput"> <i class="mdi mdi-window-close closeBrainstormMemberList"></i></div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5 class="member-name">John Doe</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Gary McKinnon</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Jonathan james</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Mary Slessor</h5>
+                                                    
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                        <div class="member-item">
+                                            <img src="images/general images/Ellipse 1109.png" alt="">
+                                            <div class="user-div-outer">
+                                                <div class="user-div">
+                                                    <h5>Elon Musk</h5>
+                                                </div>
+                                                <p class="occupation">Python Django Developer</p>
+                                            </div>
+                                            <button class="followBtn brainstormFollowBtn font-size-15 font-weight-600">Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <span class=" session-level font-weight-700">Standard</span>
                             </div>
                             <form action="" class="cardspacing">
@@ -1366,7 +1529,6 @@
                 <div class="create-session displayBrainstorm">
                     <div class="create-session-inner Bform1">
                         <div class="form-plate">
-                            
                             <h1 class="create-title font-weight-700 font-size-18">Brainstorm with others</h1><i class="mdi mdi-window-close exitCreateBrainstorm font-weight-700 font-size-22"></i>
                             <form action="">
                                 <div class="single-input">
@@ -2075,14 +2237,14 @@
     </div>
     
     
-<script src="/styles/main.js"></script>
+<script src="/styles/cardMenu.js"></script>
 <script src="/styles/menu.js"></script>
 <script src="/styles/main.js"></script>
 <script src="/styles/filter.js"></script>
 <script src="/styles/create_session.js"></script>
 <script src="/styles/images.js"></script>
 <script src="/styles/fix.js"></script>
-<script src="/styles/comment.js"></script>
+<!-- <script src="/styles/comment.js"></script> -->
 <script src="/styles/cardMenu.js"></script>
 </body>
 </html>

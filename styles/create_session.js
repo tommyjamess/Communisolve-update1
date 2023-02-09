@@ -355,6 +355,50 @@ function Category(){
 }
 
 
+// add questions 
+
+let addQuestionBtn = document.querySelector("#addQuestionBtn")
+let questionList = document.querySelector(".question-list")
+
+let questionDiv = document.createElement("div")
+let questionInnerDiv = document.createElement("div")
+let questionInput = document.createElement("input")
+let questionLabel = document.createElement("label")
+let attrOne = document.createAttribute("class")
+
+
+questionDiv.classList.add(attrOne.value = "single-input")
+questionInnerDiv.classList.add(attrOne.value = "input-style")
+questionInnerDiv.appendChild(questionInput)
+questionLabel.textContent = "Question 6"
+questionLabel.classList.add(attrOne.value = "font-size-13")
+questionLabel.classList.add(attrOne.value = "font-weight-700")
+questionDiv.appendChild(questionLabel)
+questionDiv.appendChild(questionInnerDiv)
+
+
+function addquestion(){
+    createQuestion();
+};
+    
+function createQuestion(){
+    questionList.append(questionDiv)
+};
+
+
+// preview 
+let prevQuestion = document.querySelectorAll(".prevQuestion")
+
+
+prevQuestion.forEach((item) => {
+    item.addEventListener("click", ()=> {
+        if(item.nextElementSibling.classList.contains("openPrevQuestList")){
+            item.nextElementSibling.classList.remove("openPrevQuestList")
+        }else{
+            item.nextElementSibling.classList.add("openPrevQuestList")
+        }
+    })
+})
 
 
 

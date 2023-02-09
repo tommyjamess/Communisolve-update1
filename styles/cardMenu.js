@@ -39,3 +39,41 @@ function showFloatMenu(index){
         }
     })
 }
+
+
+
+let joinedUsers = document.querySelectorAll(".joined-users")
+let brainsotemMemberListContainer = document.querySelector(".brainstorm-member-list-container")
+let closeBrainstormMemberList = document.querySelectorAll(".closeBrainstormMemberList")
+
+joinedUsers.forEach((item) => {
+    item.addEventListener("click", () => {
+        item.nextElementSibling.classList.add("displayBrainstormMemberList")
+    })
+})
+
+
+closeBrainstormMemberList.forEach((item) => {
+    item.addEventListener("click", ()=> {
+        item.parentElement.parentElement.parentElement.classList.remove("displayBrainstormMemberList")
+    })
+})
+
+
+let memberCount = document.querySelector(".member-count")
+let memberListContainer = document.querySelector(".member-list-container")
+let closeMemberListWindow = document.querySelector(".closeMemberListWindow")
+let memberItem = document.querySelectorAll(".member-item")
+let memberName = document.querySelectorAll(".member-name")
+let getSearchInput = document.querySelector(".getSearchInput")
+
+memberCount.addEventListener("click", ()=>{
+    if (!(memberListContainer.classList.contains("displayMemberList"))){
+        memberListContainer.classList.add("displayMemberList")
+    }
+})
+
+closeMemberListWindow.addEventListener("click", ()=> {
+    closeMemberListWindow.parentElement.parentElement.parentElement.classList.remove("displayMemberList")
+})
+

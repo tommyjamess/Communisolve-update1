@@ -1,3 +1,4 @@
+
 let optionChoice = document.querySelectorAll(".optionChoice")
 let optionBtnInner = document.querySelectorAll(".option-btns-inner .selectOption")
 let submitOption = document.querySelectorAll(".optionForm button")
@@ -20,3 +21,19 @@ submitOption.forEach((item)=>{
     })
 })
 
+
+
+
+
+
+// getSearchInput.addEventListener("keypress", ()=>{
+//     memberName.forEach((item) => {
+//         var searchValue = getSearchInput.value
+//         if(item.innerHTML.toLowerCase().includes(searchValue)){
+//             item.parentElement.parentElement.parentElement.style.display = "flex"
+//         }
+//     })
+//     memberItem.forEach((item) => {
+//         item.style.display = "none"
+//     })
+// })

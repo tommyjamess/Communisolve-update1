@@ -42,11 +42,12 @@ closeCardMenu.forEach((item)=>{
 let headerAvater = document.querySelector(".headerAvater")
 let userActionMenu = document.querySelector(".userActionMenu")
 
-userActionMenu.style.display = "none";
 headerAvater.addEventListener("click", ()=>{
-    if(userActionMenu.style.display == "none"){
-        userActionMenu.style.display = "block"
+    if(!(userActionMenu.classList.contains("displayUserAction"))){
+        userActionMenu.classList.add("displayUserAction")
+        userActionMenu.classList.remove("hideUserAction")
     }else{
-        userActionMenu.style.display = "none"
+        userActionMenu.classList.remove("displayUserAction")
+        userActionMenu.classList.add("hideUserAction")
     }
 })

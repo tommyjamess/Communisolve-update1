@@ -88,6 +88,13 @@
     border: 1px solid var(--color-brandcolor);
     background-color: var(--color-white);
 }
+.brainstormFollowBtn{
+    margin-right: -1px;
+}
+.brainstormFollowBtn:hover{
+    background-color: var(--color-brandcolor);
+    color: white;
+}
 .membershipProfileBtn{
     background-color: var(--color-brandcolor);
     color: white;
