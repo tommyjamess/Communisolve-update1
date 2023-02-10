@@ -641,7 +641,7 @@
 }
 
 .member-list{
-    padding-inline: 16px;
+    padding-inline: 0px;
     display: flex;
     flex-direction: column;
     grid-row-gap: 32px;

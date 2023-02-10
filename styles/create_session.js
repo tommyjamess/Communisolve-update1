@@ -336,6 +336,7 @@ let subThought = document.querySelector(".thought-sub")
 let subEmotion = document.querySelector(".emotion-sub")
 let subIdea = document.querySelector(".idea-sub")
 
+
 function Category(){
     if (document.getElementById('category').value == 'thought') { 
         subThought.style.display = "block"
@@ -353,6 +354,25 @@ function Category(){
         subIdea.style.display = "block"
     }
 }
+
+
+// attribute input 
+let attributeList = document.querySelector(".attributeList")
+let attributeItem = document.querySelectorAll(".attributeItem")
+
+function Dimension(){
+    if(document.getElementById('dimension').value == 'Attribute'){
+        attributeList.classList.add("showAttributeList")
+    }else if(document.getElementById('dimension').value == "Entity"){
+        attributeList.classList.remove("showAttributeList")
+    }
+}
+
+attributeItem.forEach((item) => {
+    item.addEventListener("click", () => {
+        attributeList.classList.remove("showAttributeList")
+    })
+})
 
 
 // add questions 
