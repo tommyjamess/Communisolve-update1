@@ -355,7 +355,6 @@ function Category(){
     }
 }
 
-
 // attribute input 
 let attributeList = document.querySelector(".attributeList")
 let attributeItem = document.querySelectorAll(".attributeItem")
@@ -374,6 +373,21 @@ attributeItem.forEach((item) => {
     })
 })
 
+// guideline 
+let openExtendedGuideline = document.querySelectorAll(".openExtendedGuideline")
+let guidelineItem = document.querySelectorAll(".guidelineItem")
+
+openExtendedGuideline.forEach((item) => {
+    item.addEventListener("click", ()=> {
+        item.nextElementSibling.classList.add("showguidelineList")
+    })
+})
+
+guidelineItem.forEach((item) => {
+    item.addEventListener("click", ()=> {
+        item.parentElement.classList.remove("showguidelineList")
+    })
+})
 
 // add questions 
 

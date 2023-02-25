@@ -49,9 +49,9 @@
 
     overflow-y: hidden;
     transition-duration: 0.5s;
-
-
 }
+
+
 
 .guideline p{
     color: var(--color-grey);

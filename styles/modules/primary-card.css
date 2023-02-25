@@ -210,12 +210,14 @@
 .card-container{
     display: flex;
     flex-direction: column;
-    grid-row-gap: 12px;
+    /* grid-row-gap: 10px; */
 }
+
 .card{
     border-radius: var(--card-border-radius);
     background-color: white;
-    margin-top: 14px;
+    border-top:1px solid var(--line-color);
+    border-bottom:1px solid var(--line-color);
 }
 .cardInterest{
     width: 100%;
@@ -478,6 +480,7 @@
 
 .filteredContent{
     display: none;
+    margin-top: 14px;
 }
 
 

@@ -3,28 +3,26 @@
     padding-top: 6.8px;
     position: fixed;
 }
-.side-menu * + *{
-    margin-top: 8px;
-}
 
 .side-menu a{
     display: flex;
-    align-items: center;
     grid-column-gap: 10px;
     text-decoration: none;
+    margin-bottom: 8px;
 }
 
 .side-menu i{
     font-size: 21px;
     color: black;
-    min-width: 35px;
 }
 
-.side-menu p{
+.side-menu div{
     font-size: 13px;
     color: #858585;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
+
 .side-menu a:hover > p,
 .side-menu a:hover i{
     color: var(--color-brandcolor);

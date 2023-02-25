@@ -12,11 +12,54 @@
 
 }
 .authLogo{
-    width: 40px;
+    width: 64px;
     position: absolute;
     top: 16px;
 }
 
+.loginAuthLogo{
+    top: 100px;
+}
+.signupAuthLogo{
+    top: 100px;
+}
+.authResetLogo{
+    top: 160px;
+}
+.authLogo img{
+    width: 64px;
+}
+.altLogoContainer {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.orgAltLogoContainer{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.orgAltLogoContainer img{
+    width: 64px;
+}
+.stepOneLogoContainer{
+    top: 40px;
+}
+.stepFourLogoContainer{
+    top: 160px;
+}
+.stepTwoLogoContainer{
+    top: 150px;
+}
+.altLogoContainer img{
+    width: 64px;
+}
 
 
 .auth-page--inner{
@@ -31,6 +74,9 @@
     border-radius: var(--card-border-radius);
     background-color: var(--color-white);
 }
+.AuthContentAlignment{
+    width: 300px;
+}
 
 .auth-page-three,
 .auth-page-two{
@@ -39,6 +85,11 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
+}
+.auth-page-four{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
 }
 
 .auth-process-number{
@@ -71,7 +122,11 @@
     font-size: 16px;
     font-weight: 700;
 }
-.auth-logo--inner .shieldIcon{
+.authIcon{
+    display: flex;
+    justify-content: center;
+}
+.authIcon .shieldIcon{
     font-size: 60px;
     color: grey;
 }
@@ -90,7 +145,7 @@
 .signup-input{
     display: flex;
     flex-direction: column;
-    grid-row-gap: 16px;
+    grid-row-gap: 10px;
 }
 .signup-input input{
     width: 90%;
@@ -197,8 +252,9 @@
     font-size: 18px;
 }
 .auth-next-btn{
-    margin-top: 16px;
+    margin-top: 10px;
 }
+
 .auth-code input[type=number]::-webkit-inner-spin-button, 
 .auth-code input[type=number]::-webkit-outer-spin-button { 
   margin: 0; 
@@ -214,9 +270,7 @@
     display: none;
 }
 
-.resetPassword{
-    margin-top: 24px;
-}
+
 .resetPassword a{
     font-size: 12px;
     width: 25%;
@@ -224,7 +278,7 @@
     text-decoration: none;
 }
 .resetPassword button{
-    margin-top: 24px;
+    margin-top: 10px;
 }
 
 

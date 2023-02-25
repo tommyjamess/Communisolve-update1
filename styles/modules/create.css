@@ -91,9 +91,32 @@ input[type="file"]::file-selector-button {
     z-index: 1000;
     display: none;
 }
+.guidelinesList{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width:fit-content;
+    max-height: 90%;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px -1px grey;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 24px;
+    padding:58px;
+    z-index: 1000;
+    display: none !important;
+}
+.guide-title{
+    width: 100%;
+}
 
 
 .showAttributeList{
+    display: flex !important;
+}
+.showguidelineList{
     display: flex !important;
 }
 
@@ -102,7 +125,15 @@ input[type="file"]::file-selector-button {
     align-items: center;
 }
 
+.guidelineItem{
+    display: flex;
+    width: 100%;
+}
+
 .attributeItem label{
+    font-size: 14px;
+}
+.guidelineItem label{
     font-size: 14px;
 }
 
@@ -111,8 +142,21 @@ input[type="file"]::file-selector-button {
     color: var(--color-brandcolor);
 }
 
+.guidelineItem label:hover{
+    cursor: pointer;
+    color: var(--color-brandcolor);
+}
+
 .attributeItem input[type="radio"]{
-    display: none;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+.guidelineItem input[type="radio"]{
+    display: block;
+    height: 16px;
+    width: 16px;
 }
 
 .exitCreatePoll,
@@ -162,16 +206,13 @@ input[type="file"]::file-selector-button {
     margin-top: 5px;
 }
 
-
 .single-input label{
-    margin-left: 12px;
+    margin-left: 20px;
 }
-
 
 .double-options .industryOrInterest{
     margin-bottom: 10px;
 }
-
 
 .emotion-sub,
 .idea-sub,
@@ -277,6 +318,22 @@ input[type="file"]::file-selector-button {
     display: none;
 }
 
+.extended-guideline{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.extended-guideline i{
+    height: 0px;
+    font-size: 20px;
+    margin-top: -5px;
+    color: var(--color-grey);
+}
+
+.extended-guideline i:hover{
+    cursor: pointer;
+}
+
 .guidelines .single-input{
     display: flex;
     align-items: center;
@@ -322,20 +379,15 @@ input[type="file"]::file-selector-button {
     border-radius: var(--card-border-radius);
 }
 
-.singleBtn{
-    display: flex;
-}
-
-
 .multipleBtn{
     display: flex;
     grid-column-gap: 23px;
     padding-inline: 20px;
     margin-top: 16px;
 }
+
 .singleBtn{
     display: flex;
-    padding-inline: 20px;
     margin-top: 23px;
 }
 

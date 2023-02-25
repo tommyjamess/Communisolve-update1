@@ -98,15 +98,12 @@
         <div class="page-container"> 
             <div class="col-1 column ">
                 <div class="side-menu sideMenuFixed side-menu-stick">
-                    <a href="index.html" class="selected text-decor-none "><div><i class="mdi mdi mdi-home-outline"></i></div> <p class="font-weight-700">Home</p></a>
-                    <a href="explore.html" class="text-decor-none"><div><i class="mdi mdi-compass-outline"></i></div> <p class="font-weight-700">Explore</p></a>
-                    <!-- <a href="circles.html" class="text-decor-none"><div><i class="mdi mdi-lightbulb-group-outline"></i></div> <p class="font-weight-700">Circles</p></a> -->
-                    <!-- <a href="connect.html" class="text-decor-none"><div><i class="mdi mdi-human-greeting-proximity"></i></div> <p class="font-weight-700">Connections</p></a> -->
-                    <a href="groups.html" class="text-decor-none"><div><i class="mdi mdi-account-group-outline"></i></div> <p class="font-weight-700">Groups</p></a>
-                    <a href="private.html" class="text-decor-none"><div><i class="mdi mdi-account-sync-outline"></i></div> <p class="font-weight-700">Private</p></a>
-                    <a href="profile.html" class="text-decor-none"><div><i class="mdi mdi-account-circle-outline"></i></div> <p class="font-weight-700">Profile</p></a>
-                    <a href="notification.html" class="text-decor-none"><div><i class="mdi mdi-bell-outline"></i></div> <p class="font-weight-700">Notifications</p></a>
-                    <!-- <a href="dashboard.html" class="text-decor-none"><div><i class ="mdi mdi-view-dashboard-outline"></i></div> <p class="font-weight-700">Dashboard</p></a> -->
+                    <a href="index.html" class="selected text-decor-none "><div><i class="mdi mdi mdi-home-outline"></i></div> <div class="font-weight-700">Home</div></a>
+                    <a href="explore.html" class="text-decor-none"><div><i class="mdi mdi-compass-outline"></i></div> <div class="font-weight-700">Explore</div></a>
+                    <a href="groups.html" class="text-decor-none"><div><i class="mdi mdi-account-group-outline"></i></div> <div class="font-weight-700">Groups</div></a>
+                    <a href="private.html" class="text-decor-none"><div><i class="mdi mdi-account-sync-outline"></i></div> <div class="font-weight-700">Private</div></a>
+                    <a href="profile.html" class="text-decor-none"><div><i class="mdi mdi-account-circle-outline"></i></div> <div class="font-weight-700">Profile</div></a>
+                    <a href="notification.html" class="text-decor-none"><div><i class="mdi mdi-bell-outline"></i></div> <div class="font-weight-700">Notifications</div></a>
                 </div>
             </div>
             <div class="col-2 column side-card left-side">  
@@ -268,7 +265,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -285,30 +312,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @topic, @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -473,7 +481,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -504,13 +542,7 @@
                                                         <button><span>Disconnect from @username</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
-                                                    </div>
-                                                </form>
-                                                
+                                               
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-flag-outline"></i>
@@ -629,7 +661,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -646,24 +708,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -759,7 +808,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -776,24 +855,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -955,7 +1021,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -972,24 +1068,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -1109,7 +1192,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -1126,24 +1239,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -1239,7 +1339,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -1256,24 +1386,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -1435,7 +1552,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -1452,24 +1599,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -1589,7 +1723,37 @@
                             <div class="cardInterest">
                                 <p class="">Technology</p>
                                 <div class="cardInterestChild">
-                                    <button><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <button class="openMainCardMenu"><i class="mdi mdi-plus font-size-12"></i> Follow</button>
+                                    <div class="mainCardMenuOuter">
+                                        <div class="mainCardMenu">
+                                            <div class="mainMenuContent">
+                                                
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow @username</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic</span></button>
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="mainMenuPlate">
+                                                        <i class="mdi mdi-account-plus-outline"></i>
+                                                        <button><span>Follow topic, @username</span></button>
+                                                    </div>
+                                                </form>
+                                                
+                                                <div class="mainMenuPlate closeMenuCard">
+                                                    <i class="mdi mdi-cancel"></i>
+                                                    <span>Cancel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card-menu--icon openMainCardMenu"><i class="mdi mdi-dots-vertical font-size-18"></i></div>
                                     <div class="mainCardMenuOuter">
                                         <div class="mainCardMenu">
@@ -1606,24 +1770,11 @@
                                                         <button><span>Update session</span></button>
                                                     </div>
                                                 </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button>
-                                                            <span>Connect to @username</span>
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                
                                                 <form action="">
                                                     <div class="mainMenuPlate">
                                                         <i class="mdi mdi-pipe-disconnected"></i>
                                                         <button><span>Disconnect from @username</span></button>
-                                                    </div>
-                                                </form>
-                                                <form action="">
-                                                    <div class="mainMenuPlate">
-                                                        <i class="mdi mdi-account-plus-outline"></i>
-                                                        <button><span>Follow @username</span></button>
                                                     </div>
                                                 </form>
                                                 
@@ -1925,7 +2076,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="singleBtn"><a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn">Next</a></div>
+                                <div class="singleBtn" ><a class=" brand-background-color all-btns font-weight-600 font-size-14  next-btn">Next</a></div>
                             </form>
                         </div>
                     </div>
@@ -1953,18 +2104,21 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="start-time">
-                                        <div class="input-style poll-timing">
-                                            <p class="font-size-12 font-weight-600">Days</p>
-                                            <input type="number" name="" id="">
-                                        </div>
-                                        <div class="input-style poll-timing">
-                                            <p class="font-size-12 font-weight-600">Hours</p>
-                                            <input type="number" name="" id="">
-                                        </div>
-                                        <div class="input-style poll-timing">
-                                            <p class="font-size-12 font-weight-600">Minutes</p>
-                                            <input type="number" name="" id="">
+                                    <div class="single-input">
+                                        <label for="" class="font-size-13 font-weight-700">Set Start Time</label>
+                                        <div class="start-time">
+                                            <div class="input-style poll-timing">
+                                                <p class="font-size-12 font-weight-600">Days</p>
+                                                <input type="number" name="" id="">
+                                            </div>
+                                            <div class="input-style poll-timing">
+                                                <p class="font-size-12 font-weight-600">Hours</p>
+                                                <input type="number" name="" id="">
+                                            </div>
+                                            <div class="input-style poll-timing">
+                                                <p class="font-size-12 font-weight-600">Minutes</p>
+                                                <input type="number" name="" id="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1991,19 +2145,95 @@
                                     </div>
                                     <div class="single-input">
                                         <input type="checkbox" class="radio">
-                                        <label for="" class="font-size-13 font-weight-700"></label>
+                                        <div class="extended-guideline">
+                                            <label for="" class="font-size-13 font-weight-700">Impact of subject</label> 
+                                            <i class="mdi mdi-chevron-down openExtendedGuideline" ></i>
+                                            <div class="single-input guidelinesList">
+                                                <div class="guide-title"><h4 class="font-size-13 font-weight-700">Impact of subject</h4></div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute1">
+                                                    <label for="attribute1">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute2">
+                                                    <label for="attribute2">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute3">
+                                                    <label for="attribute3">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute4">
+                                                    <label for="attribute4">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute5">
+                                                    <label for="attribute5">Attribute 5</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute6">
+                                                    <label for="attribute6">Attribute 6</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute7">
+                                                    <label for="attribute7">Attribute 7</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute8">
+                                                    <label for="attribute8">Attribute 8</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="single-input">
                                         <input type="checkbox" class="radio">
-                                        <label for="" class="font-size-13 font-weight-700">Guideline 4</label>
+                                        <label for="" class="font-size-13 font-weight-700">Resources</label>
                                     </div>
                                     <div class="single-input">
                                         <input type="checkbox" class="radio">
-                                        <label for="" class="font-size-13 font-weight-700">Guideline 5</label>
+                                        <label for="" class="font-size-13 font-weight-700">Potential Solutions</label>
                                     </div>
                                     <div class="single-input">
                                         <input type="checkbox" class="radio">
-                                        <label for="" class="font-size-13 font-weight-700">Guideline 6</label>
+                                        <div class="extended-guideline">
+                                            <label for="" class="font-size-13 font-weight-700">Impact of Potential Solutions</label> 
+                                            <i class="mdi mdi-chevron-down openExtendedGuideline" ></i>
+                                            <div class="single-input guidelinesList">
+                                                <div class="guide-title"><h4 class="font-size-13 font-weight-700">Impact of Potential Solutions</h4></div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute1">
+                                                    <label for="attribute1">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute2">
+                                                    <label for="attribute2">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute3">
+                                                    <label for="attribute3">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute4">
+                                                    <label for="attribute4">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute5">
+                                                    <label for="attribute5">Attribute 5</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute6">
+                                                    <label for="attribute6">Attribute 6</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute7">
+                                                    <label for="attribute7">Attribute 7</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute8">
+                                                    <label for="attribute8">Attribute 8</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="single-input">
                                         <input type="checkbox" class="radio">
@@ -2011,7 +2241,45 @@
                                     </div>
                                     <div class="single-input">
                                         <input type="checkbox" class="radio">
-                                        <label for="" class="font-size-13 font-weight-700">Guideline 8</label>
+                                        <div class="extended-guideline">
+                                            <label for="" class="font-size-13 font-weight-700">Impact of Optimal Solutions</label> 
+                                            <i class="mdi mdi-chevron-down openExtendedGuideline" ></i>
+                                            <div class="single-input guidelinesList">
+                                                <div class="guide-title"><h4 class="font-size-13 font-weight-700">Impact of Optimal Solutions</h4></div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute1">
+                                                    <label for="attribute1">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute2">
+                                                    <label for="attribute2">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute3">
+                                                    <label for="attribute3">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute4">
+                                                    <label for="attribute4">Positive impact of subject on individual </label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute5">
+                                                    <label for="attribute5">Attribute 5</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute6">
+                                                    <label for="attribute6">Attribute 6</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute7">
+                                                    <label for="attribute7">Attribute 7</label>
+                                                </div>
+                                                <div class="guidelineItem">
+                                                    <input type="radio" name="attribute" id="attribute8">
+                                                    <label for="attribute8">Attribute 8</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="single-input">
                                         <input type="checkbox" class="radio">
@@ -2157,12 +2425,12 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="multipleBtn">
-                                <a class=" all-btns font-weight-600 font-size-14 goBack back-btn">Back</a>
-                                <button class=" brand-background-color all-btns font-weight-600 font-size-14 next-btn ">Submit</button>
-                            </div>
+                            
                         </div>
-                        
+                        <div class="multipleBtn">
+                            <a class=" all-btns font-weight-600 font-size-14 goBack back-btn">Back</a>
+                            <button class=" brand-background-color all-btns font-weight-600 font-size-14 next-btn ">Submit</button>
+                        </div>
                     </div>
                 </div> 
                 <div class="create-session displayAsk">
@@ -2379,7 +2647,7 @@
                             </form>
                             
                         </div>
-                        <div class="singleBtn"><a class=" brand-background-color all-btns font-weight-600 font-size-14 next-btn pnext-btn ">Next</a></div>
+                        <div class="singleBtn" style="padding-inline: 20px;"><a class=" brand-background-color all-btns font-weight-600 font-size-14 next-btn pnext-btn ">Next</a></div>
                     </div>
                     <div class="create-session-inner Pform2">
                         <div class="form-plate">
@@ -2413,18 +2681,21 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="start-time">
-                                        <div class="input-style poll-timing">
-                                            <p class="font-size-12 font-weight-600">Days</p>
-                                            <input type="number" name="" id="">
-                                        </div>
-                                        <div class="input-style poll-timing">
-                                            <p class="font-size-12 font-weight-600">Hours</p>
-                                            <input type="number" name="" id="">
-                                        </div>
-                                        <div class="input-style poll-timing">
-                                            <p class="font-size-12 font-weight-600">Minutes</p>
-                                            <input type="number" name="" id="">
+                                    <div class="single-input">
+                                        <label for="" class="font-size-13 font-weight-700">Set Start Time</label>
+                                        <div class="start-time">
+                                            <div class="input-style poll-timing">
+                                                <p class="font-size-12 font-weight-600">Days</p>
+                                                <input type="number" name="" id="">
+                                            </div>
+                                            <div class="input-style poll-timing">
+                                                <p class="font-size-12 font-weight-600">Hours</p>
+                                                <input type="number" name="" id="">
+                                            </div>
+                                            <div class="input-style poll-timing">
+                                                <p class="font-size-12 font-weight-600">Minutes</p>
+                                                <input type="number" name="" id="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

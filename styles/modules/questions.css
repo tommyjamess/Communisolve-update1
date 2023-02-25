@@ -68,7 +68,7 @@
     margin-top: 15px;
 }
 .questionAnswer{
-    background-color: rgb(112, 12, 179, 0.2);
+    background-color: var( --color-session-background);
     overflow-y: auto;
     border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
     display: flex;
@@ -426,7 +426,7 @@
 
 .answerList{
     display: none;
-    background-color: rgb(112, 12, 179, 0.2);
+    background-color:var( --color-session-background);
     height: 100%;
     padding: 20px;
     animation-name: animAnsList;
