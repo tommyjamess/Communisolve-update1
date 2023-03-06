@@ -219,6 +219,10 @@
 .agreement p{
     color: var(--color-grey);
 }
+.agreement-links-outer{
+    display: flex;
+    justify-content: center;
+}
 .agreement-links{
     display: flex;
     grid-column-gap: 5px;

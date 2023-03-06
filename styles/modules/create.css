@@ -51,14 +51,14 @@ input[type="file"]::file-selector-button {
 .form-plate{
     padding-inline: 20px;
     padding-block: 20px;
-    min-height: 33rem;
+    /* min-height: 33rem; */
 }
 
 .overflow-form{
     display: flex;
     flex-direction: column;
     grid-row-gap: 16px;
-    min-height: 450px;
+    min-height: fit-content;
     max-height: 450px;
     overflow-y: auto;
     padding-block: 10px;
@@ -372,7 +372,8 @@ input[type="file"]::file-selector-button {
 .create-session-inner{
     border: 1px solid white;
     flex-basis: 35.4%;
-    min-height: 39rem;
+    /* min-height: 39rem; */
+    min-height: fit-content;
     margin-right: 12px;
     padding-block: 20px;
     background-color: var(--color-white);
