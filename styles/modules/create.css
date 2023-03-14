@@ -149,14 +149,20 @@ input[type="file"]::file-selector-button {
 
 .attributeItem input[type="radio"]{
     display: block;
-    height: 16px;
-    width: 16px;
+    height: 17px;
+    width: 17px;
+}
+
+.guide-input input[type="radio"]{
+    display: block;
+    height: 17px;
+    width: 17px;
 }
 
 .guidelineItem input[type="radio"]{
     display: block;
-    height: 16px;
-    width: 16px;
+    height: 17px;
+    width: 17px;
 }
 
 .exitCreatePoll,
